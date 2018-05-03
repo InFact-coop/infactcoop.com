@@ -9,7 +9,7 @@
 /* imports all tachyons modules
    (postcss looks for them from node_modules)
 */
-@import 'tachyons-custom/src/_box-sizing.css';
+@import '../../node_modules/tachyons-custom/src/_box-sizing.css';
 @import 'tachyons-custom/src/_images.css';
 @import 'tachyons-custom/src/_background-size.css';
 @import 'tachyons-custom/src/_background-position.css';
