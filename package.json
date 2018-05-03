@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "InFact Digital Co-op <hello@infactcoop.com>",
   "dependencies": {
-    "autoprefixer": "^8.4.1",
+    "autoprefixer": "^6.7.7",
     "dotenv": "^5.0.1",
     "gatsby": "^1.9.256",
     "gatsby-cli": "^1.1.51",
