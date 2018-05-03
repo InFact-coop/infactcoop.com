@@ -4,10 +4,13 @@
   "version": "1.0.0",
   "author": "InFact Digital Co-op <hello@infactcoop.com>",
   "dependencies": {
-    "gatsby": "^1.9.247",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-react-helmet": "^2.0.10",
+    "dotenv": "^5.0.1",
+    "gatsby": "^1.9.256",
+    "gatsby-cli": "^1.1.51",
+    "gatsby-link": "^1.6.41",
+    "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-source-contentful": "^1.3.48",
+    "gatsby-transformer-remark": "^1.7.40",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
@@ -21,6 +24,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.12.0"
+    "prettier": "^1.12.1"
   }
 }
