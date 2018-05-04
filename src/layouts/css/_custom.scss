@@ -18,8 +18,15 @@
 }
 
 .heading {
-  line-height: var(--line-height-1);
-  font-size: var(--font-size-1);
+  line-height: var(--line-height-subheadline);
+  font-size: var(--font-size-subheadline);
+  font-family: var(--heading);
+  text-transform: uppercase;
+}
+
+.section-heading {
+  line-height: var(--line-height-3);
+  font-size: var(--font-size-3);
   font-family: var(--heading);
   text-transform: uppercase;
 }
