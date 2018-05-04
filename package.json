@@ -4,14 +4,23 @@
   "version": "1.0.0",
   "author": "InFact Digital Co-op <hello@infactcoop.com>",
   "dependencies": {
+    "autoprefixer": "^8.4.1",
     "dotenv": "^5.0.1",
     "gatsby": "^1.9.256",
     "gatsby-cli": "^1.1.51",
     "gatsby-link": "^1.6.41",
+    "gatsby-plugin-postcss-sass": "^1.0.20",
     "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-styled-components": "^2.0.11",
     "gatsby-source-contentful": "^1.3.48",
     "gatsby-transformer-remark": "^1.7.40",
-    "react-helmet": "^5.2.0"
+    "postcss-clean": "^1.1.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^7.0.0",
+    "postcss-import": "^11.1.0",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^3.2.6",
+    "tachyons-custom": "^4.9.4"
   },
   "keywords": [
     "gatsby"
