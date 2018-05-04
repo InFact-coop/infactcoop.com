@@ -1,33 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+const Splash = styled.section.attrs({
+  className: 'h5 white heading',
+})`
+  background: linear-gradient(0deg, #009cf3 0%, #16d6d9 100%);
+`
+
+const Header = ({ siteTitle }) => <Splash>{siteTitle}</Splash>
 
 export default Header
