@@ -1,0 +1,25 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../assets/fonts/WorkSans-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../assets/fonts/WorkSans-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Reglo';
+  src: url('../assets/fonts/Reglo-Bold.otf') format('opentype'); /* Safari, Android, iOS */
+  font-weight: bold;
+}
+
+.heading {
+  line-height: var(--line-height-1);
+  font-size: var(--font-size-1);
+  font-family: var(--heading);
+  text-transform: uppercase;
+}
