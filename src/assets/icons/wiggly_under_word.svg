@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="12px" viewBox="0 0 68 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>wiggly_under_word</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#009CF3" offset="0%"></stop>
+            <stop stop-color="#16D6D9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-18.000000, -49.000000)" stroke="url(#linearGradient-1)" stroke-width="2">
+            <polyline id="wiggly_under_word" points="19 59.0623603 27 51 36 59.0623603 44 51 52.0623857 59.0623603 60 51 68 59.0623603 76 51 84.5999999 59.0623603"></polyline>
+        </g>
+    </g>
+</svg>
