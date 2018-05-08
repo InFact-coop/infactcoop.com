@@ -5,7 +5,7 @@ import logo from '../assets/logos/infact_logo_white.svg'
 
 const Splash = styled.section.attrs({
   className:
-    'pa1 flex flex-column items-center justify-center items-start-ns justify-start-ns',
+    'flex flex-column items-center justify-center items-start-ns justify-start-ns',
 })`
   height: 90vh;
   background: linear-gradient(
@@ -16,7 +16,7 @@ const Splash = styled.section.attrs({
 `
 
 const Topline = styled.div.attrs({
-  className: 'flex justify-between items-center w-100 h4 absolute top-0 ph6',
+  className: 'flex justify-between items-center w-100 h4 ph6',
 })``
 
 const Logo = styled.div.attrs({

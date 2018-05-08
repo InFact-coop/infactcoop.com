@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Burger } from '../components/menu'
+import { Burger, Menu } from '../components/menu'
 import { Splash, Topline, Logo, Tagline } from '../components/header.js'
 import { connect } from 'react-redux'
 import { toggleMenu } from '../state/actions'
@@ -19,6 +19,7 @@ const mapDispatchToProps = dispatch => {
 
 const Header = ({ siteTitle, menuIsOpen, toggleMenu }) => (
   <Splash>
+    <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
     <Topline>
       <Logo />
       <Burger menuIsOpen={menuIsOpen} onClick={toggleMenu} />

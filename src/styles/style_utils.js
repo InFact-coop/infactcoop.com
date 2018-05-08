@@ -17,6 +17,11 @@ const media = {
     }
   `,
 }
+const displayElement = bool => {
+  return css`
+    display: ${bool ? 'block' : 'none'};
+  `
+}
 
 const backgroundImage = imgUrl => {
   return imgUrl ? `url(${imgUrl}) no-repeat center center / contain` : ``
@@ -27,4 +32,4 @@ const backgroundImageToggle = (bool, trueUrl, falseUrl) => {
   return bool ? trueCss : falseCss
 }
 
-export default { media, backgroundImage, backgroundImageToggle }
+export default { media, backgroundImage, backgroundImageToggle, displayElement }
