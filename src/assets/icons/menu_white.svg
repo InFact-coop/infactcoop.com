@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="58px" viewBox="0 0 51 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu_white" transform="translate(-83.000000, -81.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="menu" transform="translate(84.000000, 82.000000)">
+                <polyline id="Path-2" transform="translate(24.500000, 4.631180) scale(-1, 1) translate(-24.500000, -4.631180) " points="0 8.6623602 8 0.599999905 17 8.6623602 25 0.599999905 33.0623857 8.6623602 41 0.599999905 49 8.6623602"></polyline>
+                <polyline id="Path-2" transform="translate(24.500000, 51.031180) scale(-1, -1) translate(-24.500000, -51.031180) " points="0 55.0623603 8 47 17 55.0623603 25 47 33.0623857 55.0623603 41 47 49 55.0623603"></polyline>
+                <g id="menu-to-close-2" transform="translate(10.900000, 17.300000)" stroke-linecap="square">
+                    <path d="M0,0 L28,0" id="Shape"></path>
+                    <path d="M0,10 L28,10" id="Shape"></path>
+                    <path d="M0,20 L28,20" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
