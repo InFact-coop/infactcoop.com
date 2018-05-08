@@ -18,15 +18,15 @@
   --serif: georgia, serif;
   --code: consolas, monaco, monospace;
 
-  --font-size-headline: 8rem;
-  --font-size-subheadline: 5rem;
-  --font-size-1: 48px;
-  --font-size-2: 32px;
-  --font-size-3: 24px;
-  --font-size-4: 19px;
-  --font-size-5: 17px;
-  --font-size-6: 15px;
-  --font-size-7: 13px;
+  --font-size-headline: 72px;
+  --font-size-subheadline: 48px;
+  --font-size-1: 36px;
+  --font-size-2: 24px;
+  --font-size-3: 20px;
+  --font-size-4: 16px;
+  --font-size-5: 14px;
+  --font-size-6: 12px;
+  --font-size-7: 10px;
 
   --letter-spacing-tight: -0.05em;
   --letter-spacing-1: 0.1em;
@@ -36,32 +36,34 @@
   --line-height-title: 1.25;
   --line-height-copy: 1.5;
 
-  --line-height-1: 64px;
+  --line-height-headline: 96px;
+  --line-height-subheadline: 64px;
+  --line-height-1: 54px;
   --line-height-2: 36px;
-  --line-height-3: 28px;
+  --line-height-3: 32px;
   --line-height-4: 24px;
-  --line-height-5: 22px;
-  --line-height-6: 18px;
-  --line-height-7: 13px;
+  --line-height-5: 20px;
+  --line-height-6: 16px;
+  --line-height-7: 16px;
 
   --measure: 30em;
   --measure-narrow: 20em;
   --measure-wide: 34em;
 
   --spacing-none: 0;
-  --spacing-extra-small: 0.25rem;
-  --spacing-small: 0.5rem;
-  --spacing-medium: 1rem;
-  --spacing-large: 1.5rem;
-  --spacing-extra-large: 2rem;
-  --spacing-extra-extra-large: 3rem;
-  --spacing-extra-extra-extra-large: 7.5rem;
+  --spacing-extra-small: 0.5rem;
+  --spacing-small: 1rem;
+  --spacing-medium: 1.5rem;
+  --spacing-large: 3rem;
+  --spacing-extra-large: 4rem;
+  --spacing-extra-extra-large: 5rem;
+  --spacing-extra-extra-extra-large: 6rem;
 
   --height-1: 1rem;
   --height-2: 2rem;
   --height-3: 4rem;
   --height-4: 6rem;
-  --height-5: 11rem;
+  --height-5: 12rem;
 
   --width-1: 1rem;
   --width-2: 2rem;
