@@ -1,5 +1,4 @@
 /* Fonts */
-
 @font-face {
   font-family: 'Work Sans';
   src: url('../assets/fonts/WorkSans-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
@@ -10,7 +9,8 @@
   font-family: 'Work Sans';
   src: url('../assets/fonts/WorkSans-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
   font-weight: bold;
-} 
+}
+
 @font-face {
   font-family: 'Reglo';
   src: url('../assets/fonts/Reglo-Bold.otf') format('opentype'); /* Safari, Android, iOS */
@@ -24,11 +24,22 @@
   text-transform: uppercase;
 }
 
-.section-heading {
+.font-2 {
+  line-height: var(--line-height-2);
+  font-size: var(--font-size-2);
+  font-family: var(--sans-serif);
+}
+
+.font-3 {
   line-height: var(--line-height-3);
   font-size: var(--font-size-3);
-  font-family: var(--heading);
-  text-transform: uppercase;
+  font-family: var(--sans-serif);
+}
+
+.font-4 {
+  line-height: var(--line-height-4);
+  font-size: var(--font-size-4);
+  font-family: var(--sans-serif);
 }
 
 /* Custom Heights */
