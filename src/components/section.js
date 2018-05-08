@@ -5,7 +5,7 @@ import wigglyLeft from '../assets/icons/wiggly_left.svg'
 import wigglyRight from '../assets/icons/wiggly_right.svg'
 
 const SectionTile = styled.section.attrs({
-  className: 'pa7 bg-mid-gray',
+  className: 'pa5 bg-mid-gray',
 })``
 
 const Wrapper = styled.div.attrs({

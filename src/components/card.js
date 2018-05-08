@@ -7,24 +7,24 @@ const CardTitle = styled.h1.attrs({
 })``
 
 const CardSubTitle = styled.h2.attrs({
-  className: 'font-2 b mb3',
+  className: 'font-2 b mb2',
 })``
 
 const CardBody = styled.p.attrs({
-  className: 'font-4 mb3',
+  className: 'font-4 mb2',
 })``
 
 const Card = styled.div.attrs({
-  className: 'bg-white shadow-1 w-33 ph6 pv7',
+  className: 'bg-white shadow-1 w-40 ph5 pv6',
 })``
 
 const CardButton = styled.button.attrs({
-  className: 'font-3 ttu b ph4 pv2 b--black',
+  className: 'font-3 ttu b ph3 pv1 b--black',
 })``
 
 const CardHeading = ({ children }) => (
-  <div className="mb3">
-    <div className="mb3">{children}</div>
+  <div className="mb2">
+    <div className="mb2">{children}</div>
     <img src={wigglyBottom} alt="wiggle" />
   </div>
 )
