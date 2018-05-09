@@ -4,7 +4,7 @@
 
 /* CSS reset */
 
-@import './css/_reset.scss';
+@import './_reset.scss';
 
 /* imports all tachyons modules
    (postcss looks for them from node_modules)
@@ -58,7 +58,7 @@
 
 /* customisable tachyons variables (and any others that you declare) */
 
-@import './css/_variables.scss';
+@import './_variables.scss';
 
 // fonts
 
@@ -66,4 +66,4 @@
 
 /* your own custom styles */
 
-@import './css/_custom.scss';
+@import './_custom.scss';
