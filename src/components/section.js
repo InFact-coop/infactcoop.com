@@ -25,7 +25,7 @@ const Section = ({ children }) => (
 )
 
 const SectionHeading = ({ children, prop }) => (
-  <div className="flex flex-row justify-center mb7">
+  <div className="flex flex-row justify-center mb6">
     <img src={wigglyLeft} alt="wiggle" />
     <div className="mh1">{children}</div>
     <img src={wigglyRight} alt="wiggle" />

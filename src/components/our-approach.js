@@ -22,8 +22,24 @@ import BackgroundImg from './background-img'
 
 import postIts from '../assets/images/our_approach.png'
 
-const SectionCard = styled(Card)`
-  transform: translate(-3rem, -1rem);
+const Wrapper = styled.div.attrs({
+  className: 'relative',
+})`
+  height: 54vh;
+  min-height: 600px;
+`
+
+const SectionCard = styled(Card).attrs({
+  className: 'absolute top-0 left-0',
+})`
+  max-height: 95%;
+`
+
+const Picture = styled(BackgroundImg).attrs({
+  className: 'absolute bottom-0 right-0',
+})`
+  height: 95%
+  width: 95%
 `
 
 const OurApproach = () => (
@@ -32,7 +48,8 @@ const OurApproach = () => (
       <SectionTitle>Our Approach</SectionTitle>
     </SectionHeading>
 
-    <BackgroundImg src={postIts}>
+    <Wrapper>
+      <Picture src={postIts} />
       <SectionCard>
         <CardHeading>
           <CardTitle>Approach</CardTitle>
@@ -44,7 +61,7 @@ const OurApproach = () => (
         </CardBody>
         <CardButton>Tell me more</CardButton>
       </SectionCard>
-    </BackgroundImg>
+    </Wrapper>
   </Section>
 )
 
