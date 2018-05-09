@@ -27,7 +27,8 @@ const Logo = styled.div.attrs({
 `
 
 const Tagline = styled.div.attrs({
-  className: 'heading white w-50-l w-70-m w-90 pl7-ns pl0 absolute tl-ns tc',
+  className:
+    'heading-ns font-1 ttu reglo white w-50-l w-70-m w-90 pl7-ns pl0 absolute tl-ns tc',
 })`
   top: 30%;
   ${media.m`top: 33%`};

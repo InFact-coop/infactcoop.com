@@ -5,7 +5,7 @@ import wigglyLeft from '../assets/icons/wiggly_left.svg'
 import wigglyRight from '../assets/icons/wiggly_right.svg'
 
 const SectionTile = styled.section.attrs({
-  className: 'pa5 bg-mid-gray',
+  className: 'pa5-ns pv3 ph1 bg-mid-gray',
 })``
 
 const Wrapper = styled.div.attrs({
@@ -15,7 +15,7 @@ const Wrapper = styled.div.attrs({
 `
 
 const SectionTitle = styled.h1.attrs({
-  className: 'font-3 b ttu',
+  className: 'font-4 font-3-ns sans-serif b ttu',
 })``
 
 const Section = ({ children }) => (
@@ -25,7 +25,7 @@ const Section = ({ children }) => (
 )
 
 const SectionHeading = ({ children, prop }) => (
-  <div className="flex flex-row justify-center mb6">
+  <div className="flex flex-row justify-center mb6-ns mb3">
     <img src={wigglyLeft} alt="wiggle" />
     <div className="mh1">{children}</div>
     <img src={wigglyRight} alt="wiggle" />
