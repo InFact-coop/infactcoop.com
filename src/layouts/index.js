@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
-import Header from '../components/header'
-import './index.scss'
+import Header from '../containers/header'
+import '../styles/index.scss'
 
 const AppWrapper = styled.div.attrs({
   className: 'bg-light-gray center',

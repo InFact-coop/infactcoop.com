@@ -1,12 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { media } from '../layouts/styles/style_utils'
+import { media, backgroundImage } from '../styles/style_utils'
 import logo from '../assets/logos/infact_logo_white.svg'
 
 const Splash = styled.section.attrs({
   className:
-    'pa1 flex flex-column items-center justify-center items-start-ns justify-start-ns',
+    'flex flex-column items-center justify-center items-start-ns justify-start-ns',
 })`
   height: 90vh;
   background: linear-gradient(
@@ -16,14 +15,14 @@ const Splash = styled.section.attrs({
   );
 `
 
-const TopLine = styled.div.attrs({
-  className: 'flex justify-between h4 absolute top-0 ph6',
+const Topline = styled.div.attrs({
+  className: 'flex justify-between items-center w-100 h4 ph6',
 })``
 
 const Logo = styled.div.attrs({
   className: 'w5 h4',
 })`
-  background: ${logo ? `url(${logo}) no-repeat center center / contain` : ''};
+  background: ${backgroundImage(logo)};
 `
 
 const Tagline = styled.div.attrs({
@@ -34,13 +33,4 @@ const Tagline = styled.div.attrs({
   ${media.l`top: 35%`};
 `
 
-const Header = ({ siteTitle }) => (
-  <Splash>
-    <TopLine>
-      <Logo />
-    </TopLine>
-    <Tagline>InFact is the most awesome co-op you will ever work with.</Tagline>
-  </Splash>
-)
-
-export default Header
+export default { Splash, Topline, Logo, Tagline }
