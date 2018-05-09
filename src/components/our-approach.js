@@ -36,6 +36,10 @@ const SectionCard = styled(Card).attrs({
   className: 'absolute-ns top-0-ns left-0-ns',
 })`
   max-height: 95%;
+  transform: translateY(-2rem);
+  ${media.ns`
+    transform: translateY(0);
+  `};
 `
 
 const Picture = styled(BackgroundImg).attrs({
