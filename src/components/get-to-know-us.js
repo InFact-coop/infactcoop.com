@@ -12,14 +12,11 @@ import {
   CardHeading,
 } from './card'
 
-import {
-  Section,
-  SectionTitle,
-  SectionBackgroundImg,
-  SectionHeading,
-} from './section'
+import { Section, SectionTitle, SectionHeading } from './section'
 
 import BackgroundImg from './background-img'
+
+import { PurpleOverlay } from './overlay'
 
 import picOfUs from '../assets/images/get_to_know_us.png'
 
@@ -31,13 +28,6 @@ const SectionCard = styled(Card).attrs({
   ${media.ns`
     transform: translateY(0);
   `};
-`
-
-const Overlay = styled.div`
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-  background: radial-gradient(circle, #fa7d78 0%, #6114cc 100%);
 `
 
 const Picture = styled(BackgroundImg).attrs({
@@ -68,7 +58,7 @@ const GetToKnowUs = () => (
 
     <Wrapper>
       <Picture src={picOfUs}>
-        <Overlay />
+        <PurpleOverlay />
       </Picture>
       <SectionCard>
         <CardHeading>

@@ -15,6 +15,8 @@ import { Section, SectionTitle, SectionHeading } from './section'
 
 import BackgroundImg from './background-img'
 
+import { BlueOverlay } from './overlay'
+
 import fac from '../assets/images/we_love_fac.png'
 
 const Wrapper = styled.div.attrs({
@@ -47,13 +49,6 @@ const Picture = styled(BackgroundImg).attrs({
   `};
 `
 
-const Overlay = styled.div`
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-  background: radial-gradient(circle, #009cf3 0%, #16d6d9 100%);
-`
-
 const FAC = () => (
   <Section bg_color="mid-gray">
     <SectionHeading>
@@ -68,7 +63,7 @@ const FAC = () => (
 
     <Wrapper>
       <Picture src={fac}>
-        <Overlay />
+        <BlueOverlay />
       </Picture>
       <SectionCard>
         <CardHeading>

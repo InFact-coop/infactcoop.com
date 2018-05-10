@@ -8,14 +8,16 @@ const CardTitle = styled.h1.attrs({
 
 const CardSubTitle = styled.h2.attrs({
   className: 'font-2-ns font-3 b mb2-ns mb1 sans-serif',
-})``
+})`
+  text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : 'inherit')};
+`
 
 const CardBody = styled.p.attrs({
   className: 'font-4-ns font-5 mb3 sans-serif',
 })``
 
 const Card = styled.div.attrs({
-  className: 'bg-white shadow-5 w-40-ns ph5-ns pv6-ns pv4 ph3 center tc tl-ns',
+  className: 'bg-white shadow-5 ph5-ns pv6-ns pv4 ph3 center tc tl-ns',
 })`
   width: 95%;
 `
