@@ -17,9 +17,9 @@ const media = {
     }
   `,
 }
-const displayElement = bool => {
+const displayElement = (bool, displayAs) => {
   return css`
-    display: ${bool ? 'block' : 'none'};
+    display: ${bool ? displayAs : 'none'};
   `
 }
 
