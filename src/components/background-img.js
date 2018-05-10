@@ -12,4 +12,4 @@ const BackgroundImg = styled.div`
     `};
 `
 
-export { BackgroundImg }
+export default BackgroundImg

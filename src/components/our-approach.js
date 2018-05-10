@@ -19,7 +19,7 @@ import {
   SectionHeading,
 } from './section'
 
-import { BackgroundImg } from './background-img'
+import BackgroundImg from './background-img'
 
 import postIts from '../assets/images/our_approach.png'
 

@@ -13,7 +13,7 @@ import {
 
 import { Section, SectionTitle, SectionHeading } from './section'
 
-import { BackgroundImg } from './background-img'
+import BackgroundImg from './background-img'
 
 import fac from '../assets/images/we_love_fac.png'
 
