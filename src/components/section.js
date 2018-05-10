@@ -5,7 +5,7 @@ import wigglyLeft from '../assets/icons/wiggly_left.svg'
 import wigglyRight from '../assets/icons/wiggly_right.svg'
 
 const SectionTile = styled.section.attrs({
-  className: 'pa5-ns pv3 mv1 mv0-ns ph1 bg-mid-gray',
+  className: 'pa5-ns pv3 mv1 mv0-ns ph1',
 })``
 
 const Wrapper = styled.div.attrs({
@@ -18,8 +18,18 @@ const SectionTitle = styled.h1.attrs({
   className: 'font-4 font-3-ns sans-serif b ttu',
 })``
 
-const Section = ({ children }) => (
-  <SectionTile>
+const SectionButton = styled.button.attrs({
+  className: 'font-4-ns font-5 sans-serif fw6 ttu ph4 pv2 white bn db center',
+})`
+  background: linear-gradient(
+    to right,
+    rgba(0, 156, 243, 0.8) 0%,
+    rgba(22, 214, 217, 0.8) 100%
+  );
+`
+
+const Section = ({ children, bg_color }) => (
+  <SectionTile className={`bg-${bg_color}`}>
     <Wrapper>{children}</Wrapper>
   </SectionTile>
 )
@@ -32,4 +42,4 @@ const SectionHeading = ({ children, prop }) => (
   </div>
 )
 
-export { Section, SectionTitle, SectionHeading }
+export { Section, SectionTitle, SectionHeading, SectionButton }

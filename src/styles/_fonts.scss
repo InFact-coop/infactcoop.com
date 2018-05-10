@@ -7,6 +7,12 @@
 
 @font-face {
   font-family: 'Work Sans';
+  src: url('../assets/fonts/WorkSans-SemiBold.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Work Sans';
   src: url('../assets/fonts/WorkSans-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
   font-weight: bold;
 }
