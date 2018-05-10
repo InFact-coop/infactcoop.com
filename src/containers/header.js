@@ -1,7 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Burger, Menu } from '../components/menu'
-import { Splash, Topline, Logo, Tagline } from '../components/header.js'
+import { BurgerGradient, Menu } from '../components/menu'
+import {
+  SplashWhite,
+  Topline,
+  LogoGradient,
+  TaglineBlack,
+} from '../components/header.js'
 import { connect } from 'react-redux'
 import { toggleMenu } from '../state/actions'
 
@@ -18,14 +23,14 @@ const mapDispatchToProps = dispatch => {
 }
 
 const Header = ({ siteTitle, menuIsOpen, toggleMenu }) => (
-  <Splash>
+  <SplashWhite>
     <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
     <Topline>
-      <Logo />
-      <Burger menuIsOpen={menuIsOpen} onClick={toggleMenu} />
+      <LogoGradient />
+      <BurgerGradient menuIsOpen={menuIsOpen} onClick={toggleMenu} />
     </Topline>
-    <Tagline>InFact is the most awesome co-op you will ever work with.</Tagline>
-  </Splash>
+    <TaglineBlack>Stimmy Things</TaglineBlack>
+  </SplashWhite>
 )
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header)

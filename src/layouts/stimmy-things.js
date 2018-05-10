@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
-import HeaderLanding from '../containers/headerLanding'
+import Header from '../containers/header'
+
 import '../styles/index.scss'
 
 const AppWrapper = styled.div.attrs({
-  className: 'bg-light-gray center',
+  className: 'bg-white center',
 })`
   max-width: 1440px;
 `
@@ -21,9 +22,9 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <div className="bg-light-gray">
+    <div className="bg-white">
       <AppWrapper>
-        <HeaderLanding siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} />
         <div>{children()}</div>
       </AppWrapper>
     </div>
@@ -37,7 +38,7 @@ Layout.propTypes = {
 export default Layout
 
 export const query = graphql`
-  query SiteTitleQuery {
+  query SiteTitleQuery1 {
     site {
       siteMetadata {
         title
