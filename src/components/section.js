@@ -19,7 +19,7 @@ const SectionTitle = styled.h1.attrs({
 })``
 
 const SectionButton = styled.button.attrs({
-  className: 'font-4-ns font-5 sans-serif b ttu ph4 pv2 white bn centerj',
+  className: 'font-4-ns font-5 sans-serif fw6 ttu ph4 pv2 white bn db center',
 })`
   background: linear-gradient(
     to right,

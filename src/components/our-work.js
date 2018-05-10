@@ -19,27 +19,25 @@ import stimmyThings from '../assets/images/stimmy_things_landing.svg'
 import workshop from '../assets/images/LWC_PIC.png'
 
 const Wrapper = styled.div.attrs({
-  className: '',
+  className: 'relative flex justify-center',
 })`
+  height: 90vh;
   ${media.ns`
     width: 46%;
   `};
 `
 
 const SectionCard = styled(Card).attrs({
-  className: '',
+  className: 'absolute',
 })`
-  transform: translateY(-2rem);
-  ${media.ns`
-    transform: translateY(-7rem);
-  `};
+  bottom: 3rem;
 `
 
 const Picture = styled(BackgroundImg).attrs({
   className: '',
 })`
   width: 100%;
-  height: 50vh;
+  height: 60%;
 `
 
 const OurWork = () => (
@@ -55,7 +53,7 @@ const OurWork = () => (
           <CardHeading>
             <CardTitle>Mental Health</CardTitle>
           </CardHeading>
-          <CardSubTitle>Stimmy Things</CardSubTitle>
+          <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
           <CardBody>
             An app to help young people to deal better with ADHD.
           </CardBody>
@@ -68,16 +66,14 @@ const OurWork = () => (
           <CardHeading>
             <CardTitle>Tech for Good</CardTitle>
           </CardHeading>
-          <CardSubTitle>Cast Fellowship</CardSubTitle>
+          <CardSubTitle uppercase>Cast Fellowship</CardSubTitle>
           <CardBody>
             A text that introduces our amazing work with CAST.
           </CardBody>
         </SectionCard>
       </Wrapper>
     </div>
-    <div className="flex items-center justify-center">
-      <SectionButton>See It All</SectionButton>
-    </div>
+    <SectionButton>See It All</SectionButton>
   </Section>
 )
 
