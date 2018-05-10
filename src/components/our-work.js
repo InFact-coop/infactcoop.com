@@ -17,6 +17,7 @@ import BackgroundImg from './background-img'
 
 import stimmyThings from '../assets/images/stimmy_things_landing.svg'
 import workshop from '../assets/images/LWC_PIC.png'
+import { PurpleOverlay } from './overlay'
 
 const Wrapper = styled.div.attrs({
   className: 'relative flex justify-center',
@@ -61,7 +62,9 @@ const OurWork = () => (
       </Wrapper>
 
       <Wrapper>
-        <Picture src={workshop} />
+        <Picture src={workshop}>
+          <PurpleOverlay />
+        </Picture>
         <SectionCard>
           <CardHeading>
             <CardTitle>Tech for Good</CardTitle>
