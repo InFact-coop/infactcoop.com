@@ -47,6 +47,13 @@ const Picture = styled(BackgroundImg).attrs({
   `};
 `
 
+const Overlay = styled.div`
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background: radial-gradient(circle, #009cf3 0%, #16d6d9 100%);
+`
+
 const FAC = () => (
   <Section bg_color="mid-gray">
     <SectionHeading>
@@ -60,7 +67,9 @@ const FAC = () => (
     </SectionHeading>
 
     <Wrapper>
-      <Picture src={fac} />
+      <Picture src={fac}>
+        <Overlay />
+      </Picture>
       <SectionCard>
         <CardHeading>
           <CardTitle>Our Story</CardTitle>
