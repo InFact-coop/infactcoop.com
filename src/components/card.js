@@ -15,7 +15,7 @@ const CardBody = styled.p.attrs({
 })``
 
 const Card = styled.div.attrs({
-  className: 'bg-white shadow-5 w-40-ns ph5-ns pv6-ns pv4 ph3 center tc tl-ns',
+  className: 'bg-white shadow-5 ph5-ns pv6-ns pv4 ph3 center tc tl-ns',
 })`
   width: 95%;
 `

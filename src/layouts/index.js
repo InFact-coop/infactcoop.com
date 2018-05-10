@@ -21,10 +21,12 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <AppWrapper>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div>{children()}</div>
-    </AppWrapper>
+    <div className="bg-light-gray">
+      <AppWrapper>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div>{children()}</div>
+      </AppWrapper>
+    </div>
   </div>
 )
 
