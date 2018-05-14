@@ -45,7 +45,7 @@ const OurWork = ({ history }) => {
   const isHomePage = history.location.pathname === '/'
 
   const title = isHomePage ? 'Our Work' : 'More Work'
-  const bgcolor = isHomePage ? 'light-grey' : 'white'
+  const bgcolor = isHomePage ? 'light-gray' : 'white'
 
   return (
     <Section bg_color={bgcolor}>
