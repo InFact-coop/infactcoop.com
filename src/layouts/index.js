@@ -13,6 +13,7 @@ const AppWrapper = styled.div.attrs({
 `
 
 const Layout = ({ children, data, history }) => {
+  const isHomePage = history.location.pathname === '/'
   return (
     <div>
       <Helmet
@@ -24,7 +25,7 @@ const Layout = ({ children, data, history }) => {
       />
       <div className="bg-light-gray">
         <AppWrapper>
-          {history.location.pathname === '/' ? (
+          {isHomePage ? (
             <HeaderLanding siteTitle={data.site.siteMetadata.title} />
           ) : (
             <Header siteTitle={data.site.siteMetadata.title} />

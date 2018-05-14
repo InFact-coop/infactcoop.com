@@ -22,7 +22,6 @@ import {
 import { PurpleOverlay } from '../components/overlay'
 import BackgroundImg from '../components/background-img'
 import { Wrapper } from '../components/section'
-import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 import stimmyPic from '../assets/images/projects/stimmy_things_hero.svg'
 import styled, { css } from 'styled-components'
 

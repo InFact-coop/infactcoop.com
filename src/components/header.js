@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { media, backgroundImage } from '../styles/style_utils'
 import logo from '../assets/logos/infact_logo_white.svg'
 import logoGradient from '../assets/logos/infact_logo_gradient.svg'
-import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const Splash = styled.section.attrs({
   className: 'flex flex-column items-center items-start-ns justify-start-ns',

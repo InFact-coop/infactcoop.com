@@ -42,8 +42,11 @@ const Picture = styled(BackgroundImg).attrs({
 `
 
 const OurWork = ({ history }) => {
-  const title = history.location.pathname === '/' ? 'Our Work' : 'More Work'
-  const bgcolor = history.location.pathname === '/' ? 'light-grey' : 'white'
+  const isHomePage = history.location.pathname === '/'
+
+  const title = isHomePage ? 'Our Work' : 'More Work'
+  const bgcolor = isHomePage ? 'light-grey' : 'white'
+
   return (
     <Section bg_color={bgcolor}>
       <SectionHeading>
@@ -79,9 +82,7 @@ const OurWork = ({ history }) => {
           </SectionCard>
         </Wrapper>
       </div>
-      {history.location.pathname === '/' && (
-        <SectionButton>See It All</SectionButton>
-      )}
+      {isHomePage && <SectionButton>See It All</SectionButton>}
     </Section>
   )
 }
