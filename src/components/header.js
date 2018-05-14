@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { media, backgroundImage } from '../styles/style_utils'
 import logo from '../assets/logos/infact_logo_white.svg'
 import logoGradient from '../assets/logos/infact_logo_gradient.svg'
+import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const Splash = styled.section.attrs({
   className: 'flex flex-column items-center items-start-ns justify-start-ns',
@@ -46,11 +47,28 @@ const Tagline = styled.div.attrs({
   ${media.m`top: 33%`};
   ${media.l`top: 35%`};
 `
+
+const ZigZag = styled.img.attrs({
+  className: 'mb1',
+})``
+
+const TopicLine = styled.div.attrs({
+  className: 'font-4 ttu sans-serif black mt2 mb1',
+})``
+
 const TaglineBlack = styled.div.attrs({
-  className: 'heading-l font-1 ttu reglo dark-grey tc w-100 absolute',
-})`
-  top: 25vh;
-`
+  className: 'font-0 ttu reglo black',
+})``
+
+const SubTaglineBlack = styled.div.attrs({
+  className: 'font-4 sans-serif black',
+})``
+
+const WorkHeading = ({ children }) => (
+  <div className="mb2-ns mb1 tc w-100 mt7">
+    <div className="mb2-ns mb1">{children}</div>
+  </div>
+)
 
 export default {
   Splash,
@@ -60,4 +78,8 @@ export default {
   LogoGradient,
   Tagline,
   TaglineBlack,
+  SubTaglineBlack,
+  TopicLine,
+  WorkHeading,
+  ZigZag,
 }

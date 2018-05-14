@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { Burger, Menu } from '../components/menu'
-import { Splash, Topline, Logo, Tagline } from '../components/header.js'
+import { Splash, Topline, Logo, Tagline } from '../components/header'
 import { connect } from 'react-redux'
 import { toggleMenu } from '../state/actions'
 

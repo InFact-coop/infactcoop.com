@@ -6,7 +6,13 @@ import {
   Topline,
   LogoGradient,
   TaglineBlack,
+  SubTaglineBlack,
+  TopicLine,
+  WorkHeading,
+  ZigZag,
 } from '../components/header.js'
+import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
+
 import { connect } from 'react-redux'
 import { toggleMenu } from '../state/actions'
 
@@ -29,7 +35,14 @@ const Header = ({ siteTitle, menuIsOpen, toggleMenu }) => (
       <LogoGradient />
       <BurgerGradient menuIsOpen={menuIsOpen} onClick={toggleMenu} />
     </Topline>
-    <TaglineBlack>Stimmy Things</TaglineBlack>
+    <WorkHeading>
+      <TopicLine>Mental Health</TopicLine>
+      <ZigZag src={wigglyBottom} alt="wiggle" />
+      <TaglineBlack>Stimmy Things</TaglineBlack>
+      <SubTaglineBlack>
+        An app to help young people deal better with ADHD.
+      </SubTaglineBlack>
+    </WorkHeading>
   </SplashWhite>
 )
 

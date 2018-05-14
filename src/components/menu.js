@@ -18,7 +18,7 @@ const BurgerGradient = styled.div.attrs({
   className: 'w3-ns h3-ns w2 h3 pointer burger',
 })`
   background: ${props =>
-    backgroundImageToggle(props.menuIsOpen, burgerGradient, burgerClosed)};
+    backgroundImageToggle(props.menuIsOpen, burgerOpen, burgerGradient)};
 `
 const Splash = styled.nav.attrs({
   className: `w-100 z-1 fixed vh-100 flex-column justify-center`,
