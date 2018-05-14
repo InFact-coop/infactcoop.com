@@ -42,4 +42,4 @@ const SectionHeading = ({ children, prop }) => (
   </div>
 )
 
-export { Section, SectionTitle, SectionHeading, SectionButton }
+export { Section, SectionTitle, SectionHeading, SectionButton, Wrapper }

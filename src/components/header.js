@@ -19,7 +19,7 @@ const SplashWhite = styled.section.attrs({
   className: 'flex flex-column items-center items-start-ns justify-start-ns',
 })`
   background: white;
-  height: 40vh;
+  min-height: 40vh;
 `
 
 const Topline = styled.div.attrs({
@@ -56,7 +56,7 @@ const TopicLine = styled.div.attrs({
   className: 'font-4 ttu sans-serif black mt2 mb1',
 })``
 
-const TaglineBlack = styled.div.attrs({
+const TaglineBlack = styled.p.attrs({
   className: 'font-0 ttu reglo black',
 })``
 
@@ -65,8 +65,8 @@ const SubTaglineBlack = styled.div.attrs({
 })``
 
 const WorkHeading = ({ children }) => (
-  <div className="mb2-ns mb1 tc w-100 mt7">
-    <div className="mb2-ns mb1">{children}</div>
+  <div className="mb3 tc w-100 mt7">
+    <div className="mb2-ns mb1 mh1">{children}</div>
   </div>
 )
 

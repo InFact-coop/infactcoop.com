@@ -41,43 +41,49 @@ const Picture = styled(BackgroundImg).attrs({
   height: 60%;
 `
 
-const OurWork = () => (
-  <Section>
-    <SectionHeading>
-      <SectionTitle>Our Work</SectionTitle>
-    </SectionHeading>
+const OurWork = ({ history }) => {
+  const title = history.location.pathname === '/' ? 'Our Work' : 'More Work'
+  const bgcolor = history.location.pathname === '/' ? 'light-grey' : 'white'
+  return (
+    <Section bg_color={bgcolor}>
+      <SectionHeading>
+        <SectionTitle>{title}</SectionTitle>
+      </SectionHeading>
 
-    <div className="flex flex-column flex-row-ns justify-between-ns">
-      <Wrapper>
-        <Picture src={stimmyThings} />
-        <SectionCard>
-          <CardHeading>
-            <CardTitle>Mental Health</CardTitle>
-          </CardHeading>
-          <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
-          <CardBody>
-            An app to help young people to deal better with ADHD.
-          </CardBody>
-        </SectionCard>
-      </Wrapper>
+      <div className="flex flex-column flex-row-ns justify-between-ns">
+        <Wrapper>
+          <Picture src={stimmyThings} />
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Mental Health</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
+            <CardBody>
+              An app to help young people to deal better with ADHD.
+            </CardBody>
+          </SectionCard>
+        </Wrapper>
 
-      <Wrapper>
-        <Picture src={workshop}>
-          <PurpleOverlay />
-        </Picture>
-        <SectionCard>
-          <CardHeading>
-            <CardTitle>Tech for Good</CardTitle>
-          </CardHeading>
-          <CardSubTitle uppercase>Cast Fellowship</CardSubTitle>
-          <CardBody>
-            A text that introduces our amazing work with CAST.
-          </CardBody>
-        </SectionCard>
-      </Wrapper>
-    </div>
-    <SectionButton>See It All</SectionButton>
-  </Section>
-)
+        <Wrapper>
+          <Picture src={workshop}>
+            <PurpleOverlay />
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Tech for Good</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Cast Fellowship</CardSubTitle>
+            <CardBody>
+              A text that introduces our amazing work with CAST.
+            </CardBody>
+          </SectionCard>
+        </Wrapper>
+      </div>
+      {history.location.pathname === '/' && (
+        <SectionButton>See It All</SectionButton>
+      )}
+    </Section>
+  )
+}
 
 export default OurWork
