@@ -7,10 +7,10 @@ import OurWork from '../components/our-work'
 import FAC from '../components/fac'
 import Clients from '../components/clients'
 
-const IndexPage = () => (
+const IndexPage = ({ history }) => (
   <div>
     <OurApproach />
-    <OurWork />
+    <OurWork history={history} />
     <Clients />
     <GetToKnowUs />
     <FAC />

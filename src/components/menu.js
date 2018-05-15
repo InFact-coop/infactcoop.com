@@ -6,6 +6,7 @@ import { Topline, Logo } from './header'
 import { media } from '../styles/style_utils'
 import burgerClosed from '../assets/icons/menu_white_close.svg'
 import burgerOpen from '../assets/icons/menu_white.svg'
+import burgerGradient from '../assets/icons/menu_gradient.svg'
 
 const Burger = styled.div.attrs({
   className: 'w3-ns h3-ns w2 h3 pointer burger',
@@ -13,7 +14,12 @@ const Burger = styled.div.attrs({
   background: ${props =>
     backgroundImageToggle(props.menuIsOpen, burgerOpen, burgerClosed)};
 `
-
+const BurgerGradient = styled.div.attrs({
+  className: 'w3-ns h3-ns w2 h3 pointer burger',
+})`
+  background: ${props =>
+    backgroundImageToggle(props.menuIsOpen, burgerOpen, burgerGradient)};
+`
 const Splash = styled.nav.attrs({
   className: `w-100 z-1 fixed vh-100 flex-column justify-center`,
 })`
@@ -54,4 +60,4 @@ const Menu = ({ menuIsOpen, toggleMenu }) => (
   </Splash>
 )
 
-export default { Burger, Menu }
+export default { Burger, BurgerGradient, Menu }
