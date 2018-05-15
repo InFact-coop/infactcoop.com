@@ -1,12 +1,14 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { media, backgroundImage } from '../styles/style_utils'
 import logo from '../assets/logos/infact_logo_white.svg'
 import logoGradient from '../assets/logos/infact_logo_gradient.svg'
 
-const Splash = styled.section.attrs({
+const SplashBase = styled.section.attrs({
   className: 'flex flex-column items-center items-start-ns justify-start-ns',
-})`
+})``
+
+const SplashGradient = SplashBase.extend`
   height: 90vh;
   background: linear-gradient(
     0deg,
@@ -14,11 +16,21 @@ const Splash = styled.section.attrs({
     rgba(22, 214, 217, 0.8) 100%
   );
 `
-const SplashWhite = styled.section.attrs({
-  className: 'flex flex-column items-center items-start-ns justify-start-ns',
-})`
+const SplashWhite = SplashBase.extend`
   background: white;
   min-height: 40vh;
+`
+
+const SplashImg = SplashBase.extend`
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  ${({ src }) =>
+    css`
+      background-image: url(${src});
+    `};
 `
 
 const Topline = styled.div.attrs({
@@ -70,7 +82,7 @@ const WorkHeading = ({ children }) => (
 )
 
 export default {
-  Splash,
+  SplashGradient,
   SplashWhite,
   Topline,
   Logo,
@@ -81,4 +93,5 @@ export default {
   TopicLine,
   WorkHeading,
   ZigZag,
+  SplashImg,
 }

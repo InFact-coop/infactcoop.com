@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-import Header from '../containers/header'
-import HeaderLanding from '../containers/headerLanding'
+import HeaderLanding from '../containers/header'
 import '../styles/index.scss'
 
 const AppWrapper = styled.div.attrs({
@@ -25,11 +24,14 @@ const Layout = ({ children, data, history }) => {
       />
       <div className="bg-light-gray">
         <AppWrapper>
+<<<<<<< HEAD
           {isAboutWork ? (
             <Header siteTitle={data.site.siteMetadata.title} />
           ) : (
             <HeaderLanding siteTitle={data.site.siteMetadata.title} />
           )}
+=======
+>>>>>>> master
           <div>{children()}</div>
         </AppWrapper>
       </div>

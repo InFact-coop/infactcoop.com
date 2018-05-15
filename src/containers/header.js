@@ -1,12 +1,12 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { toggleMenu } from '../state/actions'
-
-import { BurgerGradient, Menu } from '../components/menu'
+import { Burger, Menu } from '../components/menu'
 import {
-  SplashWhite,
+  SplashGradient,
+  SplashImg,
   Topline,
+<<<<<<< HEAD
   LogoGradient,
   TaglineBlack,
   SubTaglineBlack,
@@ -16,6 +16,12 @@ import {
 } from '../components/header'
 
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
+=======
+  Logo,
+  Tagline,
+} from '../components/header'
+import { toggleMenu } from '../state/actions'
+>>>>>>> master
 
 const mapStateToProps = ({ menuIsOpen }) => {
   return { menuIsOpen }
@@ -29,22 +35,29 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-const Header = ({ menuIsOpen, toggleMenu }) => (
-  <SplashWhite>
-    <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
-    <Topline>
-      <LogoGradient />
-      <BurgerGradient menuIsOpen={menuIsOpen} onClick={toggleMenu} />
-    </Topline>
-    <WorkHeading>
-      <TopicLine>Mental Health</TopicLine>
-      <ZigZag src={wigglyBottom} alt="wiggle" />
-      <TaglineBlack>Stimmy Things</TaglineBlack>
-      <SubTaglineBlack>
-        An app to help young people deal better with ADHD.
-      </SubTaglineBlack>
-    </WorkHeading>
-  </SplashWhite>
-)
+const emptySpan = () => <span className="dn" />
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header)
+const HeaderLanding = ({
+  menuIsOpen,
+  toggleMenu,
+  image,
+  children,
+  overlay,
+}) => {
+  const Splash = image ? SplashImg : SplashGradient
+  const Overlay = overlay ? overlay : emptySpan
+
+  return (
+    <Splash src={image}>
+      <Overlay />
+      <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
+      <Topline>
+        <Logo />
+        <Burger menuIsOpen={menuIsOpen} onClick={toggleMenu} />
+      </Topline>
+      <Tagline>{children}</Tagline>
+    </Splash>
+  )
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderLanding)
