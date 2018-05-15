@@ -1,9 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
+
 import { backgroundImageToggle, displayElement } from '../styles/style_utils'
 import { Topline, Logo } from './header'
-import { media } from '../styles/style_utils'
 import burgerClosed from '../assets/icons/menu_white_close.svg'
 import burgerOpen from '../assets/icons/menu_white.svg'
 import burgerGradient from '../assets/icons/menu_gradient.svg'

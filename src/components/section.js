@@ -34,7 +34,7 @@ const Section = ({ children, bg_color }) => (
   </SectionTile>
 )
 
-const SectionHeading = ({ children, prop }) => (
+const SectionHeading = ({ children }) => (
   <div className="flex flex-row justify-center mb6-ns mb3 pb1 pb0-ns">
     <img src={wigglyLeft} alt="wiggle" />
     <div className="mh1">{children}</div>
