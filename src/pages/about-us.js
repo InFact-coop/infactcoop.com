@@ -1,11 +1,11 @@
 import React from 'react'
 
-import WorkContent from '../containers/workContent'
+import AboutUs from '../components/about-us'
 
 const AboutWork = () => {
   return (
     <div>
-      <WorkContent />
+      <AboutUs />
     </div>
   )
 }

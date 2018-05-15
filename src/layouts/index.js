@@ -13,7 +13,7 @@ const AppWrapper = styled.div.attrs({
 `
 
 const Layout = ({ children, data, history }) => {
-  const isHomePage = history.location.pathname === '/'
+  const isAboutWork = history.location.pathname.includes('about-work')
   return (
     <div>
       <Helmet
@@ -25,10 +25,10 @@ const Layout = ({ children, data, history }) => {
       />
       <div className="bg-light-gray">
         <AppWrapper>
-          {isHomePage ? (
-            <HeaderLanding siteTitle={data.site.siteMetadata.title} />
-          ) : (
+          {isAboutWork ? (
             <Header siteTitle={data.site.siteMetadata.title} />
+          ) : (
+            <HeaderLanding siteTitle={data.site.siteMetadata.title} />
           )}
           <div>{children()}</div>
         </AppWrapper>
@@ -39,6 +39,10 @@ const Layout = ({ children, data, history }) => {
 
 Layout.propTypes = {
   children: PropTypes.func,
+}
+
+Layout.defaultProps = {
+  children: <div />,
 }
 
 export default Layout

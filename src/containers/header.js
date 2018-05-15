@@ -13,7 +13,7 @@ import {
   TopicLine,
   WorkHeading,
   ZigZag,
-} from '../components/header.js'
+} from '../components/header'
 
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
