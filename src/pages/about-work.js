@@ -1,6 +1,6 @@
 import React from 'react'
 
-import WorkContent from '../containers/workContent'
+import WorkContent from '../containers/work-content'
 import OurWork from '../components/our-work'
 
 const AboutWork = ({ history }) => {

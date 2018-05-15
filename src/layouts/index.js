@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Header from '../containers/header'
-import HeaderLanding from '../containers/headerLanding'
+import HeaderLanding from '../containers/header-landing'
 import '../styles/index.scss'
 
 const AppWrapper = styled.div.attrs({
