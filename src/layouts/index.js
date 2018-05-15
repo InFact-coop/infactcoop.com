@@ -1,3 +1,4 @@
+/* eslint no-undef:0 */
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
@@ -39,6 +40,10 @@ const Layout = ({ children, data, history }) => {
 
 Layout.propTypes = {
   children: PropTypes.func,
+}
+
+Layout.defaultProps = {
+  children: <div />,
 }
 
 export default Layout

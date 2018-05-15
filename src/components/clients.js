@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { media } from '../styles/style_utils'
 
-import { Section, SectionTitle, SectionHeading, SectionButton } from './section'
+import { Section, SectionTitle, SectionHeading } from './section'
 import BackgroundImg from './background-img'
 
 import annaFreud from '../assets/images/partner_logos/anna_freud.png'
@@ -23,7 +23,7 @@ const LinkImage = styled(BackgroundImg.withComponent('a')).attrs({
 `
 
 const Clients = () => (
-  <Section bg_color="white">
+  <Section bgColor="white">
     <SectionHeading>
       <SectionTitle>InFact works with</SectionTitle>
     </SectionHeading>
