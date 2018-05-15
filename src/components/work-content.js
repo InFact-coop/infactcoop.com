@@ -1,6 +1,4 @@
-import React from 'react'
 import styled from 'styled-components'
-import { media } from '../styles/style_utils'
 
 const WorkWrapper = styled.div.attrs({
   className: 'center flex flex-column mv4 items-center',

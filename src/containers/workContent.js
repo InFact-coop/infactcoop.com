@@ -1,16 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import { BurgerGradient, Menu } from '../components/menu'
-import {
-  SplashWhite,
-  Topline,
-  LogoGradient,
-  TaglineBlack,
-  SubTaglineBlack,
-  TopicLine,
-  WorkHeading,
-  ZigZag,
-} from '../components/header.js'
+import styled from 'styled-components'
+
 import {
   WorkWrapper,
   WorkTitle,
@@ -19,13 +9,10 @@ import {
   TestimonialPerson,
   TestimonialText,
 } from '../components/work-content'
+
 import { PurpleOverlay } from '../components/overlay'
 import BackgroundImg from '../components/background-img'
-import { Wrapper } from '../components/section'
 import stimmyPic from '../assets/images/projects/stimmy_things_hero.svg'
-import styled, { css } from 'styled-components'
-
-import { connect } from 'react-redux'
 
 const BannerImg = styled(BackgroundImg)`
   width: 100vw;

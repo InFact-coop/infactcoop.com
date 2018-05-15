@@ -1,5 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { connect } from 'react-redux'
+
+import { toggleMenu } from '../state/actions'
+
 import { BurgerGradient, Menu } from '../components/menu'
 import {
   SplashWhite,
@@ -11,10 +14,8 @@ import {
   WorkHeading,
   ZigZag,
 } from '../components/header.js'
-import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
-import { connect } from 'react-redux'
-import { toggleMenu } from '../state/actions'
+import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const mapStateToProps = ({ menuIsOpen }) => {
   return { menuIsOpen }
@@ -28,7 +29,7 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-const Header = ({ siteTitle, menuIsOpen, toggleMenu }) => (
+const Header = ({ menuIsOpen, toggleMenu }) => (
   <SplashWhite>
     <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
     <Topline>

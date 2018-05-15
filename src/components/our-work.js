@@ -2,14 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { media } from '../styles/style_utils'
 
-import {
-  CardTitle,
-  CardSubTitle,
-  CardBody,
-  Card,
-  CardButton,
-  CardHeading,
-} from './card'
+import { CardTitle, CardSubTitle, CardBody, Card, CardHeading } from './card'
 
 import { Section, SectionTitle, SectionHeading, SectionButton } from './section'
 

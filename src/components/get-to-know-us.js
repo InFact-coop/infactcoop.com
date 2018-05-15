@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
 import { media } from '../styles/style_utils'
 
 import {

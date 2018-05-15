@@ -1,13 +1,11 @@
 import React from 'react'
 
 import WorkContent from '../containers/workContent'
-import OurWork from '../components/our-work'
 
-const AboutWork = ({ history }) => {
+const AboutWork = () => {
   return (
     <div>
       <WorkContent />
-      <OurWork history={history} />
     </div>
   )
 }
