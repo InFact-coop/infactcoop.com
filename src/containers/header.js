@@ -6,22 +6,10 @@ import {
   SplashGradient,
   SplashImg,
   Topline,
-<<<<<<< HEAD
-  LogoGradient,
-  TaglineBlack,
-  SubTaglineBlack,
-  TopicLine,
-  WorkHeading,
-  ZigZag,
-} from '../components/header'
-
-import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
-=======
   Logo,
   Tagline,
 } from '../components/header'
 import { toggleMenu } from '../state/actions'
->>>>>>> master
 
 const mapStateToProps = ({ menuIsOpen }) => {
   return { menuIsOpen }

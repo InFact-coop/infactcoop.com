@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-import HeaderLanding from '../containers/header'
 import '../styles/index.scss'
 
 const AppWrapper = styled.div.attrs({
@@ -11,8 +10,7 @@ const AppWrapper = styled.div.attrs({
   max-width: 1440px;
 `
 
-const Layout = ({ children, data, history }) => {
-  const isAboutWork = history.location.pathname.includes('about-work')
+const Layout = ({ children, data }) => {
   return (
     <div>
       <Helmet
@@ -24,14 +22,6 @@ const Layout = ({ children, data, history }) => {
       />
       <div className="bg-light-gray">
         <AppWrapper>
-<<<<<<< HEAD
-          {isAboutWork ? (
-            <Header siteTitle={data.site.siteMetadata.title} />
-          ) : (
-            <HeaderLanding siteTitle={data.site.siteMetadata.title} />
-          )}
-=======
->>>>>>> master
           <div>{children()}</div>
         </AppWrapper>
       </div>
