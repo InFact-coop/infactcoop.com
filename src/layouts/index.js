@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import '../styles/index.scss'
@@ -27,14 +26,6 @@ const Layout = ({ children, data }) => {
       </div>
     </div>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.func,
-}
-
-Layout.defaultProps = {
-  children: <div />,
 }
 
 export default Layout

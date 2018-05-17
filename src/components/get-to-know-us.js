@@ -20,12 +20,13 @@ import { PurpleOverlay } from './overlay'
 import picOfUs from '../assets/images/get_to_know_us.png'
 
 const SectionCard = styled(Card).attrs({
-  className: 'absolute-ns top-0-ns right-0-ns w-40-ns',
+  className: 'absolute-ns top-0-ns right-0-ns',
 })`
   max-height: 95%;
   transform: translateY(-2rem);
   ${media.ns`
     transform: translateY(0);
+    width: 40%;
   `};
 `
 

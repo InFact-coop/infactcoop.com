@@ -10,6 +10,7 @@ import {
   Tagline,
 } from '../components/header'
 import { toggleMenu } from '../state/actions'
+import { emptySpan } from '../styles/style_utils'
 
 const mapStateToProps = ({ menuIsOpen }) => {
   return { menuIsOpen }
@@ -22,8 +23,6 @@ const mapDispatchToProps = dispatch => {
     },
   }
 }
-
-const emptySpan = () => <span className="dn" />
 
 const HeaderLanding = ({
   menuIsOpen,
