@@ -12,5 +12,8 @@
     "es6": true,
     "node": true
   },
-  "rules": { "react/prop-types": 0 }
+  "rules": {
+    "react/prop-types": 0,
+    "react/no-unescaped-entities": 0
+  }
 }

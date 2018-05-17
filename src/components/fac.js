@@ -29,12 +29,13 @@ const Wrapper = styled.div.attrs({
 `
 
 const SectionCard = styled(Card).attrs({
-  className: 'absolute-ns top-0-ns left-0-ns w-40-ns',
+  className: 'absolute-ns top-0-ns left-0-ns',
 })`
   max-height: 95%;
   transform: translateY(-2rem);
   ${media.ns`
     transform: translateY(0);
+    width: 40%;
   `};
 `
 

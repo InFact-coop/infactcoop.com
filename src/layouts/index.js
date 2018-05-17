@@ -1,8 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-import HeaderLanding from '../containers/header'
 import '../styles/index.scss'
 
 const AppWrapper = styled.div.attrs({
@@ -11,8 +9,7 @@ const AppWrapper = styled.div.attrs({
   max-width: 1440px;
 `
 
-const Layout = ({ children, data, history }) => {
-  const isHomePage = history.location.pathname === '/'
+const Layout = ({ children, data }) => {
   return (
     <div>
       <Helmet
@@ -29,10 +26,6 @@ const Layout = ({ children, data, history }) => {
       </div>
     </div>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.func,
 }
 
 export default Layout
