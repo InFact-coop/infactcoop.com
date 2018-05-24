@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
 import { media } from '../styles/style_utils'
 
 import {
@@ -12,12 +11,7 @@ import {
   CardHeading,
 } from './card'
 
-import {
-  Section,
-  SectionTitle,
-  SectionBackgroundImg,
-  SectionHeading,
-} from './section'
+import { Section, SectionTitle, SectionHeading } from './section'
 
 import BackgroundImg from './background-img'
 
@@ -39,6 +33,7 @@ const SectionCard = styled(Card).attrs({
   transform: translateY(-2rem);
   ${media.ns`
     transform: translateY(0);
+    width: 40%;
   `};
 `
 
@@ -54,7 +49,7 @@ const Picture = styled(BackgroundImg).attrs({
 `
 
 const OurApproach = () => (
-  <Section>
+  <Section bg_color="mid-gray">
     <SectionHeading>
       <SectionTitle>Our Approach</SectionTitle>
     </SectionHeading>

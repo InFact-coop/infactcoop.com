@@ -15,6 +15,8 @@ import { Section, SectionTitle, SectionHeading } from './section'
 
 import BackgroundImg from './background-img'
 
+import { BlueOverlay } from './overlay'
+
 import fac from '../assets/images/we_love_fac.png'
 
 const Wrapper = styled.div.attrs({
@@ -27,12 +29,13 @@ const Wrapper = styled.div.attrs({
 `
 
 const SectionCard = styled(Card).attrs({
-  className: 'absolute-ns top-0-ns left-0-ns w-40-ns',
+  className: 'absolute-ns top-0-ns left-0-ns',
 })`
   max-height: 95%;
   transform: translateY(-2rem);
   ${media.ns`
     transform: translateY(0);
+    width: 40%;
   `};
 `
 
@@ -45,13 +48,6 @@ const Picture = styled(BackgroundImg).attrs({
     height: 95%
     width: 95%
   `};
-`
-
-const Overlay = styled.div`
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-  background: radial-gradient(circle, #009cf3 0%, #16d6d9 100%);
 `
 
 const FAC = () => (
@@ -68,7 +64,7 @@ const FAC = () => (
 
     <Wrapper>
       <Picture src={fac}>
-        <Overlay />
+        <BlueOverlay />
       </Picture>
       <SectionCard>
         <CardHeading>

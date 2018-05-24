@@ -1,3 +1,4 @@
+import React from 'react'
 import { css } from 'styled-components'
 
 const media = {
@@ -32,4 +33,12 @@ const backgroundImageToggle = (bool, trueUrl, falseUrl) => {
   return bool ? trueCss : falseCss
 }
 
-export default { media, backgroundImage, backgroundImageToggle, displayElement }
+const emptySpan = () => <span className="dn" />
+
+export default {
+  media,
+  backgroundImage,
+  backgroundImageToggle,
+  displayElement,
+  emptySpan,
+}
