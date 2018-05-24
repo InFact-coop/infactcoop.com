@@ -13,7 +13,7 @@ import {
   TopicLine,
   WorkHeading,
   ZigZag,
-} from '../components/header.js'
+} from '../components/header'
 
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
@@ -41,7 +41,7 @@ const Header = ({ menuIsOpen, toggleMenu }) => (
       <ZigZag src={wigglyBottom} alt="wiggle" />
       <TaglineBlack>Stimmy Things</TaglineBlack>
       <SubTaglineBlack>
-        An app to help young people deal better with ADHD.
+        An app to help young people with ADHD to manage their symptoms.
       </SubTaglineBlack>
     </WorkHeading>
   </SplashWhite>

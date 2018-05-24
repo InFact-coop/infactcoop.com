@@ -29,44 +29,42 @@ const WorkContent = () => (
       <PurpleOverlay />
     </BannerImg>
     <WorkWrapper>
-      <WorkTitle>Stimmy Things was the best</WorkTitle>
+      <WorkTitle>The Challenge</WorkTitle>
       <WorkDescription>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-        quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-        Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-        dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-        enim.
+        We were approached by Slam, a leading mental health trust, and the Anna
+        Freud Centre, a young person's mental health charity. They asked us to
+        work together with young people with ADHD to identify ways in which some
+        of their symptoms could be alleviated through the use of technology.
       </WorkDescription>
+      <WorkTitle>Discovery and Design</WorkTitle>
       <WorkDescription>
-        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-        imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-        ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus
-        eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
-        sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
-        hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec
-        vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit
-        amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
-        sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
-        bibendum sodales, augue velit cursus nunc
+        One young person taught us about 'Stims' - self-soothing exercises
+        performed by people with a number of disorders helping them to relax,
+        focus their minds and concentrate in the face of overwhelming sensory
+        input. Her idea of a "virtual self-soothe box" was so complete and
+        compelling that we decided to bring it to reality for our app.
       </WorkDescription>
       <WorkImg src={stimmyPic} />
+      <WorkTitle>The Solution</WorkTitle>
       <WorkDescription>
-        {' '}
-        Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
-        Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
-        rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed
-        ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-        Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero
-        venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
-        faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
-        sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue
-        velit cursus nunc
+        <ul>
+          We built an app which:
+          <li>
+            Engages our audience with fun and friendly design and animations
+          </li>
+          <li>
+            Enables users to save their own personalised stims so they can
+            easily use them in the future
+          </li>
+          <li>
+            Allows our users to connect with other people facing similar
+            struggles via a stim-sharing platform
+          </li>
+          <li>
+            Gives near-complete access to the app offline and from the home
+            screens through the use of Progressive Web App technology
+          </li>
+        </ul>
       </WorkDescription>
       <WorkImg src={stimmyPic} />
       <TestimonialText>
@@ -76,7 +74,7 @@ const WorkContent = () => (
         bibendum sodales, augue velit cursus nunc
       </TestimonialText>
       <TestimonialPerson>
-        Mariane Caitan, program lead at CHAMS London
+        Mariane Caitan, program lead at CAMHS London
       </TestimonialPerson>
     </WorkWrapper>
   </div>
