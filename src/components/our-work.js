@@ -62,7 +62,9 @@ const OurWork = ({ history }) => {
             </CardHeading>
             <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
             <CardBody>
-              An app to help young people to deal better with ADHD.
+              Working in collaboration with young people, parents and
+              clinicians, we designed and built an app that helps young people
+              with ADHD to manage their symptoms.
             </CardBody>
             <CardButtonWithLink link="/about-work-stimmy-things">
               Read more
@@ -78,9 +80,10 @@ const OurWork = ({ history }) => {
             <CardHeading>
               <CardTitle>Tech for Good</CardTitle>
             </CardHeading>
-            <CardSubTitle uppercase>Cast Fellowship</CardSubTitle>
+            <CardSubTitle uppercase>CAST Digital Fellowship</CardSubTitle>
             <CardBody>
-              A text that introduces our amazing work with CAST.
+              We collaborated with CAST to support senior staff at non-profits
+              in becoming leaders of their organisation’s digital development.
             </CardBody>
             <CardButtonWithLink link="/about-work-cast">
               Read more

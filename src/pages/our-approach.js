@@ -31,70 +31,67 @@ const CardBody = styled.div.attrs({
 const OurApproach = () => (
   <div>
     <HeaderLanding image={lyingOnTheGrass} overlay={BlueOverlay}>
-      Our day to day is an ongoing process of discovering new things about human
-      experience
+      Putting the users at the heart of the creative process
     </HeaderLanding>
     <Wrapper>
-      <Title>
-        We use agile processes and user centred design to improve people's lives
-        and have a meaningful impact on the world
-      </Title>
+      <Title>Collaborative, empathetic and dynamic</Title>
       <ZigZag src={wigglyBottom} />
       <Text>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus est
-        mi, rhoncus ut mauris non, ultricies tincidunt dolor. Vivamus ac nisl
-        magna. Nulla ligula orci, accumsan vel mattis vel, pulvinar in leo.
-        Phasellus nisl enim, efficitur vitae magna in, porttitor molestie massa.
-        Maecenas vehicula sagittis magna, quis convallis ex molestie sit amet.
-        Nunc sodales posuere erat, vel elementum lorem suscipit non.
-        Pellentesque et malesuada sapien, non ullamcorper lacus. Aliquam
-        tincidunt vehicula dui nec mattis. Nunc lacinia quam ut interdum
-        eleifend. In in dictum sapien, nec gravida nisl. Curabitur sit amet
-        mollis nisl. Vivamus ut volutpat sem. Sed a tempus magna, sit amet
-        elementum sem.
+        We work in an Agile, user-centred fashion - however we know this doesn’t
+        mean much to everyone. This is how we interpret it:
       </Text>
       <Text>
-        Aenean nec enim pretium, volutpat enim ut, pharetra felis. Vestibulum
-        dictum mattis mi efficitur commodo. Mauris metus ante, dictum sit amet
-        orci id, tincidunt blandit justo. Maecenas in ipsum porttitor, mollis
-        urna non, venenatis enim. Nam sapien est, pellentesque at erat eu,
-        laoreet facilisis quam. Nullam dignissim, justo vitae tempus varius,
-        sapien diam convallis orci, quis maximus ex ligula maximus elit. Nullam
-        orci nibh, molestie in nibh eget, ullamcorper sodales augue.
+        <ul>
+          <li>
+            We believe in close collaboration with you, because you’re the
+            experts of your domain! We love learning about your world,
+            understanding the unique challenges you face and helping you to
+            solve them.
+          </li>
+          <li>
+            We test our solutions with your users at every stage of the process.
+            This allows us to see exactly what they think of it and how they
+            interact with it. This process highlights what’s working and what’s
+            not as early as possible.
+          </li>
+          <li>
+            We use what we discover to improve the product during the next cycle
+            of work. This ensures that what we are building satisfies real user
+            needs. We repeat this process until we arrive at the product that
+            serves your users needs in the best possible manner
+          </li>
+        </ul>
       </Text>
       <Text>
-        Aenean diam orci, laoreet vel lectus id, semper imperdiet nisl. Integer
-        porta tincidunt mauris in hendrerit. In euismod ante sit amet lorem
-        tempor, tincidunt volutpat felis pharetra. Phasellus justo odio,
-        consectetur ut mi at, maximus facilisis metus. Aliquam non ligula magna.
-        In et urna volutpat, volutpat erat pretium, auctor nulla. Nulla ac
-        condimentum elit, non pharetra augue. Fusce a lorem ligula. Phasellus
-        laoreet vulputate neque sed ultrices.
+        Working in this way can feel uncertain because the end product seems
+        undefined. We know that this approach can be scary! However time and
+        time again we’ve seen that products made this way ultimately deliver
+        more impact in less time and at a lower cost. This is because rather
+        than the product being undefined, it is constantly being redefined to
+        reflect your user's ideal product and this often comes a lot sooner than
+        anticipated.
       </Text>
       <Picture src={lyingOnTheGrass} />
       <div className="flex mt4">
         <Card>
-          <CardTitle>Discovery & Workshops</CardTitle>
+          <CardTitle>Discovery</CardTitle>
           <CardBody>
-            Here we can talk about our amazing workshops which are the best
+            In collaboration with you and your team we will carry out a variety
+            of exercises designed to discover problems and explore solutions
           </CardBody>
         </Card>
         <Card>
-          <CardTitle>Discovery & Workshops</CardTitle>
+          <CardTitle>Design</CardTitle>
           <CardBody>
-            Here we can talk about our amazing workshops which are the best
+            Prioritising your users' needs, we will work with your brand
+            identity to create the best design to connect you to your users
           </CardBody>
         </Card>
         <Card>
-          <CardTitle>Discovery & Workshops</CardTitle>
+          <CardTitle>Development</CardTitle>
           <CardBody>
-            Here we can talk about our amazing workshops which are the best
-          </CardBody>
-        </Card>
-        <Card>
-          <CardTitle>Discovery & Workshops</CardTitle>
-          <CardBody>
-            Here we can talk about our amazing workshops which are the best
+            Working in short efficient bursts and in close collaboration with
+            the Product Owner, we prioritise, build and user-test features.
           </CardBody>
         </Card>
       </div>

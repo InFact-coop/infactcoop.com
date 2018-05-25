@@ -60,10 +60,12 @@ const OurApproach = () => (
         <CardHeading>
           <CardTitle>Approach</CardTitle>
         </CardHeading>
-        <CardSubTitle>We are agile, open source and user centred.</CardSubTitle>
+        <CardSubTitle>
+          Putting the user at the heart of the creative process
+        </CardSubTitle>
         <CardBody>
-          We value learning over guessing, we want to work on stuff that really
-          matters and we will always strive for positive change.
+          We value learning over guessing. We will get to know you and your
+          users so we can build the best product for your needs.
         </CardBody>
         <CardButtonWithLink link="/our-approach">
           Tell me more
