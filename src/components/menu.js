@@ -44,16 +44,22 @@ const LinkContainer = styled.div.attrs({
 const Menu = ({ menuIsOpen, toggleMenu }) => (
   <Splash menuIsOpen={menuIsOpen}>
     <Topline>
-      <Logo />
+      <a href="/">
+        <Logo />
+      </a>
       <Burger menuIsOpen={menuIsOpen} onClick={toggleMenu} />
     </Topline>
     <LinkContainer>
-      <MenuItem href="#">Home</MenuItem>
+      <MenuItem href="/">Home</MenuItem>
       <MenuItem href="#">Our Work</MenuItem>
-      <MenuItem href="#">Approach</MenuItem>
-      <MenuItem href="#">About InFact</MenuItem>
-      <MenuItem href="#">Founders & Coders</MenuItem>
-      <MenuItem href="#">Insights</MenuItem>
+      <MenuItem href="/our-approach">Approach</MenuItem>
+      <MenuItem href="/about-us">About InFact</MenuItem>
+      <MenuItem href="https://foundersandcoders.com/" target="_blank">
+        Founders & Coders
+      </MenuItem>
+      {
+        // <MenuItem href="#">Insights</MenuItem>
+      }
       <MenuItem href="#">Contact</MenuItem>
     </LinkContainer>
   </Splash>

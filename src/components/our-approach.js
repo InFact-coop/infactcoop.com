@@ -7,7 +7,7 @@ import {
   CardSubTitle,
   CardBody,
   Card,
-  CardButton,
+  CardButtonWithLink,
   CardHeading,
 } from './card'
 
@@ -65,7 +65,9 @@ const OurApproach = () => (
           We value learning over guessing, we want to work on stuff that really
           matters and we will always strive for positive change.
         </CardBody>
-        <CardButton>Tell me more</CardButton>
+        <CardButtonWithLink link="/our-approach">
+          Tell me more
+        </CardButtonWithLink>
       </SectionCard>
     </Wrapper>
   </Section>
