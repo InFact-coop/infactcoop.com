@@ -9,7 +9,10 @@ import Clients from '../components/clients'
 
 const IndexPage = ({ history }) => (
   <div>
-    <Header>InFact is the most awesome co-op you will ever work with.</Header>
+    <Header>
+      We're a design & development co-operative helping to shape a better
+      digital future.
+    </Header>
     <OurApproach />
     <OurWork history={history} />
     <Clients />
