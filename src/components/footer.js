@@ -18,6 +18,22 @@ const Splash = styled.section.attrs({
     height: 40vh;
   `} background: linear-gradient(225deg, #000000 0%, #322d37 100%);
 `
+const EmailSplash = styled(Splash).attrs({
+  className: 'flex-column o-70',
+})`
+  background: linear-gradient(225deg, #000000 0%, #322d37 100%);
+`
+const EmailTopline = styled.p.attrs({
+  className: 'ttu tc reglo font-3-ns font-4 white mb2 mt0-ns mt2',
+})``
+
+const EmailSecondLine = styled.p.attrs({
+  className: 'ttu tc reglo font-1-ns font-2 white mb3',
+})``
+
+const EmailBlue = styled(EmailSecondLine)`
+  color: #50cfcf;
+`
 
 const Topline = styled.div.attrs({
   className:
@@ -61,37 +77,44 @@ const Logo = styled.div.attrs({
 `
 
 const Footer = () => (
-  <Splash>
-    <Topline>
-      <Logo />
-      <FooterSection>
-        <Title>Address</Title>
-        Space 4<br />
-        First Floor<br />
-        149 Fonthill Road<br />
-        Finsbury Park<br />
-        London<br />
-      </FooterSection>
-      <FooterSection>
-        <Title>Connect</Title>
-        Get in touch any way you like! <br />
-        We LOVE meeting new people
-        <ContactWrapper>
-          <ContactIcon
-            imgUrl={MediumIcon}
-            href="https://medium.com/infactdigitalcoop"
-            target="_blank"
-          />
-          <ContactIcon
-            imgUrl={GithubIcon}
-            href="https://github.com/infact-coop"
-            target="_blank"
-          />
-          <ContactIcon imgUrl={LinkedInIcon} />
-        </ContactWrapper>
-      </FooterSection>
-    </Topline>
-  </Splash>
+  <div>
+    <EmailSplash>
+      <EmailTopline>Ready to collaborate?</EmailTopline>
+      <EmailSecondLine>We would love to hear from you</EmailSecondLine>
+      <EmailBlue>hello@infactcoop.com</EmailBlue>
+    </EmailSplash>
+    <Splash>
+      <Topline>
+        <Logo />
+        <FooterSection>
+          <Title>Address</Title>
+          Space 4<br />
+          First Floor<br />
+          149 Fonthill Road<br />
+          Finsbury Park<br />
+          London<br />
+        </FooterSection>
+        <FooterSection>
+          <Title>Connect</Title>
+          Get in touch any way you like! <br />
+          We LOVE meeting new people
+          <ContactWrapper>
+            <ContactIcon
+              imgUrl={MediumIcon}
+              href="https://medium.com/infactdigitalcoop"
+              target="_blank"
+            />
+            <ContactIcon
+              imgUrl={GithubIcon}
+              href="https://github.com/infact-coop"
+              target="_blank"
+            />
+            <ContactIcon imgUrl={LinkedInIcon} />
+          </ContactWrapper>
+        </FooterSection>
+      </Topline>
+    </Splash>
+  </div>
 )
 
 export default { Footer }

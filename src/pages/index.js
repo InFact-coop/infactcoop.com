@@ -19,7 +19,6 @@ const IndexPage = ({ history }) => (
     <Clients />
     <GetToKnowUs />
     <FAC />
-    <Footer />
   </div>
 )
 

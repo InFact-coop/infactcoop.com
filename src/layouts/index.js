@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import '../styles/index.scss'
+import { Footer } from '../components/footer'
 
 const AppWrapper = styled.div.attrs({
   className: 'bg-light-gray center',
@@ -22,6 +23,7 @@ const Layout = ({ children, data }) => {
       <div className="bg-light-gray">
         <AppWrapper>
           <div>{children()}</div>
+          <Footer />
         </AppWrapper>
       </div>
     </div>
