@@ -83,9 +83,13 @@ const WorkContent = () => (
 )
 
 const AboutWork = ({ history }) => {
+  const topicLine = 'Mental Health'
+  const tagLine = 'Stimmy Things'
+  const subTagLine = 'An app to help young people deal better with ADHD.'
+
   return (
     <div>
-      <Header />
+      <Header topicLine={topicLine} tagLine={tagLine} subTagLine={subTagLine} />
       <WorkContent />
       <OurWork history={history} />
     </div>

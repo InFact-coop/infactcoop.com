@@ -13,7 +13,7 @@ import {
   TopicLine,
   WorkHeading,
   ZigZag,
-} from '../components/header.js'
+} from '../components/header'
 
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
@@ -29,22 +29,22 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-const Header = ({ menuIsOpen, toggleMenu }) => (
-  <SplashWhite>
-    <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
-    <Topline>
-      <LogoGradient />
-      <BurgerGradient menuIsOpen={menuIsOpen} onClick={toggleMenu} />
-    </Topline>
-    <WorkHeading>
-      <TopicLine>Mental Health</TopicLine>
-      <ZigZag src={wigglyBottom} alt="wiggle" />
-      <TaglineBlack>Stimmy Things</TaglineBlack>
-      <SubTaglineBlack>
-        An app to help young people deal better with ADHD.
-      </SubTaglineBlack>
-    </WorkHeading>
-  </SplashWhite>
-)
+const Header = ({ menuIsOpen, toggleMenu, topicLine, tagLine, subTagLine }) => {
+  return (
+    <SplashWhite>
+      <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
+      <Topline>
+        <LogoGradient />
+        <BurgerGradient menuIsOpen={menuIsOpen} onClick={toggleMenu} />
+      </Topline>
+      <WorkHeading>
+        <TopicLine>{topicLine}</TopicLine>
+        <ZigZag src={wigglyBottom} alt="wiggle" />
+        <TaglineBlack>{tagLine}</TaglineBlack>
+        <SubTaglineBlack>{subTagLine}</SubTaglineBlack>
+      </WorkHeading>
+    </SplashWhite>
+  )
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header)
