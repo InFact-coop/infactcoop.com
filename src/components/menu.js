@@ -51,7 +51,7 @@ const Menu = ({ menuIsOpen, toggleMenu }) => (
     </Topline>
     <LinkContainer>
       <MenuItem href="/">Home</MenuItem>
-      <MenuItem href="#">Our Work</MenuItem>
+      <MenuItem href="/our-work">Our Work</MenuItem>
       <MenuItem href="/our-approach">Approach</MenuItem>
       <MenuItem href="/about-us">About InFact</MenuItem>
       <MenuItem href="https://foundersandcoders.com/" target="_blank">
