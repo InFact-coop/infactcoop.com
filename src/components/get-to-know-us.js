@@ -65,7 +65,7 @@ const GetToKnowUs = () => (
           <CardTitle>Our Story</CardTitle>
         </CardHeading>
         <CardSubTitle>
-          We are a small digital co-op that tackles big challenges.
+          We are a small digital co-op tackling big challenges.
         </CardSubTitle>
         <CardBody>
           We love what we do and love working with others who do too. We design
