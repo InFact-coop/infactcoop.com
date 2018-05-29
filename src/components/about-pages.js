@@ -11,11 +11,25 @@ const Title = styled.div.attrs({
 })``
 
 const Text = styled.p.attrs({
-  className: 'font-4 sans-serif black w-75-ns w-90 tc tl-ns mt2',
-})``
+  className: 'font-4 sans-serif black w-75-ns w-90 tc tl-ns',
+})`
+  & ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin: 24px 0px 0px 16px;
+  }
+
+  & li {
+    margin-top: 16px;
+  }
+
+  & + p {
+    margin-top: 24px;
+  }
+`
 
 const ZigZag = styled.img.attrs({
-  className: 'mb1',
+  className: 'mb3',
 })``
 
 export { Wrapper, Title, Text, ZigZag }
