@@ -52,7 +52,7 @@ const LogoGradient = styled(Logo)`
 
 const Tagline = styled.div.attrs({
   className:
-    'heading-ns font-1 ttu reglo white w-50-l w-70-m w-90 pl7-ns pl0 absolute tl-ns tc',
+    'heading-ns font-1 ttu reglo white w-40-l w-50-m w-90 pl7-ns pl0 absolute tl-ns tc',
 })`
   top: 30%;
   ${media.m`top: 33%`};

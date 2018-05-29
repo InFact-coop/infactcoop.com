@@ -51,7 +51,7 @@ const Picture = styled(BackgroundImg).attrs({
 `
 
 const FAC = () => (
-  <Section bg_color="mid-gray">
+  <Section bg_color="white">
     <SectionHeading>
       <SectionTitle>
         <div className="flex flex-column flex-row-ns tc">
