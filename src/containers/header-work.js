@@ -29,22 +29,22 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-const Header = ({ menuIsOpen, toggleMenu }) => (
-  <SplashWhite>
-    <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
-    <Topline>
-      <LogoGradient />
-      <BurgerGradient menuIsOpen={menuIsOpen} onClick={toggleMenu} />
-    </Topline>
-    <WorkHeading>
-      <TopicLine>Mental Health</TopicLine>
-      <ZigZag src={wigglyBottom} alt="wiggle" />
-      <TaglineBlack>Stimmy Things</TaglineBlack>
-      <SubTaglineBlack>
-        An app to help young people with ADHD to manage their symptoms.
-      </SubTaglineBlack>
-    </WorkHeading>
-  </SplashWhite>
-)
+const Header = ({ menuIsOpen, toggleMenu, topicLine, tagLine, subTagLine }) => {
+  return (
+    <SplashWhite>
+      <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
+      <Topline>
+        <LogoGradient />
+        <BurgerGradient menuIsOpen={menuIsOpen} onClick={toggleMenu} />
+      </Topline>
+      <WorkHeading>
+        <TopicLine>{topicLine}</TopicLine>
+        <ZigZag src={wigglyBottom} alt="wiggle" />
+        <TaglineBlack>{tagLine}</TaglineBlack>
+        <SubTaglineBlack>{subTagLine}</SubTaglineBlack>
+      </WorkHeading>
+    </SplashWhite>
+  )
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header)

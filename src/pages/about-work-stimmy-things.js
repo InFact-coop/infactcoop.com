@@ -11,11 +11,13 @@ import {
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
+  ZigZag,
 } from '../components/work-content'
 
 import { PurpleOverlay } from '../components/overlay'
 import BackgroundImg from '../components/background-img'
 import stimmyPic from '../assets/images/projects/stimmy_things_hero.svg'
+import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const BannerImg = styled(BackgroundImg)`
   width: 100vw;
@@ -30,6 +32,7 @@ const WorkContent = () => (
     </BannerImg>
     <WorkWrapper>
       <WorkTitle>The Challenge</WorkTitle>
+      <ZigZag src={wigglyBottom} />
       <WorkDescription>
         We were approached by Slam, a leading mental health trust, and the Anna
         Freud Centre, a young person's mental health charity. They asked us to
@@ -37,6 +40,7 @@ const WorkContent = () => (
         of their symptoms could be alleviated through the use of technology.
       </WorkDescription>
       <WorkTitle>Discovery and Design</WorkTitle>
+      <ZigZag src={wigglyBottom} />
       <WorkDescription>
         One young person taught us about 'Stims' - self-soothing exercises
         performed by people with a number of disorders helping them to relax,
@@ -46,9 +50,10 @@ const WorkContent = () => (
       </WorkDescription>
       <WorkImg src={stimmyPic} />
       <WorkTitle>The Solution</WorkTitle>
+      <ZigZag src={wigglyBottom} />
       <WorkDescription>
+        We built an app which:
         <ul>
-          We built an app which:
           <li>
             Engages our audience with fun and friendly design and animations
           </li>
@@ -81,9 +86,13 @@ const WorkContent = () => (
 )
 
 const AboutWork = ({ history }) => {
+  const topicLine = 'Mental Health'
+  const tagLine = 'Stimmy Things'
+  const subTagLine = 'An app to help young people deal better with ADHD.'
+
   return (
     <div>
-      <Header />
+      <Header topicLine={topicLine} tagLine={tagLine} subTagLine={subTagLine} />
       <WorkContent />
       <OurWork history={history} />
     </div>
