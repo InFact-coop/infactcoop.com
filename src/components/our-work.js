@@ -43,8 +43,9 @@ const Picture = styled(BackgroundImg).attrs({
 
 const OurWork = ({ history }) => {
   const isHomePage = history.location.pathname === '/'
+  const isWorkGallery = history.location.pathname === '/our-work'
 
-  const title = isHomePage ? 'Our Work' : 'More Work'
+  const title = isHomePage || isWorkGallery ? 'Our Work' : 'More Work'
   const bgcolor = isHomePage ? 'light-gray' : 'white'
 
   return (

@@ -22,7 +22,7 @@ const SplashWhite = SplashBase.extend`
 `
 
 const SplashImg = SplashBase.extend`
-  height: 70vh;
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
