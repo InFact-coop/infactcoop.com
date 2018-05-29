@@ -45,7 +45,7 @@ const SectionText = styled(CardBody)`
 `
 
 const Picture = styled(BackgroundImg).attrs({
-  className: 'w-100 h-50 w-60-ns',
+  className: 'w-100 h-50',
 })``
 
 const OurWork = ({ history }) => {

@@ -26,7 +26,7 @@ const BannerImg = styled(BackgroundImg)`
 `
 
 const WorkContent = () => (
-  <div>
+  <div className="ma0">
     <BannerImg src={stimmyPic}>
       <PurpleOverlay />
     </BannerImg>

@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 const WorkWrapper = styled.div.attrs({
-  className: 'center flex flex-column mv4 items-center',
+  className:
+    'pa5-ns pv3 mv1 mv0-ns ph1 center flex flex-column items-center bg-light-gray',
 })`
-  background-color: light-gray;
   max-width: 1201px;
 `
 const WorkTitle = styled.div.attrs({
@@ -11,7 +11,7 @@ const WorkTitle = styled.div.attrs({
 })``
 
 const WorkDescription = styled.p.attrs({
-  className: 'font-5 sans-serif black w-75 w-60-ns',
+  className: 'font-4 sans-serif black w-75-ns w-90',
 })`
   & h2 {
     font-size: 16px;
@@ -39,11 +39,11 @@ const WorkImg = styled.img.attrs({
 })``
 
 const TestimonialText = styled.p.attrs({
-  className: 'font-3 sans-serif black mb2 w-80 w-90-ns',
+  className: 'font-3 sans-serif black mb2 w-75-ns w-90',
 })``
 
 const TestimonialPerson = styled.p.attrs({
-  className: 'font-5 sans-serif black w-80 w-90-ns',
+  className: 'font-5 sans-serif black w-75-ns w-90',
 })``
 
 const ZigZag = styled.img.attrs({
