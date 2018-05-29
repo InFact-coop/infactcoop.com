@@ -39,7 +39,9 @@ const HeaderLanding = ({
       <Overlay />
       <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
       <Topline>
-        <Logo />
+        <a href="/">
+          <Logo />
+        </a>
         <Burger menuIsOpen={menuIsOpen} onClick={toggleMenu} />
       </Topline>
       <Tagline>{children}</Tagline>

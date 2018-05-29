@@ -34,7 +34,9 @@ const Header = ({ menuIsOpen, toggleMenu, topicLine, tagLine, subTagLine }) => {
     <SplashWhite>
       <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
       <Topline>
-        <LogoGradient />
+        <a href="/">
+          <LogoGradient />
+        </a>
         <BurgerGradient menuIsOpen={menuIsOpen} onClick={toggleMenu} />
       </Topline>
       <WorkHeading>

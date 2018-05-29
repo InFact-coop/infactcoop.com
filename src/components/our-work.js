@@ -2,7 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { media } from '../styles/style_utils'
 
-import { CardTitle, CardSubTitle, CardBody, Card, CardHeading } from './card'
+import {
+  CardTitle,
+  CardSubTitle,
+  CardBody,
+  Card,
+  CardHeading,
+  CardButtonWithLink,
+} from './card'
 
 import { Section, SectionTitle, SectionHeading, SectionButton } from './section'
 
@@ -59,6 +66,9 @@ const OurWork = ({ history }) => {
               clinicians, we designed and built an app that helps young people
               with ADHD to manage their symptoms.
             </CardBody>
+            <CardButtonWithLink link="/about-work-stimmy-things">
+              Read more
+            </CardButtonWithLink>
           </SectionCard>
         </Wrapper>
 
@@ -75,6 +85,9 @@ const OurWork = ({ history }) => {
               We collaborated with CAST to support senior staff at non-profits
               in becoming leaders of their organisation’s digital development.
             </CardBody>
+            <CardButtonWithLink link="/about-work-cast">
+              Read more
+            </CardButtonWithLink>
           </SectionCard>
         </Wrapper>
       </div>

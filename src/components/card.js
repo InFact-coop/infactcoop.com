@@ -24,8 +24,15 @@ const Card = styled.div.attrs({
 
 const CardButton = styled.button.attrs({
   className: 'font-3-ns font-4 sans-serif ttu b ph3 pv1 b--black bg-white',
-})``
+})`
+  cursor: pointer;
+`
 
+const CardButtonWithLink = ({ children, link }) => (
+  <a className="" href={link}>
+    <CardButton>{children}</CardButton>
+  </a>
+)
 const CardHeading = ({ children }) => (
   <div className="mb2-ns mb1">
     <div className="mb2-ns mb1">{children}</div>
@@ -33,4 +40,11 @@ const CardHeading = ({ children }) => (
   </div>
 )
 
-export { CardTitle, CardSubTitle, CardBody, Card, CardButton, CardHeading }
+export {
+  CardTitle,
+  CardSubTitle,
+  CardBody,
+  Card,
+  CardButtonWithLink,
+  CardHeading,
+}

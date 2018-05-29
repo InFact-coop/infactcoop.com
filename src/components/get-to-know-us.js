@@ -7,7 +7,7 @@ import {
   CardSubTitle,
   CardBody,
   Card,
-  CardButton,
+  CardButtonWithLink,
   CardHeading,
 } from './card'
 
@@ -72,7 +72,7 @@ const GetToKnowUs = () => (
           and build solutions to real problems, getting to the heart of what
           matters.
         </CardBody>
-        <CardButton>Tell me more</CardButton>
+        <CardButtonWithLink link="/about-us">Tell me more</CardButtonWithLink>
       </SectionCard>
     </Wrapper>
   </Section>
