@@ -57,7 +57,7 @@ const OurWork = ({ history }) => {
 
   return (
     <Section bg_color={bgcolor}>
-      <SectionHeading>
+      <SectionHeading mb>
         <SectionTitle>{title}</SectionTitle>
       </SectionHeading>
 

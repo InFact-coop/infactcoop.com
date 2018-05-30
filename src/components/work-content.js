@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import BackgroundImg from './background-img'
 
 const WorkWrapper = styled.div.attrs({
   className:
@@ -30,13 +31,15 @@ const WorkDescription = styled.p.attrs({
   }
 
   & + div {
-    margin-top: 32px;
+    margin-top: 48px;
   }
 `
 
-const WorkImg = styled.img.attrs({
+const WorkImg = styled(BackgroundImg).attrs({
   className: 'w-100 mv4',
-})``
+})`
+  height: 50vh;
+`
 
 const TestimonialText = styled.p.attrs({
   className: 'font-3 sans-serif black mb2 w-75-ns w-90',

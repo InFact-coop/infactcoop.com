@@ -52,7 +52,7 @@ const Wrapper = styled.div.attrs({
 
 const GetToKnowUs = () => (
   <Section bg_color="mid-gray">
-    <SectionHeading>
+    <SectionHeading mb>
       <SectionTitle>Get To Know Us</SectionTitle>
     </SectionHeading>
 
