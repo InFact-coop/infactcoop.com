@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 import { backgroundImageToggle, displayElement } from '../styles/style_utils'
 import { Topline, Logo } from './header'
@@ -20,10 +20,13 @@ const BurgerGradient = styled.div.attrs({
     backgroundImageToggle(props.menuIsOpen, burgerOpen, burgerGradient)};
 `
 const Splash = styled.nav.attrs({
-  className: `w-100 z-1 fixed vh-100 flex-column justify-center`,
+  className: `nav w-100 z-1 fixed flex-column justify-center`,
 })`
   max-width: 1440px;
-  ${props => displayElement(props.menuIsOpen, 'flex')};
+  height: ${props => (props.menuIsOpen ? '100vh' : '0')};
+  transition: 0.8s;
+  display: flex;
+  transition-delay: 0.1s;
   background: linear-gradient(
     to right,
     rgba(97, 20, 204, 1) 0%,
@@ -31,12 +34,31 @@ const Splash = styled.nav.attrs({
   );
 `
 
+const fontWhiteToFade = keyframes`
+  0% {
+    color: white;
+  } 100% {
+    color: transparent;
+  };
+`
+const fontFadeToWhite = keyframes`
+  0% {
+    color: transparent;
+  } 100% {
+    color: white;
+  };
+`
 const MenuItem = styled.a.attrs({
-  className: 'dib link ttu heading-ns font-1 reglo white',
-})``
-
+  className: 'dib ttu heading-ns font-1 reglo link',
+})`
+  color: transparent;
+  animation: ${props =>
+    props.menuIsOpen
+      ? `${fontFadeToWhite} 1s 1 0.3s forwards`
+      : `${fontWhiteToFade} 0.5s 1 0s forwards`};
+`
 const LinkContainer = styled.div.attrs({
-  className: `w-100 flex flex-column items-center justify-around pt3 pt0-ns`,
+  className: `nav w-100 flex flex-column items-center justify-around pt3 pt0-ns`,
 })`
   height: 80vh;
 `
@@ -50,17 +72,31 @@ const Menu = ({ menuIsOpen, toggleMenu }) => (
       <Burger menuIsOpen={menuIsOpen} onClick={toggleMenu} />
     </Topline>
     <LinkContainer>
-      <MenuItem href="/">Home</MenuItem>
-      <MenuItem href="/our-work">Our Work</MenuItem>
-      <MenuItem href="/our-approach">Approach</MenuItem>
-      <MenuItem href="/about-us">About InFact</MenuItem>
-      <MenuItem href="https://foundersandcoders.com/" target="_blank">
+      <MenuItem menuIsOpen={menuIsOpen} href="/">
+        Home
+      </MenuItem>
+      <MenuItem menuIsOpen={menuIsOpen} href="/our-work">
+        Our Work
+      </MenuItem>
+      <MenuItem menuIsOpen={menuIsOpen} href="/our-approach">
+        Approach
+      </MenuItem>
+      <MenuItem menuIsOpen={menuIsOpen} href="/about-us">
+        About InFact
+      </MenuItem>
+      <MenuItem
+        menuIsOpen={menuIsOpen}
+        href="https://foundersandcoders.com/"
+        target="_blank"
+      >
         Founders & Coders
       </MenuItem>
       {
         // <MenuItem href="#">Insights</MenuItem>
       }
-      <MenuItem href="#">Contact</MenuItem>
+      <MenuItem href="#" menuIsOpen={menuIsOpen}>
+        Contact
+      </MenuItem>
     </LinkContainer>
   </Splash>
 )
