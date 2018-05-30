@@ -1,7 +1,10 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
-import { backgroundImageToggle, displayElement } from '../styles/style_utils'
+import {
+  backgroundImageToggle,
+  menuAnimationToggle,
+} from '../styles/style_utils'
 import { Topline, Logo } from './header'
 import burgerClosed from '../assets/icons/menu_white_close.svg'
 import burgerOpen from '../assets/icons/menu_white.svg'
@@ -11,19 +14,27 @@ const Burger = styled.div.attrs({
   className: 'w3-ns h3-ns w2 h3 pointer burger',
 })`
   background: ${props =>
-    backgroundImageToggle(props.menuIsOpen, burgerOpen, burgerClosed)};
+    backgroundImageToggle(
+      props.menuIsOpen === 'OPENED',
+      burgerOpen,
+      burgerClosed
+    )};
 `
 const BurgerGradient = styled.div.attrs({
   className: 'w3-ns h3-ns w2 h3 pointer burger',
 })`
   background: ${props =>
-    backgroundImageToggle(props.menuIsOpen, burgerOpen, burgerGradient)};
+    backgroundImageToggle(
+      props.menuIsOpen === 'OPENED',
+      burgerOpen,
+      burgerGradient
+    )};
 `
 const Splash = styled.nav.attrs({
   className: `nav w-100 z-1 fixed flex-column justify-center`,
 })`
   max-width: 1440px;
-  height: ${props => (props.menuIsOpen ? '100vh' : '0')};
+  height: ${props => (props.menuIsOpen === 'OPENED' ? '100vh' : '0')};
   transition: 0.8s;
   display: flex;
   transition-delay: 0.1s;
@@ -34,28 +45,11 @@ const Splash = styled.nav.attrs({
   );
 `
 
-const fontWhiteToFade = keyframes`
-  0% {
-    color: white;
-  } 100% {
-    color: transparent;
-  };
-`
-const fontFadeToWhite = keyframes`
-  0% {
-    color: transparent;
-  } 100% {
-    color: white;
-  };
-`
 const MenuItem = styled.a.attrs({
   className: 'dib ttu heading-ns font-1 reglo link',
 })`
   color: transparent;
-  animation: ${props =>
-    props.menuIsOpen
-      ? `${fontFadeToWhite} 1s 1 0.3s forwards`
-      : `${fontWhiteToFade} 0.5s 1 0s forwards`};
+  ${props => menuAnimationToggle(props.menuIsOpen)};
 `
 const LinkContainer = styled.div.attrs({
   className: `nav w-100 flex flex-column items-center justify-around pt3 pt0-ns`,
@@ -91,9 +85,6 @@ const Menu = ({ menuIsOpen, toggleMenu }) => (
       >
         Founders & Coders
       </MenuItem>
-      {
-        // <MenuItem href="#">Insights</MenuItem>
-      }
       <MenuItem href="#" menuIsOpen={menuIsOpen}>
         Contact
       </MenuItem>

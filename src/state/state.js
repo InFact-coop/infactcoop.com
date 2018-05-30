@@ -1,7 +1,7 @@
 import { createStore as reduxCreateStore } from 'redux'
 import { menuReducer } from './reducers'
 
-const initialState = { menuIsOpen: false }
+const initialState = { menuIsOpen: 'INIT' }
 
 const createStore = () =>
   reduxCreateStore(
