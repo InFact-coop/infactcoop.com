@@ -39,8 +39,6 @@ const OurApproach = () => (
       <Text>
         We work in an Agile, user-centred fashion - however we know this doesn’t
         mean much to everyone. This is how we interpret it:
-      </Text>
-      <Text>
         <ul>
           <li>
             We believe in close collaboration with you, because you’re the

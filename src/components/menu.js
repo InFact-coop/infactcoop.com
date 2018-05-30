@@ -24,11 +24,7 @@ const Splash = styled.nav.attrs({
 })`
   max-width: 1440px;
   ${props => displayElement(props.menuIsOpen, 'flex')};
-  background: linear-gradient(
-    to right,
-    rgba(97, 20, 204, 1) 0%,
-    rgba(250, 125, 120, 1) 100%
-  );
+  background: linear-gradient(225deg, #fa7d78 0%, #6114cc 100%);
 `
 
 const MenuItem = styled.a.attrs({
