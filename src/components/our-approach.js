@@ -50,7 +50,7 @@ const Picture = styled(BackgroundImg).attrs({
 
 const OurApproach = () => (
   <Section bg_color="mid-gray">
-    <SectionHeading>
+    <SectionHeading mb>
       <SectionTitle>Our Approach</SectionTitle>
     </SectionHeading>
 

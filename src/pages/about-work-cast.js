@@ -1,23 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { SectionHeading, SectionTitle } from '../components/section'
 import OurWork from '../components/our-work'
 import Header from '../containers/header-work'
 
 import {
   WorkWrapper,
-  WorkTitle,
   WorkImg,
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
-  ZigZag,
 } from '../components/work-content'
 
 import { PurpleOverlay } from '../components/overlay'
 import BackgroundImg from '../components/background-img'
 import workshop from '../assets/images/LWC_PIC.png'
-import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const BannerImg = styled(BackgroundImg)`
   width: 100vw;
@@ -31,8 +29,9 @@ const WorkContent = () => (
       <PurpleOverlay />
     </BannerImg>
     <WorkWrapper>
-      <WorkTitle>The Challenge</WorkTitle>
-      <ZigZag src={wigglyBottom} />
+      <SectionHeading>
+        <SectionTitle>The Challenge</SectionTitle>
+      </SectionHeading>
       <WorkDescription>
         For many non-profits the cost and fear of digital is a big barrier. This
         often stems from past negative experiences and means charities often shy
@@ -40,8 +39,9 @@ const WorkContent = () => (
         charities could achieve their goals in a more effective and
         cost-efficient manner.
       </WorkDescription>
-      <WorkTitle>The Solution</WorkTitle>
-      <ZigZag src={wigglyBottom} />
+      <SectionHeading>
+        <SectionTitle>The Solution</SectionTitle>
+      </SectionHeading>
       <WorkDescription>
         The CAST Digital Fellowship is a comprehensive learning programme for
         nonprofit leaders. Senior staff develop a better understanding and use
@@ -49,8 +49,9 @@ const WorkContent = () => (
         their organisation’s – and the sector’s – digital development.
       </WorkDescription>
       <WorkImg src={workshop} />
-      <WorkTitle>Our Involvement</WorkTitle>
-      <ZigZag src={wigglyBottom} />
+      <SectionHeading>
+        <SectionTitle>Our Involvement</SectionTitle>
+      </SectionHeading>
       <WorkDescription>
         <h2>The Workshop</h2>
         We led a one day workshop with groups from the different organisations.
