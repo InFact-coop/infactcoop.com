@@ -35,10 +35,9 @@ const Section = ({ children, bg_color }) => (
 )
 
 const SectionHeading = ({ children, mb }) => {
-  let classes = ''
-  mb
-    ? (classes = 'flex flex-row justify-center mb2 mb5-ns pb1 pb0-ns')
-    : (classes = 'flex flex-row justify-center mb2 pb1 pb0-ns')
+  const classes = `flex flex-row justify-center mb2 pb1 pb0-ns ${
+    mb ? 'mb5-ns' : ''
+  }`
 
   return (
     <div className={classes}>
