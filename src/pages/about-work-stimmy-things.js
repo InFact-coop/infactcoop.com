@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import OurWork from '../components/our-work'
 import Header from '../containers/header-work'
+import { SectionHeading, SectionTitle } from '../components/section'
 
 import {
   WorkWrapper,
@@ -26,21 +27,23 @@ const BannerImg = styled(BackgroundImg)`
 `
 
 const WorkContent = () => (
-  <div>
+  <div className="ma0">
     <BannerImg src={stimmyPic}>
       <PurpleOverlay />
     </BannerImg>
     <WorkWrapper>
-      <WorkTitle>The Challenge</WorkTitle>
-      <ZigZag src={wigglyBottom} />
+      <SectionHeading>
+        <SectionTitle>The Challenge</SectionTitle>
+      </SectionHeading>
       <WorkDescription>
         We were approached by Slam, a leading mental health trust, and the Anna
         Freud Centre, a young person's mental health charity. They asked us to
         work together with young people with ADHD to identify ways in which some
         of their symptoms could be alleviated through the use of technology.
       </WorkDescription>
-      <WorkTitle>Discovery and Design</WorkTitle>
-      <ZigZag src={wigglyBottom} />
+      <SectionHeading>
+        <SectionTitle>Discovery and Design</SectionTitle>
+      </SectionHeading>
       <WorkDescription>
         One young person taught us about 'Stims' - self-soothing exercises
         performed by people with a number of disorders helping them to relax,
@@ -49,8 +52,9 @@ const WorkContent = () => (
         compelling that we decided to bring it to reality for our app.
       </WorkDescription>
       <WorkImg src={stimmyPic} />
-      <WorkTitle>The Solution</WorkTitle>
-      <ZigZag src={wigglyBottom} />
+      <SectionHeading>
+        <SectionTitle>The Solution</SectionTitle>
+      </SectionHeading>
       <WorkDescription>
         We built an app which:
         <ul>

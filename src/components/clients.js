@@ -24,7 +24,7 @@ const LinkImage = styled(BackgroundImg.withComponent('a')).attrs({
 
 const Clients = () => (
   <Section bg_color="white">
-    <SectionHeading>
+    <SectionHeading mb>
       <SectionTitle>InFact works with</SectionTitle>
     </SectionHeading>
     <div className="flex justify-center flex-wrap justify-between-ns mb7-ns">

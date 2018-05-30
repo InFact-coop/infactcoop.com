@@ -45,7 +45,7 @@ const SectionText = styled(CardBody)`
 `
 
 const Picture = styled(BackgroundImg).attrs({
-  className: 'w-100 h-50 w-60-ns',
+  className: 'w-100 h-50',
 })``
 
 const OurWork = ({ history }) => {
@@ -57,7 +57,7 @@ const OurWork = ({ history }) => {
 
   return (
     <Section bg_color={bgcolor}>
-      <SectionHeading>
+      <SectionHeading mb>
         <SectionTitle>{title}</SectionTitle>
       </SectionHeading>
 

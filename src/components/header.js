@@ -18,7 +18,6 @@ const SplashGradient = SplashBase.extend`
 `
 const SplashWhite = SplashBase.extend`
   background: white;
-  min-height: 40vh;
 `
 
 const SplashImg = SplashBase.extend`
@@ -68,7 +67,7 @@ const TopicLine = styled.div.attrs({
 })``
 
 const TaglineBlack = styled.p.attrs({
-  className: 'font-0 ttu reglo black',
+  className: 'font-0-ns font-1 ttu reglo black',
 })``
 
 const SubTaglineBlack = styled.div.attrs({
@@ -76,7 +75,7 @@ const SubTaglineBlack = styled.div.attrs({
 })``
 
 const WorkHeading = ({ children }) => (
-  <div className="mb3 tc w-100 mt7">
+  <div className="mb6-ns mb4 tc w-100 mt7">
     <div className="mb2-ns mb1 mh1">{children}</div>
   </div>
 )
