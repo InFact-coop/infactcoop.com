@@ -6,7 +6,6 @@ import {
   CardTitle,
   CardSubTitle,
   CardBody,
-  Card,
   CardHeading,
   CardButtonWithLink,
 } from './card'
@@ -20,26 +19,34 @@ import workshop from '../assets/images/LWC_PIC.png'
 import { PurpleOverlay } from './overlay'
 
 const Wrapper = styled.div.attrs({
-  className: 'relative flex justify-center',
+  className: 'relative flex-ns justify-center',
 })`
-  height: 90vh;
+  height: 100vh;
   ${media.ns`
+  height: 90vh;
     width: 46%;
   `};
 `
 
-const SectionCard = styled(Card).attrs({
-  className: 'absolute',
+const SectionCard = styled.div.attrs({
+  className:
+    'bg-white shadow-5 absolute-ns ph4-ns pv4-ns pv4 ph3 center tc tl-ns',
 })`
-  bottom: 3rem;
+  ${media.ns`
+height: 45%;
+width: 90%;
+bottom: 2rem;
+  `} width: 95%;
+  transform: translateY(-2rem);
+`
+const SectionText = styled(CardBody)`
+  height: 30%;
+  overflow-y: scroll;
 `
 
 const Picture = styled(BackgroundImg).attrs({
-  className: '',
-})`
-  width: 100%;
-  height: 60%;
-`
+  className: 'w-100 h-50',
+})``
 
 const OurWork = ({ history }) => {
   const isHomePage = history.location.pathname === '/'
@@ -50,11 +57,11 @@ const OurWork = ({ history }) => {
 
   return (
     <Section bg_color={bgcolor}>
-      <SectionHeading>
+      <SectionHeading mb>
         <SectionTitle>{title}</SectionTitle>
       </SectionHeading>
 
-      <div className="flex flex-column flex-row-ns justify-between-ns">
+      <div className="flex-ns flex-column flex-row-ns justify-between-ns">
         <Wrapper>
           <Picture src={stimmyThings} />
           <SectionCard>
@@ -62,17 +69,16 @@ const OurWork = ({ history }) => {
               <CardTitle>Mental Health</CardTitle>
             </CardHeading>
             <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
-            <CardBody>
+            <SectionText>
               Working in collaboration with young people, parents and
               clinicians, we designed and built an app that helps young people
               with ADHD to manage their symptoms.
-            </CardBody>
+            </SectionText>
             <CardButtonWithLink link="/about-work-stimmy-things">
               Read more
             </CardButtonWithLink>
           </SectionCard>
         </Wrapper>
-
         <Wrapper>
           <Picture src={workshop}>
             <PurpleOverlay />
@@ -82,10 +88,10 @@ const OurWork = ({ history }) => {
               <CardTitle>Tech for Good</CardTitle>
             </CardHeading>
             <CardSubTitle uppercase>CAST Digital Fellowship</CardSubTitle>
-            <CardBody>
+            <SectionText>
               We collaborated with CAST to support senior staff at non-profits
               in becoming leaders of their organisation’s digital development.
-            </CardBody>
+            </SectionText>
             <CardButtonWithLink link="/about-work-cast">
               Read more
             </CardButtonWithLink>

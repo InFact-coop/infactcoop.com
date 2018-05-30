@@ -5,7 +5,7 @@ import wigglyLeft from '../assets/icons/wiggly_left.svg'
 import wigglyRight from '../assets/icons/wiggly_right.svg'
 
 const SectionTile = styled.section.attrs({
-  className: 'pa5-ns pv3 mv1 mv0-ns ph1',
+  className: 'pa5-ns pv3 mv0-ns ph1',
 })``
 
 const Wrapper = styled.div.attrs({
@@ -34,12 +34,18 @@ const Section = ({ children, bg_color }) => (
   </SectionTile>
 )
 
-const SectionHeading = ({ children }) => (
-  <div className="flex flex-row justify-center mb6-ns mb3 pb1 pb0-ns">
-    <img src={wigglyLeft} alt="wiggle" />
-    <div className="mh1">{children}</div>
-    <img src={wigglyRight} alt="wiggle" />
-  </div>
-)
+const SectionHeading = ({ children, mb }) => {
+  const classes = `flex flex-row justify-center mb2 pb1 pb0-ns ${
+    mb ? 'mb5-ns' : ''
+  }`
+
+  return (
+    <div className={classes}>
+      <img src={wigglyLeft} alt="wiggle" />
+      <div className="mh1">{children}</div>
+      <img src={wigglyRight} alt="wiggle" />
+    </div>
+  )
+}
 
 export { Section, SectionTitle, SectionHeading, SectionButton, Wrapper }
