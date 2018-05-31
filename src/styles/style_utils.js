@@ -1,5 +1,6 @@
 import React from 'react'
 import { css } from 'styled-components'
+import { fontWhiteToFade, fontFadeToWhite } from './style_animations'
 
 const media = {
   ns: (...args) => css`
@@ -24,6 +25,25 @@ const displayElement = (bool, displayAs) => {
   `
 }
 
+const menuAnimationToggle = menuIsOpen => {
+  switch (menuIsOpen) {
+    case 'OPENED':
+      return css`
+        animation: ${fontFadeToWhite} 1s 1 0.3s forwards;
+      `
+
+    case 'CLOSED':
+      return css`
+        animation: ${fontWhiteToFade} 0.5s 1 0s forwards;
+      `
+
+    default:
+      return css`
+        animation: inherit;
+      `
+  }
+}
+
 const backgroundImage = imgUrl => {
   return imgUrl ? `url(${imgUrl}) no-repeat center center / contain` : ``
 }
@@ -41,4 +61,5 @@ export default {
   backgroundImageToggle,
   displayElement,
   emptySpan,
+  menuAnimationToggle,
 }

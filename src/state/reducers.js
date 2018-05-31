@@ -1,6 +1,11 @@
 const menuReducer = (state, action) => {
   if (action.type === `TOGGLE_MENU`) {
-    return { ...state, menuIsOpen: !state.menuIsOpen }
+    const newMenuState =
+      state.menuIsOpen === 'INIT' || state.menuIsOpen === 'CLOSED'
+        ? 'OPENED'
+        : 'CLOSED'
+
+    return { ...state, menuIsOpen: newMenuState }
   }
   return state
 }
