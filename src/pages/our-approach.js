@@ -26,7 +26,7 @@ const Card = styled.div.attrs({
 })``
 
 const CardTitle = styled.div.attrs({
-  className: 'font-1-ns font-2 ttu reglo',
+  className: 'font-1 ttu reglo',
 })``
 
 const CardBody = styled.div.attrs({
