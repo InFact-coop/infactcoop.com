@@ -12,4 +12,7 @@ const PurpleOverlay = styled(Overlay)`
 const BlueOverlay = styled(Overlay)`
   background: radial-gradient(circle, #009cf3 0%, #16d6d9 100%);
 `
-export { PurpleOverlay, BlueOverlay }
+const YellowOverlay = styled(Overlay)`
+  background: linear-gradient(90deg, #16d6d9 0%, #96cc29 100%);
+`
+export { PurpleOverlay, BlueOverlay, YellowOverlay }

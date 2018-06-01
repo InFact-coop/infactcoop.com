@@ -85,7 +85,7 @@ const Menu = ({ menuIsOpen, toggleMenu }) => (
       >
         Founders & Coders
       </MenuItem>
-      <MenuItem href="#" menuIsOpen={menuIsOpen}>
+      <MenuItem href="/contact-us" menuIsOpen={menuIsOpen}>
         Contact
       </MenuItem>
     </LinkContainer>
