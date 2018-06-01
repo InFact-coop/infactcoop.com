@@ -22,13 +22,17 @@ const CardJobTitle = styled.p.attrs({
 })``
 
 const CardsWrapper = styled.div.attrs({
-  className: 'flex justify-around w-100 flex-wrap',
-})``
+  className: 'cf center',
+})`
+  width: fit-content;
+  max-width: 1201px;
+`
 
 const CardWrapper = styled.div.attrs({
-  className: 'w-25-ns w-80 mh3 mv5',
+  className: 'fl w-80 mh3 mv5',
 })`
   ${media.ns`
+  width: 25vw;
     height: 25vw;
   `};
   height: 80vw;

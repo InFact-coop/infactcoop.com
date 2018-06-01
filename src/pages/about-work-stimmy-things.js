@@ -7,18 +7,15 @@ import { SectionHeading, SectionTitle } from '../components/section'
 
 import {
   WorkWrapper,
-  WorkTitle,
   WorkImg,
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
-  ZigZag,
 } from '../components/work-content'
 
 import { PurpleOverlay } from '../components/overlay'
 import BackgroundImg from '../components/background-img'
 import stimmyPic from '../assets/images/projects/stimmy_things_hero.svg'
-import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const BannerImg = styled(BackgroundImg)`
   width: 100vw;

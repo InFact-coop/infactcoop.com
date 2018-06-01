@@ -33,7 +33,7 @@ const SectionCard = styled.div.attrs({
     'bg-white shadow-5 absolute-ns ph4-ns pv4-ns pv4 ph3 center tc tl-ns',
 })`
   ${media.ns`
-height: 45%;
+height: 55%;
 width: 90%;
 bottom: 2rem;
   `} width: 95%;
@@ -87,7 +87,7 @@ const OurWork = ({ history }) => {
             <CardHeading>
               <CardTitle>Tech for Good</CardTitle>
             </CardHeading>
-            <CardSubTitle uppercase>CAST Digital Fellowship</CardSubTitle>
+            <CardSubTitle uppercase>CAST Fellowship</CardSubTitle>
             <SectionText>
               We collaborated with CAST to support senior staff at non-profits
               in becoming leaders of their organisation’s digital development.
