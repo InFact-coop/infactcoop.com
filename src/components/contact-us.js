@@ -23,8 +23,7 @@ const SubmitButton = styled.input.attrs({
 const HelpText = styled.textarea.attrs({
   className: 'mt1 w-100 b--black pa2 ',
 })`
-  height: fit-content;
-  min-height: 10vh;
+  height: 10vh;
 `
 
 const Label = styled.label.attrs({
