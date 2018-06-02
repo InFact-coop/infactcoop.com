@@ -33,7 +33,7 @@ const SectionCard = styled.div.attrs({
     'bg-white shadow-5 absolute-ns ph4-ns pv4-ns pv4 ph3 center tc tl-ns',
 })`
   ${media.ns`
-height: 45%;
+height: 55%;
 width: 90%;
 bottom: 2rem;
   `} width: 95%;

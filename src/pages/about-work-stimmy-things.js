@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import OurWork from '../components/our-work'
 import Header from '../containers/header-work'
@@ -7,20 +6,17 @@ import { SectionHeading, SectionTitle } from '../components/section'
 
 import {
   WorkWrapper,
-  WorkTitle,
   WorkImg,
   BannerImg,
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
-  ZigZag,
 } from '../components/work-content'
 
 import { PurpleOverlay } from '../components/overlay'
 import stimmyAvatars from '../assets/images/projects/stimmy_things/stimmy_things_hero.svg'
 import stimmyPic1 from '../assets/images/projects/stimmy_things/stimmy_things_1.png'
 import stimmyPic2 from '../assets/images/projects/stimmy_things/stimmy_things_2.png'
-import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const WorkContent = () => (
   <div className="ma0">
