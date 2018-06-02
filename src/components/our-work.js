@@ -51,6 +51,7 @@ const Picture = styled(BackgroundImg).attrs({
 const OurWork = ({ history }) => {
   const isHomePage = history.location.pathname === '/'
   const isWorkGallery = history.location.pathname === '/our-work'
+  const currentPage = history.location.pathname
 
   const title = isHomePage || isWorkGallery ? 'Our Work' : 'More Work'
   const bgcolor = isHomePage ? 'light-gray' : 'white'
@@ -62,41 +63,46 @@ const OurWork = ({ history }) => {
       </SectionHeading>
 
       <div className="flex-ns flex-column flex-row-ns justify-between-ns">
-        <Wrapper>
-          <Picture src={stimmyThings} />
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Mental Health</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
-            <SectionText>
-              Working in collaboration with young people, parents and
-              clinicians, we designed and built an app that helps young people
-              with ADHD to manage their symptoms.
-            </SectionText>
-            <CardButtonWithLink link="/about-work-stimmy-things">
-              Read more
-            </CardButtonWithLink>
-          </SectionCard>
-        </Wrapper>
-        <Wrapper>
-          <Picture src={workshop}>
-            <PurpleOverlay />
-          </Picture>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Tech for Good</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>CAST Digital Fellowship</CardSubTitle>
-            <SectionText>
-              We collaborated with CAST to support senior staff at non-profits
-              in becoming leaders of their organisation’s digital development.
-            </SectionText>
-            <CardButtonWithLink link="/about-work-cast">
-              Read more
-            </CardButtonWithLink>
-          </SectionCard>
-        </Wrapper>
+        {currentPage !== '/about-work-stimmy-things' && (
+          <Wrapper>
+            <Picture src={stimmyThings} />
+            <SectionCard>
+              <CardHeading>
+                <CardTitle>Mental Health</CardTitle>
+              </CardHeading>
+              <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
+              <SectionText>
+                Working in collaboration with young people, parents and
+                clinicians, we designed and built an app that helps young people
+                with ADHD to manage their symptoms.
+              </SectionText>
+              <CardButtonWithLink link="/about-work-stimmy-things">
+                Read more
+              </CardButtonWithLink>
+            </SectionCard>
+          </Wrapper>
+        )}
+
+        {currentPage !== '/about-work-cast' && (
+          <Wrapper>
+            <Picture src={workshop}>
+              <PurpleOverlay />
+            </Picture>
+            <SectionCard>
+              <CardHeading>
+                <CardTitle>Tech for Good</CardTitle>
+              </CardHeading>
+              <CardSubTitle uppercase>CAST Digital Fellowship</CardSubTitle>
+              <SectionText>
+                We collaborated with CAST to support senior staff at non-profits
+                in becoming leaders of their organisation’s digital development.
+              </SectionText>
+              <CardButtonWithLink link="/about-work-cast">
+                Read more
+              </CardButtonWithLink>
+            </SectionCard>
+          </Wrapper>
+        )}
       </div>
       {isHomePage && <SectionButton>See It All</SectionButton>}
     </Section>
