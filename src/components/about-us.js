@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { css } from 'styled-components'
 
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 import BackgroundImg from './background-img'
@@ -11,9 +12,14 @@ const CardName = styled.p.attrs({
 })``
 
 const CardImage = styled.img.attrs({
-  className: 'db bg-center cover aspect-ratio--object',
+  className: 'db bg-center aspect-ratio--object',
 })`
-  background-image: ${props => props.src};
+  ${props => {
+    return css`
+      background-image: url ${props.src};
+      background-size: cover !important;
+    `
+  }};
 `
 
 const CardJobTitle = styled.p.attrs({
