@@ -3,9 +3,10 @@ import styled from 'styled-components'
 
 import HeaderLanding from '../containers/header'
 import { YellowOverlay } from '../components/overlay'
-import { Wrapper, ZigZag, Text, Title } from '../components/about-pages'
+import { Wrapper, ZigZag, Title } from '../components/about-pages'
 import {
   Form,
+  Text,
   Input,
   Label,
   HelpText,

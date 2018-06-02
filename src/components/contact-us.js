@@ -6,11 +6,13 @@ const Form = styled.form.attrs({
   className: 'w-75-ns w-90 flex flex-column items-center mv6 ph6-ns ph2 ',
 })``
 
+const Text = styled.p.attrs({
+  className: 'font-4 sans-serif black w-75-ns w-90 tc',
+})``
+
 const Input = styled.input.attrs({
-  className: 'mt1 ba w-100 pl1',
-})`
-  height: 5vh;
-`
+  className: 'mt1 ba w-100 pa2',
+})``
 
 const SubmitButton = styled.input.attrs({
   className: 'w-40-ns w-60 b white font-4 sans-serif pv2 mt2',
@@ -19,7 +21,7 @@ const SubmitButton = styled.input.attrs({
 `
 
 const HelpText = styled.textarea.attrs({
-  className: 'mt1 w-100 b--black pl1 pt1',
+  className: 'mt1 w-100 b--black pa2 ',
 })`
   height: fit-content;
   min-height: 10vh;
@@ -29,4 +31,4 @@ const Label = styled.label.attrs({
   className: 'w-100 tl font-4 sans-serif black mb4',
 })``
 
-export { Form, Input, HelpText, Label, SubmitButton }
+export { Form, Text, Input, HelpText, Label, SubmitButton }
