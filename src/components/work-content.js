@@ -53,11 +53,18 @@ const ZigZag = styled.img.attrs({
   className: 'mb2',
 })``
 
+const BannerImg = styled(BackgroundImg)`
+  width: 100vw;
+  height: 85vh;
+  max-width: 1440px;
+`
+
 export {
   WorkWrapper,
   WorkTitle,
   WorkImg,
   WorkDescription,
+  BannerImg,
   TestimonialPerson,
   TestimonialText,
   ZigZag,

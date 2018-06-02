@@ -21,7 +21,7 @@ import stimmyPic2 from '../assets/images/projects/stimmy_things/stimmy_things_2.
 
 const BannerImg = styled(BackgroundImg)`
   width: 100vw;
-  height: 60vh;
+  height: 85vh;
   max-width: 1440px;
 `
 

@@ -9,6 +9,7 @@ import {
   WorkWrapper,
   WorkTitle,
   WorkImg,
+  BannerImg,
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
@@ -16,17 +17,10 @@ import {
 } from '../components/work-content'
 
 import { PurpleOverlay } from '../components/overlay'
-import BackgroundImg from '../components/background-img'
 import stimmyAvatars from '../assets/images/projects/stimmy_things/stimmy_things_hero.svg'
 import stimmyPic1 from '../assets/images/projects/stimmy_things/stimmy_things_1.png'
 import stimmyPic2 from '../assets/images/projects/stimmy_things/stimmy_things_2.png'
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
-
-const BannerImg = styled(BackgroundImg)`
-  width: 100vw;
-  height: 60vh;
-  max-width: 1440px;
-`
 
 const WorkContent = () => (
   <div className="ma0">

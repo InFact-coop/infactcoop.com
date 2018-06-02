@@ -19,7 +19,7 @@ import workshop from '../assets/images/LWC_PIC.png'
 
 const BannerImg = styled(BackgroundImg)`
   width: 100vw;
-  height: 60vh;
+  height: 85vh;
   max-width: 1440px;
 `
 
