@@ -104,26 +104,28 @@ const OurWork = ({ history }) => {
           </Wrapper>
         )}
 
-        {(currentPage !== '/about-work-bluecross' || isHomePage) && (
-          <Wrapper>
-            <Picture src={workshop}>
-              <PurpleOverlay />
-            </Picture>
-            <SectionCard>
-              <CardHeading>
-                <CardTitle>Tech for Good</CardTitle>
-              </CardHeading>
-              <CardSubTitle uppercase>CAST Digital Fellowship</CardSubTitle>
-              <SectionText>
-                We collaborated with CAST to support senior staff at non-profits
-                in becoming leaders of their organisation’s digital development.
-              </SectionText>
-              <CardButtonWithLink link="/about-work-cast">
-                Read more
-              </CardButtonWithLink>
-            </SectionCard>
-          </Wrapper>
-        )}
+        {currentPage !== '/about-work-bluecross' &&
+          !isHomePage && (
+            <Wrapper>
+              <Picture src={workshop}>
+                <PurpleOverlay />
+              </Picture>
+              <SectionCard>
+                <CardHeading>
+                  <CardTitle>Tech for Good</CardTitle>
+                </CardHeading>
+                <CardSubTitle uppercase>CAST Digital Fellowship</CardSubTitle>
+                <SectionText>
+                  We collaborated with CAST to support senior staff at
+                  non-profits in becoming leaders of their organisation’s
+                  digital development.
+                </SectionText>
+                <CardButtonWithLink link="/about-work-cast">
+                  Read more
+                </CardButtonWithLink>
+              </SectionCard>
+            </Wrapper>
+          )}
       </div>
       {isHomePage && <SectionButton>See It All</SectionButton>}
     </Section>
