@@ -38,7 +38,7 @@ const WorkDescription = styled.p.attrs({
 const WorkImg = styled(BackgroundImg).attrs({
   className: 'w-100 mv4',
 })`
-  height: 50vh;
+  height: 75vh;
 `
 
 const TestimonialText = styled.p.attrs({

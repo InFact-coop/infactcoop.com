@@ -19,13 +19,26 @@ const SectionTitle = styled.h1.attrs({
 })``
 
 const SectionButton = styled.button.attrs({
-  className: 'font-4-ns font-5 sans-serif fw6 ttu ph4 pv2 white bn db center',
+  className:
+    'font-4-ns hover-blue font-5 sans-serif fw6 ttu ph4 pv2 white bn db center',
 })`
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    rgba(0, 156, 243, 0.8) 0%,
+    rgba(22, 214, 217, 0.8) 100%
+  );
+  border-image-slice: 1;
+
   background: linear-gradient(
     to right,
     rgba(0, 156, 243, 0.8) 0%,
     rgba(22, 214, 217, 0.8) 100%
   );
+
+  &:hover {
+    background: white;
+  }
 `
 
 const Section = ({ children, bg_color }) => (
