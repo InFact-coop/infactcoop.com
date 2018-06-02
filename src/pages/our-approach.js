@@ -18,7 +18,7 @@ const Picture = styled(BackgroundImg).attrs({
 
 const CardWrapper = styled.div.attrs({
   className:
-    'flex flex-row-ns flex-column justify-between-ns items-start-ns items-center',
+    'mv3 flex flex-row-ns flex-column justify-between-ns items-start-ns items-center',
 })``
 
 const Card = styled.div.attrs({
