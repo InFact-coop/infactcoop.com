@@ -16,13 +16,11 @@ const Splash = styled.section.attrs({
 })`
   ${media.ns`
     height: 40vh;
-  `} clear: left;
-  background: linear-gradient(225deg, #000000 0%, #322d37 100%);
+  `} background: linear-gradient(225deg, #000000 0%, #322d37 100%);
 `
 const EmailSplash = styled(Splash).attrs({
   className: 'flex-column o-70',
 })`
-  clear: left;
   background: linear-gradient(225deg, #000000 0%, #322d37 100%);
 `
 const EmailTopline = styled.p.attrs({
