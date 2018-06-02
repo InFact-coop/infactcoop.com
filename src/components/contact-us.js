@@ -15,9 +15,25 @@ const Input = styled.input.attrs({
 })``
 
 const SubmitButton = styled.input.attrs({
-  className: 'w-40-ns w-60 b white font-4 sans-serif pv2 mt2',
+  className: 'w-40-ns w-60 b hover-blue white font-4 sans-serif pv2 mt2',
 })`
-  background: linear-gradient(90deg, #009cf3 0%, #16d6d9 100%);
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    rgba(0, 156, 243, 0.8) 0%,
+    rgba(22, 214, 217, 0.8) 100%
+  );
+  border-image-slice: 1;
+
+  background: linear-gradient(
+    to right,
+    rgba(0, 156, 243, 0.8) 0%,
+    rgba(22, 214, 217, 0.8) 100%
+  );
+
+  &:hover {
+    background: white;
+  }
 `
 
 const HelpText = styled.textarea.attrs({
