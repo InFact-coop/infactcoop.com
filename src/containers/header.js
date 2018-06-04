@@ -24,13 +24,7 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-const HeaderLanding = ({
-  menuIsOpen,
-  toggleMenu,
-  image,
-  children,
-  overlay,
-}) => {
+const Header = ({ menuIsOpen, toggleMenu, image, children, overlay }) => {
   const Splash = image ? SplashImg : SplashGradient
   const Overlay = overlay ? overlay : emptySpan
 
@@ -49,4 +43,4 @@ const HeaderLanding = ({
   )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(HeaderLanding)
+export default connect(mapStateToProps, mapDispatchToProps)(Header)

@@ -13,7 +13,7 @@ const IndexPage = ({ history }) => (
   <div>
     <Header image={landing_header}>
       We're a design & development co-operative helping to shape a better
-      digital future.
+      digital future
     </Header>
     <OurApproach />
     <OurWork history={history} />
