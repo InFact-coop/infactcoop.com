@@ -6,7 +6,9 @@ import { BlueOverlay } from '../components/overlay'
 import { Wrapper, ZigZag, Text, Title } from '../components/about-pages'
 import BackgroundImg from '../components/background-img'
 
-import lyingOnTheGrass from '../assets/images/we_love_fac.png'
+import approach_header from '../assets/images/header_images/approach_header.jpg'
+import approach_img from '../assets/images/inline_images/approach_img.jpg'
+
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const Picture = styled(BackgroundImg).attrs({
@@ -30,7 +32,7 @@ const CardBody = styled.div.attrs({
 
 const OurApproach = () => (
   <div>
-    <HeaderLanding image={lyingOnTheGrass} overlay={BlueOverlay}>
+    <HeaderLanding image={approach_header} overlay={BlueOverlay}>
       Putting the users at the heart of the creative process
     </HeaderLanding>
     <Wrapper>

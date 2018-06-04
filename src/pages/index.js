@@ -7,9 +7,11 @@ import OurWork from '../components/our-work'
 import FAC from '../components/fac'
 import Clients from '../components/clients'
 
+import landing_header from '../assets/images/header_images/landing_header.png'
+
 const IndexPage = ({ history }) => (
   <div>
-    <Header>
+    <Header image={landing_header}>
       We're a design & development co-operative helping to shape a better
       digital future.
     </Header>

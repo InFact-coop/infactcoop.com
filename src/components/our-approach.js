@@ -15,7 +15,7 @@ import { Section, SectionTitle, SectionHeading } from './section'
 
 import BackgroundImg from './background-img'
 
-import postIts from '../assets/images/our_approach.png'
+import approach_img from '../assets/images/inline_images/approach_img.jpg'
 
 const Wrapper = styled.div.attrs({
   className: 'relative-ns',

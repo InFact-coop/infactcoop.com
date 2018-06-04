@@ -15,7 +15,7 @@ import {
 
 import { PurpleOverlay } from '../components/overlay'
 import BackgroundImg from '../components/background-img'
-import workshop from '../assets/images/LWC_PIC.png'
+import cast_header from '../assets/images/other/LWC_PIC.png'
 
 const BannerImg = styled(BackgroundImg)`
   width: 100vw;

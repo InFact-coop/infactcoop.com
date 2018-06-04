@@ -14,8 +14,8 @@ import { Section, SectionTitle, SectionHeading, SectionButton } from './section'
 
 import BackgroundImg from './background-img'
 
-import stimmyThings from '../assets/images/stimmy_things_landing.svg'
-import workshop from '../assets/images/LWC_PIC.png'
+import stimmy_card from '../assets/images/card_images/stimmythings_card.svg'
+import cast_card from '../assets/images/card_images/cast_card.png'
 import { PurpleOverlay } from './overlay'
 
 const Wrapper = styled.div.attrs({

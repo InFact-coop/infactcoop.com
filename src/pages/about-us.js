@@ -5,7 +5,7 @@ import { AboutCard, CardsWrapper } from '../components/about-us'
 import { Wrapper, ZigZag, Text, Title } from '../components/about-pages'
 import { BlueOverlay } from '../components/overlay'
 
-import getToKnowUs from '../assets/images/get_to_know_us.png'
+import aboutus_header from '../assets/images/header_images/aboutus_header.jpg'
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const AboutUs = () => (
