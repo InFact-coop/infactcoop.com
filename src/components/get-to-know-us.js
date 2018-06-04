@@ -57,7 +57,7 @@ const GetToKnowUs = () => (
     </SectionHeading>
 
     <Wrapper>
-      <Picture src={picOfUs}>
+      <Picture src={aboutus_card}>
         <PurpleOverlay />
       </Picture>
       <SectionCard>

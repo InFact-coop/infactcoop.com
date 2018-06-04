@@ -55,7 +55,7 @@ const OurApproach = () => (
     </SectionHeading>
 
     <Wrapper>
-      <Picture src={postIts} />
+      <Picture src={approach_img} />
       <SectionCard>
         <CardHeading>
           <CardTitle>Approach</CardTitle>

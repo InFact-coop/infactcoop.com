@@ -63,7 +63,7 @@ const OurWork = ({ history }) => {
 
       <div className="flex-ns flex-column flex-row-ns justify-between-ns">
         <Wrapper>
-          <Picture src={stimmyThings} />
+          <Picture src={stimmy_card} />
           <SectionCard>
             <CardHeading>
               <CardTitle>Mental Health</CardTitle>
@@ -80,7 +80,7 @@ const OurWork = ({ history }) => {
           </SectionCard>
         </Wrapper>
         <Wrapper>
-          <Picture src={workshop}>
+          <Picture src={cast_card}>
             <PurpleOverlay />
           </Picture>
           <SectionCard>

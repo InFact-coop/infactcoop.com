@@ -55,7 +55,7 @@ const AboutUs = () => (
 const AboutWork = () => {
   return (
     <div>
-      <HeaderLanding image={getToKnowUs} overlay={BlueOverlay}>
+      <HeaderLanding image={aboutus_header} overlay={BlueOverlay}>
         Co-operatively driven design and development.
       </HeaderLanding>
       <AboutUs />

@@ -71,7 +71,7 @@ const OurApproach = () => (
         reflect your user's ideal product and this often comes a lot sooner than
         anticipated.
       </Text>
-      <Picture src={lyingOnTheGrass} />
+      <Picture src={approach_img} />
       <div className="flex mt4">
         <Card>
           <CardTitle>Discovery</CardTitle>
