@@ -18,8 +18,13 @@ const Picture = styled(BackgroundImg).attrs({
   height: 600px;
 `
 
+const CardWrapper = styled.div.attrs({
+  className:
+    'mv3 flex flex-row-ns flex-column justify-between-ns items-start-ns items-center',
+})``
+
 const Card = styled.div.attrs({
-  className: '',
+  className: 'mt4 tc tl-ns w-25-ns w-90',
 })``
 
 const CardTitle = styled.div.attrs({
@@ -27,7 +32,7 @@ const CardTitle = styled.div.attrs({
 })``
 
 const CardBody = styled.div.attrs({
-  className: 'font-3 sans-serif',
+  className: 'font-4 sans-serif',
 })``
 
 const OurApproach = () => (
@@ -72,19 +77,19 @@ const OurApproach = () => (
         anticipated.
       </Text>
       <Picture src={approach_img} />
-      <div className="flex mt4">
+      <CardWrapper>
         <Card>
           <CardTitle>Discovery</CardTitle>
           <CardBody>
             In collaboration with you and your team we will carry out a variety
-            of exercises designed to discover problems and explore solutions
+            of exercises designed to discover problems and explore solutions.
           </CardBody>
         </Card>
         <Card>
           <CardTitle>Design</CardTitle>
           <CardBody>
             Prioritising your users' needs, we will work with your brand
-            identity to create the best design to connect you to your users
+            identity to create the best design to connect you to your users.
           </CardBody>
         </Card>
         <Card>
@@ -94,7 +99,7 @@ const OurApproach = () => (
             the Product Owner, we prioritise, build and user-test features.
           </CardBody>
         </Card>
-      </div>
+      </CardWrapper>
     </Wrapper>
   </div>
 )

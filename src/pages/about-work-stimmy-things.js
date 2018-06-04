@@ -20,12 +20,6 @@ import stimmythings_img1 from '../assets/images/inline_images/stimmythings_img1.
 import stimmythings_img2 from '../assets/images/inline_images/stimmythings_img2.png'
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
-const BannerImg = styled(BackgroundImg)`
-  width: 100vw;
-  height: 60vh;
-  max-width: 1440px;
-`
-
 const WorkContent = () => (
   <div className="ma0">
     <BannerImg src={stimmythings_header}>
