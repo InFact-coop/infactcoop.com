@@ -84,25 +84,24 @@ const OurWork = ({ history }) => {
           </Wrapper>
         )}
 
-        {currentPage !== '/about-work-bluecross' &&
-          !isHomePage && (
-            <Wrapper>
-              <Picture src={bluecross_card} />
-              <SectionCard>
-                <CardHeading>
-                  <CardTitle>Tech for Good</CardTitle>
-                </CardHeading>
-                <CardSubTitle uppercase>Blue Cross</CardSubTitle>
-                <SectionText>
-                  We created an app for conscientious owners to find a loving
-                  new home for their pet.
-                </SectionText>
-                <CardButtonWithLink link="/about-work-bluecross">
-                  Read more
-                </CardButtonWithLink>
-              </SectionCard>
-            </Wrapper>
-          )}
+        {currentPage !== '/about-work-bluecross' && (
+          <Wrapper>
+            <Picture src={bluecross_card} />
+            <SectionCard>
+              <CardHeading>
+                <CardTitle>Tech for Good</CardTitle>
+              </CardHeading>
+              <CardSubTitle uppercase>Blue Cross</CardSubTitle>
+              <SectionText>
+                We created an app for conscientious owners to find a loving new
+                home for their pet.
+              </SectionText>
+              <CardButtonWithLink link="/about-work-bluecross">
+                Read more
+              </CardButtonWithLink>
+            </SectionCard>
+          </Wrapper>
+        )}
 
         {currentPage !== '/about-work-cast' &&
           !isHomePage && (
