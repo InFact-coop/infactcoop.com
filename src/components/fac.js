@@ -17,7 +17,7 @@ import BackgroundImg from './background-img'
 
 import { BlueOverlay } from './overlay'
 
-import fac from '../assets/images/we_love_fac.png'
+import fac from '../assets/images/card_images/fac_card.png'
 
 const Wrapper = styled.div.attrs({
   className: 'relative-ns',
