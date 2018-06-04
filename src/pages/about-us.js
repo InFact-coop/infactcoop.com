@@ -9,22 +9,24 @@ import getToKnowUs from '../assets/images/get_to_know_us.png'
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const AboutUs = () => (
-  <Wrapper>
-    <Title>We are InFact</Title>
-    <ZigZag src={wigglyBottom} />
-    <Text>
-      Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
-      leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-    </Text>
-    <Text>
-      Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-      viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-      Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam
-      eget dui. Etiam rhoncus.
-    </Text>
+  <div>
+    <Wrapper>
+      <Title>We are InFact</Title>
+      <ZigZag src={wigglyBottom} />
+      <Text>
+        Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
+        leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+      </Text>
+      <Text>
+        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+        imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+        ultricies nisi. Nam eget dui. Etiam rhoncus.
+      </Text>
+    </Wrapper>
     <CardsWrapper>
       {AboutCard(
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkT67u_ff9g-DypfoRa47KEZemnj1MGNt3-GxA_zJjHDkV2Ze5',
+        'http://mrmrs.github.io/images/0006.jpg',
         'Noga Enbar',
         'Designer'
       )}
@@ -49,7 +51,7 @@ const AboutUs = () => (
         'Developer'
       )}
     </CardsWrapper>
-  </Wrapper>
+  </div>
 )
 
 const AboutWork = () => {

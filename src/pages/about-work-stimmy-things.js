@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import OurWork from '../components/our-work'
 import Header from '../containers/header-work'
@@ -7,28 +6,21 @@ import { SectionHeading, SectionTitle } from '../components/section'
 
 import {
   WorkWrapper,
-  WorkTitle,
   WorkImg,
+  BannerImg,
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
-  ZigZag,
 } from '../components/work-content'
 
 import { PurpleOverlay } from '../components/overlay'
-import BackgroundImg from '../components/background-img'
-import stimmyPic from '../assets/images/projects/stimmy_things_hero.svg'
-import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
-
-const BannerImg = styled(BackgroundImg)`
-  width: 100vw;
-  height: 60vh;
-  max-width: 1440px;
-`
+import stimmyAvatars from '../assets/images/projects/stimmy_things/stimmy_things_hero.svg'
+import stimmyPic1 from '../assets/images/projects/stimmy_things/stimmy_things_1.png'
+import stimmyPic2 from '../assets/images/projects/stimmy_things/stimmy_things_2.png'
 
 const WorkContent = () => (
   <div className="ma0">
-    <BannerImg src={stimmyPic}>
+    <BannerImg src={stimmyAvatars}>
       <PurpleOverlay />
     </BannerImg>
     <WorkWrapper>
@@ -51,7 +43,7 @@ const WorkContent = () => (
         input. Her idea of a "virtual self-soothe box" was so complete and
         compelling that we decided to bring it to reality for our app.
       </WorkDescription>
-      <WorkImg src={stimmyPic} />
+      <WorkImg src={stimmyPic1} />
       <SectionHeading>
         <SectionTitle>The Solution</SectionTitle>
       </SectionHeading>
@@ -75,7 +67,7 @@ const WorkContent = () => (
           </li>
         </ul>
       </WorkDescription>
-      <WorkImg src={stimmyPic} />
+      <WorkImg src={stimmyPic2} />
       <TestimonialText>
         InFact are the best! venenatis faucibus. Nullam quis ante. Etiam sit
         amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris

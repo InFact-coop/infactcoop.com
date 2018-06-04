@@ -23,7 +23,8 @@ const Card = styled.div.attrs({
 `
 
 const CardButton = styled.button.attrs({
-  className: 'font-3-ns font-4 sans-serif ttu b ph3 pv1 b--black bg-white',
+  className:
+    'bg-animate hover-white hover-bg-black font-3-ns font-4 sans-serif ttu b ph3 pv1 b--black bg-white',
 })`
   cursor: pointer;
 `
