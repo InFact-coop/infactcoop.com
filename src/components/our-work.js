@@ -16,7 +16,7 @@ import BackgroundImg from './background-img'
 
 import stimmy_card from '../assets/images/card_images/stimmythings_card.svg'
 import cast_card from '../assets/images/card_images/cast_card.png'
-import lwc_card from '../assets/images/card_images/lwc_card.png'
+import bluecross_card from '../assets/images/card_images/bluecross_card.png'
 import { PurpleOverlay } from './overlay'
 
 const Wrapper = styled.div.attrs({
@@ -84,31 +84,30 @@ const OurWork = ({ history }) => {
           </Wrapper>
         )}
 
-        {currentPage !== '/about-work-cast' && (
-          <Wrapper>
-            <Picture src={cast_card}>
-              <PurpleOverlay />
-            </Picture>
-            <SectionCard>
-              <CardHeading>
-                <CardTitle>Tech for Good</CardTitle>
-              </CardHeading>
-              <CardSubTitle uppercase>Blue Cross</CardSubTitle>
-              <SectionText>
-                We created an app for conscientious owners to find a loving new
-                home for their pet.
-              </SectionText>
-              <CardButtonWithLink link="/about-work-cast">
-                Read more
-              </CardButtonWithLink>
-            </SectionCard>
-          </Wrapper>
-        )}
-
         {currentPage !== '/about-work-bluecross' &&
           !isHomePage && (
             <Wrapper>
-              <Picture src={workshop}>
+              <Picture src={bluecross_card} />
+              <SectionCard>
+                <CardHeading>
+                  <CardTitle>Tech for Good</CardTitle>
+                </CardHeading>
+                <CardSubTitle uppercase>Blue Cross</CardSubTitle>
+                <SectionText>
+                  We created an app for conscientious owners to find a loving
+                  new home for their pet.
+                </SectionText>
+                <CardButtonWithLink link="/about-work-bluecross">
+                  Read more
+                </CardButtonWithLink>
+              </SectionCard>
+            </Wrapper>
+          )}
+
+        {currentPage !== '/about-work-cast' &&
+          !isHomePage && (
+            <Wrapper>
+              <Picture src={cast_card}>
                 <PurpleOverlay />
               </Picture>
               <SectionCard>
