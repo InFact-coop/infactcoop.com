@@ -7,12 +7,10 @@ import { SectionHeading, SectionTitle } from '../components/section'
 
 import {
   WorkWrapper,
-  WorkTitle,
   WorkImg,
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
-  ZigZag,
 } from '../components/work-content'
 
 import { PurpleOverlay } from '../components/overlay'
