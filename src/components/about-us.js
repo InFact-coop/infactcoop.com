@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { css } from 'styled-components'
 
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
-import BackgroundImg from './background-img'
 
 import { media } from '../styles/style_utils'
 

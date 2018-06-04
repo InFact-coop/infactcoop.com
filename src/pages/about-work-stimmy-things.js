@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import OurWork from '../components/our-work'
 import Header from '../containers/header-work'
@@ -8,6 +7,7 @@ import { SectionHeading, SectionTitle } from '../components/section'
 import {
   WorkWrapper,
   WorkImg,
+  BannerImg,
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
