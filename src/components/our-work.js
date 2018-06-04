@@ -14,8 +14,9 @@ import { Section, SectionTitle, SectionHeading, SectionButton } from './section'
 
 import BackgroundImg from './background-img'
 
-import stimmyThings from '../assets/images/stimmy_things_landing.svg'
-import workshop from '../assets/images/LWC_PIC.png'
+import stimmy_card from '../assets/images/card_images/stimmythings_card.svg'
+import cast_card from '../assets/images/card_images/cast_card.png'
+import bluecross_card from '../assets/images/card_images/bluecross_card.png'
 import { PurpleOverlay } from './overlay'
 
 const Wrapper = styled.div.attrs({
@@ -65,7 +66,7 @@ const OurWork = ({ history }) => {
       <div className="flex-ns flex-column flex-row-ns justify-between-ns">
         {currentPage !== '/about-work-stimmy-things' && (
           <Wrapper>
-            <Picture src={stimmyThings} />
+            <Picture src={stimmy_card} />
             <SectionCard>
               <CardHeading>
                 <CardTitle>Mental Health</CardTitle>
@@ -83,11 +84,9 @@ const OurWork = ({ history }) => {
           </Wrapper>
         )}
 
-        {currentPage !== '/about-work-cast' && (
+        {currentPage !== '/about-work-bluecross' && (
           <Wrapper>
-            <Picture src={workshop}>
-              <PurpleOverlay />
-            </Picture>
+            <Picture src={bluecross_card} />
             <SectionCard>
               <CardHeading>
                 <CardTitle>Tech for Good</CardTitle>
@@ -97,17 +96,17 @@ const OurWork = ({ history }) => {
                 We created an app for conscientious owners to find a loving new
                 home for their pet.
               </SectionText>
-              <CardButtonWithLink link="/about-work-cast">
+              <CardButtonWithLink link="/about-work-bluecross">
                 Read more
               </CardButtonWithLink>
             </SectionCard>
           </Wrapper>
         )}
 
-        {currentPage !== '/about-work-bluecross' &&
+        {currentPage !== '/about-work-cast' &&
           !isHomePage && (
             <Wrapper>
-              <Picture src={workshop}>
+              <Picture src={cast_card}>
                 <PurpleOverlay />
               </Picture>
               <SectionCard>

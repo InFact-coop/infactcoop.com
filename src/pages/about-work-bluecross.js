@@ -15,9 +15,9 @@ import {
 
 import { PurpleOverlay } from '../components/overlay'
 import BackgroundImg from '../components/background-img'
-import stimmyAvatars from '../assets/images/projects/stimmy_things/stimmy_things_hero.svg'
-import stimmyPic1 from '../assets/images/projects/stimmy_things/stimmy_things_1.png'
-import stimmyPic2 from '../assets/images/projects/stimmy_things/stimmy_things_2.png'
+import bluecross_header from '../assets/images/header_images/bluecross_header.png'
+import bluecross_img1 from '../assets/images/inline_images/bluecross_img1.png'
+import bluecross_img2 from '../assets/images/inline_images/bluecross_img2.png'
 
 const BannerImg = styled(BackgroundImg)`
   width: 100vw;
@@ -27,7 +27,7 @@ const BannerImg = styled(BackgroundImg)`
 
 const WorkContent = () => (
   <div className="ma0">
-    <BannerImg src={stimmyAvatars}>
+    <BannerImg src={bluecross_header}>
       <PurpleOverlay />
     </BannerImg>
     <WorkWrapper>
@@ -52,7 +52,7 @@ const WorkContent = () => (
         a focus on welfare that one would expect from an organisation like Blue
         Cross.
       </WorkDescription>
-      <WorkImg src={stimmyPic1} />
+      <WorkImg src={bluecross_img1} />
       <SectionHeading>
         <SectionTitle>The Solution</SectionTitle>
       </SectionHeading>
@@ -81,7 +81,7 @@ const WorkContent = () => (
           </li>
         </ul>
       </WorkDescription>
-      <WorkImg src={stimmyPic2} />
+      <WorkImg src={bluecross_img2} />
       <TestimonialText>
         InFact are the best! venenatis faucibus. Nullam quis ante. Etiam sit
         amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris

@@ -13,14 +13,11 @@ import {
   SubmitButton,
 } from '../components/contact-us'
 
-import lyingOnTheGrass from '../assets/images/we_love_fac.png'
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const ContactUs = () => (
   <div>
-    <HeaderLanding image={lyingOnTheGrass} overlay={YellowOverlay}>
-      We would love to meet you!
-    </HeaderLanding>
+    <HeaderLanding>We would love to meet you!</HeaderLanding>
     <Wrapper>
       <Title>Get in touch</Title>
       <ZigZag src={wigglyBottom} />
