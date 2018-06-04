@@ -7,7 +7,7 @@ const Wrapper = styled.div.attrs({
   max-width: 1201px;
 `
 const Title = styled.div.attrs({
-  className: 'font-1 ttu reglo black mb2 w-80-ns tc',
+  className: 'font-1 ttu reglo black mb3 w-80-ns tc',
 })``
 
 const Text = styled.p.attrs({
