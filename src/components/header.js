@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { backgroundImage } from '../styles/style_utils'
+import { backgroundImage, backgroundImageToggle } from '../styles/style_utils'
 import logo from '../assets/logos/infact_logo_white.svg'
 import logoGradient from '../assets/logos/infact_logo_gradient.svg'
-
+console.log('logoGradient', logoGradient)
 const SplashBase = styled.section.attrs({
   className: 'flex flex-column items-center items-start-ns justify-center-ns',
 })``
@@ -19,14 +19,24 @@ const Topline = styled.div.attrs({
   max-width: 1440px;
 `
 
-const Logo = styled.div.attrs({
+const LogoWhite = styled.div.attrs({
   className: 'w5-ns h4-ns w4 h3',
 })`
   background: ${backgroundImage(logo)};
+  transition: ${props =>
+    props.menuIsOpen === 'OPENED'
+      ? 'inherit'
+      : 'background 0.2s ease-out 0.5s'};
 `
-
-const LogoGradient = styled(Logo)`
-  background: ${backgroundImage(logoGradient)};
+const LogoGradient = styled.div.attrs({
+  className: 'w5-ns h4-ns w4 h3',
+})`
+  background: ${props =>
+    backgroundImageToggle(props.menuIsOpen === 'OPENED', logo, logoGradient)};
+  transition: ${props =>
+    props.menuIsOpen === 'OPENED'
+      ? 'inherit'
+      : 'background 0.2s ease-out 0.5s'};
 `
 
 const Tagline = styled.div.attrs({
@@ -59,7 +69,7 @@ const WorkHeading = ({ children }) => (
 export default {
   SplashWhite,
   Topline,
-  Logo,
+  LogoWhite,
   LogoGradient,
   Tagline,
   TaglineBlack,

@@ -1,9 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import { connect } from 'react-redux'
 
-import { Burger, Menu } from '../components/menu'
-import { Topline, Logo, Tagline } from '../components/header'
+import { Menu } from '../components/menu'
+import { Tagline } from '../components/header'
 import { SplashGradient } from '../components/splash'
 import { toggleMenu } from '../state/actions'
 
@@ -24,12 +23,6 @@ const Header = ({ menuIsOpen, toggleMenu, image, children, splash }) => {
   return (
     <Splash src={image}>
       <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
-      <Topline>
-        <Link to="/">
-          <Logo />
-        </Link>
-        <Burger menuIsOpen={menuIsOpen} onClick={toggleMenu} />
-      </Topline>
       <Tagline>{children}</Tagline>
     </Splash>
   )
