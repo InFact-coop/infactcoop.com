@@ -9,7 +9,7 @@ const media = {
     }
   `,
   m: (...args) => css`
-    @media screen and (min-width: 40em) and (max-width: 91em) {
+    @media screen and (min-width: 49em) and (max-width: 91em) {
       ${css(...args)};
     }
   `,

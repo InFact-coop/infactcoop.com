@@ -30,14 +30,15 @@ const CardsWrapper = styled.section.attrs({
 })``
 
 const CardWrapper = styled.article.attrs({
-  className: 'fl w-100 pt3-ns ph2-ns pb2-ns',
+  className: 'fl pt3-ns ph2-ns pb2-ns',
 })`
+  width: 100%;
   ${media.ns`
-width: 33.3%;
-`};
+    width: 50%;
+  `};
   ${media.m`
-width: 50%;
-`};
+    width: 33.3%;
+  `};
 `
 
 const ZigZag = styled.img.attrs({
