@@ -64,7 +64,7 @@ const OurWork = ({ history }) => {
       </SectionHeading>
 
       <div className="flex-ns flex-column flex-row-ns justify-between-ns">
-        {currentPage !== '/about-work-stimmy-things' && (
+        {currentPage !== '/our-work/stimmy-things' && (
           <Wrapper>
             <Picture src={stimmy_card} />
             <SectionCard>
@@ -77,14 +77,14 @@ const OurWork = ({ history }) => {
                 clinicians, we designed and built an app that helps young people
                 with ADHD to manage their symptoms.
               </SectionText>
-              <CardButtonWithLink link="/about-work-stimmy-things">
+              <CardButtonWithLink link="/our-work/stimmy-things">
                 Read more
               </CardButtonWithLink>
             </SectionCard>
           </Wrapper>
         )}
 
-        {currentPage !== '/about-work-bluecross' && (
+        {currentPage !== '/our-work/bluecross' && (
           <Wrapper>
             <Picture src={bluecross_card} />
             <SectionCard>
@@ -96,14 +96,14 @@ const OurWork = ({ history }) => {
                 We created an app for conscientious owners to find a loving new
                 home for their pet.
               </SectionText>
-              <CardButtonWithLink link="/about-work-bluecross">
+              <CardButtonWithLink link="/our-work/bluecross">
                 Read more
               </CardButtonWithLink>
             </SectionCard>
           </Wrapper>
         )}
 
-        {currentPage !== '/about-work-cast' &&
+        {currentPage !== '/our-work/cast' &&
           !isHomePage && (
             <Wrapper>
               <Picture src={cast_card}>
@@ -119,7 +119,7 @@ const OurWork = ({ history }) => {
                   non-profits in becoming leaders of their organisation’s
                   digital development.
                 </SectionText>
-                <CardButtonWithLink link="/about-work-cast">
+                <CardButtonWithLink link="/our-work/cast">
                   Read more
                 </CardButtonWithLink>
               </SectionCard>

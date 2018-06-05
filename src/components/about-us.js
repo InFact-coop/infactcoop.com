@@ -31,14 +31,15 @@ const CardsWrapper = styled.section.attrs({
 })``
 
 const CardWrapper = styled.article.attrs({
-  className: 'fl w-100 pt3-ns ph2-ns pb2-ns',
+  className: 'fl pt3-ns ph2-ns pb2-ns',
 })`
+  width: 100%;
   ${media.ns`
-width: 33.3%;
-`};
+    width: 50%;
+  `};
   ${media.m`
-width: 50%;
-`};
+    width: 33.3%;
+  `};
 `
 
 const ZigZag = styled.img.attrs({
@@ -50,11 +51,11 @@ const AboutCard = (src, name, job) => (
     <div className="aspect-ratio aspect-ratio--1x1 mb2">
       <CardImage src={src} />
     </div>
-    <a href="#0" className="ph2 ph0-ns pb3 link db">
+    <div className="ph2 ph0-ns pb3 link db">
       <CardName>{name}</CardName>
       <ZigZag src={wigglyBottom} />
       <CardJobTitle>{job}</CardJobTitle>
-    </a>
+    </div>
   </CardWrapper>
 )
 

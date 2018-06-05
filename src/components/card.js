@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'gatsby-link'
+
 import styled from 'styled-components'
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
@@ -30,9 +32,9 @@ const CardButton = styled.button.attrs({
 `
 
 const CardButtonWithLink = ({ children, link }) => (
-  <a className="" href={link}>
+  <Link to={link}>
     <CardButton>{children}</CardButton>
-  </a>
+  </Link>
 )
 const CardHeading = ({ children }) => (
   <div className="mb2-ns mb1">
