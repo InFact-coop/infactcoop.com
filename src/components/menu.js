@@ -57,6 +57,9 @@ const Splash = styled.nav.attrs({
 const MenuItem = styled.a.attrs({
   className: 'dib ttu heading-ns font-1 reglo link',
 })`
+  &:focus {
+    outline: 0;
+  }
   color: transparent;
   ${props => menuAnimationToggle(props.menuIsOpen)};
 
@@ -103,7 +106,7 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
         >
           Founders & Coders
         </MenuItem>
-        <MenuItem href="#" menuIsOpen={menuIsOpen}>
+        <MenuItem href="/contact-us" menuIsOpen={menuIsOpen}>
           Contact
         </MenuItem>
       </LinkContainer>
