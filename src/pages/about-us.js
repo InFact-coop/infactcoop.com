@@ -3,7 +3,13 @@ import React from 'react'
 import Header from '../containers/header'
 import { AboutCard, CardsWrapper } from '../components/about-us'
 import { Wrapper, ZigZag, Text, Title } from '../components/about-pages'
-import { BlueBackgroundSplash } from '../components/splash'
+import { YellowBackgroundSplash } from '../components/splash'
+
+import lucy from '../assets/images/team_images/lucy.jpg'
+import ivan from '../assets/images/team_images/ivan.jpg'
+import noga from '../assets/images/team_images/noga.jpg'
+import max from '../assets/images/team_images/max.jpg'
+import sophie from '../assets/images/team_images/sophie.jpg'
 
 import aboutus_header from '../assets/images/header_images/aboutus_header.jpg'
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
@@ -25,31 +31,11 @@ const AboutUs = () => (
       </Text>
     </Wrapper>
     <CardsWrapper>
-      {AboutCard(
-        'http://mrmrs.github.io/images/0006.jpg',
-        'Noga Enbar',
-        'Designer'
-      )}
-      {AboutCard(
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPea89TfLL9HAV1Lu6SwIsoaXrtbk3j0PyvxDGrIJI-8hyo-t3',
-        'Ivan Gonzalez',
-        'Lead Developer'
-      )}
-      {AboutCard(
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmlfqQ1yQ6WFA_r_HnGzn6wcCdxvS-nswvLqCSnCegOV2yd4DZ',
-        'Lucy King',
-        'Developer'
-      )}
-      {AboutCard(
-        'https://www.billboard.com/files/styles/article_main_image/public/media/MAX-press-photo-by-Mike-Zahar-2018-billboard-1548.jpg',
-        'Max Gerber',
-        'Developer'
-      )}
-      {AboutCard(
-        'https://pixel.nymag.com/imgs/daily/vulture/2017/12/05/05-sophie-feature-lede.w512.h600.2x.jpg',
-        'Sophie Levens',
-        'Developer'
-      )}
+      {AboutCard(noga, 'Noga Enbar', 'Designer')}
+      {AboutCard(ivan, 'Ivan Gonzalez', 'Lead Developer')}
+      {AboutCard(lucy, 'Lucy King', 'Developer')}
+      {AboutCard(max, 'Max Gerber', 'Developer')}
+      {AboutCard(sophie, 'Sophie Levens', 'Developer')}
     </CardsWrapper>
   </div>
 )
@@ -57,7 +43,7 @@ const AboutUs = () => (
 const AboutWork = () => {
   return (
     <div>
-      <Header image={aboutus_header} splash={BlueBackgroundSplash}>
+      <Header image={aboutus_header} splash={YellowBackgroundSplash}>
         Co-operatively driven design and development.
       </Header>
       <AboutUs />

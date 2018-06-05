@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Header from '../containers/header'
 import { Wrapper, ZigZag, Text, Title } from '../components/about-pages'
 import BackgroundImg from '../components/background-img'
-import { PurpleBackgroundSplash } from '../components/splash'
+import { YellowBackgroundSplash } from '../components/splash'
 
 import approach_header from '../assets/images/header_images/approach_header.jpg'
 import approach_img from '../assets/images/inline_images/approach_img.jpg'
@@ -37,7 +37,7 @@ const CardBody = styled.div.attrs({
 
 const OurApproach = () => (
   <div>
-    <Header image={approach_header} splash={PurpleBackgroundSplash}>
+    <Header image={approach_header} splash={YellowBackgroundSplash}>
       Putting users at the heart of the creative process
     </Header>
     <Wrapper>
