@@ -5,12 +5,12 @@ import {
   backgroundImageToggle,
   menuAnimationToggle,
 } from '../styles/style_utils'
-import { Topline, Logo } from './header'
+import { Topline, LogoWhite, LogoGradient } from './header'
 import burgerClosed from '../assets/icons/menu_white_close.svg'
 import burgerOpen from '../assets/icons/menu_white.svg'
 import burgerGradient from '../assets/icons/menu_gradient.svg'
 
-const Burger = styled.div.attrs({
+const BurgerWhite = styled.div.attrs({
   className: 'w3-ns h3-ns w2 h3 pointer burger',
 })`
   background: ${props =>
@@ -29,6 +29,10 @@ const BurgerGradient = styled.div.attrs({
       burgerOpen,
       burgerGradient
     )};
+  transition: ${props =>
+    props.menuIsOpen === 'OPENED'
+      ? 'inherit'
+      : 'background 0.2s ease-out 0.5s'};
 `
 const Splash = styled.nav.attrs({
   className: `nav w-100 z-1 fixed flex-column justify-center`,
@@ -50,6 +54,11 @@ const MenuItem = styled.a.attrs({
 })`
   color: transparent;
   ${props => menuAnimationToggle(props.menuIsOpen)};
+
+  &:hover {
+    transform: scale(1.1)
+    transition: transform 1s;
+  }
 `
 const LinkContainer = styled.div.attrs({
   className: `nav w-100 flex flex-column items-center justify-around pt3 pt0-ns`,
@@ -57,39 +66,43 @@ const LinkContainer = styled.div.attrs({
   height: 80vh;
 `
 
-const Menu = ({ menuIsOpen, toggleMenu }) => (
-  <Splash menuIsOpen={menuIsOpen}>
-    <Topline>
-      <a href="/">
-        <Logo />
-      </a>
-      <Burger menuIsOpen={menuIsOpen} onClick={toggleMenu} />
-    </Topline>
-    <LinkContainer>
-      <MenuItem menuIsOpen={menuIsOpen} href="/">
-        Home
-      </MenuItem>
-      <MenuItem menuIsOpen={menuIsOpen} href="/our-work">
-        Our Work
-      </MenuItem>
-      <MenuItem menuIsOpen={menuIsOpen} href="/our-approach">
-        Approach
-      </MenuItem>
-      <MenuItem menuIsOpen={menuIsOpen} href="/about-us">
-        About InFact
-      </MenuItem>
-      <MenuItem
-        menuIsOpen={menuIsOpen}
-        href="https://foundersandcoders.com/"
-        target="_blank"
-      >
-        Founders & Coders
-      </MenuItem>
-      <MenuItem href="#" menuIsOpen={menuIsOpen}>
-        Contact
-      </MenuItem>
-    </LinkContainer>
-  </Splash>
-)
+const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
+  const Burger = gradient ? BurgerGradient : BurgerWhite
+  const Logo = gradient && menuIsOpen !== 'OPENED' ? LogoGradient : LogoWhite
 
-export default { Burger, BurgerGradient, Menu }
+  return (
+    <Splash menuIsOpen={menuIsOpen}>
+      <Topline>
+        <a href="/">
+          <Logo menuIsOpen={menuIsOpen} />
+        </a>
+        <Burger menuIsOpen={menuIsOpen} onClick={toggleMenu} />
+      </Topline>
+      <LinkContainer>
+        <MenuItem menuIsOpen={menuIsOpen} href="/">
+          Home
+        </MenuItem>
+        <MenuItem menuIsOpen={menuIsOpen} href="/our-work">
+          Our Work
+        </MenuItem>
+        <MenuItem menuIsOpen={menuIsOpen} href="/our-approach">
+          Approach
+        </MenuItem>
+        <MenuItem menuIsOpen={menuIsOpen} href="/about-us">
+          About InFact
+        </MenuItem>
+        <MenuItem
+          menuIsOpen={menuIsOpen}
+          href="https://foundersandcoders.com/"
+          target="_blank"
+        >
+          Founders & Coders
+        </MenuItem>
+        <MenuItem href="#" menuIsOpen={menuIsOpen}>
+          Contact
+        </MenuItem>
+      </LinkContainer>
+    </Splash>
+  )
+}
+export default { BurgerWhite, BurgerGradient, Menu }

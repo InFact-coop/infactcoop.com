@@ -39,14 +39,23 @@ const Topline = styled.div.attrs({
   max-width: 1440px;
 `
 
-const Logo = styled.div.attrs({
+const LogoWhite = styled.div.attrs({
   className: 'w5-ns h4-ns w4 h3',
 })`
   background: ${backgroundImage(logo)};
+  transition: ${props =>
+    props.menuIsOpen === 'OPENED'
+      ? 'inherit'
+      : 'background 0.2s ease-out 0.5s'};
 `
-
-const LogoGradient = styled(Logo)`
+const LogoGradient = styled.div.attrs({
+  className: 'w5-ns h4-ns w4 h3',
+})`
   background: ${backgroundImage(logoGradient)};
+  transition: ${props =>
+    props.menuIsOpen === 'OPENED'
+      ? 'inherit'
+      : 'background 0.2s ease-out 0.5s'};
 `
 
 const Tagline = styled.div.attrs({
@@ -84,7 +93,7 @@ export default {
   SplashGradient,
   SplashWhite,
   Topline,
-  Logo,
+  LogoWhite,
   LogoGradient,
   Tagline,
   TaglineBlack,

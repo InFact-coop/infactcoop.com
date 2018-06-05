@@ -3,11 +3,9 @@ import { connect } from 'react-redux'
 
 import { toggleMenu } from '../state/actions'
 
-import { BurgerGradient, Menu } from '../components/menu'
+import { Menu } from '../components/menu'
 import {
   SplashWhite,
-  Topline,
-  LogoGradient,
   TaglineBlack,
   SubTaglineBlack,
   TopicLine,
@@ -32,13 +30,7 @@ const mapDispatchToProps = dispatch => {
 const Header = ({ menuIsOpen, toggleMenu, topicLine, tagLine, subTagLine }) => {
   return (
     <SplashWhite>
-      <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
-      <Topline>
-        <a href="/">
-          <LogoGradient />
-        </a>
-        <BurgerGradient menuIsOpen={menuIsOpen} onClick={toggleMenu} />
-      </Topline>
+      <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} gradient />
       <WorkHeading>
         <TopicLine>{topicLine}</TopicLine>
         <ZigZag src={wigglyBottom} alt="wiggle" />
