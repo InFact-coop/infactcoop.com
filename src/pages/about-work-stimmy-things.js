@@ -13,18 +13,13 @@ import {
   TestimonialText,
 } from '../components/work-content'
 
-import { PurpleOverlay } from '../components/splash'
-import BackgroundImg from '../components/background-img'
 import stimmythings_header from '../assets/images/header_images/stimmythings_header.svg'
 import stimmythings_img1 from '../assets/images/inline_images/stimmythings_img1.png'
 import stimmythings_img2 from '../assets/images/inline_images/stimmythings_img2.png'
-import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const WorkContent = () => (
   <div className="ma0">
-    <BannerImg src={stimmythings_header}>
-      <PurpleOverlay />
-    </BannerImg>
+    <BannerImg src={stimmythings_header} />
     <WorkWrapper>
       <SectionHeading>
         <SectionTitle>The Challenge</SectionTitle>

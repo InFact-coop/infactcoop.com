@@ -13,9 +13,8 @@ import {
   TestimonialText,
 } from '../components/work-content'
 
-import { PurpleOverlay } from '../components/splash'
 import BackgroundImg from '../components/background-img'
-import cast_header from '../assets/images/other/LWC_PIC.png'
+import cast_header from '../assets/images/header_images/CAST_header.png'
 import cast_img1 from '../assets/images/inline_images/cast_img1.png'
 import cast_img2 from '../assets/images/inline_images/cast_img2.png'
 
@@ -27,9 +26,7 @@ const BannerImg = styled(BackgroundImg)`
 
 const WorkContent = () => (
   <div>
-    <BannerImg src={cast_header}>
-      <PurpleOverlay />
-    </BannerImg>
+    <BannerImg src={cast_header} />
     <WorkWrapper>
       <SectionHeading>
         <SectionTitle>The Challenge</SectionTitle>

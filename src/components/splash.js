@@ -42,10 +42,10 @@ const YellowBackgroundSplash = styled(SplashBase)`
 
   ${({ src }) =>
     css`
-      background-image: radial-gradient(
-          circle,
-          rgba(22, 214, 217, 0.2) 0%,
-          rgba(150, 204, 41, 0.2) 100%
+      background-image: linear-gradient(
+          90deg,
+          rgba(22, 214, 217, 0.27) 0%,
+          rgba(150, 204, 41, 0.27) 100%
         ),
         url(${src});
     `};
