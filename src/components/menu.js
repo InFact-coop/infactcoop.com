@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import {
@@ -60,9 +61,9 @@ const LinkContainer = styled.div.attrs({
 const Menu = ({ menuIsOpen, toggleMenu }) => (
   <Splash menuIsOpen={menuIsOpen}>
     <Topline>
-      <a href="/">
+      <Link to="/">
         <Logo />
-      </a>
+      </Link>
       <Burger menuIsOpen={menuIsOpen} onClick={toggleMenu} />
     </Topline>
     <LinkContainer>

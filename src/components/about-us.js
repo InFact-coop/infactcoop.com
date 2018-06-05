@@ -49,11 +49,11 @@ const AboutCard = (src, name, job) => (
     <div className="aspect-ratio aspect-ratio--1x1 mb2">
       <CardImage src={src} />
     </div>
-    <a href="#0" className="ph2 ph0-ns pb3 link db">
+    <div className="ph2 ph0-ns pb3 link db">
       <CardName>{name}</CardName>
       <ZigZag src={wigglyBottom} />
       <CardJobTitle>{job}</CardJobTitle>
-    </a>
+    </div>
   </CardWrapper>
 )
 

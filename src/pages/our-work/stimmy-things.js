@@ -1,8 +1,8 @@
 import React from 'react'
 
-import OurWork from '../components/our-work'
-import Header from '../containers/header-work'
-import { SectionHeading, SectionTitle } from '../components/section'
+import OurWork from '../../components/our-work'
+import Header from '../../containers/header-work'
+import { SectionHeading, SectionTitle } from '../../components/section'
 
 import {
   WorkWrapper,
@@ -11,11 +11,11 @@ import {
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
-} from '../components/work-content'
+} from '../../components/work-content'
 
-import stimmythings_header from '../assets/images/header_images/stimmythings_header.svg'
-import stimmythings_img1 from '../assets/images/inline_images/stimmythings_img1.png'
-import stimmythings_img2 from '../assets/images/inline_images/stimmythings_img2.png'
+import stimmythings_header from '../../assets/images/header_images/stimmythings_header.svg'
+import stimmythings_img1 from '../../assets/images/inline_images/stimmythings_img1.png'
+import stimmythings_img2 from '../../assets/images/inline_images/stimmythings_img2.png'
 
 const WorkContent = () => (
   <div className="ma0">

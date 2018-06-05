@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import OurWork from '../components/our-work'
-import Header from '../containers/header-work'
-import { SectionHeading, SectionTitle } from '../components/section'
+import OurWork from '../../components/our-work'
+import Header from '../../containers/header-work'
+import { SectionHeading, SectionTitle } from '../../components/section'
 
 import {
   WorkWrapper,
@@ -11,13 +11,13 @@ import {
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
-} from '../components/work-content'
+} from '../../components/work-content'
 
-import { PurpleOverlay } from '../components/splash'
-import BackgroundImg from '../components/background-img'
-import bluecross_header from '../assets/images/header_images/bluecross_header.png'
-import bluecross_img1 from '../assets/images/inline_images/bluecross_img1.png'
-import bluecross_img2 from '../assets/images/inline_images/bluecross_img2.png'
+import { PurpleOverlay } from '../../components/splash'
+import BackgroundImg from '../../components/background-img'
+import bluecross_header from '../../assets/images/header_images/bluecross_header.png'
+import bluecross_img1 from '../../assets/images/inline_images/bluecross_img1.png'
+import bluecross_img2 from '../../assets/images/inline_images/bluecross_img2.png'
 
 const BannerImg = styled(BackgroundImg)`
   width: 100vw;

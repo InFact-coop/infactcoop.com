@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { SectionHeading, SectionTitle } from '../components/section'
-import OurWork from '../components/our-work'
-import Header from '../containers/header-work'
+import { SectionHeading, SectionTitle } from '../../components/section'
+import OurWork from '../../components/our-work'
+import Header from '../../containers/header-work'
 
 import {
   WorkWrapper,
@@ -11,12 +11,12 @@ import {
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
-} from '../components/work-content'
+} from '../../components/work-content'
 
-import BackgroundImg from '../components/background-img'
-import cast_header from '../assets/images/header_images/CAST_header.png'
-import cast_img1 from '../assets/images/inline_images/cast_img1.png'
-import cast_img2 from '../assets/images/inline_images/cast_img2.png'
+import BackgroundImg from '../../components/background-img'
+import cast_header from '../../assets/images/header_images/CAST_header.png'
+import cast_img1 from '../../assets/images/inline_images/cast_img1.png'
+import cast_img2 from '../../assets/images/inline_images/cast_img2.png'
 
 const BannerImg = styled(BackgroundImg)`
   width: 100vw;
