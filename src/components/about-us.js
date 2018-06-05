@@ -15,6 +15,7 @@ const CardImage = styled.img.attrs({
 })`
   ${props => {
     return css`
+      z-index: 0;
       background-image: url ${props.src};
       background-size: cover !important;
     `

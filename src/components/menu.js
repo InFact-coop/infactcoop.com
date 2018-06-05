@@ -40,8 +40,9 @@ const BurgerGradient = styled.div.attrs({
       : 'background 0.2s ease-out 0.5s'};
 `
 const Splash = styled.nav.attrs({
-  className: `nav w-100 z-1 absolute top-0 flex-column justify-center`,
+  className: `nav w-100 z-1 top-0 flex-column justify-center`,
 })`
+  position: ${props => (props.menuIsOpen === 'OPENED' ? 'fixed' : 'absolute')};
   max-width: 1440px;
   height: ${props => (props.menuIsOpen === 'OPENED' ? '100vh' : '0')};
   transition: 0.8s;
