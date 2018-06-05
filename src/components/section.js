@@ -29,16 +29,35 @@ const SectionButton = styled.button.attrs({
     rgba(22, 214, 217, 0.8) 100%
   );
   border-image-slice: 1;
-
   background: linear-gradient(
     to right,
     rgba(0, 156, 243, 0.8) 0%,
     rgba(22, 214, 217, 0.8) 100%
   );
+  z-index: 100;
+  background-size: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+
+  &:before {
+    background-image: linear-gradient(#fff, #fff);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity 0.15s ease;
+  }
 
   &:hover {
-    background: white;
-  }
+    &:before {
+      opacity: 1;
+    }
 `
 
 const Section = ({ children, bg_color }) => (
