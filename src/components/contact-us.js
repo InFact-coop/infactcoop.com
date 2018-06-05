@@ -14,7 +14,7 @@ const Input = styled.input.attrs({
   className: 'mt1 ba w-100 pa2',
 })``
 
-const SubmitButton = styled.input.attrs({
+const SubmitButton = styled.button.attrs({
   className: 'w-40-ns w-60 b hover-blue white font-4 sans-serif pv2 mt2',
 })`
   border: 1px solid transparent;
@@ -24,16 +24,38 @@ const SubmitButton = styled.input.attrs({
     rgba(22, 214, 217, 0.8) 100%
   );
   border-image-slice: 1;
-
-  background: linear-gradient(
+  background-image: linear-gradient(
     to right,
     rgba(0, 156, 243, 0.8) 0%,
     rgba(22, 214, 217, 0.8) 100%
   );
+  z-index: 100;
+  background-size: 100%;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+
+
+
+  &:before {
+    background-image: linear-gradient(#fff, #fff);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity 0.15s ease;
+  }
 
   &:hover {
-    background: white;
-  }
+    &:before {
+      opacity: 1;
+    }
 `
 
 const HelpText = styled.textarea.attrs({

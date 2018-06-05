@@ -40,7 +40,9 @@ const ContactUs = () => (
         </Label>
         <input type="hidden" name="_subject" value="Website Query" />
         <input type="hidden" name="_next" value="http://localhost:8000/" />
-        <SubmitButton type="submit" value="SUBMIT" />
+        <SubmitButton type="submit" value="SUBMIT">
+          SUBMIT
+        </SubmitButton>
       </Form>
     </Wrapper>
   </div>
