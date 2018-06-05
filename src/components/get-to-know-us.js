@@ -15,7 +15,7 @@ import { Section, SectionTitle, SectionHeading } from './section'
 
 import BackgroundImg from './background-img'
 
-import { PurpleOverlay } from './overlay'
+import { PurpleOverlay } from './splash'
 
 import aboutus_card from '../assets/images/card_images/aboutus_card.jpg'
 

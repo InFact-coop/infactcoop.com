@@ -13,7 +13,7 @@ import {
   TestimonialText,
 } from '../components/work-content'
 
-import { PurpleOverlay } from '../components/overlay'
+import { PurpleOverlay } from '../components/splash'
 import BackgroundImg from '../components/background-img'
 import bluecross_header from '../assets/images/header_images/bluecross_header.png'
 import bluecross_img1 from '../assets/images/inline_images/bluecross_img1.png'

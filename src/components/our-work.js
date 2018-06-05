@@ -17,7 +17,7 @@ import BackgroundImg from './background-img'
 import stimmy_card from '../assets/images/card_images/stimmythings_card.svg'
 import cast_card from '../assets/images/card_images/cast_card.png'
 import bluecross_card from '../assets/images/card_images/bluecross_card.png'
-import { PurpleOverlay } from './overlay'
+import { PurpleOverlay } from './splash'
 
 const Wrapper = styled.div.attrs({
   className: 'relative flex-ns justify-center',

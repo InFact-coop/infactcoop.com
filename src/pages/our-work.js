@@ -1,17 +1,17 @@
 import React from 'react'
 
-import HeaderLanding from '../containers/header'
-import { BlueOverlay } from '../components/overlay'
+import Header from '../containers/header'
 
 import ourwork_header from '../assets/images/header_images/ourwork_header.png'
 import OurWork from '../components/our-work'
+import { SplashImg } from '../components/splash'
 
 const WorkGallery = ({ history }) => {
   return (
     <div>
-      <HeaderLanding image={ourwork_header} overlay={BlueOverlay}>
-        Working with great people on inspiring projects.
-      </HeaderLanding>
+      <Header image={ourwork_header} splash={SplashImg}>
+        Working with great people on inspiring projects
+      </Header>
       <OurWork history={history} />
     </div>
   )

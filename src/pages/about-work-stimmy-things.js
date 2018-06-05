@@ -13,7 +13,7 @@ import {
   TestimonialText,
 } from '../components/work-content'
 
-import { PurpleOverlay } from '../components/overlay'
+import { PurpleOverlay } from '../components/splash'
 import BackgroundImg from '../components/background-img'
 import stimmythings_header from '../assets/images/header_images/stimmythings_header.svg'
 import stimmythings_img1 from '../assets/images/inline_images/stimmythings_img1.png'

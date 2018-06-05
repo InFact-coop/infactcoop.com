@@ -13,7 +13,7 @@ import {
   TestimonialText,
 } from '../components/work-content'
 
-import { PurpleOverlay } from '../components/overlay'
+import { PurpleOverlay } from '../components/splash'
 import BackgroundImg from '../components/background-img'
 import cast_header from '../assets/images/other/LWC_PIC.png'
 import cast_img1 from '../assets/images/inline_images/cast_img1.png'

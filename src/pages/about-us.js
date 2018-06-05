@@ -1,9 +1,9 @@
 import React from 'react'
 
-import HeaderLanding from '../containers/header'
+import Header from '../containers/header'
 import { AboutCard, CardsWrapper } from '../components/about-us'
 import { Wrapper, ZigZag, Text, Title } from '../components/about-pages'
-import { BlueOverlay } from '../components/overlay'
+import { BlueBackgroundSplash } from '../components/splash'
 
 import aboutus_header from '../assets/images/header_images/aboutus_header.jpg'
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
@@ -57,9 +57,9 @@ const AboutUs = () => (
 const AboutWork = () => {
   return (
     <div>
-      <HeaderLanding image={aboutus_header} overlay={BlueOverlay}>
+      <Header image={aboutus_header} splash={BlueBackgroundSplash}>
         Co-operatively driven design and development.
-      </HeaderLanding>
+      </Header>
       <AboutUs />
     </div>
   )
