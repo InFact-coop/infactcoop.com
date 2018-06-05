@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import OurWork from '../components/our-work'
 import Header from '../containers/header-work'
@@ -7,28 +6,23 @@ import { SectionHeading, SectionTitle } from '../components/section'
 
 import {
   WorkWrapper,
-  WorkTitle,
   WorkImg,
+  BannerImg,
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
-  ZigZag,
 } from '../components/work-content'
 
-import { PurpleOverlay } from '../components/overlay'
+import { PurpleOverlay } from '../components/splash'
 import BackgroundImg from '../components/background-img'
-import stimmyPic from '../assets/images/projects/stimmy_things_hero.svg'
+import stimmythings_header from '../assets/images/header_images/stimmythings_header.svg'
+import stimmythings_img1 from '../assets/images/inline_images/stimmythings_img1.png'
+import stimmythings_img2 from '../assets/images/inline_images/stimmythings_img2.png'
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
-
-const BannerImg = styled(BackgroundImg)`
-  width: 100vw;
-  height: 60vh;
-  max-width: 1440px;
-`
 
 const WorkContent = () => (
   <div className="ma0">
-    <BannerImg src={stimmyPic}>
+    <BannerImg src={stimmythings_header}>
       <PurpleOverlay />
     </BannerImg>
     <WorkWrapper>
@@ -51,7 +45,7 @@ const WorkContent = () => (
         input. Her idea of a "virtual self-soothe box" was so complete and
         compelling that we decided to bring it to reality for our app.
       </WorkDescription>
-      <WorkImg src={stimmyPic} />
+      <WorkImg src={stimmythings_img1} />
       <SectionHeading>
         <SectionTitle>The Solution</SectionTitle>
       </SectionHeading>
@@ -75,7 +69,7 @@ const WorkContent = () => (
           </li>
         </ul>
       </WorkDescription>
-      <WorkImg src={stimmyPic} />
+      <WorkImg src={stimmythings_img2} />
       <TestimonialText>
         InFact are the best! venenatis faucibus. Nullam quis ante. Etiam sit
         amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris

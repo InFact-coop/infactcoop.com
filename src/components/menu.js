@@ -19,6 +19,10 @@ const BurgerWhite = styled.div.attrs({
       burgerOpen,
       burgerClosed
     )};
+  transition: ${props =>
+    props.menuIsOpen === 'OPENED'
+      ? 'inherit'
+      : 'background 0.2s ease-out 0.5s'};
 `
 const BurgerGradient = styled.div.attrs({
   className: 'w3-ns h3-ns w2 h3 pointer burger',
@@ -35,7 +39,7 @@ const BurgerGradient = styled.div.attrs({
       : 'background 0.2s ease-out 0.5s'};
 `
 const Splash = styled.nav.attrs({
-  className: `nav w-100 z-1 fixed flex-column justify-center`,
+  className: `nav w-100 z-1 absolute top-0 flex-column justify-center`,
 })`
   max-width: 1440px;
   height: ${props => (props.menuIsOpen === 'OPENED' ? '100vh' : '0')};
@@ -68,7 +72,7 @@ const LinkContainer = styled.div.attrs({
 
 const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
   const Burger = gradient ? BurgerGradient : BurgerWhite
-  const Logo = gradient && menuIsOpen !== 'OPENED' ? LogoGradient : LogoWhite
+  const Logo = gradient ? LogoGradient : LogoWhite
 
   return (
     <Splash menuIsOpen={menuIsOpen}>

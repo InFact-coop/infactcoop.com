@@ -5,8 +5,8 @@
 */
 
 @custom-media --breakpoint-not-small screen and (min-width: 40em);
-@custom-media --breakpoint-medium screen and (min-width: 40em) and (max-width: 60em);
-@custom-media --breakpoint-large screen and (min-width: 60em);
+@custom-media --breakpoint-medium screen and (min-width: 40em) and (max-width: 90em);
+@custom-media --breakpoint-large screen and (min-width: 90em);
 
 :root {
   --heading: 'Reglo', -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
@@ -107,6 +107,7 @@
   --mid-gray: #f1f0ee;
   --white: #fff;
   --black: #231f20;
+  --light-green: #50cfcf;
 
   --light-silver: #aaa;
   --moon-gray: #ccc;
@@ -159,7 +160,6 @@
   --light-pink: #ffa3d7;
   --dark-green: #137752;
   --green: #19a974;
-  --light-green: #9eebcf;
   --navy: #001b44;
   --dark-blue: #00449e;
   --blue: #357edd;

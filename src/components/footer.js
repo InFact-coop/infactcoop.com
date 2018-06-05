@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { media, backgroundImage } from '../styles/style_utils'
-import logo from '../assets/logos/infact_logo_white.svg'
 import { SectionTitle } from './section'
+
 import MediumIcon from '../assets/icons/medium.svg'
 import GithubIcon from '../assets/icons/github.svg'
 import LinkedInIcon from '../assets/icons/linkedin.svg'
+import logo from '../assets/logos/infact_logo_white.svg'
+import airplane from '../assets/icons/airplace_icn.svg'
 
 const Title = styled(SectionTitle).attrs({
   className: 'white mb2 fw6',
@@ -14,14 +16,23 @@ const Title = styled(SectionTitle).attrs({
 const Splash = styled.section.attrs({
   className: 'flex pt5-ns pb7-ns justify-center justify-start-l',
 })`
+  background: linear-gradient(
+    225deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(50, 45, 55, 1) 100%
+  );
   ${media.ns`
-    height: 40vh;
-  `} background: linear-gradient(225deg, #000000 0%, #322d37 100%);
+    height: 45vh;
+  `};
 `
-const EmailSplash = styled(Splash).attrs({
-  className: 'flex-column o-70',
+const EmailSplash = styled.section.attrs({
+  className: 'flex-column flex pt5-ns pb5-ns justify-center justify-start-l',
 })`
-  background: linear-gradient(225deg, #000000 0%, #322d37 100%);
+  background: linear-gradient(
+    225deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(50, 45, 55, 0.7) 100%
+  );
 `
 const EmailTopline = styled.p.attrs({
   className: 'ttu tc reglo font-3-ns font-4 white mb2 mt0-ns mt2',
@@ -30,10 +41,6 @@ const EmailTopline = styled.p.attrs({
 const EmailSecondLine = styled.p.attrs({
   className: 'ttu tc reglo font-1-ns font-2 white mb3',
 })``
-
-const EmailBlue = styled(EmailSecondLine)`
-  color: #50cfcf;
-`
 
 const Topline = styled.div.attrs({
   className:
@@ -81,7 +88,10 @@ const Footer = () => (
     <EmailSplash>
       <EmailTopline>Ready to collaborate?</EmailTopline>
       <EmailSecondLine>We would love to hear from you</EmailSecondLine>
-      <EmailBlue>hello@infactcoop.com</EmailBlue>
+      <EmailSecondLine className="light-green">
+        hello@infactcoop.com
+      </EmailSecondLine>
+      <img className="mt2" src={airplane} alt="airplane" />
     </EmailSplash>
     <Splash>
       <Topline>
@@ -100,16 +110,16 @@ const Footer = () => (
           We LOVE meeting new people
           <ContactWrapper>
             <ContactIcon
-              imgUrl={MediumIcon}
-              href="https://medium.com/infactdigitalcoop"
-              target="_blank"
-            />
-            <ContactIcon
               imgUrl={GithubIcon}
               href="https://github.com/infact-coop"
               target="_blank"
             />
             <ContactIcon imgUrl={LinkedInIcon} />
+            <ContactIcon
+              imgUrl={MediumIcon}
+              href="https://medium.com/infactdigitalcoop"
+              target="_blank"
+            />
           </ContactWrapper>
         </FooterSection>
       </Topline>

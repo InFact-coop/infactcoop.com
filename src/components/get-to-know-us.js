@@ -15,9 +15,9 @@ import { Section, SectionTitle, SectionHeading } from './section'
 
 import BackgroundImg from './background-img'
 
-import { PurpleOverlay } from './overlay'
+import { PurpleOverlay } from './splash'
 
-import picOfUs from '../assets/images/get_to_know_us.png'
+import aboutus_card from '../assets/images/card_images/aboutus_card.jpg'
 
 const SectionCard = styled(Card).attrs({
   className: 'absolute-ns top-0-ns right-0-ns',
@@ -57,7 +57,7 @@ const GetToKnowUs = () => (
     </SectionHeading>
 
     <Wrapper>
-      <Picture src={picOfUs}>
+      <Picture src={aboutus_card}>
         <PurpleOverlay />
       </Picture>
       <SectionCard>

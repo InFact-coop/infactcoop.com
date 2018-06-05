@@ -13,19 +13,21 @@ import {
   TestimonialText,
 } from '../components/work-content'
 
-import { PurpleOverlay } from '../components/overlay'
+import { PurpleOverlay } from '../components/splash'
 import BackgroundImg from '../components/background-img'
-import workshop from '../assets/images/LWC_PIC.png'
+import cast_header from '../assets/images/other/LWC_PIC.png'
+import cast_img1 from '../assets/images/inline_images/cast_img1.png'
+import cast_img2 from '../assets/images/inline_images/cast_img2.png'
 
 const BannerImg = styled(BackgroundImg)`
   width: 100vw;
-  height: 60vh;
+  height: 85vh;
   max-width: 1440px;
 `
 
 const WorkContent = () => (
   <div>
-    <BannerImg src={workshop}>
+    <BannerImg src={cast_header}>
       <PurpleOverlay />
     </BannerImg>
     <WorkWrapper>
@@ -48,7 +50,7 @@ const WorkContent = () => (
         of tech and digital innovation. This enables them to become leaders of
         their organisation’s – and the sector’s – digital development.
       </WorkDescription>
-      <WorkImg src={workshop} />
+      <WorkImg src={cast_img1} />
       <SectionHeading>
         <SectionTitle>Our Involvement</SectionTitle>
       </SectionHeading>
@@ -92,7 +94,7 @@ const WorkContent = () => (
         such as LCN and Bluecross, to take the prototypes forward, and transform
         them into fully working products ready for release into the world.
       </WorkDescription>
-      <WorkImg src={workshop} />
+      <WorkImg src={cast_img2} />
       <TestimonialText>
         InFact are the best! venenatis faucibus. Nullam quis ante. Etiam sit
         amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
@@ -107,7 +109,7 @@ const WorkContent = () => (
 )
 
 const AboutWork = ({ history }) => {
-  const topicLine = 'non-profits'
+  const topicLine = 'partnerships'
   const tagLine = 'CAST Digital Fellowship'
   const subTagLine =
     'Empowering non-profits to achieve positive change through technology.'
