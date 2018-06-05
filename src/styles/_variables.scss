@@ -5,8 +5,8 @@
 */
 
 @custom-media --breakpoint-not-small screen and (min-width: 40em);
-@custom-media --breakpoint-medium screen and (min-width: 40em) and (max-width: 90em);
-@custom-media --breakpoint-large screen and (min-width: 90em);
+@custom-media --breakpoint-medium screen and (min-width: 49em) and (max-width: 91em);
+@custom-media --breakpoint-large screen and (min-width: 91em);
 
 :root {
   --heading: 'Reglo', -apple-system, BlinkMacSystemFont, 'avenir next', avenir,

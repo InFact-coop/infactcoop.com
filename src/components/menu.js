@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import {
@@ -57,6 +58,9 @@ const Splash = styled.nav.attrs({
 const MenuItem = styled.a.attrs({
   className: 'dib ttu heading-ns font-1 reglo link',
 })`
+  &:focus {
+    outline: 0;
+  }
   color: transparent;
   ${props => menuAnimationToggle(props.menuIsOpen)};
 
@@ -78,9 +82,9 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
   return (
     <Splash menuIsOpen={menuIsOpen}>
       <Topline>
-        <a href="/">
+        <Link to="/">
           <Logo menuIsOpen={menuIsOpen} />
-        </a>
+        </Link>
         <Burger menuIsOpen={menuIsOpen} onClick={toggleMenu} />
       </Topline>
       <LinkContainer>
@@ -103,7 +107,7 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
         >
           Founders & Coders
         </MenuItem>
-        <MenuItem href="#" menuIsOpen={menuIsOpen}>
+        <MenuItem href="/contact-us" menuIsOpen={menuIsOpen}>
           Contact
         </MenuItem>
       </LinkContainer>
