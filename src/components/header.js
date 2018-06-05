@@ -1,6 +1,6 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
-import { media, backgroundImage } from '../styles/style_utils'
+import styled from 'styled-components'
+import { backgroundImage } from '../styles/style_utils'
 import logo from '../assets/logos/infact_logo_white.svg'
 import logoGradient from '../assets/logos/infact_logo_gradient.svg'
 
@@ -8,28 +8,8 @@ const SplashBase = styled.section.attrs({
   className: 'flex flex-column items-center items-start-ns justify-center-ns',
 })``
 
-const SplashGradient = SplashBase.extend`
-  height: 90vh;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 156, 243, 0.8) 0%,
-    rgba(22, 214, 217, 0.8) 100%
-  );
-`
 const SplashWhite = SplashBase.extend`
   background: white;
-`
-
-const SplashImg = SplashBase.extend`
-  height: 90vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  ${({ src }) =>
-    css`
-      background-image: url(${src});
-    `};
 `
 
 const Topline = styled.div.attrs({
@@ -50,16 +30,9 @@ const LogoGradient = styled(Logo)`
 `
 
 const Tagline = styled.div.attrs({
-  className: 'heading-ns font-1 ttu reglo white pl7-ns pl0 tl-ns tc',
-})`
-  width: 90%;
-  ${media.m`
-    width: 50%;
-  `};
-  ${media.l`
-    width: 37%;
-  `};
-`
+  className:
+    'heading-ns font-1 ttu w-90 w-50-ns reglo white pl7-ns pl0 tl-ns tc',
+})``
 
 const ZigZag = styled.img.attrs({
   className: 'mb1',
@@ -84,7 +57,6 @@ const WorkHeading = ({ children }) => (
 )
 
 export default {
-  SplashGradient,
   SplashWhite,
   Topline,
   Logo,
@@ -95,5 +67,5 @@ export default {
   TopicLine,
   WorkHeading,
   ZigZag,
-  SplashImg,
+  SplashBase,
 }

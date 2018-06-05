@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import HeaderLanding from '../containers/header'
-import { YellowOverlay } from '../components/overlay'
+import { YellowOverlay } from '../components/splash'
 import { Wrapper, ZigZag, Title } from '../components/about-pages'
 import {
   Form,

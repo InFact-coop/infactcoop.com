@@ -15,7 +15,7 @@ import { Section, SectionTitle, SectionHeading } from './section'
 
 import BackgroundImg from './background-img'
 
-import { BlueOverlay } from './overlay'
+import { BlueOverlay } from './splash'
 
 import fac from '../assets/images/card_images/fac_card.png'
 

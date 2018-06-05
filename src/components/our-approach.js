@@ -10,12 +10,11 @@ import {
   CardButtonWithLink,
   CardHeading,
 } from './card'
-
 import { Section, SectionTitle, SectionHeading } from './section'
-
 import BackgroundImg from './background-img'
+import { YellowOverlay } from './splash'
 
-import approach_img from '../assets/images/inline_images/approach_img.jpg'
+import approach_card from '../assets/images/card_images/approach_card.jpg'
 
 const Wrapper = styled.div.attrs({
   className: 'relative-ns',
@@ -55,7 +54,9 @@ const OurApproach = () => (
     </SectionHeading>
 
     <Wrapper>
-      <Picture src={approach_img} />
+      <Picture src={approach_card}>
+        <YellowOverlay />
+      </Picture>
       <SectionCard>
         <CardHeading>
           <CardTitle>Approach</CardTitle>
