@@ -11,7 +11,7 @@ const WorkTitle = styled.div.attrs({
   className: 'font-1 ttu reglo black w-80 w-50-ns tc',
 })``
 
-const WorkDescription = styled.p.attrs({
+const WorkDescription = styled.div.attrs({
   className: 'font-4 sans-serif black w-75-ns w-90',
 })`
   & h2 {
@@ -31,7 +31,7 @@ const WorkDescription = styled.p.attrs({
   }
 
   & + div {
-    margin-top: 48px;
+    margin-top: 64px;
   }
 `
 
@@ -40,13 +40,19 @@ const WorkImg = styled(BackgroundImg).attrs({
 })`
   height: 75vh;
 `
+const TestimonialWrapper = styled.div.attrs({
+  className:
+    'flex flex-column justify-center items-center pa6-ns pa center bg-mid-gray ',
+})`
+  max-width: 1440px;
+`
 
 const TestimonialText = styled.p.attrs({
-  className: 'font-3 sans-serif black mb2 w-75-ns w-90',
+  className: 'font-2-ns font-3 sans-serif black mb2 w-75-ns w-90',
 })``
 
 const TestimonialPerson = styled.p.attrs({
-  className: 'font-5 sans-serif black w-75-ns w-90',
+  className: 'font-4 sans-serif black w-75-ns w-90 ',
 })``
 
 const ZigZag = styled.img.attrs({
@@ -65,6 +71,7 @@ export {
   WorkImg,
   WorkDescription,
   BannerImg,
+  TestimonialWrapper,
   TestimonialPerson,
   TestimonialText,
   ZigZag,
