@@ -6,18 +6,6 @@ import { Tagline } from '../components/header'
 import { SplashGradient } from '../components/splash'
 import { toggleMenu } from '../state/actions'
 
-const mapStateToProps = ({ menuIsOpen }) => {
-  return { menuIsOpen }
-}
-
-const mapDispatchToProps = dispatch => {
-  return {
-    toggleMenu: () => {
-      dispatch(toggleMenu)
-    },
-  }
-}
-
 const Header = ({ menuIsOpen, toggleMenu, image, children, splash }) => {
   const Splash = image ? splash : SplashGradient
   return (
@@ -28,4 +16,7 @@ const Header = ({ menuIsOpen, toggleMenu, image, children, splash }) => {
   )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header)
+export default connect(
+  ({ menuIsOpen }) => ({ menuIsOpen }),
+  { toggleMenu }
+)(Header)

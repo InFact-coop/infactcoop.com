@@ -15,18 +15,6 @@ import {
 
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
-const mapStateToProps = ({ menuIsOpen }) => {
-  return { menuIsOpen }
-}
-
-const mapDispatchToProps = dispatch => {
-  return {
-    toggleMenu: () => {
-      dispatch(toggleMenu)
-    },
-  }
-}
-
 const Header = ({ menuIsOpen, toggleMenu, topicLine, tagLine, subTagLine }) => {
   return (
     <SplashWhite>
@@ -41,4 +29,7 @@ const Header = ({ menuIsOpen, toggleMenu, topicLine, tagLine, subTagLine }) => {
   )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header)
+export default connect(
+  ({ menuIsOpen }) => ({ menuIsOpen }),
+  { toggleMenu }
+)(Header)
