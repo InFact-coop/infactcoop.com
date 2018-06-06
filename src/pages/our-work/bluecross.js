@@ -9,6 +9,7 @@ import {
   WorkWrapper,
   WorkImg,
   WorkDescription,
+  TestimonialWrapper,
   TestimonialPerson,
   TestimonialText,
 } from '../../components/work-content'
@@ -27,9 +28,7 @@ const BannerImg = styled(BackgroundImg)`
 
 const WorkContent = () => (
   <div className="ma0">
-    <BannerImg src={bluecross_header}>
-      <PurpleOverlay />
-    </BannerImg>
+    <BannerImg src={bluecross_header} />
     <WorkWrapper>
       <SectionHeading>
         <SectionTitle>The Challenge</SectionTitle>
@@ -82,16 +81,33 @@ const WorkContent = () => (
         </ul>
       </WorkDescription>
       <WorkImg src={bluecross_img2} />
+      <SectionHeading>
+        <SectionTitle>See The Real Deal</SectionTitle>
+      </SectionHeading>
+      <WorkDescription className="tc">
+        <p className="font-3">
+          Check out Giving a Pet{' '}
+          <a
+            className="light-green b ttu"
+            target="_blank"
+            href="https://bluecross.herokuapp.com/"
+          >
+            here
+          </a>
+        </p>
+      </WorkDescription>
+    </WorkWrapper>
+    <TestimonialWrapper>
       <TestimonialText>
-        InFact are the best! venenatis faucibus. Nullam quis ante. Etiam sit
+        "InFact are the best! venenatis faucibus. Nullam quis ante. Etiam sit
         amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
         sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
-        bibendum sodales, augue velit cursus nunc
+        bibendum sodales, augue velit cursus nunc."
       </TestimonialText>
       <TestimonialPerson>
         Kelly Grellier, Director of Strategic Business Planning at Blue Cross
       </TestimonialPerson>
-    </WorkWrapper>
+    </TestimonialWrapper>
   </div>
 )
 

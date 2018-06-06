@@ -11,6 +11,7 @@ import {
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
+  TestimonialWrapper,
 } from '../../components/work-content'
 
 import stimmythings_header from '../../assets/images/header_images/stimmythings_header.svg'
@@ -65,6 +66,23 @@ const WorkContent = () => (
         </ul>
       </WorkDescription>
       <WorkImg src={stimmythings_img2} />
+      <SectionHeading>
+        <SectionTitle>See The Real Deal</SectionTitle>
+      </SectionHeading>
+      <WorkDescription className="tc">
+        <p className="font-3">
+          Check out Stimmy Things{' '}
+          <a
+            className="light-green b ttu"
+            target="_blank"
+            href="https://stimmythings.com/"
+          >
+            here
+          </a>
+        </p>
+      </WorkDescription>
+    </WorkWrapper>
+    <TestimonialWrapper>
       <TestimonialText>
         InFact are the best! venenatis faucibus. Nullam quis ante. Etiam sit
         amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
@@ -74,7 +92,7 @@ const WorkContent = () => (
       <TestimonialPerson>
         Mariane Caitan, program lead at CAMHS London
       </TestimonialPerson>
-    </WorkWrapper>
+    </TestimonialWrapper>
   </div>
 )
 
