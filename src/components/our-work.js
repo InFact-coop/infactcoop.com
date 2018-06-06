@@ -1,14 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { media } from '../styles/style_utils'
+import Link from 'gatsby-link'
 
-import {
-  CardTitle,
-  CardSubTitle,
-  CardBody,
-  CardHeading,
-  CardButtonWithLink,
-} from './card'
+import { CardTitle, CardSubTitle, CardBody, CardHeading } from './card'
 
 import { Section, SectionTitle, SectionHeading, SectionButton } from './section'
 
@@ -17,37 +12,59 @@ import BackgroundImg from './background-img'
 import stimmy_card from '../assets/images/card_images/stimmythings_card.svg'
 import cast_card from '../assets/images/card_images/cast_card.png'
 import bluecross_card from '../assets/images/card_images/bluecross_card.png'
-import { PurpleOverlay } from './splash'
 
-const Wrapper = styled.div.attrs({
-  className: 'relative flex-ns justify-center',
+const Overlay = styled.div.attrs({
+  className: 'absolute w-100 pointer',
 })`
   height: 100vh;
+  background: ${({ background }) => background};
+  opacity: 0;
+  transition: 0.5s;
+`
+const Picture = styled(BackgroundImg).attrs({
+  className: 'w-100 h-50',
+})`
+  transition: 0.5s;
+`
+const SectionCard = styled.div.attrs({
+  className:
+    'bg-white shadow-5 absolute-ns ph4-ns pv4-ns pv4 ph3 center tc tl-ns pointer',
+})`
+  ${media.ns`
+height: 48%;
+margin-bottom: 7%;
+width: 90%;
+bottom: 2rem;
+  `};
+  width: 95%;
+  transition: 0.5s;
+`
+
+const Wrapper = styled(Link).attrs({
+  className: 'relative flex-ns justify-center black',
+})`
+  height: 100vh;
+  transition: 0.5s;
+
   ${media.ns`
   height: 90vh;
     width: 46%;
-  `};
-`
+  `}
+  &:hover ${Picture} {
+    transform: translateY(0.5rem) scale(1.05);
+    transition: 0.5s;
+  }
+  &:hover ${SectionCard} {
+    transform: translateY(-2rem);
+    transition: 0.7s;
+  }
+  &:hover ${Overlay} {
+    opacity: 1;
+    transition: 0.5s;
+  }
 
-const SectionCard = styled.div.attrs({
-  className:
-    'bg-white shadow-5 absolute-ns ph4-ns pv4-ns pv4 ph3 center tc tl-ns',
-})`
-  ${media.ns`
-height: 55%;
-width: 90%;
-bottom: 2rem;
-  `} width: 95%;
-  transform: translateY(-2rem);
-`
-const SectionText = styled(CardBody)`
-  height: 30%;
   overflow-y: scroll;
 `
-
-const Picture = styled(BackgroundImg).attrs({
-  className: 'w-100 h-50',
-})``
 
 const OurWork = ({ history }) => {
   const isHomePage = history.location.pathname === '/'
@@ -65,8 +82,16 @@ const OurWork = ({ history }) => {
 
       <div className="flex-ns flex-column flex-row-ns justify-between-ns">
         {currentPage !== '/our-work/stimmy-things' && (
-          <Wrapper>
-            <Picture src={stimmy_card} />
+          <Wrapper to="/our-work/stimmy-things">
+            <Picture src={stimmy_card}>
+              <Overlay
+                background="linear-gradient(
+              0deg,
+              rgba(250, 125, 120, 0.4) 0%,
+              rgba(97, 20, 204, 0.4) 100%
+            )"
+              />
+            </Picture>
             <SectionCard>
               <CardHeading>
                 <CardTitle>Mental Health</CardTitle>
@@ -77,16 +102,21 @@ const OurWork = ({ history }) => {
                 clinicians, we designed and built an app that helps young people
                 with ADHD to manage their symptoms.
               </SectionText>
-              <CardButtonWithLink link="/our-work/stimmy-things">
-                Read more
-              </CardButtonWithLink>
             </SectionCard>
           </Wrapper>
         )}
 
         {currentPage !== '/our-work/bluecross' && (
-          <Wrapper>
-            <Picture src={bluecross_card} />
+          <Wrapper to="/our-work/bluecross">
+            <Picture src={bluecross_card}>
+              <Overlay
+                background="linear-gradient(
+            0deg,
+            rgba(250, 125, 120, 0.4) 0%,
+            rgba(97, 20, 204, 0.4) 100%
+          )"
+              />
+            </Picture>
             <SectionCard>
               <CardHeading>
                 <CardTitle>Tech for Good</CardTitle>
@@ -96,18 +126,21 @@ const OurWork = ({ history }) => {
                 We created an app for conscientious owners to find a loving new
                 home for their pet.
               </SectionText>
-              <CardButtonWithLink link="/our-work/bluecross">
-                Read more
-              </CardButtonWithLink>
             </SectionCard>
           </Wrapper>
         )}
 
         {currentPage !== '/our-work/cast' &&
           !isHomePage && (
-            <Wrapper>
+            <Wrapper to="/our-work/cast">
               <Picture src={cast_card}>
-                <PurpleOverlay />
+                <Overlay
+                  background="linear-gradient(
+              0deg,
+              rgba(250, 125, 120, 0.4) 0%,
+              rgba(97, 20, 204, 0.4) 100%
+            )"
+                />
               </Picture>
               <SectionCard>
                 <CardHeading>
@@ -119,9 +152,6 @@ const OurWork = ({ history }) => {
                   non-profits in becoming leaders of their organisation’s
                   digital development.
                 </SectionText>
-                <CardButtonWithLink link="/our-work/cast">
-                  Read more
-                </CardButtonWithLink>
               </SectionCard>
             </Wrapper>
           )}
