@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { backgroundImage, backgroundImageToggle } from '../styles/style_utils'
 import logo from '../assets/logos/infact_logo_white.svg'
 import logoGradient from '../assets/logos/infact_logo_gradient.svg'
-console.log('logoGradient', logoGradient)
 const SplashBase = styled.section.attrs({
   className: 'flex flex-column items-center items-start-ns justify-center-ns',
 })``

@@ -1,13 +1,23 @@
-const menuReducer = (state, action) => {
-  if (action.type === `TOGGLE_MENU`) {
-    const newMenuState =
-      state.menuIsOpen === 'INIT' || state.menuIsOpen === 'CLOSED'
-        ? 'OPENED'
-        : 'CLOSED'
+import { TOGGLE_MENU } from './actions'
 
-    return { ...state, menuIsOpen: newMenuState }
+const menuReducer = (state, { type, payload }) => {
+  switch (type) {
+    case TOGGLE_MENU:
+      return toggleMenu(state, payload)
+    default:
+      return state
   }
-  return state
+}
+
+const toggleMenu = (state, payload) => {
+  if (payload && payload.pageChange) return { ...state, menuIsOpen: 'INIT' }
+
+  const newMenuState =
+    state.menuIsOpen === 'INIT' || state.menuIsOpen === 'CLOSED'
+      ? 'OPENED'
+      : 'CLOSED'
+
+  return { ...state, menuIsOpen: newMenuState }
 }
 
 export default { menuReducer }

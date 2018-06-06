@@ -55,7 +55,7 @@ const Splash = styled.nav.attrs({
   );
 `
 
-const MenuItem = styled.a.attrs({
+const MenuItem = styled(Link).attrs({
   className: 'dib ttu heading-ns font-1 reglo link',
 })`
   &:focus {
@@ -69,6 +69,8 @@ const MenuItem = styled.a.attrs({
     transition: transform 1s;
   }
 `
+const MenuItemATag = MenuItem.withComponent('a')
+
 const LinkContainer = styled.div.attrs({
   className: `nav w-100 flex flex-column items-center justify-around pt3 pt0-ns`,
 })`
@@ -85,29 +87,49 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
         <Link to="/">
           <Logo menuIsOpen={menuIsOpen} />
         </Link>
-        <Burger menuIsOpen={menuIsOpen} onClick={toggleMenu} />
+        <Burger menuIsOpen={menuIsOpen} onClick={() => toggleMenu()} />
       </Topline>
       <LinkContainer>
-        <MenuItem menuIsOpen={menuIsOpen} href="/">
+        <MenuItem
+          menuIsOpen={menuIsOpen}
+          to="/"
+          onClick={() => toggleMenu({ pageChange: true })}
+        >
           Home
         </MenuItem>
-        <MenuItem menuIsOpen={menuIsOpen} href="/our-work">
+        <MenuItem
+          menuIsOpen={menuIsOpen}
+          to="/our-work"
+          onClick={() => toggleMenu({ pageChange: true })}
+        >
           Our Work
         </MenuItem>
-        <MenuItem menuIsOpen={menuIsOpen} href="/our-approach">
+        <MenuItem
+          menuIsOpen={menuIsOpen}
+          to="/our-approach"
+          onClick={() => toggleMenu({ pageChange: true })}
+        >
           Approach
         </MenuItem>
-        <MenuItem menuIsOpen={menuIsOpen} href="/about-us">
+        <MenuItem
+          menuIsOpen={menuIsOpen}
+          to="/about-us"
+          onClick={() => toggleMenu({ pageChange: true })}
+        >
           About InFact
         </MenuItem>
-        <MenuItem
+        <MenuItemATag
           menuIsOpen={menuIsOpen}
           href="https://foundersandcoders.com/"
           target="_blank"
         >
           Founders & Coders
-        </MenuItem>
-        <MenuItem href="/contact-us" menuIsOpen={menuIsOpen}>
+        </MenuItemATag>
+        <MenuItem
+          to="/contact-us"
+          menuIsOpen={menuIsOpen}
+          onClick={() => toggleMenu({ pageChange: true })}
+        >
           Contact
         </MenuItem>
       </LinkContainer>
