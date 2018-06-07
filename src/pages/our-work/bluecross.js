@@ -97,7 +97,7 @@ const AboutWork = () => (
               className="light-green b ttu"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://bluecross.herokuapp.com/"
+              href="https://newhome.bluecross.org.uk"
             >
               here
             </a>

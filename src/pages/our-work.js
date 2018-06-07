@@ -14,6 +14,7 @@ import {
 import { Section, SectionTitle, SectionHeading } from '../components/section'
 import { CardTitle, CardSubTitle, CardHeading } from '../components/card'
 import { SplashImg } from '../components/splash'
+import { LinkImage } from '../components/link-image'
 
 import stimmy_card from '../assets/images/card_images/stimmythings_card.svg'
 import cast_card from '../assets/images/card_images/cast_card.png'
@@ -32,6 +33,16 @@ const PictureWithFilter = styled(Picture)`
     `};
 `
 
+import annaFreud from '../assets/images/partner_logos/anna_freud_grey.png'
+import bluecross from '../assets/images/partner_logos/bluecross_grey.png'
+import lwc from '../assets/images/partner_logos/lwc-grey.png'
+import cast from '../assets/images/partner_logos/cast_grey.png'
+import lcn from '../assets/images/partner_logos/lcn_grey.png'
+import ucl from '../assets/images/partner_logos/ucl_grey.png'
+import nhs from '../assets/images/partner_logos/nhs_grey.png'
+import qsa from '../assets/images/partner_logos/qsa_grey.png'
+import cambridge from '../assets/images/partner_logos/cambridge_grey.png'
+
 const Splash = SplashImg.extend`
   ${media.m`
     background-position: 65%;
@@ -47,6 +58,66 @@ const WorkGallery = () => (
       Working with great people on inspiring projects
     </Header>
     <Section bg_color="white">
+      <div className="flex justify-center flex-wrap justify-between-ns mv7">
+        <LinkImage
+          src={nhs}
+          width="6rem"
+          href="http://www.slam.nhs.uk/"
+          target="_blank"
+        />
+        <LinkImage
+          src={cast}
+          width="14rem"
+          target="_blank"
+          href="http://www.wearecast.org.uk/"
+        />
+        <LinkImage
+          src={annaFreud}
+          width="17rem"
+          target="_blank"
+          href="https://www.annafreud.org/"
+        />
+        <LinkImage
+          src={lwc}
+          width="5em"
+          target="_blank"
+          href="https://www.bluecross.org.uk/"
+        />
+        <LinkImage
+          src={bluecross}
+          width="5em"
+          target="_blank"
+          href="https://www.bluecross.org.uk/"
+        />
+      </div>
+      <div className="flex justify-center flex-wrap justify-between-ns mv7">
+        <LinkImage
+          src={lcn}
+          width="10rem"
+          target="_blank"
+          href="http://www.lawcentres.org.uk/"
+        />
+        <LinkImage
+          src={qsa}
+          width="5rem"
+          target="_blank"
+          href="https://www.quakersocialaction.org.uk/"
+        />
+        <LinkImage
+          src={ucl}
+          width="14rem"
+          target="_blank"
+          href="http://www.wearecast.org.uk/"
+        />
+        <LinkImage
+          src={cambridge}
+          width="17rem"
+          target="_blank"
+          href="https://www.annafreud.org/"
+        />
+      </div>
+    </Section>
+    <Section bg_color="light-gray">
       <SectionHeading mb>
         <SectionTitle>Our Work</SectionTitle>
       </SectionHeading>
