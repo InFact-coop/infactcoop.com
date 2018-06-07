@@ -9,7 +9,7 @@ const Text = styled.p.attrs({
 })``
 
 const Input = styled.input.attrs({
-  className: 'highlight-custom mt1 ba w-100 pa2 bg-light-gray',
+  className:  'mt1 ba w-100 pa2 bg-light-gray',
 })``
 
 const SubmitButton = styled.button.attrs({
@@ -57,7 +57,7 @@ const SubmitButton = styled.button.attrs({
 `
 
 const HelpText = styled.textarea.attrs({
-  className: 'highlight-custom mt1 w-100 b--black pa2 bg-light-gray',
+  className:  'mt1 w-100 b--black pa2 bg-light-gray',
 })`
   height: 10vh;
 `

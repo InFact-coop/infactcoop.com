@@ -41,7 +41,7 @@ const LogoGradient = styled.div.attrs({
 
 const Tagline = styled.div.attrs({
   className:
-    'highlight-custom heading-ns font-1 ttu w-90 w-50-l w-90-m reglo white pl7-ns pl0 tl-ns tc',
+     'heading-ns font-1 ttu w-90 w-50-l w-90-m reglo white pl7-ns pl0 tl-ns tc',
 })``
 
 const ZigZag = styled.img.attrs({
@@ -49,15 +49,15 @@ const ZigZag = styled.img.attrs({
 })``
 
 const TopicLine = styled.div.attrs({
-  className: 'highlight-custom font-4 ttu sans-serif black mt2 mb1',
+  className:  'font-4 ttu sans-serif black mt2 mb1',
 })``
 
 const TaglineBlack = styled.p.attrs({
-  className: 'highlight-custom font-0-ns font-1 ttu reglo black',
+  className:  'font-0-ns font-1 ttu reglo black',
 })``
 
 const SubTaglineBlack = styled.div.attrs({
-  className: 'highlight-custom font-4 sans-serif black',
+  className:  'font-4 sans-serif black',
 })``
 
 const WorkHeading = ({ children }) => (
