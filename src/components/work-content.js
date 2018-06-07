@@ -12,7 +12,7 @@ const WorkTitle = styled.div.attrs({
 })``
 
 const WorkDescription = styled.div.attrs({
-  className: 'highlight-custom font-4 sans-serif black w-75-ns w-90',
+  className: 'highlight-custom font-4 sans-serif black w-75-l w-90',
 })`
   & h2 {
     font-size: 16px;
@@ -52,7 +52,7 @@ const WorkImg = styled(BackgroundImg).attrs({
 `
 const TestimonialWrapper = styled.div.attrs({
   className:
-    'flex flex-column justify-center items-center pa6-ns pa center bg-mid-gray ',
+    'flex flex-column justify-center items-center pa6-l pv4-m ph0-m  center bg-mid-gray ',
 })`
   max-width: 1440px;
 `
@@ -71,7 +71,7 @@ const ZigZag = styled.img.attrs({
 })``
 
 const BannerImg = styled(BackgroundImg)`
-  width: 100vw;
+  width: 100%;
   height: 85vh;
   max-width: 1440px;
 `

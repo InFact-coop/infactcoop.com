@@ -34,10 +34,10 @@ const CardWrapper = styled.article.attrs({
   className: 'fl pt3-ns ph2-ns pb2-ns',
 })`
   width: 100%;
-  ${media.ns`
+  ${media.m`
     width: 50%;
   `};
-  ${media.m`
+  ${media.l`
     width: 33.3%;
   `};
 `

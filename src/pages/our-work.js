@@ -1,4 +1,5 @@
 import React from 'react'
+import { media } from '../styles/style_utils'
 
 import Header from '../containers/header'
 import {
@@ -17,9 +18,18 @@ import cast_card from '../assets/images/card_images/cast_card.png'
 import bluecross_card from '../assets/images/card_images/bluecross_card.png'
 import ourwork_header from '../assets/images/header_images/ourwork_header.png'
 
+const Splash = SplashImg.extend`
+  ${media.m`
+    background-position: 65%;
+  `};
+  ${media.l`
+    background-position: center;
+  `};
+`
+
 const WorkGallery = () => (
   <div>
-    <Header image={ourwork_header} splash={SplashImg}>
+    <Header image={ourwork_header} splash={Splash}>
       Working with great people on inspiring projects
     </Header>
     <Section bg_color="white">

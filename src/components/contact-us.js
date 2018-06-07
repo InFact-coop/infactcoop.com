@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 const Form = styled.form.attrs({
-  className: 'w-75-ns w-90 flex flex-column items-center mv6 ph6-ns ph2 ',
+  className: 'w-75-l w-90 flex flex-column items-center mv6 ph6-l ph4-m ph2 ',
 })``
 
 const Text = styled.p.attrs({
-  className: 'font-4 sans-serif black w-75-ns w-90 tc',
+  className: 'font-4 sans-serif black w-75-l w-90 tc',
 })``
 
 const Input = styled.input.attrs({

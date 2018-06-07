@@ -26,7 +26,7 @@ const Splash = styled.section.attrs({
   `};
 `
 const EmailSplash = styled.section.attrs({
-  className: 'flex-column flex pt5-ns pb5-ns justify-center justify-start-l',
+  className: 'flex-column flex pv5-ns pv4 justify-center justify-start-l',
 })`
   background: linear-gradient(
     225deg,
@@ -35,8 +35,7 @@ const EmailSplash = styled.section.attrs({
   );
 `
 const EmailTopline = styled.p.attrs({
-  className:
-    'highlight-custom ttu tc reglo font-3-ns font-4 white mb2 mt0-ns mt2',
+  className: 'highlight-custom ttu tc reglo font-3-ns font-4 white mb2 mt0-ns',
 })``
 
 const EmailSecondLine = styled.p.attrs({

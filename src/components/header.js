@@ -5,7 +5,7 @@ import logo from '../assets/logos/infact_logo_white.svg'
 import logoGradient from '../assets/logos/infact_logo_gradient.svg'
 
 const SplashBase = styled.section.attrs({
-  className: 'flex flex-column items-center items-start-ns justify-center-ns',
+  className: 'flex flex-column items-center items-start-ns justify-center',
 })``
 
 const SplashWhite = SplashBase.extend`
@@ -41,7 +41,7 @@ const LogoGradient = styled.div.attrs({
 
 const Tagline = styled.div.attrs({
   className:
-    'highlight-custom heading-ns font-1 ttu w-90 w-50-ns reglo white pl7-ns pl0 tl-ns tc',
+    'highlight-custom heading-ns font-1 ttu w-90 w-50-l w-90-m reglo white pl7-ns pl0 tl-ns tc',
 })``
 
 const ZigZag = styled.img.attrs({

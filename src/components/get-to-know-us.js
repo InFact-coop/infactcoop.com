@@ -6,9 +6,9 @@ import {
   CardTitle,
   CardSubTitle,
   CardBody,
-  Card,
   CardButtonWithLink,
   CardHeading,
+  SectionCard,
 } from './card'
 
 import { Section, SectionTitle, SectionHeading } from './section'
@@ -18,17 +18,6 @@ import BackgroundImg from './background-img'
 import { PurpleOverlay } from './splash'
 
 import aboutus_card from '../assets/images/card_images/aboutus_card.jpg'
-
-const SectionCard = styled(Card).attrs({
-  className: 'absolute-ns top-0-ns right-0-ns',
-})`
-  max-height: 95%;
-  transform: translateY(-2rem);
-  ${media.ns`
-    transform: translateY(0);
-    width: 40%;
-  `};
-`
 
 const Picture = styled(BackgroundImg).attrs({
   className: 'absolute-ns bottom-0-ns left-0-ns',
@@ -60,7 +49,7 @@ const GetToKnowUs = () => (
       <Picture src={aboutus_card}>
         <PurpleOverlay />
       </Picture>
-      <SectionCard>
+      <SectionCard className="right-0-ns">
         <CardHeading>
           <CardTitle>Our Story</CardTitle>
         </CardHeading>
