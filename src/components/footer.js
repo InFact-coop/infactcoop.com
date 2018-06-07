@@ -100,65 +100,50 @@ const AirplaneIcon = styled.img.attrs({
   }
 `
 
-const Footer = () => {
-  const toggleEmailIcon = () => {
-    console.log('hello')
-    return css`
-      ${AirplaneIcon} {
-        height: 5vh;
-      }
-    `
-  }
-
-  return (
-    <div>
-      <EmailSplash>
-        <EmailTopline>Ready to collaborate?</EmailTopline>
-        <EmailSecondLine>We would love to hear from you</EmailSecondLine>
-        <EmailSecondLine className="light-green">
-          hello@infactcoop.com
-        </EmailSecondLine>
-        <a className="tc">
-          <AirplaneIcon
-            src={airplane}
-            alt="airplane"
-            onClick={toggleEmailIcon}
-          />
-        </a>
-      </EmailSplash>
-      <Splash>
-        <Topline>
-          <Logo />
-          <FooterSection>
-            <Title>Address</Title>
-            Space 4<br />
-            First Floor<br />
-            149 Fonthill Road<br />
-            Finsbury Park<br />
-            London<br />
-          </FooterSection>
-          <FooterSection>
-            <Title>Connect</Title>
-            Get in touch any way you like! <br />
-            We LOVE meeting new people
-            <ContactWrapper>
-              <ContactIcon
-                imgUrl={GithubIcon}
-                href="https://github.com/infact-coop"
-                target="_blank"
-              />
-              <ContactIcon imgUrl={LinkedInIcon} />
-              <ContactIcon
-                imgUrl={MediumIcon}
-                href="https://medium.com/infactdigitalcoop"
-                target="_blank"
-              />
-            </ContactWrapper>
-          </FooterSection>
-        </Topline>
-      </Splash>
-    </div>
-  )
-}
+const Footer = () => (
+  <div>
+    <EmailSplash>
+      <EmailTopline>Ready to collaborate?</EmailTopline>
+      <EmailSecondLine>We would love to hear from you</EmailSecondLine>
+      <EmailSecondLine className="light-green">
+        hello@infactcoop.com
+      </EmailSecondLine>
+      <a className="tc">
+        <AirplaneIcon src={airplane} alt="airplane" />
+      </a>
+    </EmailSplash>
+    <Splash>
+      <Topline>
+        <Logo />
+        <FooterSection>
+          <Title>Address</Title>
+          Space 4<br />
+          First Floor<br />
+          149 Fonthill Road<br />
+          Finsbury Park<br />
+          London<br />
+        </FooterSection>
+        <FooterSection>
+          <Title>Connect</Title>
+          Get in touch any way you like! <br />
+          We LOVE meeting new people
+          <ContactWrapper>
+            <ContactIcon
+              imgUrl={GithubIcon}
+              href="https://github.com/infact-coop"
+              target="_blank"
+            />
+            <ContactIcon imgUrl={LinkedInIcon} />
+            <ContactIcon
+              imgUrl={MediumIcon}
+              href="https://medium.com/infactdigitalcoop"
+              target="_blank"
+            />
+          </ContactWrapper>
+        </FooterSection>
+      </Topline>
+    </Splash>
+  </div>
+)
 
 export default { Footer }
