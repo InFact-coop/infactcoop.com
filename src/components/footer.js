@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { media, backgroundImage } from '../styles/style_utils'
 import { SectionTitle } from './section'
 
@@ -83,48 +83,74 @@ const Logo = styled.div.attrs({
   background: ${backgroundImage(logo)};
 `
 
-const Footer = () => (
-  <div>
-    <EmailSplash>
-      <EmailTopline>Ready to collaborate?</EmailTopline>
-      <EmailSecondLine>We would love to hear from you</EmailSecondLine>
-      <EmailSecondLine className="light-green">
-        hello@infactcoop.com
-      </EmailSecondLine>
-      <img className="mt2" src={airplane} alt="airplane" />
-    </EmailSplash>
-    <Splash>
-      <Topline>
-        <Logo />
-        <FooterSection>
-          <Title>Address</Title>
-          Space 4<br />
-          First Floor<br />
-          149 Fonthill Road<br />
-          Finsbury Park<br />
-          London<br />
-        </FooterSection>
-        <FooterSection>
-          <Title>Connect</Title>
-          Get in touch any way you like! <br />
-          We LOVE meeting new people
-          <ContactWrapper>
-            <ContactIcon
-              imgUrl={GithubIcon}
-              href="https://github.com/infact-coop"
-              target="_blank"
-            />
-            <ContactIcon imgUrl={LinkedInIcon} />
-            <ContactIcon
-              imgUrl={MediumIcon}
-              href="https://medium.com/infactdigitalcoop"
-              target="_blank"
-            />
-          </ContactWrapper>
-        </FooterSection>
-      </Topline>
-    </Splash>
-  </div>
-)
+const AirplaneIcon = styled.img.attrs({
+  className: 'mt2',
+})`
+  &:hover {
+    transform: rotate(5deg);
+    transition: transform 0.15s;
+  }
+`
+
+const Footer = () => {
+  const toggleEmailIcon = () => {
+    console.log('hello')
+    return css`
+      ${AirplaneIcon} {
+        height: 5vh;
+      }
+    `
+  }
+
+  return (
+    <div>
+      <EmailSplash>
+        <EmailTopline>Ready to collaborate?</EmailTopline>
+        <EmailSecondLine>We would love to hear from you</EmailSecondLine>
+        <EmailSecondLine className="light-green">
+          hello@infactcoop.com
+        </EmailSecondLine>
+        <a className="tc">
+          <AirplaneIcon
+            src={airplane}
+            alt="airplane"
+            onClick={toggleEmailIcon}
+          />
+        </a>
+      </EmailSplash>
+      <Splash>
+        <Topline>
+          <Logo />
+          <FooterSection>
+            <Title>Address</Title>
+            Space 4<br />
+            First Floor<br />
+            149 Fonthill Road<br />
+            Finsbury Park<br />
+            London<br />
+          </FooterSection>
+          <FooterSection>
+            <Title>Connect</Title>
+            Get in touch any way you like! <br />
+            We LOVE meeting new people
+            <ContactWrapper>
+              <ContactIcon
+                imgUrl={GithubIcon}
+                href="https://github.com/infact-coop"
+                target="_blank"
+              />
+              <ContactIcon imgUrl={LinkedInIcon} />
+              <ContactIcon
+                imgUrl={MediumIcon}
+                href="https://medium.com/infactdigitalcoop"
+                target="_blank"
+              />
+            </ContactWrapper>
+          </FooterSection>
+        </Topline>
+      </Splash>
+    </div>
+  )
+}
 
 export default { Footer }
