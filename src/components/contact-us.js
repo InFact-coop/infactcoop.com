@@ -1,6 +1,4 @@
-import React from 'react'
 import styled from 'styled-components'
-import { media } from '../styles/style_utils'
 
 const Form = styled.form.attrs({
   className: 'w-75-ns w-90 flex flex-column items-center mv6 ph6-ns ph2 ',
@@ -11,7 +9,7 @@ const Text = styled.p.attrs({
 })``
 
 const Input = styled.input.attrs({
-  className: 'mt1 ba w-100 pa2',
+  className: 'mt1 ba w-100 pa2 bg-light-gray',
 })``
 
 const SubmitButton = styled.button.attrs({
@@ -59,7 +57,7 @@ const SubmitButton = styled.button.attrs({
 `
 
 const HelpText = styled.textarea.attrs({
-  className: 'mt1 w-100 b--black pa2 ',
+  className: 'mt1 w-100 b--black pa2 bg-light-gray',
 })`
   height: 10vh;
 `
