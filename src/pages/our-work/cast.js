@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import Header from '../../containers/header-work'
 import { SectionHeading, SectionTitle, Section } from '../../components/section'
@@ -31,6 +31,13 @@ const BannerImg = styled(BackgroundImg)`
   width: 100vw;
   height: 85vh;
   max-width: 1440px;
+`
+
+const PictureWithFilter = styled(Picture)`
+  ${({ src, gradient }) =>
+    css`
+      background-image: ${gradient}, url(${src});
+    `};
 `
 
 const AboutWork = () => (
@@ -143,9 +150,14 @@ const AboutWork = () => (
           </SectionCard>
         </Wrapper>
         <Wrapper to="/our-work/bluecross">
-          <Picture src={bluecross_card}>
+          <PictureWithFilter
+            src={bluecross_card}
+            gradient={
+              'linear-gradient(225deg, rgba(0,159,223,0.3) 0%, rgba(0,51,136,0.3) 100%)'
+            }
+          >
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
-          </Picture>
+          </PictureWithFilter>
           <SectionCard>
             <CardHeading>
               <CardTitle>Tech for Good</CardTitle>

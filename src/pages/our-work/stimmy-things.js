@@ -1,4 +1,5 @@
 import React from 'react'
+import styled, { css } from 'styled-components'
 
 import Header from '../../containers/header-work'
 import { SectionHeading, SectionTitle, Section } from '../../components/section'
@@ -25,6 +26,13 @@ import stimmythings_img1 from '../../assets/images/inline_images/stimmythings_im
 import stimmythings_img2 from '../../assets/images/inline_images/stimmythings_img2.png'
 import cast_card from '../../assets/images/card_images/cast_card.png'
 import bluecross_card from '../../assets/images/card_images/bluecross_card.png'
+
+const PictureWithFilter = styled(Picture)`
+  ${({ src, gradient }) =>
+    css`
+      background-image: ${gradient}, url(${src});
+    `};
+`
 
 const AboutWork = () => (
   <div>
@@ -132,9 +140,14 @@ const AboutWork = () => (
           </SectionCard>
         </Wrapper>
         <Wrapper to="/our-work/bluecross">
-          <Picture src={bluecross_card}>
+          <PictureWithFilter
+            src={bluecross_card}
+            gradient={
+              'linear-gradient(225deg, rgba(0,159,223,0.3) 0%, rgba(0,51,136,0.3) 100%)'
+            }
+          >
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
-          </Picture>
+          </PictureWithFilter>
           <SectionCard>
             <CardHeading>
               <CardTitle>Tech for Good</CardTitle>

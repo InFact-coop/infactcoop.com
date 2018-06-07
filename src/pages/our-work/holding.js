@@ -25,6 +25,13 @@ import stimmy_card from '../../assets/images/card_images/stimmythings_card.svg'
 import bluecross_card from '../../assets/images/card_images/bluecross_card.png'
 import header_img from '../../assets/images/other/us_portrait_christa.jpg'
 
+const PictureWithFilter = styled(Picture)`
+  ${({ src, gradient }) =>
+    css`
+      background-image: ${gradient}, url(${src});
+    `};
+`
+
 const AboutWork = () => (
   <div>
     <Header
@@ -58,9 +65,14 @@ const AboutWork = () => (
         </Wrapper>
 
         <Wrapper to="/our-work/bluecross">
-          <Picture src={bluecross_card}>
+          <PictureWithFilter
+            src={bluecross_card}
+            gradient={
+              'linear-gradient(225deg, rgba(0,159,223,0.3) 0%, rgba(0,51,136,0.3) 100%)'
+            }
+          >
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
-          </Picture>
+          </PictureWithFilter>
           <SectionCard>
             <CardHeading>
               <CardTitle>Tech for Good</CardTitle>
