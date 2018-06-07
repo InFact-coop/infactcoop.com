@@ -28,11 +28,11 @@ const Card = styled.div.attrs({
 })``
 
 const CardTitle = styled.div.attrs({
-  className:  'font-1 ttu reglo',
+  className: 'font-1 ttu reglo',
 })``
 
 const CardBody = styled.div.attrs({
-  className:  'font-4 sans-serif',
+  className: 'font-4 sans-serif',
 })``
 
 const OurApproach = () => (
@@ -67,15 +67,13 @@ const OurApproach = () => (
           </li>
         </ul>
       </Text>
-      <Text>
-        Working in this way can feel uncertain because the end product seems
-        undefined. We know that this approach can be scary! However time and
-        time again we’ve seen that products made this way ultimately deliver
-        more impact in less time and at a lower cost. This is because rather
-        than the product being undefined, it is constantly being redefined to
-        reflect your user's ideal product and this often comes a lot sooner than
-        anticipated.
-      </Text>
+      Working in this way can feel uncertain because the end product isn't fully
+      realised at the outset. We know that this approach can be scary! However,
+      at each stage of building, we will test, adjust, and tinker in our mission
+      to create your user's ideal product. Time and time again, we’ve seen
+      products produced in this way deliver more impact, in less time, and at a
+      lower cost than their counterparts.
+      <Text />
       <Picture src={approach_img} />
       <CardWrapper>
         <Card>
