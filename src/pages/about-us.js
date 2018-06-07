@@ -20,14 +20,18 @@ const AboutUs = () => (
       <Title>We are InFact</Title>
       <ZigZag src={wigglyBottom} />
       <Text>
-        Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
-        leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+        We are InFact Co-op, a small digital and creative agency with a
+        razor-sharp focus: to work with charities, non-profits and businesses to
+        provide digital answers to their organisational problems. Comprised of a
+        diverse group of designers, developers, and web professionals, we
+        believe in the power of technology and design to act as a force for
+        social good.
       </Text>
       <Text>
-        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-        imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-        ultricies nisi. Nam eget dui. Etiam rhoncus.
+        We recognise the transformative impact and reach that the internet has
+        had on every aspect of the modern world. We wish to leverage that reach
+        to turn your great ideas into reality. If this sounds like you, get in
+        touch!
       </Text>
     </Wrapper>
     <CardsWrapper>
