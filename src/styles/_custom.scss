@@ -2,3 +2,10 @@
 .vh-50 {
   height: 50vh;
 }
+
+.highlight-custom {
+  &::selection {
+    background: #50cfcf;
+    color: #f8f8f8;
+  }
+}
