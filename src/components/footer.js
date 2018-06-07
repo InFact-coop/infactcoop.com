@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { media, backgroundImage } from '../styles/style_utils'
 import { SectionTitle } from './section'
 
@@ -10,7 +10,7 @@ import logo from '../assets/logos/infact_logo_white.svg'
 import airplane from '../assets/icons/airplace_icn.svg'
 
 const Title = styled(SectionTitle).attrs({
-  className: 'white mb2 fw6',
+  className: 'highlight-custom white mb2 fw6',
 })``
 
 const Splash = styled.section.attrs({
@@ -35,11 +35,12 @@ const EmailSplash = styled.section.attrs({
   );
 `
 const EmailTopline = styled.p.attrs({
-  className: 'ttu tc reglo font-3-ns font-4 white mb2 mt0-ns mt2',
+  className:
+    'highlight-custom ttu tc reglo font-3-ns font-4 white mb2 mt0-ns mt2',
 })``
 
 const EmailSecondLine = styled.p.attrs({
-  className: 'ttu tc reglo font-1-ns font-2 white mb3',
+  className: 'highlight-custom ttu tc reglo font-1-ns font-2 white mb3',
 })``
 
 const Topline = styled.div.attrs({
@@ -63,9 +64,16 @@ const ContactIcon = styled.a.attrs({
 
 const FooterSection = styled.div.attrs({
   className:
-    'w-80 w-40-l w-30-m white sans-serif font-4 tc tl-ns mr4-l mb4 mb0-ns',
+    'highlight-custom w-80 w-40-l w-30-m white sans-serif font-4 tc tl-ns mr4-l mb4 mb0-ns',
 })`
   min-width: 158px;
+
+  & br {
+    &::selection {
+      background: #50cfcf;
+      color: white;
+    }
+  }
 `
 
 const Logo = styled.div.attrs({
@@ -83,6 +91,15 @@ const Logo = styled.div.attrs({
   background: ${backgroundImage(logo)};
 `
 
+const AirplaneIcon = styled.img.attrs({
+  className: 'mt2',
+})`
+  &:hover {
+    transform: rotate(5deg);
+    transition: transform 0.15s;
+  }
+`
+
 const Footer = () => (
   <div>
     <EmailSplash>
@@ -91,7 +108,9 @@ const Footer = () => (
       <EmailSecondLine className="light-green">
         hello@infactcoop.com
       </EmailSecondLine>
-      <img className="mt2" src={airplane} alt="airplane" />
+      <a className="tc">
+        <AirplaneIcon src={airplane} alt="airplane" />
+      </a>
     </EmailSplash>
     <Splash>
       <Topline>

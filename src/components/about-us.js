@@ -7,7 +7,7 @@ import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 import { media } from '../styles/style_utils'
 
 const CardName = styled.p.attrs({
-  className: 'font-4 ttu sans-serif b black mb1',
+  className: 'highlight-custom font-4 ttu sans-serif b black mb1',
 })``
 
 const CardImage = styled.img.attrs({
@@ -23,7 +23,7 @@ const CardImage = styled.img.attrs({
 `
 
 const CardJobTitle = styled.p.attrs({
-  className: 'font-5 ttu sans-serif black',
+  className: 'highlight-custom font-5 ttu sans-serif black',
 })``
 
 const CardsWrapper = styled.section.attrs({
