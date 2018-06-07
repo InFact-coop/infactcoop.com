@@ -15,34 +15,60 @@ const Overlay = styled.div.attrs({
   transition: 0.5s;
 `
 const Picture = styled(BackgroundImg).attrs({
-  className: 'w-100 h-50',
+  className: '',
 })`
   transition: 0.5s;
+  width: 100%;
+  padding-bottom: 100%;
+
+  ${media.ns`
+    height: 0;
+    width: 40vw;
+    padding-bottom: 100%;
+  `};
 `
 const SectionCard = styled.div.attrs({
   className:
-    'bg-white shadow-5 absolute-ns ph4-ns pv4-ns pv4 ph3 center tc tl-ns pointer',
+    'bg-white shadow-5 absolute ph4-l pv4-l pv3-m ph3-m pv4 ph3 center tc tl-ns pointer',
 })`
-  ${media.ns`
-    height: 48%;
-    margin-bottom: 7%;
-    width: 90%;
-    bottom: 2rem;
-  `};
   width: 95%;
   transition: 0.5s;
+  transform: translateY(-2rem);
+  ${media.ns`
+    width: 90%;
+    transform: translateY(0);
+  `};
+  ${media.m`
+    height: 55%;
+    margin-bottom: 7%;
+    width: 90%;
+    bottom: 1rem;
+    transform: translateY(0);
+  `};
+  ${media.l`
+    height: 40%;
+    margin-bottom: 7%;
+    width: 90%;
+    bottom: 0;
+    transform: translateY(0);
+  `};
 `
 
 const Wrapper = styled(Link).attrs({
-  className: 'relative flex-ns justify-center black',
+  className: 'relative flex-ns justify-center black no-underline dib',
 })`
   height: 100vh;
   transition: 0.5s;
 
-  ${media.ns`
-  height: 90vh;
+  ${media.m`
+    height: 60vh;
     width: 46%;
   `}
+  ${media.l`
+    height: 850px;
+    width: 46%;
+  `}
+
   &:hover ${Picture} {
     transform: translateY(0.5rem) scale(1.05);
     transition: 0.5s;

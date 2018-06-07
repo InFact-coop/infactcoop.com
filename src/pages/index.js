@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
+import { media } from '../styles/style_utils'
 
 import Header from '../containers/header'
 import OurApproach from '../components/our-approach'
@@ -28,17 +29,26 @@ import bluecross_card from '../assets/images/card_images/bluecross_card.png'
 import stimmy_card from '../assets/images/card_images/stimmythings_card.svg'
 
 const WorkLink = styled(SectionButton.withComponent(Link)).attrs({
-  className: 'no-underline w-20-ns w-80 tc',
+  className: 'no-underline w-20-l w-40-m w-80 tc',
 })``
+
+const Splash = SplashImg.extend`
+  ${media.m`
+    background-position: 86%;
+  `};
+  ${media.l`
+    background-position: 67%;
+  `};
+`
 
 const IndexPage = () => (
   <div>
-    <Header image={landing_header} splash={SplashImg}>
+    <Header image={landing_header} splash={Splash}>
       We're a design & development co-operative helping to shape a better
       digital future
     </Header>
     <OurApproach />
-    <Section bg_color="white">
+    <Section bg_color="light-gray">
       <SectionHeading mb>
         <SectionTitle>Our Work</SectionTitle>
       </SectionHeading>

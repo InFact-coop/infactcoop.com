@@ -18,6 +18,7 @@ import {
   WorkDescription,
   TestimonialPerson,
   TestimonialText,
+  TestimonialWrapper,
 } from '../../components/work-content'
 
 import BackgroundImg from '../../components/background-img'
@@ -28,9 +29,8 @@ import bluecross_card from '../../assets/images/card_images/bluecross_card.png'
 import stimmy_card from '../../assets/images/card_images/stimmythings_card.svg'
 
 const BannerImg = styled(BackgroundImg)`
-  width: 100vw;
+  width: 100%;
   height: 85vh;
-  max-width: 1440px;
 `
 
 const AboutWork = () => (
@@ -109,6 +109,8 @@ const AboutWork = () => (
           world.
         </WorkDescription>
         <WorkImg src={cast_img2} />
+      </WorkWrapper>
+      <TestimonialWrapper>
         <TestimonialText>
           InFact are the best! venenatis faucibus. Nullam quis ante. Etiam sit
           amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
@@ -118,7 +120,7 @@ const AboutWork = () => (
         <TestimonialPerson>
           Ellie Hale, Digital Fellowship and communities lead at CAST
         </TestimonialPerson>
-      </WorkWrapper>
+      </TestimonialWrapper>
     </div>
 
     <Section bg_color="white">
