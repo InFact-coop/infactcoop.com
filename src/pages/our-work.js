@@ -30,9 +30,18 @@ const PictureWithFilter = styled(Picture)`
     `};
 `
 
+const Splash = SplashImg.extend`
+  ${media.m`
+    background-position: 65%;
+  `};
+  ${media.l`
+    background-position: center;
+  `};
+`
+
 const WorkGallery = () => (
   <div>
-    <Header image={ourwork_header} splash={SplashImg}>
+    <Header image={ourwork_header} splash={Splash}>
       Working with great people on inspiring projects
     </Header>
     <Section bg_color="white">

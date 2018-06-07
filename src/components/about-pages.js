@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div.attrs({
   className:
-    'pa5-ns pv3 mv1 mv0-ns ph1 center flex flex-column items-center bg-light-gray',
+    'pa5-l pa4-m pv3 mv1 mv0-ns ph1 center flex flex-column items-center bg-light-gray',
 })`
   max-width: 1201px;
 `
@@ -11,7 +11,7 @@ const Title = styled.div.attrs({
 })``
 
 const Text = styled.p.attrs({
-  className: 'font-4 sans-serif black w-75-ns w-90 tc tl-ns',
+  className: 'font-4 sans-serif black w-75-l w-90-m w-90 tc tl-ns',
 })`
   & ul {
     list-style-type: circle;

@@ -28,11 +28,11 @@ const Card = styled.div.attrs({
 })``
 
 const CardTitle = styled.div.attrs({
-  className: 'font-1 ttu reglo',
+  className:  'font-1 ttu reglo',
 })``
 
 const CardBody = styled.div.attrs({
-  className: 'font-4 sans-serif',
+  className:  'font-4 sans-serif',
 })``
 
 const OurApproach = () => (

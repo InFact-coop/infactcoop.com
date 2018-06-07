@@ -6,9 +6,9 @@ import {
   CardTitle,
   CardSubTitle,
   CardBody,
-  Card,
   CardButtonWithLink,
   CardHeading,
+  SectionCard,
 } from './card'
 import { Section, SectionTitle, SectionHeading } from './section'
 import BackgroundImg from './background-img'
@@ -22,17 +22,6 @@ const Wrapper = styled.div.attrs({
   ${media.ns`
     height: 54vh;
     min-height: 600px;
-  `};
-`
-
-const SectionCard = styled(Card).attrs({
-  className: 'absolute-ns top-0-ns left-0-ns',
-})`
-  max-height: 95%;
-  transform: translateY(-2rem);
-  ${media.ns`
-    transform: translateY(0);
-    width: 40%;
   `};
 `
 

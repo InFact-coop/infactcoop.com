@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import Header from '../../containers/header-work'
 import { SectionHeading, SectionTitle, Section } from '../../components/section'
@@ -18,20 +17,14 @@ import {
   TestimonialWrapper,
   TestimonialPerson,
   TestimonialText,
+  BannerImg,
 } from '../../components/work-content'
 
-import BackgroundImg from '../../components/background-img'
 import bluecross_header from '../../assets/images/header_images/bluecross_header.png'
 import bluecross_img1 from '../../assets/images/inline_images/bluecross_img1.png'
 import bluecross_img2 from '../../assets/images/inline_images/bluecross_img2.png'
 import stimmy_card from '../../assets/images/card_images/stimmythings_card.svg'
 import cast_card from '../../assets/images/card_images/cast_card.png'
-
-const BannerImg = styled(BackgroundImg)`
-  width: 100vw;
-  height: 85vh;
-  max-width: 1440px;
-`
 
 const AboutWork = () => (
   <div>
