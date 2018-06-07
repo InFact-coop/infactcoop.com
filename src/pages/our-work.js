@@ -27,7 +27,7 @@ const WorkGallery = () => (
         <SectionTitle>Our Work</SectionTitle>
       </SectionHeading>
 
-      <div className="flex-ns flex-column flex-row-ns justify-between-ns">
+      <div className="flex-ns flex-column flex-row-ns flex-wrap justify-between-ns">
         <Wrapper to="/our-work/stimmy-things">
           <Picture src={stimmy_card}>
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
