@@ -106,7 +106,7 @@ const AboutWork = () => (
           </p>
         </WorkDescription>
       </WorkWrapper>
-      <TestimonialWrapper>
+      {/* <TestimonialWrapper>
         <TestimonialText>
           InFact are the best! venenatis faucibus. Nullam quis ante. Etiam sit
           amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
@@ -116,7 +116,7 @@ const AboutWork = () => (
         <TestimonialPerson>
           Mariane Caitan, program lead at CAMHS London
         </TestimonialPerson>
-      </TestimonialWrapper>
+      </TestimonialWrapper> */}
     </div>
 
     <Section bg_color="white">

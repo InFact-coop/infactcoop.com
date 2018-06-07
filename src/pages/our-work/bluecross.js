@@ -106,10 +106,16 @@ const AboutWork = () => (
       </WorkWrapper>
       <TestimonialWrapper>
         <TestimonialText>
-          "InFact are the best! venenatis faucibus. Nullam quis ante. Etiam sit
-          amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
-          sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
-          bibendum sodales, augue velit cursus nunc."
+          "As part of the CAST (centre for accelerating social technology)
+          fellowship I was introduced to InFact coop to develop a brand new
+          online site for Blue Cross where we will make it easier for people who
+          need to find a new home for their pet to do so safely with us online.
+          Coming into the process I had never heard of GitHub or worked in this
+          way before, Max Gerber and the team made it very easy to understand
+          and have developed a very high quality site for us over 2 sprints, Max
+          also gave a massively helpful handover so that I feel confident we can
+          manage the site in-house. I will definitely be coming back to InFact
+          for further development opportunities."
         </TestimonialText>
         <TestimonialPerson>
           Kelly Grellier, Director of Strategic Business Planning at Blue Cross
