@@ -1,6 +1,8 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
+import { media } from '../styles/style_utils'
+
 import Header from '../containers/header'
 import {
   Wrapper,
