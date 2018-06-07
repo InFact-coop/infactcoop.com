@@ -20,7 +20,7 @@ const SectionTitle = styled.h1.attrs({
 
 const SectionButton = styled.button.attrs({
   className:
-    'font-4-ns hover-blue font-5 sans-serif fw6 ttu ph4 pv2 white bn db center',
+    'font-4-ns hover-blue font-5 sans-serif fw6 ttu ph4 pv2 white bn db center outline-0',
 })`
   border: 1px solid transparent;
   border-image: linear-gradient(

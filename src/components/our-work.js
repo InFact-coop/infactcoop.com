@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { media } from '../styles/style_utils'
 import Link from 'gatsby-link'
 
-import { CardTitle, CardSubTitle, CardBody, CardHeading } from './card'
+import { CardTitle, CardSubTitle, CardHeading, CardBody } from './card'
 
 import { Section, SectionTitle, SectionHeading, SectionButton } from './section'
 
@@ -16,7 +16,7 @@ import bluecross_card from '../assets/images/card_images/bluecross_card.png'
 const Overlay = styled.div.attrs({
   className: 'absolute w-100 pointer',
 })`
-  height: 100vh;
+  height: 100%;
   background: ${({ background }) => background};
   opacity: 0;
   transition: 0.5s;
@@ -31,10 +31,10 @@ const SectionCard = styled.div.attrs({
     'bg-white shadow-5 absolute-ns ph4-ns pv4-ns pv4 ph3 center tc tl-ns pointer',
 })`
   ${media.ns`
-height: 48%;
-margin-bottom: 7%;
-width: 90%;
-bottom: 2rem;
+    height: 48%;
+    margin-bottom: 7%;
+    width: 90%;
+    bottom: 2rem;
   `};
   width: 95%;
   transition: 0.5s;
@@ -65,6 +65,13 @@ const Wrapper = styled(Link).attrs({
 
   overflow-y: scroll;
 `
+const SectionText = styled(CardBody)`
+  height: 30%;
+`
+
+const WorkLink = styled(SectionButton.withComponent(Link)).attrs({
+  className: 'no-underline w-20-ns w-80 tc',
+})``
 
 const OurWork = ({ history }) => {
   const isHomePage = history.location.pathname === '/'
@@ -84,13 +91,7 @@ const OurWork = ({ history }) => {
         {currentPage !== '/our-work/stimmy-things' && (
           <Wrapper to="/our-work/stimmy-things">
             <Picture src={stimmy_card}>
-              <Overlay
-                background="linear-gradient(
-              0deg,
-              rgba(250, 125, 120, 0.4) 0%,
-              rgba(97, 20, 204, 0.4) 100%
-            )"
-              />
+              <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
             </Picture>
             <SectionCard>
               <CardHeading>
@@ -109,13 +110,7 @@ const OurWork = ({ history }) => {
         {currentPage !== '/our-work/bluecross' && (
           <Wrapper to="/our-work/bluecross">
             <Picture src={bluecross_card}>
-              <Overlay
-                background="linear-gradient(
-            0deg,
-            rgba(250, 125, 120, 0.4) 0%,
-            rgba(97, 20, 204, 0.4) 100%
-          )"
-              />
+              <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
             </Picture>
             <SectionCard>
               <CardHeading>
@@ -134,13 +129,7 @@ const OurWork = ({ history }) => {
           !isHomePage && (
             <Wrapper to="/our-work/cast">
               <Picture src={cast_card}>
-                <Overlay
-                  background="linear-gradient(
-              0deg,
-              rgba(250, 125, 120, 0.4) 0%,
-              rgba(97, 20, 204, 0.4) 100%
-            )"
-                />
+                <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
               </Picture>
               <SectionCard>
                 <CardHeading>
@@ -156,7 +145,7 @@ const OurWork = ({ history }) => {
             </Wrapper>
           )}
       </div>
-      {isHomePage && <SectionButton>See It All</SectionButton>}
+      {isHomePage && <WorkLink to="/our-work">See It All</WorkLink>}
     </Section>
   )
 }
