@@ -117,7 +117,7 @@ const AboutWork = () => (
         </WorkDescription>
         <WorkImg src={cast_img2} />
       </WorkWrapper>
-      <TestimonialWrapper>
+      {/* <TestimonialWrapper>
         <TestimonialText>
           InFact are the best! venenatis faucibus. Nullam quis ante. Etiam sit
           amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
@@ -127,7 +127,7 @@ const AboutWork = () => (
         <TestimonialPerson>
           Ellie Hale, Digital Fellowship and communities lead at CAST
         </TestimonialPerson>
-      </TestimonialWrapper>
+      </TestimonialWrapper> */}
     </div>
 
     <Section bg_color="white">
