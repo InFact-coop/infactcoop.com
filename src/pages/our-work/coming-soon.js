@@ -11,15 +11,7 @@ import {
   SectionText,
 } from '../../components/work-card'
 import { CardTitle, CardSubTitle, CardHeading } from '../../components/card'
-import {
-  WorkWrapper,
-  WorkImg,
-  WorkDescription,
-  TestimonialWrapper,
-  TestimonialPerson,
-  TestimonialText,
-  BannerImg,
-} from '../../components/work-content'
+import { BannerImg } from '../../components/work-content'
 
 import stimmy_card from '../../assets/images/card_images/stimmythings_card.svg'
 import bluecross_card from '../../assets/images/card_images/bluecross_card.png'
@@ -44,7 +36,12 @@ const AboutWork = () => (
     </div>
     <Section bg_color="white">
       <SectionHeading mb>
-        <SectionTitle>Check these out in the meantime!</SectionTitle>
+        <SectionTitle>
+          <div className="flex flex-column flex-row-ns tc">
+            <span>Check these out</span>
+            <span className="pre"> in the meantime! </span>
+          </div>
+        </SectionTitle>
       </SectionHeading>
       <div className="flex-ns flex-column flex-row-ns justify-between-ns">
         <Wrapper to="/our-work/stimmy-things">

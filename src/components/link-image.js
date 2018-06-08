@@ -4,7 +4,7 @@ import { media } from '../styles/style_utils'
 import BackgroundImg from './background-img'
 
 const LinkImage = styled(BackgroundImg.withComponent('a')).attrs({
-  className: 'h4 ma1 ma0-ns mb0-ns dib link pointer',
+  className: 'h4 ma1 ma2-m ma0-l dib link pointer',
 })`
   background-size: contain;
   width: 40%;
