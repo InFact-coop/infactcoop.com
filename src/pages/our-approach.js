@@ -46,7 +46,7 @@ const OurApproach = () => (
       <Text>
         We work in an Agile, user-centred fashion - however we know this doesn’t
         mean much to everyone. This is how we interpret it:
-        <ul>
+        <ul className="tl">
           <li>
             We believe in close collaboration with you, because you’re the
             experts of your domain! We love learning about your world,
@@ -63,17 +63,18 @@ const OurApproach = () => (
             We use what we discover to improve the product during the next cycle
             of work. This ensures that what we are building satisfies real user
             needs. We repeat this process until we arrive at the product that
-            serves your users needs in the best possible manner
+            serves your users needs in the best possible manner.
           </li>
         </ul>
       </Text>
-      Working in this way can feel uncertain because the end product isn't fully
-      realised at the outset. We know that this approach can be scary! However,
-      at each stage of building, we will test, adjust, and tinker in our mission
-      to create your user's ideal product. Time and time again, we’ve seen
-      products produced in this way deliver more impact, in less time, and at a
-      lower cost than their counterparts.
-      <Text />
+      <Text>
+        Working in this way can feel uncertain because the end product isn't
+        fully realised at the outset. We know that this approach can be scary!
+        However, at each stage of building, we will test, adjust, and tinker in
+        our mission to create your user's ideal product. Time and time again,
+        we’ve seen products produced in this way deliver more impact, in less
+        time, and at a lower cost than their counterparts.
+      </Text>
       <Picture src={approach_img} />
       <CardWrapper>
         <Card>

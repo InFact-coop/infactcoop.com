@@ -16,9 +16,6 @@ import {
   WorkImg,
   BannerImg,
   WorkDescription,
-  TestimonialPerson,
-  TestimonialText,
-  TestimonialWrapper,
 } from '../../components/work-content'
 
 import stimmythings_header from '../../assets/images/header_images/stimmythings_header.svg'
@@ -70,7 +67,7 @@ const AboutWork = () => (
         </SectionHeading>
         <WorkDescription>
           We built an app which:
-          <ul>
+          <ul className="tl">
             <li>
               Engages our audience with fun and friendly design and animations
             </li>

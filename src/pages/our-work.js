@@ -52,70 +52,138 @@ const Splash = SplashImg.extend`
   `};
 `
 
+const PartnersMobile = () => (
+  <div className="dn-l">
+    <div className="flex justify-center flex-wrap mv7-l">
+      <LinkImage
+        src={nhs}
+        width="6rem"
+        href="http://www.slam.nhs.uk/"
+        target="_blank"
+      />
+      <LinkImage
+        src={cast}
+        width="14rem"
+        target="_blank"
+        href="http://www.wearecast.org.uk/"
+      />
+      <LinkImage
+        src={annaFreud}
+        width="17rem"
+        target="_blank"
+        href="https://www.annafreud.org/"
+      />
+      <LinkImage
+        src={lwc}
+        width="5em"
+        target="_blank"
+        href="https://www.bluecross.org.uk/"
+      />
+      <LinkImage
+        src={bluecross}
+        width="5em"
+        target="_blank"
+        href="https://www.bluecross.org.uk/"
+      />
+      <LinkImage
+        src={lcn}
+        width="10rem"
+        target="_blank"
+        href="http://www.lawcentres.org.uk/"
+      />
+      <LinkImage
+        src={qsa}
+        width="5rem"
+        target="_blank"
+        href="https://www.quakersocialaction.org.uk/"
+      />
+      <LinkImage
+        src={ucl}
+        width="14rem"
+        target="_blank"
+        href="http://www.wearecast.org.uk/"
+      />
+      <LinkImage
+        src={cambridge}
+        width="17rem"
+        target="_blank"
+        href="https://www.annafreud.org/"
+      />
+    </div>
+  </div>
+)
+
+const Partners = () => (
+  <div className="dn db-l">
+    <div className="flex justify-center flex-wrap justify-between-ns mv7-l">
+      <LinkImage
+        src={nhs}
+        width="6rem"
+        href="http://www.slam.nhs.uk/"
+        target="_blank"
+      />
+      <LinkImage
+        src={cast}
+        width="14rem"
+        target="_blank"
+        href="http://www.wearecast.org.uk/"
+      />
+      <LinkImage
+        src={annaFreud}
+        width="17rem"
+        target="_blank"
+        href="https://www.annafreud.org/"
+      />
+      <LinkImage
+        src={lwc}
+        width="5em"
+        target="_blank"
+        href="https://www.bluecross.org.uk/"
+      />
+      <LinkImage
+        src={bluecross}
+        width="5em"
+        target="_blank"
+        href="https://www.bluecross.org.uk/"
+      />
+    </div>
+    <div className="flex justify-center flex-wrap justify-between-ns mv7">
+      <LinkImage
+        src={lcn}
+        width="10rem"
+        target="_blank"
+        href="http://www.lawcentres.org.uk/"
+      />
+      <LinkImage
+        src={qsa}
+        width="5rem"
+        target="_blank"
+        href="https://www.quakersocialaction.org.uk/"
+      />
+      <LinkImage
+        src={ucl}
+        width="14rem"
+        target="_blank"
+        href="http://www.wearecast.org.uk/"
+      />
+      <LinkImage
+        src={cambridge}
+        width="17rem"
+        target="_blank"
+        href="https://www.annafreud.org/"
+      />
+    </div>
+  </div>
+)
+
 const WorkGallery = () => (
   <div>
     <Header image={ourwork_header} splash={Splash}>
       Working with great people on inspiring projects
     </Header>
     <Section bg_color="white">
-      <div className="flex justify-center flex-wrap justify-between-ns mv7">
-        <LinkImage
-          src={nhs}
-          width="6rem"
-          href="http://www.slam.nhs.uk/"
-          target="_blank"
-        />
-        <LinkImage
-          src={cast}
-          width="14rem"
-          target="_blank"
-          href="http://www.wearecast.org.uk/"
-        />
-        <LinkImage
-          src={annaFreud}
-          width="17rem"
-          target="_blank"
-          href="https://www.annafreud.org/"
-        />
-        <LinkImage
-          src={lwc}
-          width="5em"
-          target="_blank"
-          href="https://www.bluecross.org.uk/"
-        />
-        <LinkImage
-          src={bluecross}
-          width="5em"
-          target="_blank"
-          href="https://www.bluecross.org.uk/"
-        />
-      </div>
-      <div className="flex justify-center flex-wrap justify-between-ns mv7">
-        <LinkImage
-          src={lcn}
-          width="10rem"
-          target="_blank"
-          href="http://www.lawcentres.org.uk/"
-        />
-        <LinkImage
-          src={qsa}
-          width="5rem"
-          target="_blank"
-          href="https://www.quakersocialaction.org.uk/"
-        />
-        <LinkImage
-          src={ucl}
-          width="14rem"
-          target="_blank"
-          href="http://www.wearecast.org.uk/"
-        />
-        <LinkImage
-          src={cambridge}
-          width="17rem"
-          target="_blank"
-          href="https://www.annafreud.org/"
-        />
-      </div>
+      <PartnersMobile />
+      <Partners />
     </Section>
     <Section bg_color="light-gray">
       <SectionHeading mb>
@@ -177,7 +245,7 @@ const WorkGallery = () => (
           </SectionCard>
         </Wrapper>
 
-        <Wrapper to="/our-work/holding">
+        <Wrapper to="/our-work/coming-soon">
           <PictureWithFilter
             src={yimovi_card}
             gradient={
@@ -198,7 +266,7 @@ const WorkGallery = () => (
           </SectionCard>
         </Wrapper>
 
-        <Wrapper to="/our-work/holding">
+        <Wrapper to="/our-work/coming-soon">
           <Picture src={lcn_card}>
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />{' '}
           </Picture>
@@ -214,7 +282,7 @@ const WorkGallery = () => (
           </SectionCard>
         </Wrapper>
 
-        <Wrapper to="/our-work/holding">
+        <Wrapper to="/our-work/coming-soon">
           <Picture src={first_days_card}>
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />{' '}
           </Picture>
@@ -231,7 +299,7 @@ const WorkGallery = () => (
           </SectionCard>
         </Wrapper>
 
-        <Wrapper to="/our-work/holding">
+        <Wrapper to="/our-work/coming-soon">
           <PictureWithFilter
             src={lwc_card}
             gradient="radial-gradient(circle, rgba(250,125,120,0.3) 0%, rgba(97,20,204,0.3) 100%)"
@@ -251,7 +319,7 @@ const WorkGallery = () => (
           </SectionCard>
         </Wrapper>
 
-        <Wrapper to="/our-work/holding">
+        <Wrapper to="/our-work/coming-soon">
           <PictureWithFilter
             src={unlock_card}
             gradient="linear-gradient(225deg, rgba(0,0,0,0.1) 0%, rgba(50,45,55,0.1) 100%)"
