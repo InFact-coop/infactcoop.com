@@ -68,7 +68,7 @@ const AboutWork = () => (
         </SectionHeading>
         <WorkDescription>
           We built an app which:
-          <ul>
+          <ul className="tl">
             <li>
               Engages our audience with fun and friendly design and animations
             </li>

@@ -77,7 +77,7 @@ const AboutWork = () => (
           organisations. To help us understand the challenges they were facing,
           the groups spanned all levels of experience within the charity. We led
           the participants through a set of exercises designed to help them:
-          <ul>
+          <ul className="tl">
             <li>
               Discover the problems faced by both their service users and their
               staff.

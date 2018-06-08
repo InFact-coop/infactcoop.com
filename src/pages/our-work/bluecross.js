@@ -65,7 +65,7 @@ const AboutWork = () => (
         <WorkDescription>
           From this brief, we created a companion app for conscientious owners
           to find a loving new home for their pets. The aims of the solution:
-          <ul>
+          <ul className="tl">
             <li>
               To give “re-homers” a viable alternative to marketplaces like
               Gumtree

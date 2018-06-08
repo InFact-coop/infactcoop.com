@@ -15,7 +15,7 @@ const Wrapper = styled.div.attrs({
 `
 
 const SectionTitle = styled.h1.attrs({
-  className: 'font-4 font-3-ns sans-serif b ttu',
+  className: 'font-4 font-3-ns sans-serif b ttu mv1 mv0-ns',
 })``
 
 const SectionButton = styled.button.attrs({

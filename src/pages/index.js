@@ -43,6 +43,7 @@ const WorkLink = styled(SectionButton.withComponent(Link)).attrs({
 `
 
 const Splash = SplashImg.extend`
+  background-position: 73%;
   ${media.m`
     background-position: 86%;
   `};
@@ -106,7 +107,7 @@ const IndexPage = () => (
       <SectionHeading mb>
         <SectionTitle>InFact works with</SectionTitle>
       </SectionHeading>
-      <div className="flex justify-center flex-wrap justify-between-ns mb7-ns">
+      <div className="flex justify-center flex-wrap justify-between-l mb7-l">
         <LinkImage
           src={nhs}
           width="6rem"

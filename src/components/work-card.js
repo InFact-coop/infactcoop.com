@@ -24,44 +24,44 @@ const Picture = styled(BackgroundImg).attrs({
   ${media.ns`
     height: 0;
     width: 40vw;
-    padding-bottom: 100%;
   `};
 `
 const SectionCard = styled.div.attrs({
   className:
-    'bg-white shadow-5 absolute ph4-l pv4-l pv3-m ph3-m pv4 ph3 center tc tl-ns pointer',
+    'bg-white shadow-5 absolute ph4-l pv4-l pv3-m ph3-m pv3 ph3 center tc tl-ns pointer',
 })`
   width: 95%;
+  right: 2.5%;
   transition: 0.5s;
   transform: translateY(-2rem);
+  height: 270px;
+
   ${media.ns`
     width: 90%;
-    transform: translateY(0);
+    left: 2.5%;
   `};
   ${media.m`
-    height: 55%;
     margin-bottom: 7%;
-    width: 90%;
+    height: 250px;
     bottom: 1rem;
     transform: translateY(0);
   `};
   ${media.l`
     height: 40%;
     margin-bottom: 7%;
-    width: 90%;
     bottom: 0;
     transform: translateY(0);
   `};
 `
 
 const Wrapper = styled(Link).attrs({
-  className: 'relative flex-ns justify-center black no-underline dib',
+  className: 'relative flex-ns justify-center black no-underline db mb0-ns',
 })`
   height: 100vh;
   transition: 0.5s;
 
   ${media.m`
-    height: 60vh;
+    height: 67vw;
     width: 46%;
   `}
   ${media.l`
