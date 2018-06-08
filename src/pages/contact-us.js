@@ -11,11 +11,13 @@ import {
   SubmitButton,
 } from '../components/contact-us'
 
+import { ToplineBackground } from '../components/header'
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const ContactUs = () => (
   <div>
     <HeaderLanding>We would love to meet you!</HeaderLanding>
+    <ToplineBackground />
     <Wrapper>
       <Title>Get in touch</Title>
       <ZigZag src={wigglyBottom} />

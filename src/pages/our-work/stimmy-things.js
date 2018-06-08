@@ -16,9 +16,6 @@ import {
   WorkImg,
   BannerImg,
   WorkDescription,
-  TestimonialPerson,
-  TestimonialText,
-  TestimonialWrapper,
 } from '../../components/work-content'
 
 import stimmythings_header from '../../assets/images/header_images/stimmythings_header.svg'
@@ -40,6 +37,7 @@ const AboutWork = () => (
       topicLine="Mental Health"
       tagLine="Stimmy Things"
       subTagLine="An app to help young people deal better with ADHD."
+      gradient
     />
     <div className="ma0">
       <BannerImg src={stimmythings_header} />

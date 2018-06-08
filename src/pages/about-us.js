@@ -5,6 +5,7 @@ import { AboutCard, CardsWrapper } from '../components/about-us'
 import { Wrapper, ZigZag, Text, Title } from '../components/about-pages'
 import { YellowBackgroundSplash } from '../components/splash'
 
+import { ToplineBackground } from '../components/header'
 import lucy from '../assets/images/team_images/lucy.png'
 import ivan from '../assets/images/team_images/ivan.png'
 import noga from '../assets/images/team_images/noga.png'
@@ -16,6 +17,7 @@ import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const AboutUs = () => (
   <div>
+    <ToplineBackground />
     <Wrapper>
       <Title>We are InFact</Title>
       <ZigZag src={wigglyBottom} />
@@ -48,7 +50,7 @@ const AboutWork = () => {
   return (
     <div>
       <Header image={aboutus_header} splash={YellowBackgroundSplash}>
-        Co-operatively driven design and development.
+        Co-operatively driven design and development
       </Header>
       <AboutUs />
     </div>

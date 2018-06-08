@@ -11,15 +11,7 @@ import {
   SectionText,
 } from '../../components/work-card'
 import { CardTitle, CardSubTitle, CardHeading } from '../../components/card'
-import {
-  WorkWrapper,
-  WorkImg,
-  WorkDescription,
-  TestimonialWrapper,
-  TestimonialPerson,
-  TestimonialText,
-  BannerImg,
-} from '../../components/work-content'
+import { BannerImg } from '../../components/work-content'
 
 import stimmy_card from '../../assets/images/card_images/stimmythings_card.svg'
 import bluecross_card from '../../assets/images/card_images/bluecross_card.png'
@@ -38,6 +30,7 @@ const AboutWork = () => (
       topicLine="Work in progress"
       tagLine="Coming soon!"
       subTagLine="We haven't made this page yet, but as you can see, we're busy working on it."
+      gradient
     />
     <div className="ma0">
       <BannerImg src={header_img} />

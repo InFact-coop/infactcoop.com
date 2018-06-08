@@ -16,9 +16,6 @@ import {
   WorkWrapper,
   WorkImg,
   WorkDescription,
-  TestimonialPerson,
-  TestimonialText,
-  TestimonialWrapper,
 } from '../../components/work-content'
 
 import BackgroundImg from '../../components/background-img'
@@ -46,8 +43,8 @@ const AboutWork = () => (
       topicLine="partnerships"
       tagLine="CAST Digital Fellowship"
       subTagLine="Empowering non-profits to achieve positive change through technology."
+      gradient
     />
-
     <div>
       <BannerImg src={cast_header} />
       <WorkWrapper>

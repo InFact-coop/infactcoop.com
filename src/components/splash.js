@@ -55,8 +55,8 @@ const SplashGradient = SplashBase.extend`
   height: 90vh;
   background: linear-gradient(
     0deg,
-    rgba(0, 156, 243, 0.8) 0%,
-    rgba(22, 214, 217, 0.8) 100%
+    rgba(0, 156, 243, 1) 0%,
+    rgba(22, 214, 217, 1) 100%
   );
 `
 
