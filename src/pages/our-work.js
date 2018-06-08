@@ -15,6 +15,7 @@ import { Section, SectionTitle, SectionHeading } from '../components/section'
 import { CardTitle, CardSubTitle, CardHeading } from '../components/card'
 import { SplashImg } from '../components/splash'
 import { LinkImage } from '../components/link-image'
+import { ToplineBackground } from '../components/header'
 
 import stimmy_card from '../assets/images/card_images/stimmythings_card.svg'
 import cast_card from '../assets/images/card_images/cast_card.png'
@@ -181,6 +182,7 @@ const WorkGallery = () => (
     <Header image={ourwork_header} splash={Splash}>
       Working with great people on inspiring projects
     </Header>
+    <ToplineBackground />
     <Section bg_color="white">
       <PartnersMobile />
       <Partners />

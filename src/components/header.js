@@ -14,8 +14,22 @@ const SplashWhite = SplashBase.extend`
 
 const Topline = styled.div.attrs({
   className:
-    'flex justify-between items-center w-100 ph6-ns ph2 absolute top-0',
+    'flex justify-between items-center w-100 ph6-ns ph2 absolute top-0 fixed',
 })`
+  background-color: ${({ gradient, menuIsOpen }) =>
+    gradient && menuIsOpen !== 'OPENED' ? 'white' : 'inherit'}
+  transition: ${({ menuIsOpen }) =>
+    menuIsOpen === 'OPENED' ? '0s' : 'background-color 0.2s ease-out 0.7s'};
+  max-width: 1440px;
+`
+const ToplineBackground = styled.div.attrs({
+  className: 'w-100 h4-ns h3 fixed top-0 z-1',
+})`
+  background: linear-gradient(
+    to right,
+    rgba(0, 156, 243, 1) 0%,
+    rgba(22, 214, 217, 1) 100%
+  );
   max-width: 1440px;
 `
 
@@ -41,7 +55,7 @@ const LogoGradient = styled.div.attrs({
 
 const Tagline = styled.div.attrs({
   className:
-     'heading-ns font-1 ttu w-90 w-50-l w-90-m reglo white pl7-ns pl0 tl-ns tc',
+    'heading-ns font-1 ttu w-90 w-50-l w-90-m reglo white pl7-ns pl0 tl-ns tc',
 })``
 
 const ZigZag = styled.img.attrs({
@@ -49,15 +63,15 @@ const ZigZag = styled.img.attrs({
 })``
 
 const TopicLine = styled.div.attrs({
-  className:  'font-4 ttu sans-serif black mt2 mb1',
+  className: 'font-4 ttu sans-serif black mt2 mb1',
 })``
 
 const TaglineBlack = styled.p.attrs({
-  className:  'font-0-ns font-1 ttu reglo black',
+  className: 'font-0-ns font-1 ttu reglo black',
 })``
 
 const SubTaglineBlack = styled.div.attrs({
-  className:  'font-4 sans-serif black',
+  className: 'font-4 sans-serif black',
 })``
 
 const WorkHeading = ({ children }) => (
@@ -69,6 +83,7 @@ const WorkHeading = ({ children }) => (
 export default {
   SplashWhite,
   Topline,
+  ToplineBackground,
   LogoWhite,
   LogoGradient,
   Tagline,

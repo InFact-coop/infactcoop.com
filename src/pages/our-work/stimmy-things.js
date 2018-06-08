@@ -37,6 +37,7 @@ const AboutWork = () => (
       topicLine="Mental Health"
       tagLine="Stimmy Things"
       subTagLine="An app to help young people deal better with ADHD."
+      gradient
     />
     <div className="ma0">
       <BannerImg src={stimmythings_header} />

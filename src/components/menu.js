@@ -63,7 +63,8 @@ const MenuItem = styled(Link).attrs({
   }
   color: transparent;
   ${props => menuAnimationToggle(props.menuIsOpen)};
-
+  pointer-events: ${({ menuIsOpen }) =>
+    menuIsOpen === 'OPENED' ? 'inherit' : 'none'};
   &:hover {
     transform: scale(1.1)
     transition: transform 1s;
@@ -83,7 +84,7 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
 
   return (
     <Splash menuIsOpen={menuIsOpen}>
-      <Topline>
+      <Topline gradient={gradient} menuIsOpen={menuIsOpen}>
         <Link to="/">
           <Logo menuIsOpen={menuIsOpen} />
         </Link>

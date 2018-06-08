@@ -7,6 +7,7 @@ import {
   CardSubTitle,
   CardBody,
   CardButtonWithLink,
+  ExternalCardButtonWithLink,
   CardHeading,
   SectionCard,
 } from './card'
@@ -66,9 +67,9 @@ const FAC = () => (
           graduated from the programme and our story begins with the Founders &
           Coders community.
         </CardBody>
-        <CardButtonWithLink link="https://foundersandcoders.com/">
+        <ExternalCardButtonWithLink link="https://foundersandcoders.com/">
           Read More
-        </CardButtonWithLink>
+        </ExternalCardButtonWithLink>
       </SectionCard>
     </Wrapper>
   </Section>

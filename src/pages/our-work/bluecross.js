@@ -32,6 +32,7 @@ const AboutWork = () => (
       topicLine="Non-profit sector"
       tagLine="Blue Cross: Giving a Pet"
       subTagLine="An app to help conscientious owners find a loving new home for their pet"
+      gradient
     />
     <div className="ma0">
       <BannerImg src={bluecross_header} />

@@ -8,6 +8,7 @@ import OurApproach from '../components/our-approach'
 import GetToKnowUs from '../components/get-to-know-us'
 import FAC from '../components/fac'
 import { SplashImg } from '../components/splash'
+import { ToplineBackground } from '../components/header'
 import {
   Section,
   SectionTitle,
@@ -37,7 +38,9 @@ import qsa from '../assets/images/partner_logos/qsa.png'
 
 const WorkLink = styled(SectionButton.withComponent(Link)).attrs({
   className: 'no-underline w-20-l w-40-m w-80 tc',
-})``
+})`
+  z-index: 0;
+`
 
 const Splash = SplashImg.extend`
   background-position: 73%;
@@ -55,6 +58,7 @@ const IndexPage = () => (
       We're a design & development co-operative helping to shape a better
       digital future
     </Header>
+    <ToplineBackground />
     <OurApproach />
 
     <Section bg_color="light-gray">

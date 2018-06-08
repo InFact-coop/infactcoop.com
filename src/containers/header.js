@@ -9,7 +9,7 @@ import { toggleMenu } from '../state/actions'
 const Header = ({ menuIsOpen, toggleMenu, image, children, splash }) => {
   const Splash = image ? splash : SplashGradient
   return (
-    <Splash src={image}>
+    <Splash src={image} className="z-2 relative">
       <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
       <Tagline>{children}</Tagline>
     </Splash>

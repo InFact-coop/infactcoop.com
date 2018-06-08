@@ -30,6 +30,7 @@ const AboutWork = () => (
       topicLine="Work in progress"
       tagLine="Coming soon!"
       subTagLine="We haven't made this page yet, but as you can see, we're busy working on it."
+      gradient
     />
     <div className="ma0">
       <BannerImg src={header_img} />

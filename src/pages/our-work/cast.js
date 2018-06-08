@@ -43,8 +43,8 @@ const AboutWork = () => (
       topicLine="partnerships"
       tagLine="CAST Digital Fellowship"
       subTagLine="Empowering non-profits to achieve positive change through technology."
+      gradient
     />
-
     <div>
       <BannerImg src={cast_header} />
       <WorkWrapper>

@@ -51,6 +51,12 @@ const CardButtonWithLink = ({ children, link }) => (
     <CardButton>{children}</CardButton>
   </Link>
 )
+
+const ExternalCardButtonWithLink = ({ children, link }) => (
+  <a href={link} target="_blank" rel="noopener noreferrer">
+    <CardButton>{children}</CardButton>
+  </a>
+)
 const CardHeading = ({ children }) => (
   <div className="mb2-l mb1">
     <div className="mb2-l mb1">{children}</div>
@@ -64,6 +70,7 @@ export {
   CardBody,
   Card,
   CardButtonWithLink,
+  ExternalCardButtonWithLink,
   CardHeading,
   SectionCard,
 }
