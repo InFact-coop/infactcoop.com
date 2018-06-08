@@ -292,9 +292,9 @@ const WorkGallery = () => (
             </CardHeading>
             <CardSubTitle uppercase>Wales Cooperative Centre</CardSubTitle>
             <SectionText>
-              First Days is a platform built to help engage with volunteers from
-              the beginning of the recruitment process right through to getting
-              feedback on the volunteer's first day.
+              Platform for helping with volunteer engagement from the beginning
+              of the recruitment process right through to getting feedback on
+              the volunteer's first day.
             </SectionText>
           </SectionCard>
         </Wrapper>

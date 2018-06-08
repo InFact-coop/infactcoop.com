@@ -28,15 +28,16 @@ const Picture = styled(BackgroundImg).attrs({
 `
 const SectionCard = styled.div.attrs({
   className:
-    'bg-white shadow-5 absolute ph4-l pv4-l pv3-m ph3-m pv4 ph3 center tc tl-ns pointer',
+    'bg-white shadow-5 absolute ph4-l pv4-l pv3-m ph3-m pv3 ph3 center tc tl-ns pointer',
 })`
   width: 95%;
   right: 2.5%;
   transition: 0.5s;
   transform: translateY(-2rem);
+  height: 270px;
+
   ${media.ns`
     width: 90%;
-    transform: translateY(0);
     left: 2.5%;
   `};
   ${media.m`
@@ -54,7 +55,7 @@ const SectionCard = styled.div.attrs({
 `
 
 const Wrapper = styled(Link).attrs({
-  className: 'relative flex-ns justify-center black no-underline db',
+  className: 'relative flex-ns justify-center black no-underline db mb0-ns',
 })`
   height: 100vh;
   transition: 0.5s;
