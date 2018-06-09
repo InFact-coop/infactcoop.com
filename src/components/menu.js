@@ -57,7 +57,7 @@ const Splash = styled.nav.attrs({
 `
 
 const MenuItem = styled(Link).attrs({
-  className: 'dib ttu heading-ns font-1 reglo link',
+  className: 'dib ttu heading-ns font-1 reglo link grow',
 })`
   &:focus {
     outline: 0;
@@ -66,11 +66,8 @@ const MenuItem = styled(Link).attrs({
   ${props => menuAnimationToggle(props.menuIsOpen)};
   pointer-events: ${({ menuIsOpen }) =>
     menuIsOpen === 'OPENED' ? 'inherit' : 'none'};
-  &:hover {
-    transform: scale(1.1)
-    transition: transform 1s;
-  }
 `
+
 const MenuItemATag = MenuItem.withComponent('a')
 
 const LinkContainer = styled.div.attrs({
