@@ -1,6 +1,9 @@
 import React from 'react'
 
 import Header from '../containers/header'
+import Headroom from 'react-headroom'
+
+import { getVhInPixels } from '../styles/style_utils'
 import { AboutCard, CardsWrapper } from '../components/about-us'
 import { Wrapper, ZigZag, Text, Title } from '../components/about-pages'
 import { YellowBackgroundSplash } from '../components/splash'
@@ -17,7 +20,9 @@ import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const AboutUs = () => (
   <div>
-    <ToplineBackground />
+    <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()}>
+      <ToplineBackground />
+    </Headroom>
     <Wrapper>
       <Title>We are InFact</Title>
       <ZigZag src={wigglyBottom} />

@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-
+import Headroom from 'react-headroom'
 import {
   backgroundImageToggle,
   menuAnimationToggle,
+  getVhInPixels,
 } from '../styles/style_utils'
 import { Topline, LogoWhite, LogoGradient } from './header'
 import burgerClosed from '../assets/icons/menu_white_close.svg'
@@ -81,15 +82,19 @@ const LinkContainer = styled.div.attrs({
 const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
   const Burger = gradient ? BurgerGradient : BurgerWhite
   const Logo = gradient ? LogoGradient : LogoWhite
-
   return (
     <Splash menuIsOpen={menuIsOpen}>
-      <Topline gradient={gradient} menuIsOpen={menuIsOpen}>
-        <Link to="/">
-          <Logo menuIsOpen={menuIsOpen} />
-        </Link>
-        <Burger menuIsOpen={menuIsOpen} onClick={() => toggleMenu()} />
-      </Topline>
+      <Headroom
+        style={{ position: 'fixed', top: 0 }}
+        pinStart={getVhInPixels()}
+      >
+        <Topline gradient={gradient} menuIsOpen={menuIsOpen}>
+          <Link to="/">
+            <Logo menuIsOpen={menuIsOpen} />
+          </Link>
+          <Burger menuIsOpen={menuIsOpen} onClick={() => toggleMenu()} />
+        </Topline>
+      </Headroom>
       <LinkContainer>
         <MenuItem
           menuIsOpen={menuIsOpen}
