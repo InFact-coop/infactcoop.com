@@ -20,8 +20,8 @@ import {
   BannerImg,
 } from '../../components/work-content'
 
-import bluecross_header from '../../assets/images/header_images/bluecross_header.png'
-import bluecross_img1 from '../../assets/images/inline_images/bluecross_img1.png'
+import bluecross_header from '../../assets/images/header_images/bluecross_header.jpg'
+import bluecross_img1 from '../../assets/images/inline_images/bluecross_img1.jpg'
 import bluecross_img2 from '../../assets/images/inline_images/bluecross_img2.png'
 import stimmy_card from '../../assets/images/card_images/stimmythings_card.svg'
 import cast_card from '../../assets/images/card_images/cast_card.png'
