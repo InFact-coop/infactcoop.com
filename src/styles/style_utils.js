@@ -2,6 +2,9 @@ import React from 'react'
 import { css } from 'styled-components'
 import { fontWhiteToFade, fontFadeToWhite } from './style_animations'
 
+const getVhInPixels = (vh = 65) =>
+  document.documentElement.clientHeight * (vh / 100)
+
 const media = {
   ns: (...args) => css`
     @media screen and (min-width: 40em) {
@@ -62,4 +65,5 @@ export default {
   displayElement,
   emptySpan,
   menuAnimationToggle,
+  getVhInPixels,
 }

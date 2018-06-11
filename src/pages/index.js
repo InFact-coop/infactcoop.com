@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
-import { media } from '../styles/style_utils'
+import Headroom from 'react-headroom'
+import { media, getVhInPixels } from '../styles/style_utils'
 
 import Header from '../containers/header'
 import OurApproach from '../components/our-approach'
@@ -58,7 +59,9 @@ const IndexPage = () => (
       We're a design & development co-operative helping to shape a better
       digital future
     </Header>
-    <ToplineBackground />
+    <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()}>
+      <ToplineBackground />
+    </Headroom>
     <OurApproach />
 
     <Section bg_color="light-gray">

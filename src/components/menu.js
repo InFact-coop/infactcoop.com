@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-
+import Headroom from 'react-headroom'
 import {
   backgroundImageToggle,
   menuAnimationToggle,
+  getVhInPixels,
 } from '../styles/style_utils'
 import { Topline, LogoWhite, LogoGradient } from './header'
 import burgerClosed from '../assets/icons/menu_white_close.svg'
@@ -42,7 +43,7 @@ const BurgerGradient = styled.div.attrs({
 const Splash = styled.nav.attrs({
   className: `nav w-100 z-1 top-0 flex-column justify-center`,
 })`
-  position: ${props => (props.menuIsOpen === 'OPENED' ? 'fixed' : 'absolute')};
+  position: fixed;
   max-width: 1440px;
   height: ${props => (props.menuIsOpen === 'OPENED' ? '100vh' : '0')};
   transition: 0.8s;
@@ -56,7 +57,7 @@ const Splash = styled.nav.attrs({
 `
 
 const MenuItem = styled(Link).attrs({
-  className: 'dib ttu heading-ns font-1 reglo link',
+  className: 'dib ttu heading-ns font-1 reglo link grow',
 })`
   &:focus {
     outline: 0;
@@ -65,11 +66,8 @@ const MenuItem = styled(Link).attrs({
   ${props => menuAnimationToggle(props.menuIsOpen)};
   pointer-events: ${({ menuIsOpen }) =>
     menuIsOpen === 'OPENED' ? 'inherit' : 'none'};
-  &:hover {
-    transform: scale(1.1)
-    transition: transform 1s;
-  }
 `
+
 const MenuItemATag = MenuItem.withComponent('a')
 
 const LinkContainer = styled.div.attrs({
@@ -81,15 +79,19 @@ const LinkContainer = styled.div.attrs({
 const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
   const Burger = gradient ? BurgerGradient : BurgerWhite
   const Logo = gradient ? LogoGradient : LogoWhite
-
   return (
     <Splash menuIsOpen={menuIsOpen}>
-      <Topline gradient={gradient} menuIsOpen={menuIsOpen}>
-        <Link to="/">
-          <Logo menuIsOpen={menuIsOpen} />
-        </Link>
-        <Burger menuIsOpen={menuIsOpen} onClick={() => toggleMenu()} />
-      </Topline>
+      <Headroom
+        style={{ position: 'fixed', top: 0 }}
+        pinStart={getVhInPixels()}
+      >
+        <Topline gradient={gradient} menuIsOpen={menuIsOpen}>
+          <Link to="/">
+            <Logo menuIsOpen={menuIsOpen} />
+          </Link>
+          <Burger menuIsOpen={menuIsOpen} onClick={() => toggleMenu()} />
+        </Topline>
+      </Headroom>
       <LinkContainer>
         <MenuItem
           menuIsOpen={menuIsOpen}
