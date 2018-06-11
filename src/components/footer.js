@@ -100,7 +100,10 @@ const Footer = () => (
       <EmailSecondLine className="light-green">
         hello@infactcoop.com
       </EmailSecondLine>
-      <a className="tc">
+      <a
+        className="tc"
+        href="mailto:hello@infactcoop.com?Subject=I%20was%20checking%20out%20your%20website%20and..."
+      >
         <AirplaneIcon src={airplane} alt="airplane" />
       </a>
     </EmailSplash>

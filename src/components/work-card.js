@@ -55,7 +55,8 @@ const SectionCard = styled.div.attrs({
 `
 
 const Wrapper = styled(Link).attrs({
-  className: 'relative flex-ns justify-center black no-underline db mb3 mb0-ns',
+  className:
+    'relative flex-ns justify-center black no-underline db mb3 mb0-ns overflow-x-hidden overflow-y-hidden',
 })`
   height: 115vh;
   transition: 0.5s;
@@ -82,7 +83,6 @@ const Wrapper = styled(Link).attrs({
     transition: 0.5s;
   }
 
-  overflow-y: scroll;
 `
 const SectionText = styled(CardBody)`
   height: 30%;
