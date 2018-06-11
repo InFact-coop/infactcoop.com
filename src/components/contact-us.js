@@ -37,7 +37,6 @@ const SubmitButton = styled.button.attrs({
   z-index: 100;
 
 
-
   &:before {
     background-image: linear-gradient(#fff, #fff);
     content: '';
