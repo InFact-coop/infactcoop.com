@@ -13,7 +13,7 @@ const SplashWhite = SplashBase.extend`
 `
 
 const Topline = styled.div.attrs({
-  className: 'flex justify-between items-center w-100 ph6-ns ph2',
+  className: 'flex justify-between items-center w-100 ph6-ns ph2 center',
 })`
   background-color: ${({ gradient, menuIsOpen }) =>
     gradient && menuIsOpen !== 'OPENED' ? 'white' : 'inherit'}
@@ -22,7 +22,7 @@ const Topline = styled.div.attrs({
   max-width: 1440px;
 `
 const ToplineBackground = styled.div.attrs({
-  className: 'w-100 h4-ns h3 z-1',
+  className: 'w-100 h4-ns h3 z-1 center',
 })`
   background: linear-gradient(
     to right,
