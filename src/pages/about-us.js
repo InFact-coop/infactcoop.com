@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 import Header from '../containers/header'
 import Headroom from 'react-headroom'
@@ -37,16 +38,36 @@ const AboutUs = () => (
       <Text>
         We recognise the transformative impact and reach that the internet has
         had on every aspect of the modern world. We wish to leverage that reach
-        to turn your great ideas into reality. If this sounds like you, get in
-        touch!
+        to turn your great ideas into reality. If this sounds like you,
+        <Link to="/contact-us"> then why not get in touch?</Link>
       </Text>
     </Wrapper>
     <CardsWrapper>
-      {AboutCard(ivan, 'Ivan Gonzalez', 'Lead Developer')}
-      {AboutCard(lucy, 'Lucy King', 'Developer')}
-      {AboutCard(max, 'Max Gerber', 'Developer')}
-      {AboutCard(sophie, 'Sophie Levens', 'Developer')}
-      {AboutCard(noga, 'Noga Enbar', 'Designer')}
+      {AboutCard(
+        ivan,
+        'Ivan Gonzalez',
+        'Lead Developer',
+        'https://github.com/ivanmauricio'
+      )}
+      {AboutCard(lucy, 'Lucy King', 'Developer', 'https://github.com/lucymk')}
+      {AboutCard(
+        max,
+        'Max Gerber',
+        'Developer',
+        'https://github.com/maxgerber/'
+      )}
+      {AboutCard(
+        sophie,
+        'Sophie Levens',
+        'Developer',
+        'https://github.com/sophielevens'
+      )}
+      {AboutCard(
+        noga,
+        'Noga Enbar',
+        'Designer',
+        'http://www.inbarcodedesign.com/'
+      )}
     </CardsWrapper>
   </div>
 )

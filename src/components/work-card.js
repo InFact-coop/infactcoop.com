@@ -55,9 +55,9 @@ const SectionCard = styled.div.attrs({
 `
 
 const Wrapper = styled(Link).attrs({
-  className: 'relative flex-ns justify-center black no-underline db mb0-ns',
+  className: 'relative flex-ns justify-center black no-underline db mb3 mb0-ns',
 })`
-  height: 100vh;
+  height: 115vh;
   transition: 0.5s;
 
   ${media.m`

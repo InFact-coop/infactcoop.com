@@ -2,12 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { css } from 'styled-components'
 
+import Link from 'gatsby-link'
+
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 import { media } from '../styles/style_utils'
 
 const CardName = styled.p.attrs({
-  className:  'font-4 ttu sans-serif b black mb1',
+  className: 'font-4 ttu sans-serif b black mb1',
 })``
 
 const CardImage = styled.img.attrs({
@@ -23,15 +25,15 @@ const CardImage = styled.img.attrs({
 `
 
 const CardJobTitle = styled.p.attrs({
-  className:  'font-5 ttu sans-serif black',
+  className: 'font-5 ttu sans-serif black',
 })``
 
 const CardsWrapper = styled.section.attrs({
   className: 'cf w-100 pv2-ns ph6-ns pa2 mb4',
 })``
 
-const CardWrapper = styled.article.attrs({
-  className: 'fl pt3-ns ph2-ns pb2-ns',
+const CardWrapper = styled.a.attrs({
+  className: 'fl dib black pt3-ns ph2-ns pb2-ns grow no-underline',
 })`
   width: 100%;
   ${media.m`
@@ -46,8 +48,18 @@ const ZigZag = styled.img.attrs({
   className: 'mb1',
 })``
 
-const AboutCard = (src, name, job) => (
-  <CardWrapper>
+const AboutCard = (
+  src,
+  name,
+  job,
+  github = 'https://www.github.com/infact-coop'
+) => (
+  <CardWrapper
+    href={github}
+    alt={`GitHub profile of ${name}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <div className="aspect-ratio aspect-ratio--1x1 mb2">
       <CardImage src={src} />
     </div>
