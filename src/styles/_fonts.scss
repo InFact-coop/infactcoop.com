@@ -19,7 +19,9 @@
 
 @font-face {
   font-family: 'Reglo';
-  src: url('../assets/fonts/Reglo-Bold.otf') format('opentype'); /* Safari, Android, iOS */
+  src: url('../assets/fonts/Reglo-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/Reglo-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Reglo-Bold.otf') format('opentype'); /* Safari, Android, iOS */
   font-weight: bold;
 }
 
