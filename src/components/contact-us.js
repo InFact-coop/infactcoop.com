@@ -9,8 +9,10 @@ const Text = styled.p.attrs({
 })``
 
 const Input = styled.input.attrs({
-  className:  'mt1 ba w-100 pa2 bg-light-gray',
-})``
+  className: 'mt1 ba w-100 pa2 bg-light-gray',
+})`
+  border: 1px solid black;
+`
 
 const SubmitButton = styled.button.attrs({
   className: 'w-40-ns w-60 b hover-blue white font-4 sans-serif pv2 mt2',
@@ -57,9 +59,10 @@ const SubmitButton = styled.button.attrs({
 `
 
 const HelpText = styled.textarea.attrs({
-  className:  'mt1 w-100 b--black pa2 bg-light-gray',
+  className: 'mt1 w-100 pa2 bg-light-gray',
 })`
   height: 10vh;
+  border: 1px solid black;
 `
 
 const Label = styled.label.attrs({
