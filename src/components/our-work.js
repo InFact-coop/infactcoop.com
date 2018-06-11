@@ -21,7 +21,7 @@ import { PurpleOverlay } from './splash'
 
 const Wrapper = styled.div.attrs({
   className:
-    'relative flex-ns justify-center overflow-x-hidden overflow-y-hidden',
+    'relative flex-ns justify-center',
 })`
   height: 100vh;
   ${media.ns`
