@@ -1,6 +1,9 @@
 import React from 'react'
 
 import HeaderLanding from '../containers/header'
+import Headroom from 'react-headroom'
+
+import { getVhInPixels } from '../styles/style_utils'
 import { Wrapper, ZigZag, Title } from '../components/about-pages'
 import {
   Form,
@@ -17,7 +20,9 @@ import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 const ContactUs = () => (
   <div>
     <HeaderLanding>We would love to meet you!</HeaderLanding>
-    <ToplineBackground />
+    <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()}>
+      <ToplineBackground />
+    </Headroom>
     <Wrapper>
       <Title>Get in touch</Title>
       <ZigZag src={wigglyBottom} />

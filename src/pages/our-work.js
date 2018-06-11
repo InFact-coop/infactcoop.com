@@ -1,8 +1,8 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-import { media } from '../styles/style_utils'
-
+import { media, getVhInPixels } from '../styles/style_utils'
+import Headroom from 'react-headroom'
 import Header from '../containers/header'
 import {
   Wrapper,
@@ -182,7 +182,9 @@ const WorkGallery = () => (
     <Header image={ourwork_header} splash={Splash}>
       Working with great people on inspiring projects
     </Header>
-    <ToplineBackground />
+    <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()}>
+      <ToplineBackground />
+    </Headroom>
     <Section bg_color="white">
       <PartnersMobile />
       <Partners />
