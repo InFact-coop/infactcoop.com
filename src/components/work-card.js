@@ -58,7 +58,7 @@ const Wrapper = styled(Link).attrs({
   className:
     'relative flex-ns justify-center black no-underline db mb3 mb0-ns overflow-x-hidden overflow-y-hidden',
 })`
-  height: 115vh;
+  height: 105vh;
   transition: 0.5s;
 
   ${media.m`

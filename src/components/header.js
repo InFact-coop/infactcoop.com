@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { backgroundImage, backgroundImageToggle } from '../styles/style_utils'
 import logo from '../assets/logos/infact_logo_white.svg'
 import logoGradient from '../assets/logos/infact_logo_gradient.svg'
+import { appear } from '../styles/style_animations'
 
 const SplashBase = styled.section.attrs({
   className: 'flex flex-column items-center items-start-ns justify-center',
@@ -30,8 +31,8 @@ const ToplineBackground = styled.div.attrs({
     rgba(22, 214, 217, 1) 100%
   );
   max-width: 1440px;
+  animation: ${appear} 2s 1 0s forwards;
 `
-
 const LogoWhite = styled.div.attrs({
   className: 'w5-ns h4-ns w4 h3',
 })`

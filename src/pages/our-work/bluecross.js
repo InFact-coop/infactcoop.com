@@ -79,9 +79,6 @@ const AboutWork = () => (
               them appropriately
             </li>
             <li>
-              To covertly flag up signs of wrongdoing through questionnaires{' '}
-            </li>
-            <li>
               To make the app sensitive, warm, and easy to use for what could be
               an emotional, transitionary stage in our users’ lives
             </li>
