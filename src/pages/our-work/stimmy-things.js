@@ -90,8 +90,8 @@ const AboutWork = () => (
         <SectionHeading>
           <SectionTitle>See The Real Deal</SectionTitle>
         </SectionHeading>
-        <WorkDescription className="tc">
-          <p className="font-3">
+        <WorkDescription>
+          <p className="font-3 tc">
             Check out Stimmy Things{' '}
             <a
               className="light-green b ttu"
