@@ -78,7 +78,7 @@ const PartnersMobile = () => (
         src={lwc}
         width="5em"
         target="_blank"
-        href="https://www.bluecross.org.uk/"
+        href="http://www.womenscentre.org/"
       />
       <LinkImage
         src={bluecross}
@@ -102,13 +102,13 @@ const PartnersMobile = () => (
         src={ucl}
         width="14rem"
         target="_blank"
-        href="http://www.wearecast.org.uk/"
+        href="https://www.ucl.ac.uk/"
       />
       <LinkImage
         src={cambridge}
         width="17rem"
         target="_blank"
-        href="https://www.annafreud.org/"
+        href="https://www.cam.ac.uk/"
       />
     </div>
   </div>
@@ -139,7 +139,7 @@ const Partners = () => (
         src={lwc}
         width="5em"
         target="_blank"
-        href="https://www.bluecross.org.uk/"
+        href="http://www.womenscentre.org/"
       />
       <LinkImage
         src={bluecross}
@@ -165,13 +165,13 @@ const Partners = () => (
         src={ucl}
         width="14rem"
         target="_blank"
-        href="http://www.wearecast.org.uk/"
+        href="https://www.ucl.ac.uk/"
       />
       <LinkImage
         src={cambridge}
         width="17rem"
         target="_blank"
-        href="https://www.annafreud.org/"
+        href="https://www.cam.ac.uk/"
       />
     </div>
   </div>
