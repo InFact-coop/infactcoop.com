@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { css } from 'styled-components'
 
-import Link from 'gatsby-link'
-
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 import { media } from '../styles/style_utils'
@@ -29,8 +27,10 @@ const CardJobTitle = styled.p.attrs({
 })``
 
 const CardsWrapper = styled.section.attrs({
-  className: 'cf w-100 pv2-ns ph6-ns pa2 mb4',
-})``
+  className: 'cf w-100 pv2-ns mb4 center',
+})`
+  max-width: 1201px;
+`
 
 const CardWrapper = styled.a.attrs({
   className: 'fl dib black pt3-ns ph2-ns pb2-ns grow no-underline',
