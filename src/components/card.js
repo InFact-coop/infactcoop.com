@@ -16,7 +16,11 @@ const CardSubTitle = styled.h2.attrs({
 `
 
 const CardBody = styled.p.attrs({
-  className: 'font-4-l font-6-m font-5 mb3 sans-serif',
+  className: 'font-4-l font-6-m font-5 sans-serif',
+})``
+
+const SectionCardBody = styled(CardBody).attrs({
+  className: 'mb3',
 })``
 
 const Card = styled.div.attrs({
@@ -73,4 +77,5 @@ export {
   ExternalCardButtonWithLink,
   CardHeading,
   SectionCard,
+  SectionCardBody,
 }

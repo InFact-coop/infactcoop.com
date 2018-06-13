@@ -93,12 +93,6 @@ const PartnersMobile = () => (
         href="http://www.lawcentres.org.uk/"
       />
       <LinkImage
-        src={qsa}
-        width="5rem"
-        target="_blank"
-        href="https://www.quakersocialaction.org.uk/"
-      />
-      <LinkImage
         src={ucl}
         width="14rem"
         target="_blank"
@@ -109,6 +103,12 @@ const PartnersMobile = () => (
         width="17rem"
         target="_blank"
         href="https://www.cam.ac.uk/"
+      />
+      <LinkImage
+        src={qsa}
+        width="5rem"
+        target="_blank"
+        href="https://www.quakersocialaction.org.uk/"
       />
     </div>
   </div>
@@ -294,7 +294,7 @@ const WorkGallery = () => (
             <CardHeading>
               <CardTitle>Tech for Good</CardTitle>
             </CardHeading>
-            <CardSubTitle uppercase>Wales Cooperative Centre</CardSubTitle>
+            <CardSubTitle uppercase>Wales Cooperative</CardSubTitle>
             <SectionText>
               Platform for helping with volunteer engagement from the beginning
               of the recruitment process right through to getting feedback on

@@ -28,17 +28,20 @@ const Picture = styled(BackgroundImg).attrs({
 `
 const SectionCard = styled.div.attrs({
   className:
-    'bg-white shadow-5 absolute ph4-l pv4-l pv3-m ph3-m pv3 ph3 center tc tl-ns pointer',
+    'bg-white shadow-5 absolute ph4-l pv4-l pv3-m ph3-m pv3 ph3 center tc tl-ns pointer flex-column justify-center',
 })`
   width: 95%;
   right: 2.5%;
   transition: 0.5s;
   transform: translateY(-2rem);
-  height: 270px;
+  height: 70vw;
+  display: flex;
+  min-height: 280px;
 
   ${media.ns`
     width: 90%;
     left: 2.5%;
+    display: inline-block;
   `};
   ${media.m`
     margin-bottom: 7%;
@@ -58,9 +61,13 @@ const Wrapper = styled(Link).attrs({
   className:
     'relative flex-ns justify-center black no-underline db mb3 mb0-ns overflow-x-hidden overflow-y-hidden',
 })`
-  height: 105vh;
+  height: 182vw;
+  max-height: 640px;
   transition: 0.5s;
 
+  ${media.ns`
+    max-height: 200vh;
+  `}
   ${media.m`
     height: 67vw;
     width: 46%;
@@ -85,7 +92,10 @@ const Wrapper = styled(Link).attrs({
 
 `
 const SectionText = styled(CardBody)`
-  height: 30%;
+  height: auto;
+  ${media.ns`
+    height: 30%;
+  `};
 `
 
 export { Wrapper, Picture, Overlay, SectionCard, SectionText }
