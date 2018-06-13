@@ -56,6 +56,15 @@ const backgroundImageToggle = (bool, trueUrl, falseUrl) => {
   return bool ? trueCss : falseCss
 }
 
+const spacingNone = '0'
+const spacing1 = '0.5rem'
+const spacing2 = '1rem'
+const spacing3 = '1.5rem'
+const spacing4 = '3rem'
+const spacing5 = '4rem'
+const spacing6 = '5rem'
+const spacing7 = '6rem'
+
 const emptySpan = () => <span className="dn" />
 
 export default {
@@ -66,4 +75,12 @@ export default {
   emptySpan,
   menuAnimationToggle,
   getVhInPixels,
+  spacingNone,
+  spacing1,
+  spacing2,
+  spacing3,
+  spacing4,
+  spacing5,
+  spacing6,
+  spacing7,
 }

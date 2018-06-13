@@ -4,6 +4,7 @@ import { backgroundImage, backgroundImageToggle } from '../styles/style_utils'
 import logo from '../assets/logos/infact_logo_white.svg'
 import logoGradient from '../assets/logos/infact_logo_gradient.svg'
 import { appear } from '../styles/style_animations'
+import { media, spacing2, spacing6 } from '../styles/style_utils'
 
 const SplashBase = styled.section.attrs({
   className: 'flex flex-column items-center items-start-ns justify-center',
@@ -14,23 +15,35 @@ const SplashWhite = SplashBase.extend`
 `
 
 const Topline = styled.div.attrs({
-  className: 'flex justify-between items-center w-100 ph6-ns ph2 center',
+  className: 'flex justify-between items-center w-100 center',
 })`
   background-color: ${({ gradient, menuIsOpen }) =>
-    gradient && menuIsOpen !== 'OPENED' ? 'white' : 'inherit'}
+    gradient && menuIsOpen !== 'OPENED'
+      ? 'rgba(255, 255, 255, 0.98)'
+      : 'inherit'};
   transition: ${({ menuIsOpen }) =>
     menuIsOpen === 'OPENED' ? '0s' : 'background-color 0.2s ease-out 0.7s'};
-  max-width: 1440px;
+  max-width: 1201px;
+  padding-right: ${spacing2};
+  padding-left: ${spacing2};
+  ${media.m`
+    padding-right: ${spacing6}
+    padding-left: ${spacing6}
+  `};
+  ${media.l`
+    padding-right: ${spacing2}
+    padding-left: ${spacing2}
+  `};
 `
 const ToplineBackground = styled.div.attrs({
   className: 'w-100 h4-ns h3 z-1 center',
 })`
   background: linear-gradient(
     to right,
-    rgba(0, 156, 243, 1) 0%,
-    rgba(22, 214, 217, 1) 100%
+    rgba(0, 156, 243, 0.94) 0%,
+    rgba(22, 214, 217, 0.94) 100%
   );
-  max-width: 1440px;
+  max-width: 1201px;
   animation: ${appear} 2s 1 0s forwards;
 `
 const LogoWhite = styled.div.attrs({
@@ -56,7 +69,11 @@ const LogoGradient = styled.div.attrs({
 const Tagline = styled.div.attrs({
   className:
     'heading-ns font-1 ttu w-90 w-50-l w-90-m reglo white pl7-ns pl0 tl-ns tc',
-})``
+})`
+  ${media.l`
+    margin-left: 2.4rem;
+  `};
+`
 
 const ZigZag = styled.img.attrs({
   className: 'mb1',
