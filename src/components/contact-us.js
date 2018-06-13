@@ -34,7 +34,7 @@ const SubmitButton = styled.button.attrs({
   cursor: pointer;
   display: inline-block;
   position: relative;
-  z-index: 100;
+  z-index: 0;
 
 
   &:before {
