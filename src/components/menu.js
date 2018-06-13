@@ -86,7 +86,7 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
         pinStart={getVhInPixels()}
       >
         <Topline gradient={gradient} menuIsOpen={menuIsOpen}>
-          <Link to="/">
+          <Link to="/" onClick={() => toggleMenu({ pageChange: true })}>
             <Logo menuIsOpen={menuIsOpen} />
           </Link>
           <Burger menuIsOpen={menuIsOpen} onClick={() => toggleMenu()} />
