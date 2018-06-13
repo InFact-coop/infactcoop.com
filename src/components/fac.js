@@ -5,7 +5,7 @@ import { media } from '../styles/style_utils'
 import {
   CardTitle,
   CardSubTitle,
-  CardBody,
+  SectionCardBody,
   ExternalCardButtonWithLink,
   CardHeading,
   SectionCard,
@@ -60,12 +60,12 @@ const FAC = () => (
           <CardTitle>Our Story</CardTitle>
         </CardHeading>
         <CardSubTitle>One of the best experiences of our lives.</CardSubTitle>
-        <CardBody>
+        <SectionCardBody>
           Founders & Coders is a UK-based nonprofit organization that runs a
           tuition free coding academy in London. All members of InFact coop
           graduated from the programme and our story begins with the Founders &
           Coders community.
-        </CardBody>
+        </SectionCardBody>
         <ExternalCardButtonWithLink link="https://foundersandcoders.com/">
           Read More
         </ExternalCardButtonWithLink>

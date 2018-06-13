@@ -5,7 +5,7 @@ import { media } from '../styles/style_utils'
 import {
   CardTitle,
   CardSubTitle,
-  CardBody,
+  SectionCardBody,
   CardButtonWithLink,
   CardHeading,
   SectionCard,
@@ -56,11 +56,11 @@ const GetToKnowUs = () => (
         <CardSubTitle>
           We are a small digital co-op tackling big challenges.
         </CardSubTitle>
-        <CardBody>
+        <SectionCardBody>
           We love what we do and love working with others who do too. We design
           and build solutions to real problems, getting to the heart of what
           matters.
-        </CardBody>
+        </SectionCardBody>
         <CardButtonWithLink link="/about-us">Tell me more</CardButtonWithLink>
       </SectionCard>
     </Wrapper>

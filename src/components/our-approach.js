@@ -5,7 +5,7 @@ import { media } from '../styles/style_utils'
 import {
   CardTitle,
   CardSubTitle,
-  CardBody,
+  SectionCardBody,
   CardButtonWithLink,
   CardHeading,
   SectionCard,
@@ -53,10 +53,10 @@ const OurApproach = () => (
         <CardSubTitle>
           Putting the user at the heart of the creative process
         </CardSubTitle>
-        <CardBody>
+        <SectionCardBody>
           We value learning over guessing. We will get to know you and your
           users so we can build the best product for your needs.
-        </CardBody>
+        </SectionCardBody>
         <CardButtonWithLink link="/our-approach">
           Tell me more
         </CardButtonWithLink>
