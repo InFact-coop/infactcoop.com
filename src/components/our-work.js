@@ -20,8 +20,7 @@ import bluecross_card from '../assets/images/card_images/bluecross_card.png'
 import { PurpleOverlay } from './splash'
 
 const Wrapper = styled.div.attrs({
-  className:
-    'relative flex-ns justify-center',
+  className: 'relative flex-ns justify-center',
 })`
   height: 100vh;
   ${media.ns`

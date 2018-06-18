@@ -270,7 +270,7 @@ const WorkGallery = () => (
           </SectionCard>
         </Wrapper>
 
-        <Wrapper to="/our-work/coming-soon">
+        <Wrapper to="/our-work/lcn">
           <Picture src={lcn_card}>
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />{' '}
           </Picture>
