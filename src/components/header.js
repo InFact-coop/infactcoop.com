@@ -36,7 +36,7 @@ const Topline = styled.div.attrs({
   `};
 `
 const ToplineBackground = styled.div.attrs({
-  className: 'w-100 h4-ns h3 z-1 center',
+  className: 'w-100 h4-ns h3 z-1 center topline-bg',
 })`
   background: linear-gradient(
     to right,
