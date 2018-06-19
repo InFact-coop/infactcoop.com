@@ -27,7 +27,7 @@ const CardJobTitle = styled.p.attrs({
 })``
 
 const CardsWrapper = styled.section.attrs({
-  className: 'cf w-100 pv2-ns mb4 center',
+  className: 'cf w-90 w-100-ns pv2-ns mb4 center',
 })`
   max-width: 1201px;
 `

@@ -64,6 +64,7 @@ const spacing4 = '3rem'
 const spacing5 = '4rem'
 const spacing6 = '5rem'
 const spacing7 = '6rem'
+const spacing8 = '7.5rem'
 
 const emptySpan = () => <span className="dn" />
 
@@ -83,4 +84,5 @@ export default {
   spacing5,
   spacing6,
   spacing7,
+  spacing8,
 }

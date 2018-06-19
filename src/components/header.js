@@ -4,7 +4,7 @@ import { backgroundImage, backgroundImageToggle } from '../styles/style_utils'
 import logo from '../assets/logos/infact_logo_white.svg'
 import logoGradient from '../assets/logos/infact_logo_gradient.svg'
 import { appear } from '../styles/style_animations'
-import { media, spacing2, spacing6, spacing7 } from '../styles/style_utils'
+import { media, spacing1, spacing5, spacing8 } from '../styles/style_utils'
 
 const SplashBase = styled.section.attrs({
   className: 'flex flex-column items-center items-start-ns justify-center',
@@ -24,15 +24,15 @@ const Topline = styled.div.attrs({
   transition: ${({ menuIsOpen }) =>
     menuIsOpen === 'OPENED' ? '0s' : 'background-color 0.2s ease-out 0.7s'};
   max-width: 1440px;
-  padding-right: ${spacing2};
-  padding-left: ${spacing2};
+  padding-right: ${spacing1};
+  padding-left: ${spacing1};
   ${media.m`
-    padding-right: ${spacing6}
-    padding-left: ${spacing6}
+    padding-right: ${spacing5}
+    padding-left: ${spacing5}
   `};
   ${media.l`
-    padding-right: ${spacing7}
-    padding-left: ${spacing7}
+    padding-right: ${spacing8}
+    padding-left: ${spacing8}
   `};
 `
 const ToplineBackground = styled.div.attrs({
