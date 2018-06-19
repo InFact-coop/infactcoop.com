@@ -14,13 +14,10 @@ import {
   WorkWrapper,
   WorkImg,
   WorkDescription,
-  TestimonialWrapper,
-  TestimonialPerson,
-  TestimonialText,
   BannerImg,
 } from '../../components/work-content'
 
-import lcn_header from '../../assets/images/header_images/lcn_header.png'
+import lcn_header from '../../assets/images/header_images/lcn_header.jpg'
 import lcn_img1 from '../../assets/images/inline_images/lcn_img1.png'
 import lcn_img2 from '../../assets/images/inline_images/lcn_img2.png'
 
