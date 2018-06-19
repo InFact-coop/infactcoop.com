@@ -113,6 +113,18 @@ const AboutWork = () => (
             </a>
           </p>
         </WorkDescription>
+        <WorkDescription>
+          Following on from our collaboration, LCN were inducted into{' '}
+          <a
+            className="light-green b"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.wearecast.org.uk/for-nonprofits/fuse/"
+          >
+            CAST's Fuse program
+          </a>, and are further exploring ways they can embed innovative digital
+          practices into their organisation.
+        </WorkDescription>
       </WorkWrapper>
     </div>
     <Section bg_color="white">
