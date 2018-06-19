@@ -16,6 +16,9 @@ import {
   WorkImg,
   BannerImg,
   WorkDescription,
+  TestimonialWrapper,
+  TestimonialPerson,
+  TestimonialText,
 } from '../../components/work-content'
 
 import stimmythings_header from '../../assets/images/header_images/stimmythings_header.svg'
@@ -104,17 +107,22 @@ const AboutWork = () => (
           </p>
         </WorkDescription>
       </WorkWrapper>
-      {/* <TestimonialWrapper>
+      <TestimonialWrapper>
         <TestimonialText>
-          InFact are the best! venenatis faucibus. Nullam quis ante. Etiam sit
-          amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
-          sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
-          bibendum sodales, augue velit cursus nunc
+          As experts in the mental health of children and families, we needed
+          experts in digital design and development … and we found in InFact!
+          We’ve worked with various members of the team for 2 years, and their
+          design ideas, attention to detail, enthusiasm, and ultimately, end
+          products have always been extremely impressive. The latest example of
+          our partnership is Stimmy Things, which exemplifies their talent for
+          taking a great idea, and turning it into something really beautiful,
+          usable and helpful. We can’t wait to work with InFact again!
         </TestimonialText>
         <TestimonialPerson>
-          Mariane Caitan, program lead at CAMHS London
+          Alex Goforth, Programme Lead Children & Young People's IAPT at Anna
+          Freud Centre
         </TestimonialPerson>
-      </TestimonialWrapper> */}
+      </TestimonialWrapper>
     </div>
 
     <Section bg_color="white">
