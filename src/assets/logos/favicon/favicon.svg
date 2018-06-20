@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#009CF3" offset="0%"></stop>
+            <stop stop-color="#16D6D9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#05A9EE" offset="0%"></stop>
+            <stop stop-color="#08B1EA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#009CF3" offset="0%"></stop>
+            <stop stop-color="#05A9EE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="favicon" transform="translate(-30.000000, -30.000000)">
+            <g id="Group" transform="translate(30.000000, 30.000000)">
+                <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="0" width="64" height="64" rx="4"></rect>
+                <g id="shape" transform="translate(14.000000, 7.000000)">
+                    <polyline id="I" stroke="url(#linearGradient-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="8.78318277 0 1 0 1 50 1 50 8.78318277 50"></polyline>
+                    <polygon id="F" stroke="url(#linearGradient-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="17 18.0381509 17 8 35.0651629 8 35.0651629 0 9 0 9 50 17 50"></polygon>
+                    <path d="M1,13 L22,13 C26.3571429,13 29.5,14.2380952 31.9761905,16.8888889 C34.0873016,19.1190476 35,22.7380952 35,27.7857143 L35,50 L27,50 L27,49.721985 L27,29.7142857 C27,26.1984127 26.5793651,24.0952381 25.5873016,22.7301587 C24.5873016,21.3095238 22.6587302,21.0555556 20.1666667,21 L9,21" id="N" stroke="url(#linearGradient-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <rect id="Rectangle-3" fill="url(#linearGradient-2)" x="8" y="20" width="4" height="2"></rect>
+                    <rect id="Rectangle-4" fill="url(#linearGradient-3)" x="0" y="12" width="4" height="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
