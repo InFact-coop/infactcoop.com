@@ -56,8 +56,7 @@ const Splash = SplashImg.extend`
 const IndexPage = () => (
   <div>
     <Header image={landing_header} splash={Splash}>
-      We're a design & development co-operative helping to shape a better
-      digital future
+      Technology used in service of humans and nature.
     </Header>
     <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()}>
       <ToplineBackground />
