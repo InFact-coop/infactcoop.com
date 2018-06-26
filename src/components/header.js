@@ -68,7 +68,7 @@ const LogoGradient = styled.div.attrs({
 
 const Tagline = styled.div.attrs({
   className:
-    'heading-ns font-1 ttu w-90 w-50-l w-90-m reglo white pl7-ns pl0 tl-ns tc',
+    'heading-ns font-1 ttu w-90 w-40-l w-90-m reglo white pl7-ns pl0 tl-ns tc',
 })``
 
 const ZigZag = styled.img.attrs({
