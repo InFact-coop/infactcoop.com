@@ -67,7 +67,7 @@ const Section = ({ children, bg_color }) => (
 )
 
 const SectionHeading = ({ children, mb }) => {
-  const classes = `flex flex-row justify-center mb2 pb1 pb0-ns ${
+  const classes = `flex flex-row justify-center items-center mb2 pb1 pb0-ns ${
     mb ? 'mb5-ns' : ''
   }`
 
