@@ -47,7 +47,7 @@ const menuAnimationToggle = menuIsOpen => {
   }
 }
 
-const userSelect = bool =>
+const disableUserSelect = bool =>
   bool
     ? css`
         -webkit-user-select: none; /* Safari */
@@ -95,5 +95,5 @@ export default {
   spacing6,
   spacing7,
   spacing8,
-  userSelect,
+  disableUserSelect,
 }

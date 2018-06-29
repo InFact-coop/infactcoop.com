@@ -6,7 +6,7 @@ import {
   backgroundImageToggle,
   menuAnimationToggle,
   getVhInPixels,
-  userSelect,
+  disableUserSelect,
 } from '../styles/style_utils'
 import { Topline, LogoWhite, LogoGradient } from './header'
 import burgerClosed from '../assets/icons/menu_white_close.svg'
@@ -67,7 +67,7 @@ const MenuItem = styled(Link).attrs({
   ${props => menuAnimationToggle(props.menuIsOpen)};
   pointer-events: ${({ menuIsOpen }) =>
     menuIsOpen === 'OPENED' ? 'inherit' : 'none'};
-  ${({ menuIsOpen }) => userSelect(menuIsOpen)};
+  ${({ menuIsOpen }) => disableUserSelect(menuIsOpen !== 'OPENED')};
 `
 
 const MenuItemATag = MenuItem.withComponent('a')
