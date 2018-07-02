@@ -22,6 +22,7 @@ const Header = ({
   tagLine,
   subTagLine,
   gradient,
+  smallFont,
 }) => {
   return (
     <SplashWhite>
@@ -33,7 +34,7 @@ const Header = ({
       <WorkHeading>
         <TopicLine>{topicLine}</TopicLine>
         <ZigZag src={wigglyBottom} alt="wiggle" />
-        <TaglineBlack>{tagLine}</TaglineBlack>
+        <TaglineBlack smallFont={smallFont}>{tagLine}</TaglineBlack>
         <SubTaglineBlack>{subTagLine}</SubTaglineBlack>
       </WorkHeading>
     </SplashWhite>

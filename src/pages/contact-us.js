@@ -1,6 +1,6 @@
 import React from 'react'
 
-import HeaderLanding from '../containers/header'
+import Header from '../containers/header-work'
 import Headroom from 'react-headroom'
 
 import { getVhInPixels } from '../styles/style_utils'
@@ -14,15 +14,12 @@ import {
   SubmitButton,
 } from '../components/contact-us'
 
-import { ToplineBackground } from '../components/header'
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const ContactUs = () => (
   <div>
-    <HeaderLanding>We would love to meet you!</HeaderLanding>
-    <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()}>
-      <ToplineBackground />
-    </Headroom>
+    <Header tagLine="We would love to meet you!" gradient smallFont />
+    <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()} />
     <Wrapper>
       <Title>Get in touch</Title>
       <ZigZag src={wigglyBottom} />
