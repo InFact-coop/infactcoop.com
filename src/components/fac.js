@@ -43,10 +43,13 @@ const FAC = () => (
   <Section bg_color="white">
     <SectionHeading mb>
       <SectionTitle>
-        <div className="flex flex-column flex-row-ns tc">
-          <span>We love</span>
-          <span className="pre"> Founders </span>
-          <span>& Coders</span>
+        <div className="tc dn db-ns">We love Founders & Coders</div>
+        <div className="dn-ns tc">
+          <div className="flex flex-column">
+            <span>We love</span>
+            <span>Founders</span>
+            <span>& Coders</span>
+          </div>
         </div>
       </SectionTitle>
     </SectionHeading>

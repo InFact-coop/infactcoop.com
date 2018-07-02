@@ -47,6 +47,16 @@ const menuAnimationToggle = menuIsOpen => {
   }
 }
 
+const disableUserSelect = bool =>
+  bool
+    ? css`
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+      `
+    : css``
+
 const backgroundImage = imgUrl => {
   return imgUrl ? `url(${imgUrl}) no-repeat center center / contain` : ``
 }
@@ -85,4 +95,5 @@ export default {
   spacing6,
   spacing7,
   spacing8,
+  disableUserSelect,
 }

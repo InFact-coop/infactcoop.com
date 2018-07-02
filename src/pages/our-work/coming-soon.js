@@ -38,10 +38,13 @@ const AboutWork = () => (
     <Section bg_color="white">
       <SectionHeading mb>
         <SectionTitle>
-          <div className="flex flex-column flex-row-ns tc">
-            <span>Check these out</span>
-            <span className="pre"> in the meantime! </span>
+          <div className="dn-ns">
+            <div className="tc flex flex-column">
+              <span>Check these out</span>
+              <span>in the meantime!</span>
+            </div>
           </div>
+          <div className="tc dn db-ns">Check these out in the meantime!</div>
         </SectionTitle>
       </SectionHeading>
       <div className="flex-ns flex-column flex-row-ns justify-between-ns">
