@@ -41,7 +41,6 @@ const ContactUs = () => (
           How can we help you?<HelpText type="text" name="how_can_we_help" />
         </Label>
         <input type="hidden" name="_subject" value="Website Query" />
-        <input type="hidden" name="_next" value="http://localhost:8000/" />
         <SubmitButton type="submit" value="SUBMIT">
           SUBMIT
         </SubmitButton>
