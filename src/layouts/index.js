@@ -22,8 +22,16 @@ const Layout = ({ children, data }) => {
       <Helmet
         title={data.site.siteMetadata.title}
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          {
+            name: 'description',
+            content:
+              'We are a design & development digital co-operative using technology in service of humans and nature.',
+          },
+          {
+            name: 'keywords',
+            content:
+              'digital, technology, tech, charity, charities, co-op, coop, cooperative, tech for good, founders and coders',
+          },
         ]}
       >
         <link
