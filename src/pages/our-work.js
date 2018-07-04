@@ -34,15 +34,15 @@ const PictureWithFilter = styled(Picture)`
     `};
 `
 
-import annaFreud from '../assets/images/partner_logos/anna_freud_grey.png'
-import bluecross from '../assets/images/partner_logos/bluecross_grey.png'
-import lwc from '../assets/images/partner_logos/lwc-grey.png'
-import cast from '../assets/images/partner_logos/cast_grey.png'
-import lcn from '../assets/images/partner_logos/lcn_grey.png'
-import ucl from '../assets/images/partner_logos/ucl_grey.png'
-import nhs from '../assets/images/partner_logos/nhs_grey.png'
-import qsa from '../assets/images/partner_logos/qsa_grey.png'
-import cambridge from '../assets/images/partner_logos/cambridge_grey.png'
+import annaFreud from '../assets/images/partner_logos/anna_freud.png'
+import bluecross from '../assets/images/partner_logos/bluecross.png'
+import lwc from '../assets/images/partner_logos/lwc.png'
+import cast from '../assets/images/partner_logos/cast.png'
+import lcn from '../assets/images/partner_logos/lcn.png'
+import ucl from '../assets/images/partner_logos/ucl.png'
+import nhs from '../assets/images/partner_logos/nhs.png'
+import qsa from '../assets/images/partner_logos/qsa.png'
+import cambridge from '../assets/images/partner_logos/cambridge.png'
 
 const Splash = SplashImg.extend`
   ${media.m`
@@ -61,54 +61,63 @@ const PartnersMobile = () => (
         width="6rem"
         href="http://www.slam.nhs.uk/"
         target="_blank"
+        grayscale
       />
       <LinkImage
         src={cast}
         width="14rem"
         target="_blank"
         href="http://www.wearecast.org.uk/"
+        grayscale
       />
       <LinkImage
         src={annaFreud}
         width="17rem"
         target="_blank"
         href="https://www.annafreud.org/"
+        grayscale
       />
       <LinkImage
         src={lwc}
         width="5em"
         target="_blank"
         href="http://www.womenscentre.org/"
+        grayscale
       />
       <LinkImage
         src={bluecross}
         width="5em"
         target="_blank"
         href="https://www.bluecross.org.uk/"
+        grayscale
       />
       <LinkImage
         src={lcn}
         width="10rem"
         target="_blank"
         href="http://www.lawcentres.org.uk/"
+        grayscale
       />
       <LinkImage
         src={ucl}
         width="14rem"
         target="_blank"
         href="https://www.ucl.ac.uk/"
+        grayscale
       />
       <LinkImage
         src={cambridge}
         width="17rem"
         target="_blank"
         href="https://www.cam.ac.uk/"
+        grayscale
       />
       <LinkImage
         src={qsa}
         width="5rem"
         target="_blank"
         href="https://www.quakersocialaction.org.uk/"
+        grayscale
       />
     </div>
   </div>
@@ -122,30 +131,35 @@ const Partners = () => (
         width="6rem"
         href="http://www.slam.nhs.uk/"
         target="_blank"
+        grayscale
       />
       <LinkImage
         src={cast}
         width="14rem"
         target="_blank"
         href="http://www.wearecast.org.uk/"
+        grayscale
       />
       <LinkImage
         src={annaFreud}
         width="17rem"
         target="_blank"
         href="https://www.annafreud.org/"
+        grayscale
       />
       <LinkImage
         src={lwc}
         width="5em"
         target="_blank"
         href="http://www.womenscentre.org/"
+        grayscale
       />
       <LinkImage
         src={bluecross}
         width="5em"
         target="_blank"
         href="https://www.bluecross.org.uk/"
+        grayscale
       />
     </div>
     <div className="flex justify-center flex-wrap justify-between-ns mv7">
@@ -154,24 +168,28 @@ const Partners = () => (
         width="10rem"
         target="_blank"
         href="http://www.lawcentres.org.uk/"
+        grayscale
       />
       <LinkImage
         src={qsa}
         width="5rem"
         target="_blank"
         href="https://www.quakersocialaction.org.uk/"
+        grayscale
       />
       <LinkImage
         src={ucl}
         width="14rem"
         target="_blank"
         href="https://www.ucl.ac.uk/"
+        grayscale
       />
       <LinkImage
         src={cambridge}
         width="17rem"
         target="_blank"
         href="https://www.cam.ac.uk/"
+        grayscale
       />
     </div>
   </div>

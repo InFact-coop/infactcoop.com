@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { media } from '../styles/style_utils'
 
 import BackgroundImg from './background-img'
@@ -12,6 +12,14 @@ const LinkImage = styled(BackgroundImg.withComponent('a')).attrs({
   ${media.ns`
     width: ${({ width }) => width};
   `};
+  ${({ grayscale }) =>
+    grayscale &&
+    css`
+      filter: grayscale(100%);
+      &:hover {
+        filter: grayscale(0%);
+      }
+    `};
 `
 
 export { LinkImage }
