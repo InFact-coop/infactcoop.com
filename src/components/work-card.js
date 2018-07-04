@@ -23,7 +23,6 @@ const Picture = styled(BackgroundImg).attrs({
 
   ${media.ns`
     height: 0;
-    width: 40vw;
   `};
 `
 const SectionCard = styled.div.attrs({
@@ -58,8 +57,7 @@ const SectionCard = styled.div.attrs({
 `
 
 const Wrapper = styled(Link).attrs({
-  className:
-    'relative flex-ns justify-center black no-underline db mb3 mb0-ns overflow-x-hidden overflow-y-hidden',
+  className: 'relative black no-underline db mb3 mb0-ns',
 })`
   height: 182vw;
   max-height: 640px;
