@@ -34,10 +34,6 @@ const Layout = ({ children, data }) => {
           },
         ]}
       >
-        <meta
-          name="google-site-verification"
-          content="iIf5z4gDaNL1jchNAuphlgnVDr7sYmJNWhLPx0LtHrk"
-        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
