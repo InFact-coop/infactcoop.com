@@ -32,12 +32,12 @@ const Layout = ({ children, data }) => {
             content:
               'digital, technology, tech, charity, charities, co-op, coop, cooperative, tech for good, founders and coders',
           },
-          {
-            name: 'google-site-verification',
-            content: 'iIf5z4gDaNL1jchNAuphlgnVDr7sYmJNWhLPx0LtHrk',
-          },
         ]}
       >
+        <meta
+          name="google-site-verification"
+          content="iIf5z4gDaNL1jchNAuphlgnVDr7sYmJNWhLPx0LtHrk"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
