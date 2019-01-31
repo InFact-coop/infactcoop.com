@@ -101,7 +101,7 @@ const WorkHeading = ({ children }) => (
   </div>
 )
 
-export default {
+export {
   SplashWhite,
   Topline,
   ToplineBackground,

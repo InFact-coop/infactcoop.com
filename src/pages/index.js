@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Headroom from 'react-headroom'
 import { media, getVhInPixels } from '../styles/style_utils'
 
 import Header from '../containers/header'
+import Layout from '../components/layout'
 import OurApproach from '../components/our-approach'
 import GetToKnowUs from '../components/get-to-know-us'
 import FAC from '../components/fac'
@@ -54,7 +55,7 @@ const Splash = SplashImg.extend`
 `
 
 const IndexPage = () => (
-  <div>
+  <Layout>
     <Header image={landing_header} splash={Splash}>
       We're a design & development co-operative using Technology in service of
       humans and nature
@@ -151,7 +152,7 @@ const IndexPage = () => (
     </Section>
     <GetToKnowUs />
     <FAC />
-  </div>
+  </Layout>
 )
 
 export default IndexPage

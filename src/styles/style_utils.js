@@ -78,7 +78,7 @@ const spacing8 = '7.5rem'
 
 const emptySpan = () => <span className="dn" />
 
-export default {
+export {
   media,
   backgroundImage,
   backgroundImageToggle,

@@ -20,4 +20,4 @@ const toggleMenu = (state, payload) => {
   return { ...state, menuIsOpen: newMenuState }
 }
 
-export default { menuReducer }
+export default menuReducer 

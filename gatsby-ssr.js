@@ -4,7 +4,7 @@ import { renderToString } from 'react-dom/server'
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
 import createStore from './src/state/state'
 
-exports.replaceRenderer = ({
+const replaceRenderer = ({
   bodyComponent,
   replaceBodyHTMLString,
   setHeadComponents,
@@ -22,3 +22,5 @@ exports.replaceRenderer = ({
   replaceBodyHTMLString(renderToString(<app />))
   setHeadComponents([sheet.getStyleElement()])
 }
+
+export default replaceRenderer

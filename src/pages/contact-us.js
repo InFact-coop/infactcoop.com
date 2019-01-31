@@ -5,6 +5,7 @@ import Headroom from 'react-headroom'
 
 import { getVhInPixels } from '../styles/style_utils'
 import { Wrapper, ZigZag, Title } from '../components/about-pages'
+import Layout from '../components/layout'
 import {
   Form,
   Text,
@@ -17,7 +18,7 @@ import {
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const ContactUs = () => (
-  <div>
+  <Layout>
     <Header tagLine="We would love to meet you!" gradient smallFont />
     <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()} />
     <Wrapper>
@@ -46,7 +47,7 @@ const ContactUs = () => (
         </SubmitButton>
       </Form>
     </Wrapper>
-  </div>
+  </Layout>
 )
 
 export default ContactUs

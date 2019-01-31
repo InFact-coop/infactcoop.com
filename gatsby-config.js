@@ -23,7 +23,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
     {
-      resolve: `gatsby-plugin-postcss-sass`,
+      resolve: `gatsby-plugin-sass`,
       options: {
         postCssPlugins: [
           require('postcss-import')(), // allows you to use @import

@@ -71,4 +71,4 @@ const AboutCard = (
   </CardWrapper>
 )
 
-export default { AboutCard, CardsWrapper }
+export { AboutCard, CardsWrapper }

@@ -1,17 +1,16 @@
 import React from 'react'
-import { Router } from 'react-router-dom'
 import { Provider } from 'react-redux'
-
 import createStore from './src/state/state'
 
-exports.replaceRouterComponent = ({ history }) => {
+export const wrapRootElement = ({ element }) => {
   const store = createStore()
 
-  const ConnectedRouterWrapper = ({ children }) => (
+  const ConnectedRootElement = (
     <Provider store={store}>
-      <Router history={history}>{children}</Router>
+    {element}
     </Provider>
   )
 
-  return ConnectedRouterWrapper
+   return ConnectedRootElement
 }
+

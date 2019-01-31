@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { media } from '../styles/style_utils'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 import { CardBody } from './card'
 

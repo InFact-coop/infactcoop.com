@@ -1,10 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 import Header from '../containers/header'
 import Headroom from 'react-headroom'
 
 import { getVhInPixels } from '../styles/style_utils'
+import Layout from '../components/layout'
 import { AboutCard, CardsWrapper } from '../components/about-us'
 import { Wrapper, ZigZag, Text, Title } from '../components/about-pages'
 import { YellowBackgroundSplash } from '../components/splash'
@@ -74,12 +75,12 @@ const AboutUs = () => (
 
 const AboutWork = () => {
   return (
-    <div>
+    <Layout>
       <Header image={aboutus_header} splash={YellowBackgroundSplash}>
         Co-operatively driven design and development
       </Header>
       <AboutUs />
-    </div>
+    </Layout>
   )
 }
 

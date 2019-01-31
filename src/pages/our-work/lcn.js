@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Header from '../../containers/header-work'
+import Layout from '../../components/layout'
 import { SectionHeading, SectionTitle, Section } from '../../components/section'
 import {
   Wrapper,
@@ -25,7 +26,7 @@ import stimmy_card from '../../assets/images/card_images/stimmythings_card.svg'
 import cast_card from '../../assets/images/card_images/cast_card.png'
 
 const AboutWork = () => (
-  <div>
+  <Layout>
     <Header
       topicLine="Tech for Good"
       tagLine="Law Centres Network"
@@ -163,7 +164,7 @@ const AboutWork = () => (
         </Wrapper>
       </div>
     </Section>
-  </div>
+  </Layout>
 )
 
 export default AboutWork
