@@ -201,7 +201,10 @@ const WorkGallery = () => (
     <Header image={ourwork_header} splash={Splash}>
       Working with great people on inspiring projects
     </Header>
-    <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()}>
+    <Headroom
+      style={{ position: 'fixed' }}
+      pinStart={document && getVhInPixels()}
+    >
       <ToplineBackground />
     </Headroom>
     <Section bg_color="white">

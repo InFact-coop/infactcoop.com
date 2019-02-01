@@ -85,7 +85,7 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
     <Splash menuIsOpen={menuIsOpen}>
       <Headroom
         style={{ position: 'fixed', top: 0 }}
-        pinStart={getVhInPixels()}
+        pinStart={document && getVhInPixels()}
       >
         <Topline gradient={gradient} menuIsOpen={menuIsOpen}>
           <Link to="/" onClick={() => toggleMenu({ pageChange: true })}>

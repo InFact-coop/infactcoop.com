@@ -20,7 +20,10 @@ import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 const ContactUs = () => (
   <Layout>
     <Header tagLine="We would love to meet you!" gradient smallFont />
-    <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()} />
+    <Headroom
+      style={{ position: 'fixed' }}
+      pinStart={document && getVhInPixels()}
+    />
     <Wrapper>
       <Title>Get in touch</Title>
       <ZigZag src={wigglyBottom} />
@@ -30,16 +33,20 @@ const ContactUs = () => (
       </Text>
       <Form action="https://formspree.io/hello@infactcoop.com" method="POST">
         <Label>
-          Name<Input type="text" name="name" />
+          Name
+          <Input type="text" name="name" />
         </Label>
         <Label>
-          Company Name<Input type="text" name="company_name" />
+          Company Name
+          <Input type="text" name="company_name" />
         </Label>
         <Label>
-          Email<Input type="email" name="_replyto" />
+          Email
+          <Input type="email" name="_replyto" />
         </Label>
         <Label>
-          How can we help you?<HelpText type="text" name="how_can_we_help" />
+          How can we help you?
+          <HelpText type="text" name="how_can_we_help" />
         </Label>
         <input type="hidden" name="_subject" value="Website Query" />
         <SubmitButton type="submit" value="SUBMIT">

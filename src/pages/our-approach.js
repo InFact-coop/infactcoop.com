@@ -43,7 +43,10 @@ const OurApproach = () => (
     <Header image={approach_header} splash={YellowBackgroundSplash}>
       Putting users at the heart of the creative process
     </Header>
-    <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()}>
+    <Headroom
+      style={{ position: 'fixed' }}
+      pinStart={document && getVhInPixels()}
+    >
       <ToplineBackground />
     </Headroom>
     <Wrapper>

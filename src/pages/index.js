@@ -60,7 +60,7 @@ const IndexPage = () => (
       We're a design & development co-operative using Technology in service of
       humans and nature
     </Header>
-    <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()}>
+    <Headroom style={{ position: 'fixed' }} pinStart={document && getVhInPixels()}>
       <ToplineBackground />
     </Headroom>
     <OurApproach />
