@@ -45,7 +45,7 @@ import nhs from '../assets/images/partner_logos/nhs.png'
 import qsa from '../assets/images/partner_logos/qsa.png'
 import cambridge from '../assets/images/partner_logos/cambridge.png'
 
-const Splash = SplashImg.extend`
+const Splash = styled(SplashImg)`
   ${media.m`
     background-position: 65%;
   `};
