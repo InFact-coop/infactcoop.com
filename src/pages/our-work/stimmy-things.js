@@ -2,6 +2,7 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 
 import Header from '../../containers/header-work'
+import Layout from '../../components/layout'
 import { SectionHeading, SectionTitle, Section } from '../../components/section'
 import {
   Wrapper,
@@ -35,7 +36,7 @@ const PictureWithFilter = styled(Picture)`
 `
 
 const AboutWork = () => (
-  <div>
+  <Layout>
     <Header
       topicLine="Mental Health"
       tagLine="Stimmy Things"
@@ -167,7 +168,7 @@ const AboutWork = () => (
         </Wrapper>
       </div>
     </Section>
-  </div>
+  </Layout>
 )
 
 export default AboutWork

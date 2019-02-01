@@ -23,4 +23,4 @@ const appear = keyframes`
   };
 `
 
-export default { fontWhiteToFade, fontFadeToWhite, appear }
+export { fontWhiteToFade, fontFadeToWhite, appear }

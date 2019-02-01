@@ -10,7 +10,7 @@ const SplashBase = styled.section.attrs({
   className: 'flex flex-column items-center items-start-ns justify-center',
 })``
 
-const SplashWhite = SplashBase.extend`
+const SplashWhite = styled(SplashBase)`
   background: white;
 `
 
@@ -101,7 +101,7 @@ const WorkHeading = ({ children }) => (
   </div>
 )
 
-export default {
+export {
   SplashWhite,
   Topline,
   ToplineBackground,

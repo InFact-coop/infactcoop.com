@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Headroom from 'react-headroom'
 import {
@@ -57,9 +57,9 @@ const Splash = styled.nav.attrs({
   );
 `
 
-const MenuItem = styled(Link).attrs({
-  className: 'dib ttu heading-ns font-1 reglo link grow',
-})`
+const MenuItem = styled(Link).attrs(({ className }) => ({
+  className: `${className} dib ttu heading-ns font-1 reglo link grow`,
+}))`
   &:focus {
     outline: 0;
   }
@@ -141,4 +141,4 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
     </Splash>
   )
 }
-export default { BurgerWhite, BurgerGradient, Menu }
+export { BurgerWhite, BurgerGradient, Menu }

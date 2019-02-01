@@ -1,5 +1,5 @@
 import { createStore as reduxCreateStore } from 'redux'
-import { menuReducer } from './reducers'
+import menuReducer from './reducers'
 
 const initialState = { menuIsOpen: 'INIT' }
 
@@ -12,4 +12,5 @@ const createStore = () =>
         window.__REDUX_DEVTOOLS_EXTENSION__()
       : f => f
   )
+  
 export default createStore

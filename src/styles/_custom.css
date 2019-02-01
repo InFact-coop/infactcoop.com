@@ -1,0 +1,18 @@
+/* Custom Heights */
+.vh-50 {
+  height: 50vh;
+}
+
+*::selection {
+  background: #50cfcf;
+  color: #f8f8f8;
+}
+
+.headroom-wrapper {
+  position: fixed;
+  z-index: 1;
+}
+
+.headroom--unfixed > .topline-bg {
+  visibility: hidden;
+}

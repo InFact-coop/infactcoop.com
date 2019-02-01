@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Headroom from 'react-headroom'
 
 import Header from '../containers/header'
+import Layout from '../components/layout'
 import { Wrapper, ZigZag, Text, Title } from '../components/about-pages'
 import BackgroundImg from '../components/background-img'
 import { YellowBackgroundSplash } from '../components/splash'
@@ -13,9 +14,9 @@ import approach_img from '../assets/images/inline_images/approach_img.jpg'
 
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
-const Picture = styled(BackgroundImg).attrs({
-  className: 'mt4',
-})`
+const Picture = styled(BackgroundImg).attrs(({ className }) => ({
+  className: `${className} mt4`,
+}))`
   width: 100%;
   height: 600px;
 `
@@ -38,7 +39,7 @@ const CardBody = styled.div.attrs({
 })``
 
 const OurApproach = () => (
-  <div>
+  <Layout>
     <Header image={approach_header} splash={YellowBackgroundSplash}>
       Putting users at the heart of the creative process
     </Header>
@@ -105,7 +106,7 @@ const OurApproach = () => (
         </Card>
       </CardWrapper>
     </Wrapper>
-  </div>
+  </Layout>
 )
 
 export default OurApproach

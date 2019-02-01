@@ -51,7 +51,7 @@ const YellowBackgroundSplash = styled(SplashBase)`
     `};
 `
 
-const SplashGradient = SplashBase.extend`
+const SplashGradient = styled(SplashBase)`
   height: 90vh;
   background: linear-gradient(
     0deg,
@@ -60,7 +60,7 @@ const SplashGradient = SplashBase.extend`
   );
 `
 
-const SplashImg = SplashBase.extend`
+const SplashImg = styled(SplashBase)`
   height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;

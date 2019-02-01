@@ -45,9 +45,9 @@ const SectionText = styled(CardBody)`
   overflow-y: scroll;
 `
 
-const Picture = styled(BackgroundImg).attrs({
-  className: 'w-100 h-50',
-})``
+const Picture = styled(BackgroundImg).attrs(({ className }) => ({
+  className: `${className} w-100 h-50`,
+}))``
 
 const OurWork = ({ history }) => {
   const isHomePage = history.location.pathname === '/'
@@ -103,28 +103,26 @@ const OurWork = ({ history }) => {
           </Wrapper>
         )}
 
-        {currentPage !== '/about-work-cast' &&
-          !isHomePage && (
-            <Wrapper>
-              <Picture src={cast_card}>
-                <PurpleOverlay />
-              </Picture>
-              <SectionCard>
-                <CardHeading>
-                  <CardTitle>Tech for Good</CardTitle>
-                </CardHeading>
-                <CardSubTitle uppercase>CAST Digital Fellowship</CardSubTitle>
-                <SectionText>
-                  We collaborated with CAST to support senior staff at
-                  non-profits in becoming leaders of their organisation’s
-                  digital development.
-                </SectionText>
-                <CardButtonWithLink link="/about-work-cast">
-                  Read more
-                </CardButtonWithLink>
-              </SectionCard>
-            </Wrapper>
-          )}
+        {currentPage !== '/about-work-cast' && !isHomePage && (
+          <Wrapper>
+            <Picture src={cast_card}>
+              <PurpleOverlay />
+            </Picture>
+            <SectionCard>
+              <CardHeading>
+                <CardTitle>Tech for Good</CardTitle>
+              </CardHeading>
+              <CardSubTitle uppercase>CAST Digital Fellowship</CardSubTitle>
+              <SectionText>
+                We collaborated with CAST to support senior staff at non-profits
+                in becoming leaders of their organisation’s digital development.
+              </SectionText>
+              <CardButtonWithLink link="/about-work-cast">
+                Read more
+              </CardButtonWithLink>
+            </SectionCard>
+          </Wrapper>
+        )}
       </div>
       {isHomePage && <SectionButton>See It All</SectionButton>}
     </Section>

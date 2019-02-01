@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components'
 import { media, getVhInPixels } from '../styles/style_utils'
 import Headroom from 'react-headroom'
 import Header from '../containers/header'
+import Layout from '../components/layout'
 import {
   Wrapper,
   Picture,
@@ -44,7 +45,7 @@ import nhs from '../assets/images/partner_logos/nhs.png'
 import qsa from '../assets/images/partner_logos/qsa.png'
 import cambridge from '../assets/images/partner_logos/cambridge.png'
 
-const Splash = SplashImg.extend`
+const Splash = styled(SplashImg)`
   ${media.m`
     background-position: 65%;
   `};
@@ -196,7 +197,7 @@ const Partners = () => (
 )
 
 const WorkGallery = () => (
-  <div>
+  <Layout>
     <Header image={ourwork_header} splash={Splash}>
       Working with great people on inspiring projects
     </Header>
@@ -362,7 +363,7 @@ const WorkGallery = () => (
         </Wrapper>
       </div>
     </Section>
-  </div>
+  </Layout>
 )
 
 export default WorkGallery
