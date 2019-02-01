@@ -12,4 +12,5 @@ const createStore = () =>
         window.__REDUX_DEVTOOLS_EXTENSION__()
       : f => f
   )
+  
 export default createStore

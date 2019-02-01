@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-import '../styles/index.scss'
+import '../styles/index.css'
 import  Footer from './footer'
 import faviconAppleTouchIcon from '../assets/logos/favicon/favicon-original.png'
 import faviconMaskIcon from '../assets/logos/favicon/favicon.svg'
