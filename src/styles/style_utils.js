@@ -2,8 +2,11 @@ import React from 'react'
 import { css } from 'styled-components'
 import { fontWhiteToFade, fontFadeToWhite } from './style_animations'
 
-const getVhInPixels = (vh = 65) =>
-  document.documentElement.clientHeight * (vh / 100)
+const getVhInPixels = (vh = 65) => {
+  if (typeof window !== 'undefined')
+    return document.documentElement.clientHeight * (vh / 100)
+  return null
+}
 
 const media = {
   ns: (...args) => css`
