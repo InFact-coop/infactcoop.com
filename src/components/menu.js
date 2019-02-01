@@ -141,4 +141,5 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
     </Splash>
   )
 }
+
 export { BurgerWhite, BurgerGradient, Menu }

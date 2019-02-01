@@ -4,13 +4,14 @@ import { renderToString } from 'react-dom/server'
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
 import createStore from './src/state/state'
 
+const { store } = createStore()
+
 const replaceRenderer = ({
   bodyComponent,
   replaceBodyHTMLString,
   setHeadComponents,
 }) => {
   const sheet = new ServerStyleSheet()
-  const store = createStore()
 
   const app = () => (
     <Provider store={store}>
