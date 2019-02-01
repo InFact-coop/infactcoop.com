@@ -3,11 +3,9 @@
   height: 50vh;
 }
 
-* {
-  &::selection {
-    background: #50cfcf;
-    color: #f8f8f8;
-  }
+*::selection {
+  background: #50cfcf;
+  color: #f8f8f8;
 }
 
 .headroom-wrapper {
