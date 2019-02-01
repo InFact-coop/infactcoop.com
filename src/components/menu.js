@@ -57,9 +57,9 @@ const Splash = styled.nav.attrs({
   );
 `
 
-const MenuItem = styled(Link).attrs({
-  className: 'dib ttu heading-ns font-1 reglo link grow',
-})`
+const MenuItem = styled(Link).attrs(({ className }) => ({
+  className: `${className} dib ttu heading-ns font-1 reglo link grow`,
+}))`
   &:focus {
     outline: 0;
   }

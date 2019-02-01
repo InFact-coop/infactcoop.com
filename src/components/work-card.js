@@ -14,9 +14,7 @@ const Overlay = styled.div.attrs({
   opacity: 0;
   transition: 0.5s;
 `
-const Picture = styled(BackgroundImg).attrs({
-  className: '',
-})`
+const Picture = styled(BackgroundImg)`
   transition: 0.5s;
   width: 100%;
   padding-bottom: 100%;

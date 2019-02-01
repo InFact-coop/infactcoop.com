@@ -14,9 +14,9 @@ import approach_img from '../assets/images/inline_images/approach_img.jpg'
 
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
-const Picture = styled(BackgroundImg).attrs({
-  className: 'mt4',
-})`
+const Picture = styled(BackgroundImg).attrs(({ className }) => ({
+  className: `${className} mt4`,
+}))`
   width: 100%;
   height: 600px;
 `

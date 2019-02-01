@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link }  from 'gatsby'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { media } from '../styles/style_utils'
 
@@ -19,18 +19,18 @@ const CardBody = styled.p.attrs({
   className: 'font-4-l font-6-m font-5 sans-serif',
 })``
 
-const SectionCardBody = styled(CardBody).attrs({
-  className: 'mb3',
-})``
+const SectionCardBody = styled(CardBody).attrs(({ className }) => ({
+  className: `${className} mb3`,
+}))``
 
 const Card = styled.div.attrs({
   className: 'bg-white shadow-5 ph5-l pv6-l pa3-m ph3 pv4 center tc tl-ns',
 })`
   width: 95%;
 `
-const SectionCard = styled(Card).attrs({
-  className: 'absolute-ns top-0-ns',
-})`
+const SectionCard = styled(Card).attrs(({ className }) => ({
+  className: `${className} absolute-ns top-0-ns`,
+}))`
   max-height: 95%;
   transform: translateY(-2rem);
   ${media.m`

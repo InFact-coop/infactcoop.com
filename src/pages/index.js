@@ -38,9 +38,9 @@ import lcn from '../assets/images/partner_logos/lcn.png'
 import nhs from '../assets/images/partner_logos/nhs.png'
 import qsa from '../assets/images/partner_logos/qsa.png'
 
-const WorkLink = styled(SectionButton.withComponent(Link)).attrs({
-  className: 'no-underline w-20-l w-40-m w-80 tc',
-})`
+const WorkLink = styled(SectionButton).attrs(({ className }) => ({
+  className: `${className} no-underline w-20-l w-40-m w-80 tc`,
+}))`
   z-index: 0;
 `
 
@@ -104,7 +104,9 @@ const IndexPage = () => (
           </SectionCard>
         </Wrapper>
       </div>
-      <WorkLink to="/our-work">See It All</WorkLink>
+      <WorkLink as={Link} to="/our-work">
+        See It All
+      </WorkLink>
     </Section>
 
     <Section bg_color="white">
@@ -113,36 +115,42 @@ const IndexPage = () => (
       </SectionHeading>
       <div className="flex justify-center flex-wrap justify-between-l mb7-l">
         <LinkImage
+          as="a"
           src={nhs}
           width="6rem"
           href="http://www.slam.nhs.uk/"
           target="_blank"
         />
         <LinkImage
+          as="a"
           src={cast}
           width="14rem"
           target="_blank"
           href="http://www.wearecast.org.uk/"
         />
         <LinkImage
+          as="a"
           src={annaFreud}
           width="17rem"
           target="_blank"
           href="https://www.annafreud.org/"
         />
         <LinkImage
+          as="a"
           src={bluecross}
           width="5em"
           target="_blank"
           href="https://www.bluecross.org.uk/"
         />
         <LinkImage
+          as="a"
           src={lcn}
           width="10rem"
           target="_blank"
           href="http://www.lawcentres.org.uk/"
         />
         <LinkImage
+          as="a"
           src={qsa}
           width="5rem"
           target="_blank"

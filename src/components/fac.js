@@ -28,9 +28,9 @@ const Wrapper = styled.div.attrs({
   `};
 `
 
-const Picture = styled(BackgroundImg).attrs({
-  className: 'absolute-ns bottom-0-ns right-0-ns',
-})`
+const Picture = styled(BackgroundImg).attrs(({ className }) => ({
+  className: `${className} absolute-ns bottom-0-ns right-0-ns`,
+}))`
   width: 100%;
   height: 50vh;
   ${media.ns`
