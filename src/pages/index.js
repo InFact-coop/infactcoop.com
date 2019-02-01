@@ -44,7 +44,7 @@ const WorkLink = styled(SectionButton.withComponent(Link)).attrs({
   z-index: 0;
 `
 
-const Splash = SplashImg.extend`
+const Splash = styled(SplashImg)`
   background-position: 73%;
   ${media.m`
     background-position: 86%;
