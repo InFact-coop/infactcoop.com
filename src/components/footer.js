@@ -113,10 +113,14 @@ const Footer = () => (
         <FooterSection>
           <Title>Address</Title>
           Space 4<br />
-          First Floor<br />
-          149 Fonthill Road<br />
-          Finsbury Park<br />
-          London<br />
+          First Floor
+          <br />
+          149 Fonthill Road
+          <br />
+          Finsbury Park
+          <br />
+          London
+          <br />
         </FooterSection>
         <FooterSection>
           <Title>Connect</Title>
@@ -128,12 +132,6 @@ const Footer = () => (
               href="https://github.com/infact-coop"
               target="_blank"
             />
-            <ContactIcon imgUrl={LinkedInIcon} />
-            <ContactIcon
-              imgUrl={MediumIcon}
-              href="https://medium.com/infactdigitalcoop"
-              target="_blank"
-            />
           </ContactWrapper>
         </FooterSection>
       </Topline>
@@ -141,4 +139,4 @@ const Footer = () => (
   </div>
 )
 
-export default  Footer 
+export default Footer
