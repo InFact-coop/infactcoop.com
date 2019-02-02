@@ -24,7 +24,6 @@ import bluecross_card from '../assets/images/card_images/bluecross_card.png'
 import ourwork_header from '../assets/images/header_images/ourwork_header.png'
 import first_days_card from '../assets/images/card_images/first_days_card.png'
 import lcn_card from '../assets/images/card_images/lcn_card.png'
-import unlock_card from '../assets/images/card_images/unlock_card.png'
 import yimovi_card from '../assets/images/card_images/yimovi_card.png'
 import lwc_card from '../assets/images/card_images/lwc_card.png'
 
@@ -338,26 +337,6 @@ const WorkGallery = () => (
               We created LWC: Service Search, which is an app to help women
               access the right services so they can feel more in control of
               their lives.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
-
-        <Wrapper to="/our-work/coming-soon">
-          <PictureWithFilter
-            src={unlock_card}
-            gradient="linear-gradient(225deg, rgba(0,0,0,0.1) 0%, rgba(50,45,55,0.1) 100%)"
-          >
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />{' '}
-          </PictureWithFilter>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Tech for Good</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>Unlock</CardSubTitle>
-            <SectionText>
-              We built a chat bot to feature on Unlock's informationHub. Users
-              can click on it and interact with it to answer their questions
-              related to travel to the U.S.
             </SectionText>
           </SectionCard>
         </Wrapper>

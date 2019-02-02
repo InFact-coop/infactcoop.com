@@ -58,12 +58,6 @@ const AboutUs = () => (
         'https://github.com/maxgerber/'
       )}
       {AboutCard(
-        sophie,
-        'Sophie Levens',
-        'Developer',
-        'https://github.com/sophielevens'
-      )}
-      {AboutCard(
         noga,
         'Noga Enbar',
         'Designer',
