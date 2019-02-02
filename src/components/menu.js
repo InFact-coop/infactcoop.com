@@ -70,8 +70,6 @@ const MenuItem = styled(Link).attrs(({ className }) => ({
   ${({ menuIsOpen }) => disableUserSelect(menuIsOpen !== 'OPENED')};
 `
 
-const MenuItemATag = MenuItem.withComponent('a')
-
 const LinkContainer = styled.div.attrs({
   className: `nav w-100 flex flex-column items-center justify-around pt3 pt0-ns`,
 })`
@@ -123,13 +121,6 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
         >
           About InFact
         </MenuItem>
-        <MenuItemATag
-          menuIsOpen={menuIsOpen}
-          href="https://foundersandcoders.com/"
-          target="_blank"
-        >
-          Founders & Coders
-        </MenuItemATag>
         <MenuItem
           to="/contact-us"
           menuIsOpen={menuIsOpen}
