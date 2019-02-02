@@ -3,6 +3,9 @@ import { TOGGLE_MENU } from './actions'
 const menuReducer = (state, { type, payload }) => {
   switch (type) {
     case TOGGLE_MENU:
+      document.body.style.overflowY === 'hidden'
+        ? (document.body.style.overflowY = 'visible')
+        : (document.body.style.overflowY = 'hidden')
       return toggleMenu(state, payload)
     default:
       return state
