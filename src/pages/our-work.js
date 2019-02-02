@@ -28,6 +28,7 @@ import yimovi_card from '../assets/images/card_images/yimovi_card.png'
 import lwc_card from '../assets/images/card_images/lwc_card.png'
 import meme_card from '../assets/images/card_images/meme_card.png'
 import ys_card from '../assets/images/card_images/ys_card.png'
+import discover_card from '../assets/images/card_images/discover_card.png'
 
 const PictureWithFilter = styled(Picture)`
   ${({ src, gradient }) =>
@@ -221,7 +222,7 @@ const WorkGallery = () => (
           </Picture>
           <SectionCard>
             <CardHeading>
-              <CardTitle>Mental Health</CardTitle>
+              <CardTitle>Health</CardTitle>
             </CardHeading>
             <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
             <SectionText>
@@ -260,6 +261,23 @@ const WorkGallery = () => (
             <SectionText>
               A tool to allow victims of domestic violence to gain information,
               either from a live advisor or through a chatbot.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
+        <Wrapper to="/our-work/discover">
+          <Picture src={discover_card}>
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Health</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Discoverbot</CardSubTitle>
+            <SectionText>
+              An app teaching 16-18 year olds psychological techniques based on
+              cognitive behavioural therapy principles to make helpful changes
+              to their lives and to build resilience to stress.
             </SectionText>
           </SectionCard>
         </Wrapper>

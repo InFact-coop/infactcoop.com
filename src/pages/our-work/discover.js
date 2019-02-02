@@ -18,9 +18,9 @@ import {
   BannerImg,
 } from '../../components/work-content'
 
-import meme_header from '../../assets/images/header_images/meme_header.png'
-import meme_1 from '../../assets/images/inline_images/meme_1.png'
-import meme_2 from '../../assets/images/inline_images/meme_2.png'
+import discover_header from '../../assets/images/header_images/discover_header.png'
+import discover_1 from '../../assets/images/inline_images/discover_1.png'
+import discover_2 from '../../assets/images/inline_images/discover_2.png'
 
 import stimmy_card from '../../assets/images/card_images/stimmythings_card.svg'
 import cast_card from '../../assets/images/card_images/cast_card.png'
@@ -28,23 +28,48 @@ import cast_card from '../../assets/images/card_images/cast_card.png'
 const AboutWork = () => (
   <Layout>
     <Header
-      topicLine="Activism"
-      tagLine="EU Compliant Meme Generator"
-      subTagLine="A campaign tool to aid Create.Refresh in their fight against Article 13."
+      topicLine="Health"
+      tagLine="DISCOVERbot"
+      subTagLine="An app teaching 16-18 year olds psychological techniques based on cognitive behavioural therapy principles to make helpful changes to their lives and to build resilience to stress."
       gradient
     />
     <div className="ma0">
-      <BannerImg src={meme_header} />
+      <BannerImg src={discover_header} />
       <WorkWrapper>
         <SectionHeading>
           <SectionTitle>The Challenge</SectionTitle>
         </SectionHeading>
         <WorkDescription>
-          We worked together with Purpose, who build and support forward
-          thinking movements, to create a tool for Create.Refresh that would
-          help them raise awareness of the implications of Article 13.
+          The DISCOVER team run one-day interactive group workshops where
+          participants learn psychological techniques based on cognitive
+          behavioural therapy principles. Our challenge was to build a digital
+          product which would engage the young people in the weeks and months
+          after the workshop, helping them to consolidate the teachings from the
+          day.
         </WorkDescription>
-        <WorkImg src={meme_1} />
+        <SectionHeading>
+          <SectionTitle>Discovery and Design</SectionTitle>
+        </SectionHeading>
+        <WorkDescription>
+          <p className="mb3">
+            We ran an inital workshop with the DISCOVER team to gain a better
+            insight into their internal processes and organisational needs. We
+            then decided on two additional workshops with a group of young
+            people who had been through the whole DISCOVER programme. The
+            workshops shed light on possible ways we could use technology to
+            enhance the DISCOVER experience and keep users engaged throughout.
+            Through conversations, exercises and sharing of ideas we decided to
+            translate the DISCOVER workshop materials into a friendly bot.
+          </p>
+          <p>
+            Our designer then spent time creating a clickable prototype which we
+            tested with the young people and iterated on before we started
+            development work. By the time we reached development stage, we had
+            gained many insights through testing and the bot's direction was
+            positive and well received by the young people.
+          </p>
+        </WorkDescription>
+        <WorkImg src={discover_1} />
         <SectionHeading>
           <SectionTitle>The Solution</SectionTitle>
         </SectionHeading>
@@ -52,44 +77,24 @@ const AboutWork = () => (
           We built an app which:
           <ul className="tl">
             <li>
-              Engages the target audience with a simple layout accompanied by
-              retro 90s design and animations
+              Enables users to review tips and techniques from the workshop by
+              interacting with friendly chatbot or by going through static
+              content
             </li>
             <li>
-              Enables users to make uploaded memes/photos 'EU Compliant' by
-              using the tool
+              Allows users to set specific goals for themselves, putting the
+              learning from the workshops into practice
             </li>
             <li>
-              Allows and encourages users to share the tool and their unique
-              cartoon on Twitter and Facebook, to maximise reach
+              Gives near-complete access to the app offline and from the home
+              screens through the use of Progressive Web App technology
             </li>
             <li>
-              Connects to a backend API deployed on AWS which implements
-              Cartoonify and returns a cartoon based the original upload
-            </li>
-            <li>
-              Supports analytics and tracking events using Google Analytics,
-              Facebook Pixel and Twitter Pixel
+              Engages the audience with fun and friendly design and animations
             </li>
           </ul>
         </WorkDescription>
-        <WorkImg src={meme_2} />
-        <SectionHeading>
-          <SectionTitle>See The Real Deal</SectionTitle>
-        </SectionHeading>
-        <WorkDescription>
-          <p className="font-3 tc">
-            Check out the EU Compliant Meme Generator{' '}
-            <a
-              className="light-green b ttu"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://compliantmemegenerator.eu"
-            >
-              here
-            </a>
-          </p>
-        </WorkDescription>
+        <WorkImg src={discover_2} />
       </WorkWrapper>
     </div>
     <Section bg_color="white">
