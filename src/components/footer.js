@@ -1,11 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { media, backgroundImage } from '../styles/style_utils'
 import { SectionTitle } from './section'
 
-import MediumIcon from '../assets/icons/medium.svg'
 import GithubIcon from '../assets/icons/github.svg'
-import LinkedInIcon from '../assets/icons/linkedin.svg'
 import logo from '../assets/logos/infact_logo_white.svg'
 import airplane from '../assets/icons/airplace_icn.svg'
 
@@ -83,63 +81,78 @@ const Logo = styled.div.attrs({
   background: ${backgroundImage(logo)};
 `
 
-const AirplaneIcon = styled.img.attrs({
-  className: 'mt2',
+const AirplaneIcon = styled.a.attrs({
+  className: 'mt2 center relative',
 })`
-  &:hover {
-    transform: rotate(5deg);
-    transition: transform 0.15s;
-  }
+  background-image: ${({ src }) => `url(${src})`};
+  height: 150px;
+  width: 150px;
+  ${({ takeOff }) =>
+    takeOff &&
+    css`
+      transform: translate(1000px, -1000px);
+      transition: all 3s ease-out 0s;
+    `}
 `
 
-const Footer = () => (
-  <div>
-    <EmailSplash>
-      <EmailTopline>Ready to collaborate?</EmailTopline>
-      <EmailSecondLine>We would love to hear from you</EmailSecondLine>
-      <EmailSecondLine
-        className="light-green"
-        href="mailto:hello@infactcoop.com?Subject=I%20was%20checking%20out%20your%20website%20and..."
-      >
-        hello@infactcoop.com
-      </EmailSecondLine>
-      <a
-        className="tc"
-        href="mailto:hello@infactcoop.com?Subject=I%20was%20checking%20out%20your%20website%20and..."
-      >
-        <AirplaneIcon src={airplane} alt="airplane" />
-      </a>
-    </EmailSplash>
-    <Splash>
-      <Topline>
-        <Logo />
-        <FooterSection>
-          <Title>Address</Title>
-          Space 4<br />
-          First Floor
-          <br />
-          149 Fonthill Road
-          <br />
-          Finsbury Park
-          <br />
-          London
-          <br />
-        </FooterSection>
-        <FooterSection>
-          <Title>Connect</Title>
-          Get in touch any way you like! <br />
-          We LOVE meeting new people
-          <ContactWrapper>
-            <ContactIcon
-              imgUrl={GithubIcon}
-              href="https://github.com/infact-coop"
-              target="_blank"
-            />
-          </ContactWrapper>
-        </FooterSection>
-      </Topline>
-    </Splash>
-  </div>
-)
+class Footer extends React.Component {
+  state = {
+    takeOff: false,
+  }
+
+  render() {
+    return (
+      <div>
+        <EmailSplash>
+          <EmailTopline>Ready to collaborate?</EmailTopline>
+          <EmailSecondLine>We would love to hear from you</EmailSecondLine>
+          <EmailSecondLine
+            className="light-green"
+            href="mailto:hello@infactcoop.com?Subject=I%20was%20checking%20out%20your%20website%20and..."
+            onMouseDown={() => this.setState({ takeOff: true })}
+          >
+            hello@infactcoop.com
+          </EmailSecondLine>
+          <AirplaneIcon
+            src={airplane}
+            alt="airplane"
+            href="mailto:hello@infactcoop.com?Subject=I%20was%20checking%20out%20your%20website%20and..."
+            takeOff={this.state.takeOff}
+            onMouseDown={() => this.setState({ takeOff: true })}
+          />
+        </EmailSplash>
+        <Splash>
+          <Topline>
+            <Logo />
+            <FooterSection>
+              <Title>Address</Title>
+              Space 4<br />
+              First Floor
+              <br />
+              149 Fonthill Road
+              <br />
+              Finsbury Park
+              <br />
+              London
+              <br />
+            </FooterSection>
+            <FooterSection>
+              <Title>Connect</Title>
+              Get in touch any way you like! <br />
+              We LOVE meeting new people
+              <ContactWrapper>
+                <ContactIcon
+                  imgUrl={GithubIcon}
+                  href="https://github.com/infact-coop"
+                  target="_blank"
+                />
+              </ContactWrapper>
+            </FooterSection>
+          </Topline>
+        </Splash>
+      </div>
+    )
+  }
+}
 
 export default Footer
