@@ -38,7 +38,7 @@ const PictureWithFilter = styled(Picture)`
 const AboutWork = () => (
   <Layout>
     <Header
-      topicLine="Mental Health"
+      topicLine="Health"
       tagLine="Stimmy Things"
       subTagLine="An app to help young people deal better with ADHD."
       gradient
