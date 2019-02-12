@@ -34,7 +34,7 @@ const AboutWork = () => (
       gradient
     />
     <div className="ma0">
-      <BannerImg src={meme_header} />
+      <BannerImg src={meme_header} as="img" heightAuto={true} />
       <WorkWrapper>
         <SectionHeading>
           <SectionTitle>The Challenge</SectionTitle>
@@ -44,7 +44,7 @@ const AboutWork = () => (
           thinking movements, to create a tool for Create.Refresh that would
           help them raise awareness of the implications of Article 13.
         </WorkDescription>
-        <WorkImg src={meme_1} />
+        <WorkImg src={meme_1} as="img" heightAuto={true} />
         <SectionHeading>
           <SectionTitle>The Solution</SectionTitle>
         </SectionHeading>
@@ -73,7 +73,7 @@ const AboutWork = () => (
             </li>
           </ul>
         </WorkDescription>
-        <WorkImg src={meme_2} />
+        <WorkImg src={meme_2} as="img" heightAuto={true} />
         <SectionHeading>
           <SectionTitle>See The Real Deal</SectionTitle>
         </SectionHeading>
