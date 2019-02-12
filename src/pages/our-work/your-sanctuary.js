@@ -41,7 +41,7 @@ const AboutWork = () => (
       gradient
     />
     <div className="ma0">
-      <BannerImg src={ys_header} as="img" heightAuto={true} />
+      <BannerImg src={ys_header} />
       <WorkWrapper>
         <SectionHeading>
           <SectionTitle>The Challenge</SectionTitle>
@@ -62,7 +62,7 @@ const AboutWork = () => (
           forwards quicker and come up with a simple, yet effective design with
           an integrated out of the box chat solution.
         </WorkDescription>
-        <WorkImg src={ys_1} as="img" heightAuto={true} />
+        <WorkImg src={ys_1} />
         <SectionHeading>
           <SectionTitle>The Solution</SectionTitle>
         </SectionHeading>
@@ -89,7 +89,7 @@ const AboutWork = () => (
             </li>
           </ul>
         </WorkDescription>
-        <WorkImg src={ys_2} as="img" heightAuto={true} />
+        <WorkImg src={ys_2} />
         <SectionHeading>
           <SectionTitle>See The Real Deal</SectionTitle>
         </SectionHeading>

@@ -35,13 +35,6 @@ const WorkDescription = styled.div.attrs({
   }
 `
 
-const WorkImg = styled.img.attrs({
-  className: 'w-100 mv4',
-})`
-  height: ${({ smallScreen, heightAuto }) =>
-    smallScreen || heightAuto ? 'auto' : '75vh'};
-  height: auto;
-`
 const TestimonialWrapper = styled.div.attrs({
   className:
     'flex flex-column justify-center items-center pa6-l pv4-m ph0-m pv4 center bg-mid-gray tc tl-nsho',
@@ -63,10 +56,14 @@ const ZigZag = styled.img.attrs({
 
 const BannerImg = styled.img`
   width: 100%;
-  height: ${({ smallScreen, heightAuto }) =>
-    smallScreen || heightAuto ? 'auto' : '85vh'};
   height: auto;
   max-width: 1440px;
+`
+
+const WorkImg = styled.img.attrs({
+  className: 'w-100 mv4',
+})`
+  height: auto;
 `
 
 export {
