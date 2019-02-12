@@ -31,7 +31,6 @@ const Card = styled.div.attrs({
 const SectionCard = styled(Card).attrs(({ className }) => ({
   className: `${className} absolute-ns top-0-ns`,
 }))`
-  max-height: 95%;
   transform: translateY(-2rem);
   ${media.m`
     transform: translateY(0);

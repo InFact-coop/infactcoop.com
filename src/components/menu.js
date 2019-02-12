@@ -70,8 +70,6 @@ const MenuItem = styled(Link).attrs(({ className }) => ({
   ${({ menuIsOpen }) => disableUserSelect(menuIsOpen !== 'OPENED')};
 `
 
-const MenuItemATag = MenuItem.withComponent('a')
-
 const LinkContainer = styled.div.attrs({
   className: `nav w-100 flex flex-column items-center justify-around pt3 pt0-ns`,
 })`
