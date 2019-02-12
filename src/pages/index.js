@@ -29,8 +29,8 @@ import {
 import { LinkImage } from '../components/link-image'
 
 import landing_header from '../assets/images/header_images/landing_header2.jpg'
-import bluecross_card from '../assets/images/card_images/bluecross_card.png'
-import stimmy_card from '../assets/images/card_images/stimmythings_card.svg'
+import meme_card from '../assets/images/card_images/meme_card.png'
+import facweb_card from '../assets/images/card_images/facweb_card.png'
 
 import annaFreud from '../assets/images/partner_logos/anna_freud.png'
 import bluecross from '../assets/images/partner_logos/bluecross.png'
@@ -82,35 +82,34 @@ const IndexPage = () => (
       </SectionHeading>
 
       <div className="flex-ns flex-column flex-row-ns justify-between-ns">
-        <Wrapper to="/our-work/stimmy-things">
-          <Picture src={stimmy_card}>
+        <Wrapper to="/our-work/founders-and-coders">
+          <Picture src={facweb_card}>
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
           </Picture>
           <SectionCard>
             <CardHeading>
-              <CardTitle>Mental Health</CardTitle>
+              <CardTitle>Partnerships</CardTitle>
             </CardHeading>
-            <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
+            <CardSubTitle uppercase>Founders and Coders</CardSubTitle>
             <SectionText>
-              Working in collaboration with young people, parents and
-              clinicians, we designed and built an app that helps young people
-              with ADHD to manage their symptoms.
+              Creating a new look and feel for a community close to our hearts,
+              Founders and Coders.
             </SectionText>
           </SectionCard>
         </Wrapper>
 
-        <Wrapper to="/our-work/bluecross">
-          <Picture src={bluecross_card}>
+        <Wrapper to="/our-work/meme-generator">
+          <Picture src={meme_card}>
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
           </Picture>
           <SectionCard>
             <CardHeading>
-              <CardTitle>Tech for Good</CardTitle>
+              <CardTitle>Activism</CardTitle>
             </CardHeading>
-            <CardSubTitle uppercase>Blue Cross</CardSubTitle>
+            <CardSubTitle uppercase>EU Compliant Meme Generator</CardSubTitle>
             <SectionText>
-              We created an app for conscientious owners to find a loving new
-              home for their pet.
+              A campaign tool to aid Create.Refresh in their fight against
+              Article 13.
             </SectionText>
           </SectionCard>
         </Wrapper>
