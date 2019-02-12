@@ -83,13 +83,11 @@ const TopicLine = styled.div.attrs({
   className: 'font-4 ttu sans-serif black mt2 mb1',
 })``
 
-const TaglineBlack = styled.p.attrs({
-  className: props =>
-    'ttu reglo black' +
-    (props.smallFont
-      ? ' heading-ns font-1 w-30-ns center mt2'
-      : ' font-0-ns font-1'),
-})``
+const TaglineBlack = styled.p.attrs(({ smallFont }) => ({
+  className: `ttu reglo black ${
+    smallFont ? 'heading-ns font-1 w-30-ns center mt2' : 'font-0-ns font-1'
+  }`,
+}))``
 
 const SubTaglineBlack = styled.div.attrs({
   className: 'font-4 sans-serif black',
