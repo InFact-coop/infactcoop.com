@@ -16,6 +16,9 @@ import {
   WorkImg,
   WorkDescription,
   BannerImg,
+  TestimonialWrapper,
+  TestimonialPerson,
+  TestimonialText,
 } from '../../components/work-content'
 
 import meme_header from '../../assets/images/header_images/meme_header.png'
@@ -91,6 +94,17 @@ const AboutWork = () => (
           </p>
         </WorkDescription>
       </WorkWrapper>
+      <TestimonialWrapper>
+        <TestimonialText>
+          "Working with InFact has been a completely smooth and timely
+          experience. The team contributed to decision making and came up with
+          innovative solutions to fit our specification, making this project
+          100% easier for us."
+        </TestimonialText>
+        <TestimonialPerson>
+          Aaron Parr, Digital Campaigner at Purpose
+        </TestimonialPerson>
+      </TestimonialWrapper>
     </div>
     <Section bg_color="white">
       <SectionHeading mb>
