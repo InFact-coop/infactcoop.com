@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Headroom from 'react-headroom'
+import Helmet from 'react-helmet'
 
 import Header from '../containers/header'
 import Layout from '../components/layout'
@@ -40,6 +41,16 @@ const CardBody = styled.div.attrs({
 
 const OurApproach = () => (
   <Layout>
+    <Helmet
+      title="Our Approach - InFact Digital Co-op"
+      meta={[
+        {
+          name: 'description',
+          content:
+            'Discover how our collaborative approach can benefit your organisation.',
+        },
+      ]}
+    />
     <Header image={approach_header} splash={YellowBackgroundSplash}>
       Putting users at the heart of the creative process
     </Header>

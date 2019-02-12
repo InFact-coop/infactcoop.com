@@ -28,16 +28,10 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={() => (
       <div>
         <Helmet
-          title={data.site.siteMetadata.title}
           meta={[
-            {
-              name: 'description',
-              content:
-                'We are a design & development digital co-operative using technology in service of humans and nature.',
-            },
             {
               name: 'keywords',
               content:
