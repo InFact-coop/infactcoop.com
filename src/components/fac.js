@@ -65,12 +65,12 @@ const FAC = () => (
         <CardSubTitle>One of the best experiences of our lives.</CardSubTitle>
         <SectionCardBody>
           Founders & Coders is a UK-based nonprofit organization that runs a
-          tuition free coding academy in London. All members of InFact coop
+          tuition free coding academy in London. All members of InFact co-op
           graduated from the programme and our story begins with the Founders &
           Coders community.
         </SectionCardBody>
         <ExternalCardButtonWithLink link="https://foundersandcoders.com/">
-          Read More
+          Check them out
         </ExternalCardButtonWithLink>
       </SectionCard>
     </Wrapper>

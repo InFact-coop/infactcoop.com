@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 import Headroom from 'react-headroom'
 import { media, getVhInPixels } from '../styles/style_utils'
+import Helmet from 'react-helmet'
 
 import Header from '../containers/header'
 import Layout from '../components/layout'
@@ -56,6 +57,16 @@ const Splash = styled(SplashImg)`
 
 const IndexPage = () => (
   <Layout>
+    <Helmet
+      title="InFact Digital Co-op"
+      meta={[
+        {
+          name: 'description',
+          content:
+            'We are a design & development digital co-operative using technology in service of humans and nature.',
+        },
+      ]}
+    />
     <Header image={landing_header} splash={Splash}>
       We're a design & development co-operative using Technology in service of
       humans and nature

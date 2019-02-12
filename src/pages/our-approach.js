@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Headroom from 'react-headroom'
+import Helmet from 'react-helmet'
 
 import Header from '../containers/header'
 import Layout from '../components/layout'
@@ -40,6 +41,16 @@ const CardBody = styled.div.attrs({
 
 const OurApproach = () => (
   <Layout>
+    <Helmet
+      title="Our Approach - InFact Digital Co-op"
+      meta={[
+        {
+          name: 'description',
+          content:
+            'Discover how our collaborative approach can benefit your organisation.',
+        },
+      ]}
+    />
     <Header image={approach_header} splash={YellowBackgroundSplash}>
       Putting users at the heart of the creative process
     </Header>
@@ -47,7 +58,7 @@ const OurApproach = () => (
       <ToplineBackground />
     </Headroom>
     <Wrapper>
-      <Title>Collaborative, empathetic and dynamic</Title>
+      <Title>Collaborative, empathic and dynamic</Title>
       <ZigZag src={wigglyBottom} />
       <Text>
         We work in an Agile, user-centred fashion - however we know this doesn’t
@@ -55,7 +66,7 @@ const OurApproach = () => (
         <ul className="tl">
           <li>
             We believe in close collaboration with you, because you’re the
-            experts of your domain! We love learning about your world,
+            experts of your domain. We love learning about your world,
             understanding the unique challenges you face and helping you to
             solve them.
           </li>

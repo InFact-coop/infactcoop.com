@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import '../styles/index.css'
-import  Footer from './footer'
+import Footer from './footer'
 import faviconAppleTouchIcon from '../assets/logos/favicon/favicon-original.png'
 import faviconMaskIcon from '../assets/logos/favicon/favicon.svg'
 import favicon64 from '../assets/logos/favicon/favicon_forweb/favicon-64x64.png'
@@ -28,20 +28,14 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={() => (
       <div>
         <Helmet
-          title={data.site.siteMetadata.title}
           meta={[
-            {
-              name: 'description',
-              content:
-                'We are a design & development digital co-operative using technology in service of humans and nature.',
-            },
             {
               name: 'keywords',
               content:
-                'digital, technology, tech, charity, charities, co-op, coop, cooperative, tech for good, founders and coders',
+                'digital, technology, tech, charity, charities, co-op, coop, co-operative, cooperative, tech for good, founders and coders',
             },
           ]}
         >

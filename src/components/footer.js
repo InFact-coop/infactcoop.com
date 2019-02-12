@@ -38,8 +38,8 @@ const EmailTopline = styled.p.attrs({
   className: 'ttu tc reglo font-3-ns font-4 white mb2 mt0-ns',
 })``
 
-const EmailSecondLine = styled.p.attrs({
-  className: 'ttu tc reglo font-1-ns font-2 white mb3',
+const EmailSecondLine = styled.a.attrs({
+  className: 'ttu tc reglo font-1-ns font-2 white mb3 link',
 })``
 
 const Topline = styled.div.attrs({
@@ -97,7 +97,10 @@ const Footer = () => (
     <EmailSplash>
       <EmailTopline>Ready to collaborate?</EmailTopline>
       <EmailSecondLine>We would love to hear from you</EmailSecondLine>
-      <EmailSecondLine className="light-green">
+      <EmailSecondLine
+        className="light-green"
+        href="mailto:hello@infactcoop.com?Subject=I%20was%20checking%20out%20your%20website%20and..."
+      >
         hello@infactcoop.com
       </EmailSecondLine>
       <a

@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Headroom from 'react-headroom'
+import Helmet from 'react-helmet'
 
 import Header from '../containers/header'
-import Headroom from 'react-headroom'
 
 import { getVhInPixels } from '../styles/style_utils'
 import Layout from '../components/layout'
@@ -22,6 +23,16 @@ import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
 
 const AboutUs = () => (
   <div>
+    <Helmet
+      title="About Us - InFact Digital Co-op"
+      meta={[
+        {
+          name: 'description',
+          content:
+            'Find out about InFact, a cooperative community made up of a diverse group of designers, developers and web professionals.',
+        },
+      ]}
+    />
     <Headroom style={{ position: 'fixed' }} pinStart={getVhInPixels()}>
       <ToplineBackground />
     </Headroom>
