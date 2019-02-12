@@ -30,6 +30,7 @@ import lwc_card from '../assets/images/card_images/lwc_card.png'
 import meme_card from '../assets/images/card_images/meme_card.png'
 import ys_card from '../assets/images/card_images/ys_card.png'
 import discover_card from '../assets/images/card_images/discover_card.png'
+import workhub_card from '../assets/images/card_images/workhub_card.png'
 
 const PictureWithFilter = styled(Picture)`
   ${({ src, gradient }) =>
@@ -289,6 +290,22 @@ const WorkGallery = () => (
               An app teaching 16-18 year olds psychological techniques based on
               cognitive behavioural therapy principles to make helpful changes
               to their lives and to build resilience to stress.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
+        <Wrapper to="/our-work/workhub">
+          <Picture src={workhub_card}>
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Start-Up</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Workhub</CardSubTitle>
+            <SectionText>
+              Workhub is a platform to capture how teams work together and to
+              explore how the world works.
             </SectionText>
           </SectionCard>
         </Wrapper>

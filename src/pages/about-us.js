@@ -16,7 +16,6 @@ import lucy from '../assets/images/team_images/lucy.jpg'
 import ivan from '../assets/images/team_images/ivan.jpg'
 import noga from '../assets/images/team_images/noga.jpg'
 import max from '../assets/images/team_images/max.jpg'
-import sophie from '../assets/images/team_images/sophie.jpg'
 
 import aboutus_header from '../assets/images/header_images/aboutus_header.jpg'
 import wigglyBottom from '../assets/icons/wiggly_under_word.svg'
