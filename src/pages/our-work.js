@@ -229,6 +229,39 @@ const WorkGallery = () => (
       </SectionHeading>
 
       <div className="flex-ns flex-column flex-row-ns flex-wrap justify-between-ns">
+        <Wrapper to="/our-work/workhub">
+          <Picture src={workhub_card}>
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Start-Up</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Workhub</CardSubTitle>
+            <SectionText>
+              Workhub is a platform to capture how teams work together and to
+              explore how the world works.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
+        <Wrapper to="/our-work/discover">
+          <Picture src={discover_card}>
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Health</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Discoverbot</CardSubTitle>
+            <SectionText>
+              An app teaching 16-18 year olds psychological techniques based on
+              cognitive behavioural therapy principles to make helpful changes
+              to their lives and to build resilience to stress.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
         <Wrapper to="/our-work/founders-and-coders">
           <Picture src={facweb_card}>
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
@@ -241,23 +274,6 @@ const WorkGallery = () => (
             <SectionText>
               Creating a new look and feel for a community close to our hearts,
               Founders and Coders.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
-
-        <Wrapper to="/our-work/stimmy-things">
-          <Picture src={stimmy_card}>
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
-          </Picture>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Health</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
-            <SectionText>
-              Working in collaboration with young people, parents and
-              clinicians, we designed and built an app that helps young people
-              with ADHD to manage their symptoms.
             </SectionText>
           </SectionCard>
         </Wrapper>
@@ -290,39 +306,6 @@ const WorkGallery = () => (
             <SectionText>
               A tool to allow victims of domestic violence to gain information,
               either from a live advisor or through a chatbot.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
-
-        <Wrapper to="/our-work/discover">
-          <Picture src={discover_card}>
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
-          </Picture>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Health</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>Discoverbot</CardSubTitle>
-            <SectionText>
-              An app teaching 16-18 year olds psychological techniques based on
-              cognitive behavioural therapy principles to make helpful changes
-              to their lives and to build resilience to stress.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
-
-        <Wrapper to="/our-work/workhub">
-          <Picture src={workhub_card}>
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
-          </Picture>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Start-Up</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>Workhub</CardSubTitle>
-            <SectionText>
-              Workhub is a platform to capture how teams work together and to
-              explore how the world works.
             </SectionText>
           </SectionCard>
         </Wrapper>
@@ -364,6 +347,60 @@ const WorkGallery = () => (
           </SectionCard>
         </Wrapper>
 
+        <Wrapper to="/our-work/stimmy-things">
+          <Picture src={stimmy_card}>
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Health</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
+            <SectionText>
+              Working in collaboration with young people, parents and
+              clinicians, we designed and built an app that helps young people
+              with ADHD to manage their symptoms.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
+        <Wrapper to="/our-work/lwc">
+          <PictureWithFilter
+            src={lwc_card}
+            gradient="radial-gradient(circle, rgba(250,125,120,0.3) 0%, rgba(97,20,204,0.3) 100%)"
+          >
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />{' '}
+          </PictureWithFilter>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Tech for Good</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Lancashire Women's Centers</CardSubTitle>
+            <SectionText>
+              We created LWC: Service Search, which is an app to help women
+              access the right services so they can feel more in control of
+              their lives.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
+        <Wrapper to="/our-work/first-days">
+          <Picture src={first_days_card}>
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />{' '}
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Tech for Good</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Wales Cooperative</CardSubTitle>
+            <SectionText>
+              Platform for helping with volunteer engagement from the beginning
+              of the recruitment process right through to getting feedback on
+              the volunteer's first day.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
         <Wrapper to="/our-work/coming-soon">
           <PictureWithFilter
             src={yimovi_card}
@@ -397,43 +434,6 @@ const WorkGallery = () => (
             <SectionText>
               We built the LCN Feedback Platform to allow simple, quick, data
               collection with instant feedback on what others think.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
-
-        <Wrapper to="/our-work/first-days">
-          <Picture src={first_days_card}>
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />{' '}
-          </Picture>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Tech for Good</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>Wales Cooperative</CardSubTitle>
-            <SectionText>
-              Platform for helping with volunteer engagement from the beginning
-              of the recruitment process right through to getting feedback on
-              the volunteer's first day.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
-
-        <Wrapper to="/our-work/lwc">
-          <PictureWithFilter
-            src={lwc_card}
-            gradient="radial-gradient(circle, rgba(250,125,120,0.3) 0%, rgba(97,20,204,0.3) 100%)"
-          >
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />{' '}
-          </PictureWithFilter>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Tech for Good</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>Lancashire Women's Centers</CardSubTitle>
-            <SectionText>
-              We created LWC: Service Search, which is an app to help women
-              access the right services so they can feel more in control of
-              their lives.
             </SectionText>
           </SectionCard>
         </Wrapper>
