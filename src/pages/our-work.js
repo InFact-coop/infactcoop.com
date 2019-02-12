@@ -31,6 +31,7 @@ import meme_card from '../assets/images/card_images/meme_card.png'
 import ys_card from '../assets/images/card_images/ys_card.png'
 import discover_card from '../assets/images/card_images/discover_card.png'
 import workhub_card from '../assets/images/card_images/workhub_card.png'
+import facweb_card from '../assets/images/card_images/facweb_card.png'
 
 const PictureWithFilter = styled(Picture)`
   ${({ src, gradient }) =>
@@ -228,6 +229,22 @@ const WorkGallery = () => (
       </SectionHeading>
 
       <div className="flex-ns flex-column flex-row-ns flex-wrap justify-between-ns">
+        <Wrapper to="/our-work/founders-and-coders">
+          <Picture src={facweb_card}>
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Partnerships</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Founders and Coders</CardSubTitle>
+            <SectionText>
+              Creating a new look and feel for a community close to our hearts,
+              Founders and Coders.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
         <Wrapper to="/our-work/stimmy-things">
           <Picture src={stimmy_card}>
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
