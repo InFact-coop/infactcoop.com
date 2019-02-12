@@ -35,11 +35,12 @@ const WorkDescription = styled.div.attrs({
   }
 `
 
-const WorkImg = styled(BackgroundImg).attrs({
+const WorkImg = styled.img.attrs({
   className: 'w-100 mv4',
 })`
   height: ${({ smallScreen, heightAuto }) =>
     smallScreen || heightAuto ? 'auto' : '75vh'};
+  height: auto;
 `
 const TestimonialWrapper = styled.div.attrs({
   className:
@@ -60,10 +61,11 @@ const ZigZag = styled.img.attrs({
   className: 'mb2',
 })``
 
-const BannerImg = styled(BackgroundImg)`
+const BannerImg = styled.img`
   width: 100%;
   height: ${({ smallScreen, heightAuto }) =>
     smallScreen || heightAuto ? 'auto' : '85vh'};
+  height: auto;
   max-width: 1440px;
 `
 
