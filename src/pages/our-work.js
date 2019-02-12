@@ -401,7 +401,7 @@ const WorkGallery = () => (
           </SectionCard>
         </Wrapper>
 
-        <Wrapper to="/our-work/coming-soon">
+        <Wrapper to="/our-work/first-days">
           <Picture src={first_days_card}>
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />{' '}
           </Picture>
@@ -418,7 +418,7 @@ const WorkGallery = () => (
           </SectionCard>
         </Wrapper>
 
-        <Wrapper to="/our-work/coming-soon">
+        <Wrapper to="/our-work/lwc">
           <PictureWithFilter
             src={lwc_card}
             gradient="radial-gradient(circle, rgba(250,125,120,0.3) 0%, rgba(97,20,204,0.3) 100%)"
@@ -429,7 +429,7 @@ const WorkGallery = () => (
             <CardHeading>
               <CardTitle>Tech for Good</CardTitle>
             </CardHeading>
-            <CardSubTitle uppercase>Lancashire Women's Centre</CardSubTitle>
+            <CardSubTitle uppercase>Lancashire Women's Centers</CardSubTitle>
             <SectionText>
               We created LWC: Service Search, which is an app to help women
               access the right services so they can feel more in control of
