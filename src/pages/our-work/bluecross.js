@@ -106,7 +106,7 @@ const AboutWork = () => (
       <TestimonialWrapper>
         <TestimonialText>
           "As part of the CAST (centre for accelerating social technology)
-          fellowship I was introduced to InFact co-opto develop a brand new
+          fellowship I was introduced to InFact co-op to develop a brand new
           online site for Blue Cross where we will make it easier for people who
           need to find a new home for their pet to do so safely with us online.
           Coming into the process I had never heard of GitHub or worked in this
