@@ -17,14 +17,11 @@ import {
   WorkImg,
   BannerImg,
   WorkDescription,
-  TestimonialWrapper,
-  TestimonialPerson,
-  TestimonialText,
 } from '../../components/work-content'
 
-import stimmythings_header from '../../assets/images/header_images/stimmythings_header.svg'
-import stimmythings_img1 from '../../assets/images/inline_images/stimmythings_img1.png'
-import stimmythings_img2 from '../../assets/images/inline_images/stimmythings_img2.png'
+import ys_header from '../../assets/images/header_images/ys_header.png'
+import ys_1 from '../../assets/images/inline_images/ys_1.png'
+import ys_2 from '../../assets/images/inline_images/ys_2.png'
 import cast_card from '../../assets/images/card_images/cast_card.png'
 import bluecross_card from '../../assets/images/card_images/bluecross_card.png'
 
@@ -38,35 +35,34 @@ const PictureWithFilter = styled(Picture)`
 const AboutWork = () => (
   <Layout>
     <Header
-      topicLine="Health"
-      tagLine="Stimmy Things"
-      subTagLine="An app to help young people deal better with ADHD."
+      topicLine="Tech for Good"
+      tagLine="Your Sanctuary"
+      subTagLine="A tool to allow victoms of domestic violence to gain useful information, either from a live advisor or through a chatbot."
       gradient
     />
     <div className="ma0">
-      <BannerImg src={stimmythings_header} />
+      <BannerImg src={ys_header} />
       <WorkWrapper>
         <SectionHeading>
           <SectionTitle>The Challenge</SectionTitle>
         </SectionHeading>
         <WorkDescription>
-          We were approached by Slam, a leading mental health trust, and the
-          Anna Freud Centre, a young person's mental health charity. They asked
-          us to work together with young people with ADHD to identify ways in
-          which some of their symptoms could be alleviated through the use of
-          technology.
+          Your Sanctuary wanted to help their users access information and
+          support outside of the hours their helpline was staffed. They also
+          wanted their information to be more accessible to users who are
+          disabled and in vulnerable situations.
         </WorkDescription>
         <SectionHeading>
           <SectionTitle>Discovery and Design</SectionTitle>
         </SectionHeading>
         <WorkDescription>
-          One young person taught us about 'Stims' - self-soothing exercises
-          performed by people with a number of disorders helping them to relax,
-          focus their minds and concentrate in the face of overwhelming sensory
-          input. Her idea of a "virtual self-soothe box" was so complete and
-          compelling that we decided to bring it to reality for our app.
+          Working with Your Sanctuary and CAST, we decided to draw inspiration
+          from a previous tool we had built for Action For Children. Reusing
+          some of the functionality and ideas from this helped us progress
+          forwards quicker and come up with a simple, yet effective design with
+          an integrated out of the box chat solution.
         </WorkDescription>
-        <WorkImg src={stimmythings_img1} />
+        <WorkImg src={ys_1} />
         <SectionHeading>
           <SectionTitle>The Solution</SectionTitle>
         </SectionHeading>
@@ -74,56 +70,43 @@ const AboutWork = () => (
           We built an app which:
           <ul className="tl">
             <li>
-              Engages our audience with fun and friendly design and animations
+              Communicates information clearly and concisely for vulnerable
+              users
             </li>
             <li>
-              Enables users to save their own personalised stims so they can
-              easily use them in the future
+              Implements a chatbot to provide information to users out of hours,
+              as well as provide answers to commonly asked FAQs to free up staff
+              time
             </li>
             <li>
-              Allows our users to connect with other people facing similar
-              struggles via a stim-sharing platform
+              Connects users and staff on the chat tool and enables users to
+              return to the session at another time
             </li>
             <li>
-              Gives near-complete access to the app offline and from the home
-              screens through the use of Progressive Web App technology
+              Gives users optional anonymity through a coded login system (users
+              enter their email only if they want to be sent reminders of their
+              password)
             </li>
           </ul>
         </WorkDescription>
-        <WorkImg src={stimmythings_img2} />
+        <WorkImg src={ys_2} />
         <SectionHeading>
           <SectionTitle>See The Real Deal</SectionTitle>
         </SectionHeading>
         <WorkDescription>
           <p className="font-3 tc">
-            Check out Stimmy Things{' '}
+            Check out Your Sanctuary{' '}
             <a
               className="light-green b ttu"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://stimmythings.com/"
+              href="https://chat.yoursanctuary.org.uk/"
             >
               here
             </a>
           </p>
         </WorkDescription>
       </WorkWrapper>
-      <TestimonialWrapper>
-        <TestimonialText>
-          As experts in the mental health of children and families, we needed
-          experts in digital design and development … and we found in InFact!
-          We’ve worked with various members of the team for 2 years, and their
-          design ideas, attention to detail, enthusiasm, and ultimately, end
-          products have always been extremely impressive. The latest example of
-          our partnership is Stimmy Things, which exemplifies their talent for
-          taking a great idea, and turning it into something really beautiful,
-          usable and helpful. We can’t wait to work with InFact again!
-        </TestimonialText>
-        <TestimonialPerson>
-          Alex Goforth, Programme Lead Children & Young People's IAPT at Anna
-          Freud Centre
-        </TestimonialPerson>
-      </TestimonialWrapper>
     </div>
 
     <Section bg_color="white">

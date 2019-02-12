@@ -1,8 +1,9 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
+import Headroom from 'react-headroom'
+import Helmet from 'react-helmet'
 
 import { media, getVhInPixels } from '../styles/style_utils'
-import Headroom from 'react-headroom'
 import Header from '../containers/header'
 import Layout from '../components/layout'
 import {
@@ -24,9 +25,13 @@ import bluecross_card from '../assets/images/card_images/bluecross_card.png'
 import ourwork_header from '../assets/images/header_images/ourwork_header.png'
 import first_days_card from '../assets/images/card_images/first_days_card.png'
 import lcn_card from '../assets/images/card_images/lcn_card.png'
-import unlock_card from '../assets/images/card_images/unlock_card.png'
 import yimovi_card from '../assets/images/card_images/yimovi_card.png'
 import lwc_card from '../assets/images/card_images/lwc_card.png'
+import meme_card from '../assets/images/card_images/meme_card.png'
+import ys_card from '../assets/images/card_images/ys_card.png'
+import discover_card from '../assets/images/card_images/discover_card.png'
+import workhub_card from '../assets/images/card_images/workhub_card.png'
+import facweb_card from '../assets/images/card_images/facweb_card.png'
 
 const PictureWithFilter = styled(Picture)`
   ${({ src, gradient }) =>
@@ -198,6 +203,16 @@ const Partners = () => (
 
 const WorkGallery = () => (
   <Layout>
+    <Helmet
+      title="Our Work - InFact Digital Co-op"
+      meta={[
+        {
+          name: 'description',
+          content:
+            "Check out some of the apps and websites we're most proud of.",
+        },
+      ]}
+    />
     <Header image={ourwork_header} splash={Splash}>
       Working with great people on inspiring projects
     </Header>
@@ -214,19 +229,100 @@ const WorkGallery = () => (
       </SectionHeading>
 
       <div className="flex-ns flex-column flex-row-ns flex-wrap justify-between-ns">
+        <Wrapper to="/our-work/founders-and-coders">
+          <Picture src={facweb_card}>
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Partnerships</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Founders and Coders</CardSubTitle>
+            <SectionText>
+              Creating a new look and feel for a community close to our hearts,
+              Founders and Coders.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
         <Wrapper to="/our-work/stimmy-things">
           <Picture src={stimmy_card}>
             <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
           </Picture>
           <SectionCard>
             <CardHeading>
-              <CardTitle>Mental Health</CardTitle>
+              <CardTitle>Health</CardTitle>
             </CardHeading>
             <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
             <SectionText>
               Working in collaboration with young people, parents and
               clinicians, we designed and built an app that helps young people
               with ADHD to manage their symptoms.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
+        <Wrapper to="/our-work/meme-generator">
+          <Picture src={meme_card}>
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Activism</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>EU Compliant Meme Generator</CardSubTitle>
+            <SectionText>
+              A campaign tool to aid Create.Refresh in their fight against
+              Article 13.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
+        <Wrapper to="/our-work/your-sanctuary">
+          <Picture src={ys_card}>
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />{' '}
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Tech for Good</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Your Sanctuary</CardSubTitle>
+            <SectionText>
+              A tool to allow victims of domestic violence to gain information,
+              either from a live advisor or through a chatbot.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
+        <Wrapper to="/our-work/discover">
+          <Picture src={discover_card}>
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Health</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Discoverbot</CardSubTitle>
+            <SectionText>
+              An app teaching 16-18 year olds psychological techniques based on
+              cognitive behavioural therapy principles to make helpful changes
+              to their lives and to build resilience to stress.
+            </SectionText>
+          </SectionCard>
+        </Wrapper>
+
+        <Wrapper to="/our-work/workhub">
+          <Picture src={workhub_card}>
+            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
+          </Picture>
+          <SectionCard>
+            <CardHeading>
+              <CardTitle>Start-Up</CardTitle>
+            </CardHeading>
+            <CardSubTitle uppercase>Workhub</CardSubTitle>
+            <SectionText>
+              Workhub is a platform to capture how teams work together and to
+              explore how the world works.
             </SectionText>
           </SectionCard>
         </Wrapper>
@@ -338,26 +434,6 @@ const WorkGallery = () => (
               We created LWC: Service Search, which is an app to help women
               access the right services so they can feel more in control of
               their lives.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
-
-        <Wrapper to="/our-work/coming-soon">
-          <PictureWithFilter
-            src={unlock_card}
-            gradient="linear-gradient(225deg, rgba(0,0,0,0.1) 0%, rgba(50,45,55,0.1) 100%)"
-          >
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />{' '}
-          </PictureWithFilter>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Tech for Good</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>Unlock</CardSubTitle>
-            <SectionText>
-              We built a chat bot to feature on Unlock's informationHub. Users
-              can click on it and interact with it to answer their questions
-              related to travel to the U.S.
             </SectionText>
           </SectionCard>
         </Wrapper>

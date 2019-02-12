@@ -102,6 +102,13 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
         </MenuItem>
         <MenuItem
           menuIsOpen={menuIsOpen}
+          to="/about-us"
+          onClick={() => toggleMenu({ pageChange: true })}
+        >
+          About InFact
+        </MenuItem>
+        <MenuItem
+          menuIsOpen={menuIsOpen}
           to="/our-work"
           onClick={() => toggleMenu({ pageChange: true })}
         >
@@ -113,13 +120,6 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
           onClick={() => toggleMenu({ pageChange: true })}
         >
           Approach
-        </MenuItem>
-        <MenuItem
-          menuIsOpen={menuIsOpen}
-          to="/about-us"
-          onClick={() => toggleMenu({ pageChange: true })}
-        >
-          About InFact
         </MenuItem>
         <MenuItem
           to="/contact-us"

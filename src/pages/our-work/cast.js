@@ -17,19 +17,14 @@ import {
   WorkWrapper,
   WorkImg,
   WorkDescription,
+  BannerImg,
 } from '../../components/work-content'
 
-import BackgroundImg from '../../components/background-img'
 import cast_header from '../../assets/images/header_images/CAST_header.jpg'
 import cast_img1 from '../../assets/images/inline_images/cast_img1.jpg'
 import cast_img2 from '../../assets/images/inline_images/cast_img2.png'
 import bluecross_card from '../../assets/images/card_images/bluecross_card.png'
 import stimmy_card from '../../assets/images/card_images/stimmythings_card.svg'
-
-const BannerImg = styled(BackgroundImg)`
-  width: 100%;
-  height: 85vh;
-`
 
 const PictureWithFilter = styled(Picture)`
   ${({ src, gradient }) =>
