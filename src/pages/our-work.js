@@ -1,8 +1,9 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
+import Headroom from 'react-headroom'
+import Helmet from 'react-helmet'
 
 import { media, getVhInPixels } from '../styles/style_utils'
-import Headroom from 'react-headroom'
 import Header from '../containers/header'
 import Layout from '../components/layout'
 import {
@@ -198,6 +199,16 @@ const Partners = () => (
 
 const WorkGallery = () => (
   <Layout>
+    <Helmet
+      title="Our Work - InFact Digital Co-op"
+      meta={[
+        {
+          name: 'description',
+          content:
+            "Check out some of the apps and websites we're most proud of.",
+        },
+      ]}
+    />
     <Header image={ourwork_header} splash={Splash}>
       Working with great people on inspiring projects
     </Header>

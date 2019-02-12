@@ -104,6 +104,13 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
         </MenuItem>
         <MenuItem
           menuIsOpen={menuIsOpen}
+          to="/about-us"
+          onClick={() => toggleMenu({ pageChange: true })}
+        >
+          About InFact
+        </MenuItem>
+        <MenuItem
+          menuIsOpen={menuIsOpen}
           to="/our-work"
           onClick={() => toggleMenu({ pageChange: true })}
         >
@@ -116,20 +123,6 @@ const Menu = ({ menuIsOpen, toggleMenu, gradient }) => {
         >
           Approach
         </MenuItem>
-        <MenuItem
-          menuIsOpen={menuIsOpen}
-          to="/about-us"
-          onClick={() => toggleMenu({ pageChange: true })}
-        >
-          About InFact
-        </MenuItem>
-        <MenuItemATag
-          menuIsOpen={menuIsOpen}
-          href="https://foundersandcoders.com/"
-          target="_blank"
-        >
-          Founders & Coders
-        </MenuItemATag>
         <MenuItem
           to="/contact-us"
           menuIsOpen={menuIsOpen}
