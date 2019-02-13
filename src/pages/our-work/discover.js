@@ -40,7 +40,16 @@ const AboutWork = () => (
           <SectionTitle>The Challenge</SectionTitle>
         </SectionHeading>
         <WorkDescription>
-          The DISCOVER team run one-day interactive group workshops where
+          The{' '}
+          <a
+            className="link light-green b"
+            href="https://www.theguardian.com/society/2018/nov/28/public-service-awards-2018-all-winners"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            award-winning
+          </a>{' '}
+          DISCOVER team run one-day interactive group workshops where
           participants learn psychological techniques based on cognitive
           behavioural therapy principles. Our challenge was to build a digital
           product which would engage the young people in the weeks and months
