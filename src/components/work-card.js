@@ -1,8 +1,10 @@
-import styled from 'styled-components'
-import { media } from '../styles/style_utils'
+import React from 'react'
 import { Link } from 'gatsby'
+import styled, { css } from 'styled-components'
 
-import { CardBody } from './card'
+import { media } from '../styles/style_utils'
+
+import { CardBody, CardHeading, CardTitle, CardSubTitle } from './card'
 
 import BackgroundImg from './background-img'
 
@@ -23,6 +25,14 @@ const Picture = styled(BackgroundImg)`
     height: 0;
   `};
 `
+
+const PictureWithFilter = styled(Picture)`
+  ${({ src, gradient }) =>
+    css`
+      background-image: ${gradient}, url(${src});
+    `};
+`
+
 const SectionCard = styled.div.attrs({
   className:
     'bg-white shadow-5 absolute ph4-l pv4-l pv3-m ph3-m pv3 ph3 center tc tl-ns pointer flex-column justify-center',
@@ -94,4 +104,22 @@ const SectionText = styled(CardBody)`
   `};
 `
 
-export { Wrapper, Picture, Overlay, SectionCard, SectionText }
+const WorkCard = ({ src, to, gradient, title, subtitle, description }) => {
+  const PictureWrapper = gradient ? PictureWithFilter : Picture
+  return (
+    <Wrapper to={to}>
+      <PictureWrapper src={src} gradient={gradient}>
+        <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
+      </PictureWrapper>
+      <SectionCard>
+        <CardHeading>
+          <CardTitle>{title}</CardTitle>
+        </CardHeading>
+        <CardSubTitle uppercase>{subtitle}</CardSubTitle>
+        <SectionText>{description}</SectionText>
+      </SectionCard>
+    </Wrapper>
+  )
+}
+
+export { Wrapper, Picture, Overlay, SectionCard, SectionText, WorkCard }
