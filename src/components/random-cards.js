@@ -1,7 +1,7 @@
 import React from 'react'
 import * as r from 'ramda'
 
-import { WorkCard } from './work-card'
+import WorkCard from './work-card'
 
 import workProjects from '../data/work-projects'
 
@@ -17,7 +17,12 @@ const shuffle = list => {
 }
 
 const RandomCards = ({ location }) => {
-  const [project1, project2] = shuffle(r.dissoc(location, workProjects))
+  const [project1, project2] = shuffle(
+    r.pipe(
+      r.omit([location, 'yimovi']),
+      r.values
+    )(workProjects)
+  )
   return (
     <div className="flex-ns flex-column flex-row-ns justify-between-ns">
       <WorkCard {...project1} />

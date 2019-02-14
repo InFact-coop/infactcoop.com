@@ -18,19 +18,11 @@ import {
   SectionHeading,
   SectionButton,
 } from '../components/section'
-import { CardTitle, CardSubTitle, CardHeading } from '../components/card'
-import {
-  Wrapper,
-  Picture,
-  Overlay,
-  SectionCard,
-  SectionText,
-} from '../components/work-card'
 import { LinkImage } from '../components/link-image'
+import WorkCard from '../components/work-card'
+import workProjects from '../data/work-projects'
 
 import landing_header from '../assets/images/header_images/landing_header2.jpg'
-import meme_card from '../assets/images/card_images/meme_card.png'
-import facweb_card from '../assets/images/card_images/facweb_card.png'
 
 import annaFreud from '../assets/images/partner_logos/anna_freud.png'
 import bluecross from '../assets/images/partner_logos/bluecross.png'
@@ -82,37 +74,8 @@ const IndexPage = () => (
       </SectionHeading>
 
       <div className="flex-ns flex-column flex-row-ns justify-between-ns">
-        <Wrapper to="/our-work/founders-and-coders">
-          <Picture src={facweb_card}>
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
-          </Picture>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Partnerships</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>Founders and Coders</CardSubTitle>
-            <SectionText>
-              Creating a new look and feel for a community close to our hearts,
-              Founders and Coders.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
-
-        <Wrapper to="/our-work/meme-generator">
-          <Picture src={meme_card}>
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
-          </Picture>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Activism</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>EU Compliant Meme Generator</CardSubTitle>
-            <SectionText>
-              A campaign tool to aid Create.Refresh in their fight against
-              Article 13.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
+        <WorkCard {...workProjects['founders-and-coders']} />
+        <WorkCard {...workProjects['meme-generator']} />
       </div>
       <WorkLink as={Link} to="/our-work">
         See It All

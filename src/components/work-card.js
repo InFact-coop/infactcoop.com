@@ -122,4 +122,4 @@ const WorkCard = ({ src, to, gradient, title, subtitle, description }) => {
   )
 }
 
-export { Wrapper, Picture, Overlay, SectionCard, SectionText, WorkCard }
+export default WorkCard
