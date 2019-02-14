@@ -50,7 +50,10 @@ const AboutUs = () => (
         We recognise the transformative impact and reach that the internet has
         had on every aspect of the modern world. We wish to leverage that reach
         to turn your great ideas into reality. If this sounds like you,
-        <Link to="/contact-us"> then why not get in touch?</Link>
+        <Link to="/contact-us" className="link light-green b">
+          {' '}
+          then why not get in touch?
+        </Link>
       </Text>
     </Wrapper>
     <CardsWrapper>

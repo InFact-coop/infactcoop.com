@@ -4,28 +4,18 @@ import Header from '../../containers/header-work'
 import Layout from '../../components/layout'
 import { SectionHeading, SectionTitle, Section } from '../../components/section'
 import {
-  Wrapper,
-  Picture,
-  Overlay,
-  SectionCard,
-  SectionText,
-} from '../../components/work-card'
-import { CardTitle, CardSubTitle, CardHeading } from '../../components/card'
-import {
   WorkWrapper,
   WorkImg,
   WorkDescription,
   BannerImg,
 } from '../../components/work-content'
+import RandomCards from '../../components/random-cards'
 
 import lcn_header from '../../assets/images/header_images/lcn_header.jpg'
 import lcn_img1 from '../../assets/images/inline_images/lcn_img1.png'
 import lcn_img2 from '../../assets/images/inline_images/lcn_img2.png'
 
-import stimmy_card from '../../assets/images/card_images/stimmythings_card.svg'
-import cast_card from '../../assets/images/card_images/cast_card.png'
-
-const AboutWork = () => (
+const LCN = () => (
   <Layout>
     <Header
       topicLine="Tech for Good"
@@ -120,7 +110,8 @@ const AboutWork = () => (
             href="https://www.wearecast.org.uk/for-nonprofits/fuse/"
           >
             CAST's Fuse program
-          </a>, and are further exploring ways they can embed innovative digital
+          </a>
+          , and are further exploring ways they can embed innovative digital
           practices into their organisation.
         </WorkDescription>
       </WorkWrapper>
@@ -129,42 +120,9 @@ const AboutWork = () => (
       <SectionHeading mb>
         <SectionTitle>More Work</SectionTitle>
       </SectionHeading>
-      <div className="flex-ns flex-column flex-row-ns justify-between-ns">
-        <Wrapper to="/our-work/stimmy-things">
-          <Picture src={stimmy_card}>
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
-          </Picture>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Mental Health</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>Stimmy Things</CardSubTitle>
-            <SectionText>
-              Working in collaboration with young people, parents and
-              clinicians, we designed and built an app that helps young people
-              with ADHD to manage their symptoms.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
-
-        <Wrapper to="/our-work/cast">
-          <Picture src={cast_card}>
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
-          </Picture>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Tech for Good</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>CAST Digital Fellowship</CardSubTitle>
-            <SectionText>
-              We collaborated with CAST to support senior staff at non-profits
-              in becoming leaders of their organisation’s digital development.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
-      </div>
+      <RandomCards location="lcn" />
     </Section>
   </Layout>
 )
 
-export default AboutWork
+export default LCN

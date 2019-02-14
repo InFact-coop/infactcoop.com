@@ -90,8 +90,10 @@ const TaglineBlack = styled.p.attrs(({ smallFont }) => ({
 }))``
 
 const SubTaglineBlack = styled.div.attrs({
-  className: 'font-4 sans-serif black',
-})``
+  className: 'font-4 sans-serif black center',
+})`
+  max-width: 960px;
+`
 
 const WorkHeading = ({ children }) => (
   <div className="mb6-ns mb4 tc w-100 mt7">

@@ -1,38 +1,21 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
 
 import Header from '../../containers/header-work'
 import Layout from '../../components/layout'
 import { SectionHeading, SectionTitle, Section } from '../../components/section'
-import {
-  Wrapper,
-  Picture,
-  Overlay,
-  SectionCard,
-  SectionText,
-} from '../../components/work-card'
-import { CardTitle, CardSubTitle, CardHeading } from '../../components/card'
 import {
   WorkWrapper,
   WorkImg,
   BannerImg,
   WorkDescription,
 } from '../../components/work-content'
+import RandomCards from '../../components/random-cards'
 
 import lwc_header from '../../assets/images/header_images/lwc_header.png'
 import lwc_1 from '../../assets/images/inline_images/lwc_1.png'
 import lwc_2 from '../../assets/images/inline_images/lwc_2.png'
-import cast_card from '../../assets/images/card_images/cast_card.png'
-import bluecross_card from '../../assets/images/card_images/bluecross_card.png'
 
-const PictureWithFilter = styled(Picture)`
-  ${({ src, gradient }) =>
-    css`
-      background-image: ${gradient}, url(${src});
-    `};
-`
-
-const AboutWork = () => (
+const LWC = () => (
   <Layout>
     <Header
       topicLine="Tech for good"
@@ -117,45 +100,9 @@ const AboutWork = () => (
       <SectionHeading mb>
         <SectionTitle>More Work</SectionTitle>
       </SectionHeading>
-      <div className="flex-ns flex-column flex-row-ns justify-between-ns">
-        <Wrapper to="/our-work/cast">
-          <Picture src={cast_card}>
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
-          </Picture>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Tech for Good</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>CAST Digital Fellowship</CardSubTitle>
-            <SectionText>
-              We collaborated with CAST to support senior staff at non-profits
-              in becoming leaders of their organisation’s digital development.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
-        <Wrapper to="/our-work/bluecross">
-          <PictureWithFilter
-            src={bluecross_card}
-            gradient={
-              'linear-gradient(225deg, rgba(0,159,223,0.3) 0%, rgba(0,51,136,0.3) 100%)'
-            }
-          >
-            <Overlay background="linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(50, 45, 55, 0.3) 100%)" />
-          </PictureWithFilter>
-          <SectionCard>
-            <CardHeading>
-              <CardTitle>Tech for Good</CardTitle>
-            </CardHeading>
-            <CardSubTitle uppercase>Blue Cross</CardSubTitle>
-            <SectionText>
-              We created an app for conscientious owners to find a loving new
-              home for their pet.
-            </SectionText>
-          </SectionCard>
-        </Wrapper>
-      </div>
+      <RandomCards location="lwc" />
     </Section>
   </Layout>
 )
 
-export default AboutWork
+export default LWC
