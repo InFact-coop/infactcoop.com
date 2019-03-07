@@ -66,10 +66,10 @@ const Section = ({ children, bg_color }) => (
   </SectionTile>
 )
 
-const SectionHeading = ({ children, mb }) => {
+const SectionHeading = ({ children, mb, className }) => {
   const classes = `flex flex-row justify-center items-center mb2 pb1 pb0-ns ${
     mb ? 'mb5-ns' : ''
-  }`
+  }${className && className}`
 
   return (
     <div className={classes}>
