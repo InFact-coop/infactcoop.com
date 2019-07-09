@@ -94,6 +94,22 @@ const Discover = () => (
           </ul>
         </WorkDescription>
         <WorkImg src={discover_2} />
+        <SectionHeading>
+          <SectionTitle>See The Real Deal</SectionTitle>
+        </SectionHeading>
+        <WorkDescription>
+          <p className="font-3 tc">
+            Check out DISCOVERbot{' '}
+            <a
+              className="light-green b ttu"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://discoverbot.slam.nhs.uk/"
+            >
+              here
+            </a>
+          </p>
+        </WorkDescription>
       </WorkWrapper>
     </div>
     <Section bg_color="white">
